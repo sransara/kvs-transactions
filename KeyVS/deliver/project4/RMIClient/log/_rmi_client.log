@@ -1,0 +1,1938 @@
+2015-12-08 03:06:48,955 INFO  [RMIClient] Client 1:ACK
+2015-12-08 03:06:49,410 INFO  [RMIClient] Client 1:ACK
+2015-12-08 03:06:49,857 INFO  [RMIClient] Client 1:ACK
+2015-12-08 03:06:50,326 INFO  [RMIClient] Client 1:ACK
+2015-12-08 03:06:50,913 INFO  [RMIClient] Client 1:ACK
+2015-12-08 03:06:51,366 INFO  [RMIClient] Client 1:Color is Red
+2015-12-08 03:06:51,910 INFO  [RMIClient] Client 1:Color is Yellow
+2015-12-08 03:06:52,356 INFO  [RMIClient] Client 1:Color is Orange
+2015-12-08 03:06:52,831 INFO  [RMIClient] Client 1:Color is Green
+2015-12-08 03:06:53,278 INFO  [RMIClient] Client 1:Color is Yellowish-Green
+2015-12-08 03:06:53,698 INFO  [RMIClient] Client 1:ACK
+2015-12-08 03:06:54,119 INFO  [RMIClient] Client 1:ACK
+2015-12-08 03:06:54,554 INFO  [RMIClient] Client 1:ACK
+2015-12-08 03:06:54,991 INFO  [RMIClient] Client 1:ACK
+2015-12-08 03:06:55,437 INFO  [RMIClient] Client 1:ACK
+2015-12-08 03:06:55,884 INFO  [RMIClient] Client 1:No key Apple matches db 
+2015-12-08 03:06:56,337 INFO  [RMIClient] Client 1:No key Banana matches db 
+2015-12-08 03:06:56,776 INFO  [RMIClient] Client 1:No key Orange matches db 
+2015-12-08 03:06:57,259 INFO  [RMIClient] Client 1:No key Kiwi matches db 
+2015-12-08 03:06:57,703 INFO  [RMIClient] Client 1:No key Pineapple matches db 
+2015-12-08 03:19:34,485 INFO  [RMIClient] Client 1:ACK
+2015-12-08 03:19:34,882 INFO  [RMIClient] Client 1:ACK
+2015-12-08 03:19:35,294 INFO  [RMIClient] Client 1:ACK
+2015-12-08 03:19:35,704 INFO  [RMIClient] Client 1:ACK
+2015-12-08 03:19:36,157 INFO  [RMIClient] Client 1:ACK
+2015-12-08 03:19:36,534 INFO  [RMIClient] Client 1:Color is Red
+2015-12-08 03:19:36,934 INFO  [RMIClient] Client 1:Color is Yellow
+2015-12-08 03:19:37,336 INFO  [RMIClient] Client 1:Color is Orange
+2015-12-08 03:19:37,740 INFO  [RMIClient] Client 1:Color is Green
+2015-12-08 03:19:38,133 INFO  [RMIClient] Client 1:Color is Yellowish-Green
+2015-12-08 03:19:38,548 INFO  [RMIClient] Client 1:ACK
+2015-12-08 03:19:38,948 INFO  [RMIClient] Client 1:ACK
+2015-12-08 03:19:39,352 INFO  [RMIClient] Client 1:ACK
+2015-12-08 03:19:39,760 INFO  [RMIClient] Client 1:ACK
+2015-12-08 03:19:40,168 INFO  [RMIClient] Client 1:ACK
+2015-12-08 03:19:40,540 INFO  [RMIClient] Client 1:No key Apple matches db 
+2015-12-08 03:19:40,941 INFO  [RMIClient] Client 1:No key Banana matches db 
+2015-12-08 03:19:41,346 INFO  [RMIClient] Client 1:No key Orange matches db 
+2015-12-08 03:19:41,746 INFO  [RMIClient] Client 1:No key Kiwi matches db 
+2015-12-08 03:19:42,141 INFO  [RMIClient] Client 1:No key Pineapple matches db 
+2015-12-08 03:23:54,693 INFO  [RMIClient] Client 1:ACK
+2015-12-08 03:23:55,097 INFO  [RMIClient] Client 1:ACK
+2015-12-08 03:23:55,497 INFO  [RMIClient] Client 1:ACK
+2015-12-08 03:23:55,906 INFO  [RMIClient] Client 1:ACK
+2015-12-08 03:23:56,330 INFO  [RMIClient] Client 1:ACK
+2015-12-08 03:23:56,708 INFO  [RMIClient] Client 1:Color is Red
+2015-12-08 03:23:57,138 INFO  [RMIClient] Client 1:Color is Yellow
+2015-12-08 03:23:57,547 INFO  [RMIClient] Client 1:Color is Orange
+2015-12-08 03:23:57,964 INFO  [RMIClient] Client 1:Color is Green
+2015-12-08 03:23:58,358 INFO  [RMIClient] Client 1:Color is Yellowish-Green
+2015-12-08 03:23:58,758 INFO  [RMIClient] Client 1:ACK
+2015-12-08 03:23:59,157 INFO  [RMIClient] Client 1:ACK
+2015-12-08 03:23:59,550 INFO  [RMIClient] Client 1:ACK
+2015-12-08 03:23:59,963 INFO  [RMIClient] Client 1:ACK
+2015-12-08 03:24:00,391 INFO  [RMIClient] Client 1:ACK
+2015-12-08 03:24:00,767 INFO  [RMIClient] Client 1:No key Apple matches db 
+2015-12-08 03:24:01,169 INFO  [RMIClient] Client 1:No key Banana matches db 
+2015-12-08 03:24:01,558 INFO  [RMIClient] Client 1:No key Orange matches db 
+2015-12-08 03:40:30,236 INFO  [RMIClient] Client 1:ACK
+2015-12-08 03:40:30,656 INFO  [RMIClient] Client 1:ACK
+2015-12-08 03:40:31,070 INFO  [RMIClient] Client 1:ACK
+2015-12-08 03:40:31,503 INFO  [RMIClient] Client 1:ACK
+2015-12-08 03:40:31,934 INFO  [RMIClient] Client 1:ACK
+2015-12-08 03:40:32,307 INFO  [RMIClient] Client 1:Color is Red
+2015-12-08 03:40:32,720 INFO  [RMIClient] Client 1:Color is Yellow
+2015-12-08 03:40:33,131 INFO  [RMIClient] Client 1:Color is Orange
+2015-12-08 03:40:33,541 INFO  [RMIClient] Client 1:Color is Green
+2015-12-08 03:40:33,957 INFO  [RMIClient] Client 1:Color is Yellowish-Green
+2015-12-08 03:40:34,354 INFO  [RMIClient] Client 1:ACK
+2015-12-08 03:40:34,766 INFO  [RMIClient] Client 1:ACK
+2015-12-08 03:40:35,164 INFO  [RMIClient] Client 1:ACK
+2015-12-08 03:40:35,565 INFO  [RMIClient] Client 1:ACK
+2015-12-08 03:40:36,005 INFO  [RMIClient] Client 1:ACK
+2015-12-08 03:40:36,403 INFO  [RMIClient] Client 1:No key Apple matches db 
+2015-12-08 03:40:36,841 INFO  [RMIClient] Client 1:No key Banana matches db 
+2015-12-08 03:40:37,253 INFO  [RMIClient] Client 1:No key Orange matches db 
+2015-12-08 03:40:37,679 INFO  [RMIClient] Client 1:No key Kiwi matches db 
+2015-12-08 03:40:38,074 INFO  [RMIClient] Client 1:No key Pineapple matches db 
+2015-12-08 04:27:02,528 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:27:02,994 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:27:03,407 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:27:03,857 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:27:04,413 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:27:04,798 INFO  [RMIClient] Client 1:Color is Red
+2015-12-08 04:27:05,191 INFO  [RMIClient] Client 1:Color is Yellow
+2015-12-08 04:27:05,591 INFO  [RMIClient] Client 1:Color is Orange
+2015-12-08 04:27:05,990 INFO  [RMIClient] Client 1:Color is Green
+2015-12-08 04:27:06,392 INFO  [RMIClient] Client 1:Color is Yellowish-Green
+2015-12-08 04:27:06,773 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:27:07,157 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:27:07,556 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:27:07,964 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:27:08,372 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:27:08,767 INFO  [RMIClient] Client 1:No key Apple matches db 
+2015-12-08 04:27:09,191 INFO  [RMIClient] Client 1:No key Banana matches db 
+2015-12-08 04:27:09,576 INFO  [RMIClient] Client 1:No key Orange matches db 
+2015-12-08 04:27:09,985 INFO  [RMIClient] Client 1:No key Kiwi matches db 
+2015-12-08 04:27:10,396 INFO  [RMIClient] Client 1:No key Pineapple matches db 
+2015-12-08 04:38:45,044 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:38:45,444 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:38:45,856 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:38:46,263 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:38:46,668 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:38:47,052 INFO  [RMIClient] Client 1:Color is Red
+2015-12-08 04:38:47,449 INFO  [RMIClient] Client 1:Color is Yellow
+2015-12-08 04:38:47,872 INFO  [RMIClient] Client 1:Color is Orange
+2015-12-08 04:38:48,292 INFO  [RMIClient] Client 1:Color is Green
+2015-12-08 04:38:48,696 INFO  [RMIClient] Client 1:Color is Yellowish-Green
+2015-12-08 04:38:49,095 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:38:49,491 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:38:49,887 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:38:50,288 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:38:50,704 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:38:51,110 INFO  [RMIClient] Client 1:No key Apple matches db 
+2015-12-08 04:38:51,524 INFO  [RMIClient] Client 1:No key Banana matches db 
+2015-12-08 04:38:51,911 INFO  [RMIClient] Client 1:No key Orange matches db 
+2015-12-08 04:38:52,323 INFO  [RMIClient] Client 1:No key Kiwi matches db 
+2015-12-08 04:38:52,727 INFO  [RMIClient] Client 1:No key Pineapple matches db 
+2015-12-08 04:43:49,703 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:43:50,103 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:43:50,492 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:43:50,886 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:43:51,294 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:43:51,678 INFO  [RMIClient] Client 1:Color is Red
+2015-12-08 04:43:52,071 INFO  [RMIClient] Client 1:Color is Yellow
+2015-12-08 04:43:52,458 INFO  [RMIClient] Client 1:Color is Orange
+2015-12-08 04:43:52,871 INFO  [RMIClient] Client 1:Color is Green
+2015-12-08 04:43:53,259 INFO  [RMIClient] Client 1:Color is Yellowish-Green
+2015-12-08 04:43:53,640 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:43:54,118 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:43:54,516 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:43:54,926 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:43:55,329 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:43:55,710 INFO  [RMIClient] Client 1:No key Apple matches db 
+2015-12-08 04:43:56,117 INFO  [RMIClient] Client 1:No key Banana matches db 
+2015-12-08 04:43:56,508 INFO  [RMIClient] Client 1:No key Orange matches db 
+2015-12-08 04:43:56,908 INFO  [RMIClient] Client 1:No key Kiwi matches db 
+2015-12-08 04:43:57,313 INFO  [RMIClient] Client 1:No key Pineapple matches db 
+2015-12-08 04:45:58,687 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:45:59,093 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:45:59,497 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:45:59,895 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:46:00,319 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:46:00,694 INFO  [RMIClient] Client 1:Color is Red
+2015-12-08 04:46:01,096 INFO  [RMIClient] Client 1:Color is Yellow
+2015-12-08 04:46:01,488 INFO  [RMIClient] Client 1:Color is Orange
+2015-12-08 04:46:01,896 INFO  [RMIClient] Client 1:Color is Green
+2015-12-08 04:46:02,287 INFO  [RMIClient] Client 1:Color is Yellowish-Green
+2015-12-08 04:46:02,690 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:46:03,091 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:46:03,530 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:46:03,954 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:46:04,379 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:46:04,765 INFO  [RMIClient] Client 1:No key Apple matches db 
+2015-12-08 04:46:05,185 INFO  [RMIClient] Client 1:No key Banana matches db 
+2015-12-08 04:46:05,572 INFO  [RMIClient] Client 1:No key Orange matches db 
+2015-12-08 04:46:05,987 INFO  [RMIClient] Client 1:No key Kiwi matches db 
+2015-12-08 04:46:06,390 INFO  [RMIClient] Client 1:No key Pineapple matches db 
+2015-12-08 04:48:39,333 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:48:39,730 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:48:40,130 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:48:40,532 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:48:41,078 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:48:41,461 INFO  [RMIClient] Client 1:Color is Red
+2015-12-08 04:48:41,869 INFO  [RMIClient] Client 1:Color is Yellow
+2015-12-08 04:48:42,267 INFO  [RMIClient] Client 1:Color is Orange
+2015-12-08 04:48:42,679 INFO  [RMIClient] Client 1:Color is Green
+2015-12-08 04:48:43,103 INFO  [RMIClient] Client 1:Color is Yellowish-Green
+2015-12-08 04:48:43,492 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:48:43,896 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:48:44,297 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:48:44,724 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:48:45,148 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:48:45,540 INFO  [RMIClient] Client 1:No key Apple matches db 
+2015-12-08 04:48:45,950 INFO  [RMIClient] Client 1:No key Banana matches db 
+2015-12-08 04:48:46,345 INFO  [RMIClient] Client 1:No key Orange matches db 
+2015-12-08 04:48:46,740 INFO  [RMIClient] Client 1:No key Kiwi matches db 
+2015-12-08 04:48:47,138 INFO  [RMIClient] Client 1:No key Pineapple matches db 
+2015-12-08 04:49:01,597 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:49:01,999 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:49:02,405 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:49:02,825 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:49:03,256 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:49:03,730 INFO  [RMIClient] Client 1:Color is Red
+2015-12-08 04:49:04,208 INFO  [RMIClient] Client 1:Color is Yellow
+2015-12-08 04:49:04,730 INFO  [RMIClient] Client 1:Color is Orange
+2015-12-08 04:49:05,251 INFO  [RMIClient] Client 1:Color is Green
+2015-12-08 04:49:05,752 INFO  [RMIClient] Client 1:Color is Yellowish-Green
+2015-12-08 04:49:06,288 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:49:07,045 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:49:07,441 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:49:07,835 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:49:08,250 INFO  [RMIClient] Client 1:ACK
+2015-12-08 04:49:08,648 INFO  [RMIClient] Client 1:No key Apple matches db 
+2015-12-08 04:49:09,077 INFO  [RMIClient] Client 1:No key Banana matches db 
+2015-12-08 04:49:09,469 INFO  [RMIClient] Client 1:No key Orange matches db 
+2015-12-08 04:49:09,873 INFO  [RMIClient] Client 1:No key Kiwi matches db 
+2015-12-08 04:49:10,264 INFO  [RMIClient] Client 1:No key Pineapple matches db 
+2015-12-08 05:03:31,523 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:03:31,944 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:03:32,410 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:03:32,897 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:03:33,472 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:03:33,889 INFO  [RMIClient] Client 1:Color is Red
+2015-12-08 05:03:34,319 INFO  [RMIClient] Client 1:Color is Yellow
+2015-12-08 05:03:34,749 INFO  [RMIClient] Client 1:Color is Orange
+2015-12-08 05:03:35,173 INFO  [RMIClient] Client 1:Color is Green
+2015-12-08 05:03:35,573 INFO  [RMIClient] Client 1:Color is Yellowish-Green
+2015-12-08 05:03:36,048 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:03:36,544 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:03:36,952 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:03:37,374 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:03:37,825 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:03:38,207 INFO  [RMIClient] Client 1:No key Apple matches db 
+2015-12-08 05:03:38,625 INFO  [RMIClient] Client 1:No key Banana matches db 
+2015-12-08 05:03:39,067 INFO  [RMIClient] Client 1:No key Orange matches db 
+2015-12-08 05:03:39,476 INFO  [RMIClient] Client 1:No key Kiwi matches db 
+2015-12-08 05:03:39,895 INFO  [RMIClient] Client 1:No key Pineapple matches db 
+2015-12-08 05:07:14,943 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:07:15,490 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:07:15,905 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:07:16,450 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:07:17,011 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:07:17,433 INFO  [RMIClient] Client 1:Color is Red
+2015-12-08 05:07:17,831 INFO  [RMIClient] Client 1:Color is Yellow
+2015-12-08 05:07:18,231 INFO  [RMIClient] Client 1:Color is Orange
+2015-12-08 05:07:18,638 INFO  [RMIClient] Client 1:Color is Green
+2015-12-08 05:07:19,057 INFO  [RMIClient] Client 1:Color is Yellowish-Green
+2015-12-08 05:07:19,444 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:07:19,844 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:07:20,267 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:07:20,707 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:07:21,140 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:07:21,525 INFO  [RMIClient] Client 1:No key Apple matches db 
+2015-12-08 05:07:21,933 INFO  [RMIClient] Client 1:No key Banana matches db 
+2015-12-08 05:07:22,324 INFO  [RMIClient] Client 1:No key Orange matches db 
+2015-12-08 05:07:22,729 INFO  [RMIClient] Client 1:No key Kiwi matches db 
+2015-12-08 05:07:23,129 INFO  [RMIClient] Client 1:No key Pineapple matches db 
+2015-12-08 05:09:38,187 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:09:38,635 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:09:39,093 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:09:39,657 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:09:40,219 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:09:40,607 INFO  [RMIClient] Client 1:Color is Red
+2015-12-08 05:09:41,023 INFO  [RMIClient] Client 1:Color is Yellow
+2015-12-08 05:09:41,474 INFO  [RMIClient] Client 1:Color is Orange
+2015-12-08 05:09:41,906 INFO  [RMIClient] Client 1:Color is Green
+2015-12-08 05:09:42,302 INFO  [RMIClient] Client 1:Color is Yellowish-Green
+2015-12-08 05:09:42,697 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:09:43,092 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:09:43,495 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:09:43,935 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:09:44,344 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:09:44,723 INFO  [RMIClient] Client 1:No key Apple matches db 
+2015-12-08 05:09:45,146 INFO  [RMIClient] Client 1:No key Banana matches db 
+2015-12-08 05:09:45,534 INFO  [RMIClient] Client 1:No key Orange matches db 
+2015-12-08 05:09:45,935 INFO  [RMIClient] Client 1:No key Kiwi matches db 
+2015-12-08 05:09:46,331 INFO  [RMIClient] Client 1:No key Pineapple matches db 
+2015-12-08 05:25:39,252 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:25:39,653 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:25:40,124 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:25:40,552 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:25:41,096 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:25:41,468 INFO  [RMIClient] Client 1:Color is Red
+2015-12-08 05:25:41,882 INFO  [RMIClient] Client 1:Color is Yellow
+2015-12-08 05:25:42,285 INFO  [RMIClient] Client 1:Color is Orange
+2015-12-08 05:25:42,695 INFO  [RMIClient] Client 1:Color is Green
+2015-12-08 05:25:43,104 INFO  [RMIClient] Client 1:Color is Yellowish-Green
+2015-12-08 05:25:43,500 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:25:43,931 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:25:44,342 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:25:44,749 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:25:45,163 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:25:45,557 INFO  [RMIClient] Client 1:No key Apple matches db 
+2015-12-08 05:25:45,960 INFO  [RMIClient] Client 1:No key Banana matches db 
+2015-12-08 05:25:46,368 INFO  [RMIClient] Client 1:No key Orange matches db 
+2015-12-08 05:25:46,788 INFO  [RMIClient] Client 1:No key Kiwi matches db 
+2015-12-08 05:25:47,213 INFO  [RMIClient] Client 1:No key Pineapple matches db 
+2015-12-08 05:25:47,615 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:25:47,938 INFO  [RMIClient] Client 1: killing localhost : 1234
+2015-12-08 05:25:50,955 INFO  [RMIClient] Client 1: killing localhost : 2345
+2015-12-08 05:25:53,964 INFO  [RMIClient] Client 1: killing localhost : 3445
+2015-12-08 05:25:56,974 INFO  [RMIClient] Client 1: killing localhost : 4542
+2015-12-08 05:25:59,978 ERROR [RMIClient] Error occured while connecting to RMI server with error, -1
+2015-12-08 05:26:00,783 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:26:10,134 ERROR [RMIClient] Error occured while connecting to RMI server with error, -1
+2015-12-08 05:26:10,890 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:26:11,380 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:26:11,783 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:30:36,691 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:30:37,112 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:30:37,538 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:30:37,979 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:30:38,459 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:30:38,889 INFO  [RMIClient] Client 1:Color is Red
+2015-12-08 05:30:39,312 INFO  [RMIClient] Client 1:Color is Yellow
+2015-12-08 05:30:39,813 INFO  [RMIClient] Client 1:Color is Orange
+2015-12-08 05:30:40,256 INFO  [RMIClient] Client 1:Color is Green
+2015-12-08 05:30:40,647 INFO  [RMIClient] Client 1:Color is Yellowish-Green
+2015-12-08 05:30:41,038 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:30:41,446 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:30:41,861 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:30:42,329 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:30:42,791 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:30:43,177 INFO  [RMIClient] Client 1:No key Apple matches db 
+2015-12-08 05:30:43,617 INFO  [RMIClient] Client 1:No key Banana matches db 
+2015-12-08 05:30:44,034 INFO  [RMIClient] Client 1:No key Orange matches db 
+2015-12-08 05:30:44,467 INFO  [RMIClient] Client 1:No key Kiwi matches db 
+2015-12-08 05:30:44,889 INFO  [RMIClient] Client 1:No key Pineapple matches db 
+2015-12-08 05:30:45,297 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:30:45,617 INFO  [RMIClient] Client 1: killing localhost : 1234
+2015-12-08 05:30:48,629 INFO  [RMIClient] Client 1: killing localhost : 2345
+2015-12-08 05:30:51,639 INFO  [RMIClient] Client 1: killing localhost : 3445
+2015-12-08 05:30:54,651 INFO  [RMIClient] Client 1: killing localhost : 4542
+2015-12-08 05:30:57,655 ERROR [RMIClient] Error occured while connecting to RMI server with error, -1
+2015-12-08 05:30:58,446 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:31:07,828 ERROR [RMIClient] Error occured while connecting to RMI server with error, -1
+2015-12-08 05:31:08,602 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:31:09,042 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:31:09,455 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:34:19,314 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:34:19,744 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:34:20,301 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:34:20,741 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:34:21,187 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:34:21,581 INFO  [RMIClient] Client 1:Color is Red
+2015-12-08 05:34:21,986 INFO  [RMIClient] Client 1:Color is Yellow
+2015-12-08 05:34:22,393 INFO  [RMIClient] Client 1:Color is Orange
+2015-12-08 05:34:22,816 INFO  [RMIClient] Client 1:Color is Green
+2015-12-08 05:34:23,232 INFO  [RMIClient] Client 1:Color is Yellowish-Green
+2015-12-08 05:34:23,647 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:34:24,081 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:34:24,478 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:34:24,889 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:34:25,303 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:34:25,691 INFO  [RMIClient] Client 1:No key Apple matches db 
+2015-12-08 05:34:26,128 INFO  [RMIClient] Client 1:No key Banana matches db 
+2015-12-08 05:34:26,568 INFO  [RMIClient] Client 1:No key Orange matches db 
+2015-12-08 05:34:27,046 INFO  [RMIClient] Client 1:No key Kiwi matches db 
+2015-12-08 05:34:27,457 INFO  [RMIClient] Client 1:No key Pineapple matches db 
+2015-12-08 05:34:27,865 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:34:28,183 INFO  [RMIClient] Client 1: killing localhost : 1234
+2015-12-08 05:34:31,196 INFO  [RMIClient] Client 1: killing localhost : 2345
+2015-12-08 05:34:34,205 INFO  [RMIClient] Client 1: killing localhost : 3445
+2015-12-08 05:34:37,214 INFO  [RMIClient] Client 1: killing localhost : 4542
+2015-12-08 05:34:40,220 ERROR [RMIClient] Error occured while connecting to RMI server with error, -1
+2015-12-08 05:34:40,988 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:36:09,433 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:36:09,890 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:36:10,309 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:36:10,720 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:36:11,153 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:36:11,544 INFO  [RMIClient] Client 1:Color is Red
+2015-12-08 05:36:11,967 INFO  [RMIClient] Client 1:Color is Yellow
+2015-12-08 05:36:12,373 INFO  [RMIClient] Client 1:Color is Orange
+2015-12-08 05:36:12,780 INFO  [RMIClient] Client 1:Color is Green
+2015-12-08 05:36:13,183 INFO  [RMIClient] Client 1:Color is Yellowish-Green
+2015-12-08 05:36:13,588 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:36:14,019 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:36:14,420 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:36:14,846 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:36:15,262 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:36:15,660 INFO  [RMIClient] Client 1:No key Apple matches db 
+2015-12-08 05:36:16,060 INFO  [RMIClient] Client 1:No key Banana matches db 
+2015-12-08 05:36:16,464 INFO  [RMIClient] Client 1:No key Orange matches db 
+2015-12-08 05:36:16,869 INFO  [RMIClient] Client 1:No key Kiwi matches db 
+2015-12-08 05:36:17,278 INFO  [RMIClient] Client 1:No key Pineapple matches db 
+2015-12-08 05:36:17,671 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:36:17,988 INFO  [RMIClient] Client 1: killing localhost : 1234
+2015-12-08 05:36:20,999 INFO  [RMIClient] Client 1: killing localhost : 2345
+2015-12-08 05:36:24,008 INFO  [RMIClient] Client 1: killing localhost : 3445
+2015-12-08 05:36:27,018 INFO  [RMIClient] Client 1: killing localhost : 4542
+2015-12-08 05:36:30,022 ERROR [RMIClient] Error occured while connecting to RMI server with error, -1
+2015-12-08 05:36:30,855 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:36:40,202 ERROR [RMIClient] Error occured while connecting to RMI server with error, -1
+2015-12-08 05:36:41,009 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:36:41,429 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:36:41,839 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:41:29,849 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:41:30,259 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:41:30,702 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:41:31,141 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:41:31,569 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:41:31,951 INFO  [RMIClient] Client 1:Color is Red
+2015-12-08 05:41:32,361 INFO  [RMIClient] Client 1:Color is Yellow
+2015-12-08 05:41:32,763 INFO  [RMIClient] Client 1:Color is Orange
+2015-12-08 05:41:33,188 INFO  [RMIClient] Client 1:Color is Green
+2015-12-08 05:41:33,593 INFO  [RMIClient] Client 1:Color is Yellowish-Green
+2015-12-08 05:41:34,023 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:41:34,435 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:41:34,839 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:41:35,252 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:41:35,658 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:41:36,037 INFO  [RMIClient] Client 1:No key Apple matches db 
+2015-12-08 05:41:36,441 INFO  [RMIClient] Client 1:No key Banana matches db 
+2015-12-08 05:41:36,834 INFO  [RMIClient] Client 1:No key Orange matches db 
+2015-12-08 05:41:37,244 INFO  [RMIClient] Client 1:No key Kiwi matches db 
+2015-12-08 05:41:37,653 INFO  [RMIClient] Client 1:No key Pineapple matches db 
+2015-12-08 05:41:38,039 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:41:38,370 INFO  [RMIClient] Client 1: killing localhost : 1234
+2015-12-08 05:41:44,792 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:41:45,584 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:41:46,002 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:41:46,419 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:41:46,849 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:48:42,682 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:48:43,106 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:48:43,531 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:48:44,115 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:48:44,572 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:48:44,996 INFO  [RMIClient] Client 1:Color is Red
+2015-12-08 05:48:45,428 INFO  [RMIClient] Client 1:Color is Yellow
+2015-12-08 05:48:45,839 INFO  [RMIClient] Client 1:Color is Orange
+2015-12-08 05:48:46,259 INFO  [RMIClient] Client 1:Color is Green
+2015-12-08 05:48:46,686 INFO  [RMIClient] Client 1:Color is Yellowish-Green
+2015-12-08 05:48:47,093 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:48:47,494 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:48:47,893 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:48:48,387 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:48:48,928 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:48:49,310 INFO  [RMIClient] Client 1:No key Apple matches db 
+2015-12-08 05:48:49,785 INFO  [RMIClient] Client 1:No key Banana matches db 
+2015-12-08 05:48:50,181 INFO  [RMIClient] Client 1:No key Orange matches db 
+2015-12-08 05:48:50,694 INFO  [RMIClient] Client 1:No key Kiwi matches db 
+2015-12-08 05:48:51,124 INFO  [RMIClient] Client 1:No key Pineapple matches db 
+2015-12-08 05:48:51,434 INFO  [RMIClient] Client 1: killing localhost : 1234
+2015-12-08 05:49:04,219 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:49:04,993 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:49:05,863 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:49:06,291 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:49:06,689 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:49:07,101 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:57:36,570 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:57:36,990 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:57:37,409 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:57:37,828 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:57:38,269 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:57:38,677 INFO  [RMIClient] Client 1:Color is Red
+2015-12-08 05:57:39,114 INFO  [RMIClient] Client 1:Color is Yellow
+2015-12-08 05:57:39,536 INFO  [RMIClient] Client 1:Color is Orange
+2015-12-08 05:57:39,965 INFO  [RMIClient] Client 1:Color is Green
+2015-12-08 05:57:40,408 INFO  [RMIClient] Client 1:Color is Yellowish-Green
+2015-12-08 05:57:40,809 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:57:41,226 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:57:41,622 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:57:42,034 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:57:42,454 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:57:42,840 INFO  [RMIClient] Client 1:No key Apple matches db 
+2015-12-08 05:57:43,264 INFO  [RMIClient] Client 1:No key Banana matches db 
+2015-12-08 05:57:43,678 INFO  [RMIClient] Client 1:No key Orange matches db 
+2015-12-08 05:57:44,112 INFO  [RMIClient] Client 1:No key Kiwi matches db 
+2015-12-08 05:57:44,527 INFO  [RMIClient] Client 1:No key Pineapple matches db 
+2015-12-08 05:57:44,854 INFO  [RMIClient] Client 1: killing localhost : 1234
+2015-12-08 05:57:54,275 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:57:57,619 ERROR [RMIClient] Error occured while connecting to RMI server with error, -1
+2015-12-08 05:57:58,019 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:57:58,418 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:57:58,855 INFO  [RMIClient] Client 1:ACK
+2015-12-08 05:57:59,275 INFO  [RMIClient] Client 1:ACK
+2015-12-08 06:07:42,663 INFO  [RMIClient] Client 1:ACK
+2015-12-08 06:07:43,109 INFO  [RMIClient] Client 1:ACK
+2015-12-08 06:07:43,577 INFO  [RMIClient] Client 1:ACK
+2015-12-08 06:07:44,010 INFO  [RMIClient] Client 1:ACK
+2015-12-08 06:07:44,425 INFO  [RMIClient] Client 1:ACK
+2015-12-08 06:07:44,807 INFO  [RMIClient] Client 1:Color is Red
+2015-12-08 06:07:45,239 INFO  [RMIClient] Client 1:Color is Yellow
+2015-12-08 06:07:45,637 INFO  [RMIClient] Client 1:Color is Orange
+2015-12-08 06:07:46,044 INFO  [RMIClient] Client 1:Color is Green
+2015-12-08 06:07:46,447 INFO  [RMIClient] Client 1:Color is Yellowish-Green
+2015-12-08 06:07:46,839 INFO  [RMIClient] Client 1:ACK
+2015-12-08 06:07:47,257 INFO  [RMIClient] Client 1:ACK
+2015-12-08 06:07:47,668 INFO  [RMIClient] Client 1:ACK
+2015-12-08 06:07:48,088 INFO  [RMIClient] Client 1:ACK
+2015-12-08 06:07:48,495 INFO  [RMIClient] Client 1:ACK
+2015-12-08 06:07:48,869 INFO  [RMIClient] Client 1:No key Apple matches db 
+2015-12-08 06:07:49,294 INFO  [RMIClient] Client 1:No key Banana matches db 
+2015-12-08 06:07:49,684 INFO  [RMIClient] Client 1:No key Orange matches db 
+2015-12-08 06:07:50,090 INFO  [RMIClient] Client 1:No key Kiwi matches db 
+2015-12-08 06:07:50,491 INFO  [RMIClient] Client 1:No key Pineapple matches db 
+2015-12-08 06:07:50,798 INFO  [RMIClient] Client 1: killing localhost : 1234
+2015-12-08 06:08:00,230 INFO  [RMIClient] Client 1:ACK
+2015-12-08 06:08:03,581 ERROR [RMIClient] Error occured while connecting to RMI server with error, -1
+2015-12-08 06:08:04,056 INFO  [RMIClient] Client 1:ACK
+2015-12-08 06:08:04,447 INFO  [RMIClient] Client 1:ACK
+2015-12-08 06:08:04,855 INFO  [RMIClient] Client 1:ACK
+2015-12-08 06:08:05,279 INFO  [RMIClient] Client 1:ACK
+2015-12-08 06:08:17,793 INFO  [RMIClient] Client 1:Color is Red
+2015-12-08 06:08:18,217 INFO  [RMIClient] Client 1:Color is Yellow
+2015-12-08 06:08:18,600 INFO  [RMIClient] Client 1:Color is Orange
+2015-12-08 06:08:18,992 INFO  [RMIClient] Client 1:Color is Green
+2015-12-08 06:08:19,369 INFO  [RMIClient] Client 1:Color is Yellowish-Green
+2015-12-08 12:49:40,955 INFO  [RMIClient] Client 1:ACK
+2015-12-08 12:49:41,399 INFO  [RMIClient] Client 1:ACK
+2015-12-08 12:49:41,852 INFO  [RMIClient] Client 1:ACK
+2015-12-08 12:49:42,284 INFO  [RMIClient] Client 1:ACK
+2015-12-08 12:49:42,708 INFO  [RMIClient] Client 1:ACK
+2015-12-08 12:49:43,095 INFO  [RMIClient] Client 1:Color is Red
+2015-12-08 12:49:43,552 INFO  [RMIClient] Client 1:Color is Yellow
+2015-12-08 12:49:43,955 INFO  [RMIClient] Client 1:Color is Orange
+2015-12-08 12:49:44,393 INFO  [RMIClient] Client 1:Color is Green
+2015-12-08 12:49:44,790 INFO  [RMIClient] Client 1:Color is Yellowish-Green
+2015-12-08 12:49:45,191 INFO  [RMIClient] Client 1:ACK
+2015-12-08 12:49:45,615 INFO  [RMIClient] Client 1:ACK
+2015-12-08 12:49:46,014 INFO  [RMIClient] Client 1:ACK
+2015-12-08 12:49:46,429 INFO  [RMIClient] Client 1:ACK
+2015-12-08 12:49:46,895 INFO  [RMIClient] Client 1:ACK
+2015-12-08 12:49:47,330 INFO  [RMIClient] Client 1:No key Apple matches db 
+2015-12-08 12:49:47,812 INFO  [RMIClient] Client 1:No key Banana matches db 
+2015-12-08 12:49:48,287 INFO  [RMIClient] Client 1:No key Orange matches db 
+2015-12-08 12:49:48,810 INFO  [RMIClient] Client 1:No key Kiwi matches db 
+2015-12-08 12:49:49,255 INFO  [RMIClient] Client 1:No key Pineapple matches db 
+2015-12-08 12:49:49,587 INFO  [RMIClient] Client 1: killing localhost : 1234
+2015-12-08 12:50:02,035 INFO  [RMIClient] Client 1:ACK
+2015-12-08 12:50:02,454 INFO  [RMIClient] Client 1:ACK
+2015-12-08 12:50:03,662 INFO  [RMIClient] Client 1:ACK
+2015-12-08 12:50:04,137 INFO  [RMIClient] Client 1:ACK
+2015-12-08 12:50:04,579 INFO  [RMIClient] Client 1:ACK
+2015-12-08 12:50:05,027 INFO  [RMIClient] Client 1:ACK
+2015-12-08 12:50:17,539 INFO  [RMIClient] Client 1:Color is Red
+2015-12-08 12:50:17,992 INFO  [RMIClient] Client 1:Color is Yellow
+2015-12-08 12:50:18,388 INFO  [RMIClient] Client 1:Color is Orange
+2015-12-08 12:50:18,781 INFO  [RMIClient] Client 1:Color is Green
+2015-12-08 12:50:19,190 INFO  [RMIClient] Client 1:Color is Yellowish-Green
+2015-12-08 13:07:46,007 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:07:46,425 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:07:46,866 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:07:47,326 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:07:47,762 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:07:48,156 INFO  [RMIClient] Client 1:Color is Red
+2015-12-08 13:07:48,572 INFO  [RMIClient] Client 1:Color is Yellow
+2015-12-08 13:07:48,984 INFO  [RMIClient] Client 1:Color is Orange
+2015-12-08 13:07:49,391 INFO  [RMIClient] Client 1:Color is Green
+2015-12-08 13:07:49,785 INFO  [RMIClient] Client 1:Color is Yellowish-Green
+2015-12-08 13:07:50,201 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:07:50,596 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:07:51,012 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:07:51,415 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:07:51,858 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:07:52,242 INFO  [RMIClient] Client 1:No key Apple matches db 
+2015-12-08 13:07:52,655 INFO  [RMIClient] Client 1:No key Banana matches db 
+2015-12-08 13:07:53,047 INFO  [RMIClient] Client 1:No key Orange matches db 
+2015-12-08 13:07:53,467 INFO  [RMIClient] Client 1:No key Kiwi matches db 
+2015-12-08 13:07:53,873 INFO  [RMIClient] Client 1:No key Pineapple matches db 
+2015-12-08 13:07:54,180 INFO  [RMIClient] Client 1: killing localhost : 1234
+2015-12-08 13:07:56,082 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:07:56,479 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:07:56,914 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:07:57,318 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:07:57,777 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:07:58,216 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:08:10,745 INFO  [RMIClient] Client 1:Color is Red
+2015-12-08 13:08:11,129 INFO  [RMIClient] Client 1:Color is Yellow
+2015-12-08 13:08:11,505 INFO  [RMIClient] Client 1:Color is Orange
+2015-12-08 13:08:11,899 INFO  [RMIClient] Client 1:Color is Green
+2015-12-08 13:08:12,278 INFO  [RMIClient] Client 1:Color is Yellowish-Green
+2015-12-08 13:12:49,860 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:12:50,286 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:12:50,694 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:12:51,134 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:12:51,575 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:12:51,981 INFO  [RMIClient] Client 1:Color is Red
+2015-12-08 13:12:52,412 INFO  [RMIClient] Client 1:Color is Yellow
+2015-12-08 13:12:52,821 INFO  [RMIClient] Client 1:Color is Orange
+2015-12-08 13:12:53,232 INFO  [RMIClient] Client 1:Color is Green
+2015-12-08 13:12:53,628 INFO  [RMIClient] Client 1:Color is Yellowish-Green
+2015-12-08 13:12:54,039 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:12:54,427 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:12:54,815 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:12:55,231 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:12:55,642 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:12:56,029 INFO  [RMIClient] Client 1:No key Apple matches db 
+2015-12-08 13:12:56,432 INFO  [RMIClient] Client 1:No key Banana matches db 
+2015-12-08 13:12:56,850 INFO  [RMIClient] Client 1:No key Orange matches db 
+2015-12-08 13:12:57,314 INFO  [RMIClient] Client 1:No key Kiwi matches db 
+2015-12-08 13:12:57,722 INFO  [RMIClient] Client 1:No key Pineapple matches db 
+2015-12-08 13:12:58,046 INFO  [RMIClient] Client 1: killing localhost : 1234
+2015-12-08 13:13:04,890 INFO  [RMIClient] Client 1: 
+2015-12-08 13:13:06,785 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:13:07,180 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:13:07,664 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:13:08,101 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:13:08,492 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:13:08,914 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:13:21,435 INFO  [RMIClient] Client 1:Color is Red
+2015-12-08 13:13:21,839 INFO  [RMIClient] Client 1:Color is Yellow
+2015-12-08 13:13:22,240 INFO  [RMIClient] Client 1:Color is Orange
+2015-12-08 13:13:22,629 INFO  [RMIClient] Client 1:Color is Green
+2015-12-08 13:13:23,006 INFO  [RMIClient] Client 1:Color is Yellowish-Green
+2015-12-08 13:28:00,123 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:28:00,526 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:28:00,937 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:28:01,377 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:28:01,825 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:28:02,213 INFO  [RMIClient] Client 1:Color is Red
+2015-12-08 13:28:02,613 INFO  [RMIClient] Client 1:Color is Yellow
+2015-12-08 13:28:03,040 INFO  [RMIClient] Client 1:Color is Orange
+2015-12-08 13:28:03,447 INFO  [RMIClient] Client 1:Color is Green
+2015-12-08 13:28:03,860 INFO  [RMIClient] Client 1:Color is Yellowish-Green
+2015-12-08 13:28:04,267 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:28:04,671 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:28:05,109 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:28:05,521 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:28:05,940 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:28:06,322 INFO  [RMIClient] Client 1:No key Apple matches db 
+2015-12-08 13:28:06,746 INFO  [RMIClient] Client 1:No key Banana matches db 
+2015-12-08 13:28:07,145 INFO  [RMIClient] Client 1:No key Orange matches db 
+2015-12-08 13:28:07,568 INFO  [RMIClient] Client 1:No key Kiwi matches db 
+2015-12-08 13:28:07,971 INFO  [RMIClient] Client 1:No key Pineapple matches db 
+2015-12-08 13:28:08,294 INFO  [RMIClient] Client 1: killing localhost : 1234
+2015-12-08 13:28:16,143 INFO  [RMIClient] Client 1: 
+2015-12-08 13:28:18,041 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:28:18,437 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:28:18,831 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:28:19,253 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:28:19,664 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:28:20,089 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:28:32,604 INFO  [RMIClient] Client 1:Color is Red
+2015-12-08 13:28:32,995 INFO  [RMIClient] Client 1:Color is Yellow
+2015-12-08 13:28:33,370 INFO  [RMIClient] Client 1:Color is Orange
+2015-12-08 13:28:33,749 INFO  [RMIClient] Client 1:Color is Green
+2015-12-08 13:28:34,137 INFO  [RMIClient] Client 1:Color is Yellowish-Green
+2015-12-08 13:34:00,605 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:34:01,030 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:34:01,458 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:34:01,914 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:34:02,339 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:34:02,737 INFO  [RMIClient] Client 1:Color is Red
+2015-12-08 13:34:03,165 INFO  [RMIClient] Client 1:Color is Yellow
+2015-12-08 13:34:03,588 INFO  [RMIClient] Client 1:Color is Orange
+2015-12-08 13:34:04,004 INFO  [RMIClient] Client 1:Color is Green
+2015-12-08 13:34:04,427 INFO  [RMIClient] Client 1:Color is Yellowish-Green
+2015-12-08 13:34:04,835 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:34:05,250 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:34:05,662 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:34:06,068 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:34:06,532 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:34:06,942 INFO  [RMIClient] Client 1:No key Apple matches db 
+2015-12-08 13:34:07,355 INFO  [RMIClient] Client 1:No key Banana matches db 
+2015-12-08 13:34:07,767 INFO  [RMIClient] Client 1:No key Orange matches db 
+2015-12-08 13:34:08,175 INFO  [RMIClient] Client 1:No key Kiwi matches db 
+2015-12-08 13:34:08,581 INFO  [RMIClient] Client 1:No key Pineapple matches db 
+2015-12-08 13:34:08,908 INFO  [RMIClient] Client 1: killing localhost : 1234
+2015-12-08 13:34:16,764 INFO  [RMIClient] Client 1: 
+2015-12-08 13:34:18,663 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:34:19,055 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:34:19,455 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:34:19,867 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:34:20,271 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:34:20,706 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:34:33,223 INFO  [RMIClient] Client 1:Color is Red
+2015-12-08 13:34:33,609 INFO  [RMIClient] Client 1:Color is Yellow
+2015-12-08 13:34:34,003 INFO  [RMIClient] Client 1:Color is Orange
+2015-12-08 13:34:34,392 INFO  [RMIClient] Client 1:Color is Green
+2015-12-08 13:34:34,770 INFO  [RMIClient] Client 1:Color is Yellowish-Green
+2015-12-08 13:42:09,163 INFO  [RMIClient] 
+2015-12-08 13:42:09,165 INFO  [RMIClient] This request has id :6941ad20-1531-4e14-a819-ed1b98a6fa3c
+2015-12-08 13:42:09,165 INFO  [RMIClient] 
+2015-12-08 13:42:09,465 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:42:09,713 INFO  [RMIClient] 
+2015-12-08 13:42:09,715 INFO  [RMIClient] This request has id :46319bed-840a-4930-b23a-c0e14c57ee75
+2015-12-08 13:42:09,716 INFO  [RMIClient] 
+2015-12-08 13:42:09,903 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:42:10,150 INFO  [RMIClient] 
+2015-12-08 13:42:10,152 INFO  [RMIClient] This request has id :5b14b254-1c24-4873-bdc3-a978b92c8a90
+2015-12-08 13:42:10,152 INFO  [RMIClient] 
+2015-12-08 13:42:10,342 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:42:10,588 INFO  [RMIClient] 
+2015-12-08 13:42:10,591 INFO  [RMIClient] This request has id :be5a13d5-ed97-48b4-bcab-9d3a9d8f0716
+2015-12-08 13:42:10,591 INFO  [RMIClient] 
+2015-12-08 13:42:10,781 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:42:11,013 INFO  [RMIClient] 
+2015-12-08 13:42:11,016 INFO  [RMIClient] This request has id :71d82e74-6d9b-4711-bf64-095b78da20d3
+2015-12-08 13:42:11,016 INFO  [RMIClient] 
+2015-12-08 13:42:11,349 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:42:11,723 INFO  [RMIClient] 
+2015-12-08 13:42:11,727 INFO  [RMIClient] This request has id :629d9b20-3e9d-48d3-ab59-d4eb40a6e0c6
+2015-12-08 13:42:11,727 INFO  [RMIClient] 
+2015-12-08 13:42:11,898 INFO  [RMIClient] Client 1:Color is Red
+2015-12-08 13:42:12,144 INFO  [RMIClient] 
+2015-12-08 13:42:12,146 INFO  [RMIClient] This request has id :1cddbc2a-0792-4f98-8fe4-beae49d400c8
+2015-12-08 13:42:12,146 INFO  [RMIClient] 
+2015-12-08 13:42:12,325 INFO  [RMIClient] Client 1:Color is Yellow
+2015-12-08 13:42:12,555 INFO  [RMIClient] 
+2015-12-08 13:42:12,558 INFO  [RMIClient] This request has id :ff3ba1d0-c50e-4afa-84bf-eecffbf309f4
+2015-12-08 13:42:12,558 INFO  [RMIClient] 
+2015-12-08 13:42:12,734 INFO  [RMIClient] Client 1:Color is Orange
+2015-12-08 13:42:12,976 INFO  [RMIClient] 
+2015-12-08 13:42:12,978 INFO  [RMIClient] This request has id :779f8272-0373-4b76-ab32-e7fc864d911c
+2015-12-08 13:42:12,978 INFO  [RMIClient] 
+2015-12-08 13:42:13,164 INFO  [RMIClient] Client 1:Color is Green
+2015-12-08 13:42:13,410 INFO  [RMIClient] 
+2015-12-08 13:42:13,412 INFO  [RMIClient] This request has id :97e110fb-8b96-4283-b526-0873d8a62c12
+2015-12-08 13:42:13,412 INFO  [RMIClient] 
+2015-12-08 13:42:13,580 INFO  [RMIClient] Client 1:Color is Yellowish-Green
+2015-12-08 13:42:13,841 INFO  [RMIClient] 
+2015-12-08 13:42:13,844 INFO  [RMIClient] This request has id :7e50ec64-3e13-4aa5-a654-38da19ed57ef
+2015-12-08 13:42:13,844 INFO  [RMIClient] 
+2015-12-08 13:42:14,006 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:42:14,238 INFO  [RMIClient] 
+2015-12-08 13:42:14,241 INFO  [RMIClient] This request has id :faaa817b-f724-4f6c-9030-763d28d033d2
+2015-12-08 13:42:14,241 INFO  [RMIClient] 
+2015-12-08 13:42:14,415 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:42:14,648 INFO  [RMIClient] 
+2015-12-08 13:42:14,651 INFO  [RMIClient] This request has id :60c60e18-5896-497b-9e68-499c72019532
+2015-12-08 13:42:14,651 INFO  [RMIClient] 
+2015-12-08 13:42:14,823 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:42:15,062 INFO  [RMIClient] 
+2015-12-08 13:42:15,065 INFO  [RMIClient] This request has id :369d26ea-e96b-40db-ad2d-9120ac5e3582
+2015-12-08 13:42:15,065 INFO  [RMIClient] 
+2015-12-08 13:42:15,248 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:42:15,486 INFO  [RMIClient] 
+2015-12-08 13:42:15,490 INFO  [RMIClient] This request has id :8d662b2f-9d5e-428a-8651-3ea9f6222849
+2015-12-08 13:42:15,490 INFO  [RMIClient] 
+2015-12-08 13:42:15,748 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:42:15,991 INFO  [RMIClient] 
+2015-12-08 13:42:15,994 INFO  [RMIClient] This request has id :3170d080-7137-40e4-9a63-17b52024e759
+2015-12-08 13:42:15,994 INFO  [RMIClient] 
+2015-12-08 13:42:16,146 INFO  [RMIClient] Client 1:No key Apple matches db 
+2015-12-08 13:42:16,383 INFO  [RMIClient] 
+2015-12-08 13:42:16,386 INFO  [RMIClient] This request has id :b050e0af-aa91-4121-9b0e-82d662ad0361
+2015-12-08 13:42:16,386 INFO  [RMIClient] 
+2015-12-08 13:42:16,636 INFO  [RMIClient] Client 1:No key Banana matches db 
+2015-12-08 13:42:16,908 INFO  [RMIClient] 
+2015-12-08 13:42:16,911 INFO  [RMIClient] This request has id :175b7b28-9feb-4212-912f-afce2287031d
+2015-12-08 13:42:16,911 INFO  [RMIClient] 
+2015-12-08 13:42:17,075 INFO  [RMIClient] Client 1:No key Orange matches db 
+2015-12-08 13:42:17,319 INFO  [RMIClient] 
+2015-12-08 13:42:17,322 INFO  [RMIClient] This request has id :aa744264-6615-4eeb-aa17-79cb74deaf38
+2015-12-08 13:42:17,322 INFO  [RMIClient] 
+2015-12-08 13:42:17,503 INFO  [RMIClient] Client 1:No key Kiwi matches db 
+2015-12-08 13:42:17,751 INFO  [RMIClient] 
+2015-12-08 13:42:17,754 INFO  [RMIClient] This request has id :70670217-8479-4cdb-8dd2-5a71fd85eb2b
+2015-12-08 13:42:17,754 INFO  [RMIClient] 
+2015-12-08 13:42:17,932 INFO  [RMIClient] Client 1:No key Pineapple matches db 
+2015-12-08 13:42:18,195 INFO  [RMIClient] 
+2015-12-08 13:42:18,197 INFO  [RMIClient] This request has id :f69e035a-0b84-4281-b462-90cc9aae0bb9
+2015-12-08 13:42:18,197 INFO  [RMIClient] 
+2015-12-08 13:42:18,283 INFO  [RMIClient] Client 1: killing localhost : 1234
+2015-12-08 13:42:24,539 INFO  [RMIClient] 
+2015-12-08 13:42:24,542 INFO  [RMIClient] This request has id :723be1c6-0ee4-4b8f-bb6f-c1a7a4250688
+2015-12-08 13:42:24,542 INFO  [RMIClient] 
+2015-12-08 13:42:26,155 INFO  [RMIClient] Client 1: 
+2015-12-08 13:42:28,049 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:42:28,276 INFO  [RMIClient] 
+2015-12-08 13:42:28,279 INFO  [RMIClient] This request has id :1104d0af-e3fe-4ebf-932d-849e19fe4263
+2015-12-08 13:42:28,279 INFO  [RMIClient] 
+2015-12-08 13:42:28,452 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:42:28,709 INFO  [RMIClient] 
+2015-12-08 13:42:28,713 INFO  [RMIClient] This request has id :0a349eff-0402-4516-b4e1-c21e5eaea943
+2015-12-08 13:42:28,713 INFO  [RMIClient] 
+2015-12-08 13:42:28,887 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:42:29,154 INFO  [RMIClient] 
+2015-12-08 13:42:29,157 INFO  [RMIClient] This request has id :7ce91d6b-48f6-46c5-a6f8-2581d60921a1
+2015-12-08 13:42:29,157 INFO  [RMIClient] 
+2015-12-08 13:42:29,349 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:42:29,593 INFO  [RMIClient] 
+2015-12-08 13:42:29,595 INFO  [RMIClient] This request has id :7170d0a3-51c3-4110-9bba-3a68650e7fac
+2015-12-08 13:42:29,595 INFO  [RMIClient] 
+2015-12-08 13:42:29,778 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:42:30,027 INFO  [RMIClient] 
+2015-12-08 13:42:30,031 INFO  [RMIClient] This request has id :37799771-b2e4-488b-8d48-d9ba85998386
+2015-12-08 13:42:30,031 INFO  [RMIClient] 
+2015-12-08 13:42:30,219 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:42:42,571 INFO  [RMIClient] 
+2015-12-08 13:42:42,574 INFO  [RMIClient] This request has id :86fe1b13-0a2c-43db-a3b6-622f8f4a2db4
+2015-12-08 13:42:42,574 INFO  [RMIClient] 
+2015-12-08 13:42:42,778 INFO  [RMIClient] Client 1:Color is Red
+2015-12-08 13:42:43,048 INFO  [RMIClient] 
+2015-12-08 13:42:43,052 INFO  [RMIClient] This request has id :9e4fd709-43b1-4532-88b3-e076b957e357
+2015-12-08 13:42:43,052 INFO  [RMIClient] 
+2015-12-08 13:42:43,214 INFO  [RMIClient] Client 1:Color is Yellow
+2015-12-08 13:42:43,455 INFO  [RMIClient] 
+2015-12-08 13:42:43,457 INFO  [RMIClient] This request has id :cd5f0bbf-8f83-454d-909b-d3686ea954ae
+2015-12-08 13:42:43,458 INFO  [RMIClient] 
+2015-12-08 13:42:43,616 INFO  [RMIClient] Client 1:Color is Orange
+2015-12-08 13:42:43,868 INFO  [RMIClient] 
+2015-12-08 13:42:43,871 INFO  [RMIClient] This request has id :cc52319f-27c4-4c80-abc4-d1b52ef25955
+2015-12-08 13:42:43,871 INFO  [RMIClient] 
+2015-12-08 13:42:44,019 INFO  [RMIClient] Client 1:Color is Green
+2015-12-08 13:42:44,264 INFO  [RMIClient] 
+2015-12-08 13:42:44,267 INFO  [RMIClient] This request has id :4db5e0c2-a685-43cb-aa0d-cce605ac175a
+2015-12-08 13:42:44,267 INFO  [RMIClient] 
+2015-12-08 13:42:44,415 INFO  [RMIClient] Client 1:Color is Yellowish-Green
+2015-12-08 13:44:31,766 INFO  [RMIClient] This request has id :e8a0c0f4-fbd6-4a43-94b5-ae8c55a85b31
+2015-12-08 13:44:31,948 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:44:32,192 INFO  [RMIClient] This request has id :fa2d8121-32a9-4ddc-a616-191010309121
+2015-12-08 13:44:32,374 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:44:32,621 INFO  [RMIClient] This request has id :455570ea-b1b1-419b-94b6-496264e453a2
+2015-12-08 13:44:32,823 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:44:33,076 INFO  [RMIClient] This request has id :1aa0e115-5c00-44a1-898f-4e8202bf1864
+2015-12-08 13:44:33,266 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:44:33,515 INFO  [RMIClient] This request has id :8eb82534-e5f3-43ef-9055-95541530d00a
+2015-12-08 13:44:33,719 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:44:33,955 INFO  [RMIClient] This request has id :40b59b01-69ae-4600-bbe0-dd2b73450140
+2015-12-08 13:44:34,116 INFO  [RMIClient] Client 1:Color is Red
+2015-12-08 13:44:34,372 INFO  [RMIClient] This request has id :6e1d97a9-d994-4cc1-ac9a-5edd2b8a2658
+2015-12-08 13:44:34,552 INFO  [RMIClient] Client 1:Color is Yellow
+2015-12-08 13:44:34,796 INFO  [RMIClient] This request has id :313d2de1-96df-46a7-94d7-928261498f45
+2015-12-08 13:44:34,970 INFO  [RMIClient] Client 1:Color is Orange
+2015-12-08 13:44:35,209 INFO  [RMIClient] This request has id :d7a21a04-b6fe-4ad4-bf56-cf6d8bdd13dc
+2015-12-08 13:44:35,396 INFO  [RMIClient] Client 1:Color is Green
+2015-12-08 13:44:35,637 INFO  [RMIClient] This request has id :a0d89c82-2792-4b1e-8975-30b1c5d2d1e4
+2015-12-08 13:44:35,818 INFO  [RMIClient] Client 1:Color is Yellowish-Green
+2015-12-08 13:44:36,091 INFO  [RMIClient] This request has id :c5b43927-cde0-4110-b299-48eb92c5915c
+2015-12-08 13:44:36,282 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:44:36,585 INFO  [RMIClient] This request has id :ef1fab94-0f70-4877-8525-97587877c9d2
+2015-12-08 13:44:36,791 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:44:37,044 INFO  [RMIClient] This request has id :f5aab230-d26c-464a-ab46-8f483898c1a7
+2015-12-08 13:44:37,222 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:44:37,478 INFO  [RMIClient] This request has id :cb6cad20-0973-40a3-82e5-dbd824017819
+2015-12-08 13:44:37,662 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:44:37,898 INFO  [RMIClient] This request has id :740eca8b-e2fd-4a22-be65-e03572125fea
+2015-12-08 13:44:38,092 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:44:38,333 INFO  [RMIClient] This request has id :57dd0d92-e74a-44c1-9077-0bbb67227fd6
+2015-12-08 13:44:38,482 INFO  [RMIClient] Client 1:No key Apple matches db 
+2015-12-08 13:44:38,713 INFO  [RMIClient] This request has id :a3bcdb4a-0d1d-401a-bb52-633fd6b73c30
+2015-12-08 13:44:38,886 INFO  [RMIClient] Client 1:No key Banana matches db 
+2015-12-08 13:44:39,141 INFO  [RMIClient] This request has id :ab6e4f29-417b-4dc2-94f2-05a175e598d0
+2015-12-08 13:44:39,301 INFO  [RMIClient] Client 1:No key Orange matches db 
+2015-12-08 13:44:39,541 INFO  [RMIClient] This request has id :a51abaa6-9951-48fa-a074-d51ac73af2dc
+2015-12-08 13:44:39,712 INFO  [RMIClient] Client 1:No key Kiwi matches db 
+2015-12-08 13:44:39,950 INFO  [RMIClient] This request has id :345b50b5-0e89-4a82-9ea0-895bda452c31
+2015-12-08 13:44:40,124 INFO  [RMIClient] Client 1:No key Pineapple matches db 
+2015-12-08 13:44:40,355 INFO  [RMIClient] This request has id :b01eae4c-1f49-4bf8-b747-da097f5e5989
+2015-12-08 13:44:40,434 INFO  [RMIClient] Client 1: killing localhost : 1234
+2015-12-08 13:44:46,785 INFO  [RMIClient] This request has id :cd1730a6-8269-4800-9a4c-08edcc43a367
+2015-12-08 13:44:48,401 INFO  [RMIClient] Client 1: 
+2015-12-08 13:44:50,298 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:44:50,527 INFO  [RMIClient] This request has id :6bf10a2a-e356-42b9-97fc-aa103a200522
+2015-12-08 13:44:50,696 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:44:50,945 INFO  [RMIClient] This request has id :a0c9d765-dbe9-4d11-b8f3-5ffe7e6430a9
+2015-12-08 13:44:51,115 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:44:51,350 INFO  [RMIClient] This request has id :7df90312-220f-4f25-9b8e-b7858be3200c
+2015-12-08 13:44:51,537 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:44:51,789 INFO  [RMIClient] This request has id :6a19a1a1-af91-4671-bd8a-20662913496b
+2015-12-08 13:44:51,970 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:44:52,224 INFO  [RMIClient] This request has id :b09d0e90-aec6-4fc6-80fc-9c017c05659e
+2015-12-08 13:44:52,420 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:45:04,728 INFO  [RMIClient] This request has id :cd3089a0-542e-43ee-a6e4-aab26268ec84
+2015-12-08 13:45:04,938 INFO  [RMIClient] Client 1:Color is Red
+2015-12-08 13:45:05,184 INFO  [RMIClient] This request has id :96ba8a62-b355-4821-a082-dbfb5c8da467
+2015-12-08 13:45:05,334 INFO  [RMIClient] Client 1:Color is Yellow
+2015-12-08 13:45:05,573 INFO  [RMIClient] This request has id :3b6bda54-5b7e-4877-9b4b-21078a8c532e
+2015-12-08 13:45:05,725 INFO  [RMIClient] Client 1:Color is Orange
+2015-12-08 13:45:05,975 INFO  [RMIClient] This request has id :7245377a-7c4d-4052-b5ef-0ca40eacc92c
+2015-12-08 13:45:06,125 INFO  [RMIClient] Client 1:Color is Green
+2015-12-08 13:45:06,368 INFO  [RMIClient] This request has id :20d9dd7b-7552-435f-b3b6-69963f55f893
+2015-12-08 13:45:06,519 INFO  [RMIClient] Client 1:Color is Yellowish-Green
+2015-12-08 13:45:59,939 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:45:59,961 INFO  [RMIClient] This request has id :907f84ed-ab2c-4068-8991-46a7b04b3d41
+2015-12-08 13:46:00,141 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:46:00,380 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:46:00,401 INFO  [RMIClient] This request has id :9d231667-19dc-4dc3-9bfd-bf3b63161342
+2015-12-08 13:46:00,588 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:46:00,836 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:46:00,860 INFO  [RMIClient] This request has id :460ec93a-bd80-4559-b2a3-e21c0fcca7a7
+2015-12-08 13:46:01,053 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:46:01,302 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:46:01,324 INFO  [RMIClient] This request has id :4247ac4d-fb51-448f-ac41-537c507ef1c1
+2015-12-08 13:46:01,526 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:46:01,792 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:46:01,816 INFO  [RMIClient] This request has id :37e17330-f292-40c3-a48d-f92d924ef040
+2015-12-08 13:46:02,012 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:46:02,234 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:46:02,255 INFO  [RMIClient] This request has id :d790d40d-3bb9-474a-a30b-6494337a6288
+2015-12-08 13:46:02,425 INFO  [RMIClient] Client 1:Color is Red
+2015-12-08 13:46:02,645 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:46:02,669 INFO  [RMIClient] This request has id :69378216-71b3-41e6-b454-6323605845b4
+2015-12-08 13:46:02,850 INFO  [RMIClient] Client 1:Color is Yellow
+2015-12-08 13:46:03,085 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:46:03,107 INFO  [RMIClient] This request has id :78c697b4-0da2-43f3-809c-142bccc0b34a
+2015-12-08 13:46:03,279 INFO  [RMIClient] Client 1:Color is Orange
+2015-12-08 13:46:03,531 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:46:03,553 INFO  [RMIClient] This request has id :a9520a52-8db8-413a-b97a-eeb71aec3768
+2015-12-08 13:46:03,743 INFO  [RMIClient] Client 1:Color is Green
+2015-12-08 13:46:03,962 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:46:03,983 INFO  [RMIClient] This request has id :2e85c414-3149-484c-83ea-1db28f73e1cc
+2015-12-08 13:46:04,157 INFO  [RMIClient] Client 1:Color is Yellowish-Green
+2015-12-08 13:46:04,408 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:46:04,431 INFO  [RMIClient] This request has id :1ac20b04-669b-4976-95c3-0ba6b7658d56
+2015-12-08 13:46:04,600 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:46:04,818 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:46:04,839 INFO  [RMIClient] This request has id :08952191-2763-4e66-a66e-278a89444f26
+2015-12-08 13:46:05,017 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:46:05,241 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:46:05,262 INFO  [RMIClient] This request has id :bcdaa1e3-b917-41a2-a6f2-3beaa25d6c26
+2015-12-08 13:46:05,435 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:46:05,661 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:46:05,682 INFO  [RMIClient] This request has id :83839ecd-b995-42bd-93a3-66aa715aabd1
+2015-12-08 13:46:05,862 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:46:06,097 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:46:06,120 INFO  [RMIClient] This request has id :08da75f4-1fd9-40cc-a35e-35e6f69fedcb
+2015-12-08 13:46:06,309 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:46:06,547 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:46:06,575 INFO  [RMIClient] This request has id :8c391726-066a-4bd1-9dc9-dbdc9f3e1fa5
+2015-12-08 13:46:06,745 INFO  [RMIClient] Client 1:No key Apple matches db 
+2015-12-08 13:46:06,958 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:46:06,979 INFO  [RMIClient] This request has id :1706e009-d621-46a5-b81b-bfa235057097
+2015-12-08 13:46:07,171 INFO  [RMIClient] Client 1:No key Banana matches db 
+2015-12-08 13:46:07,391 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:46:07,413 INFO  [RMIClient] This request has id :672c9ef5-544e-499e-ae72-ba2922cf6e0f
+2015-12-08 13:46:07,585 INFO  [RMIClient] Client 1:No key Orange matches db 
+2015-12-08 13:46:07,827 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:46:07,849 INFO  [RMIClient] This request has id :53a2a6a1-fa56-4ab4-b35f-aabd203246e2
+2015-12-08 13:46:08,034 INFO  [RMIClient] Client 1:No key Kiwi matches db 
+2015-12-08 13:46:08,299 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:46:08,322 INFO  [RMIClient] This request has id :92bcd8ee-6c8a-453f-95b1-9c85dfd875c0
+2015-12-08 13:46:08,499 INFO  [RMIClient] Client 1:No key Pineapple matches db 
+2015-12-08 13:46:08,729 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:46:08,751 INFO  [RMIClient] This request has id :7b4f25da-4f7b-4d9d-9348-1eac10dfbc0c
+2015-12-08 13:46:08,841 INFO  [RMIClient] Client 1: killing localhost : 1234
+2015-12-08 13:46:14,846 INFO  [RMIClient] Contact server 1 at hostname:port localhost : 1234 FAILED. Trying others..
+2015-12-08 13:46:15,093 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:46:15,119 INFO  [RMIClient] This request has id :f454c78f-6b6c-4c71-aabb-b16f1f934610
+2015-12-08 13:46:16,729 INFO  [RMIClient] Client 1: 
+2015-12-08 13:46:18,621 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:46:18,834 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:46:18,855 INFO  [RMIClient] This request has id :0057b98f-de52-4eb4-8f64-f427e32bd5e4
+2015-12-08 13:46:19,021 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:46:19,249 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:46:19,270 INFO  [RMIClient] This request has id :dfca4853-2829-4052-8adb-f0a5cbee983f
+2015-12-08 13:46:19,437 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:46:19,689 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:46:19,721 INFO  [RMIClient] This request has id :71d422d3-1274-4366-b7e6-f8b42b02bc68
+2015-12-08 13:46:19,913 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:46:20,177 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:46:20,200 INFO  [RMIClient] This request has id :6f4b4cc7-2c9a-4741-b3a0-a29e469db9e6
+2015-12-08 13:46:20,380 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:46:20,594 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:46:20,615 INFO  [RMIClient] This request has id :36531b41-5bfb-4379-9226-9f03f061cdf7
+2015-12-08 13:46:20,810 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:46:33,105 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:46:33,127 INFO  [RMIClient] This request has id :6b5cd71d-23f0-4a5e-893e-97c3e4ac421b
+2015-12-08 13:46:33,332 INFO  [RMIClient] Client 1:Color is Red
+2015-12-08 13:46:33,568 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:46:33,590 INFO  [RMIClient] This request has id :5f73de75-e7ca-4b79-a9f0-49bc8243d7b5
+2015-12-08 13:46:33,744 INFO  [RMIClient] Client 1:Color is Yellow
+2015-12-08 13:46:33,955 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:46:33,976 INFO  [RMIClient] This request has id :360f05e5-29e8-411f-81df-2845f3c64a65
+2015-12-08 13:46:34,132 INFO  [RMIClient] Client 1:Color is Orange
+2015-12-08 13:46:34,344 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:46:34,364 INFO  [RMIClient] This request has id :84ba5084-e159-4e16-8b19-7dbfbd6d7eac
+2015-12-08 13:46:34,512 INFO  [RMIClient] Client 1:Color is Green
+2015-12-08 13:46:34,738 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:46:34,759 INFO  [RMIClient] This request has id :64284a57-30b5-424a-87ff-0e52d8e01ed1
+2015-12-08 13:46:34,911 INFO  [RMIClient] Client 1:Color is Yellowish-Green
+2015-12-08 13:55:25,073 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:55:25,094 INFO  [RMIClient] This request has id :9a275b06-0f40-4d71-b896-f89eb5de4a77
+2015-12-08 13:55:25,390 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:55:25,607 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:55:25,629 INFO  [RMIClient] This request has id :8adbe3f9-ec7e-4058-881d-5e286705a39d
+2015-12-08 13:55:25,812 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:55:26,036 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:55:26,057 INFO  [RMIClient] This request has id :c150d690-ace6-41d3-ad91-271187b1e8bd
+2015-12-08 13:55:26,244 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:55:26,473 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:55:26,500 INFO  [RMIClient] This request has id :f08ee612-7136-4808-87bc-d2b978dd1d4a
+2015-12-08 13:55:26,847 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:55:27,111 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:55:27,134 INFO  [RMIClient] This request has id :a1f53f08-996f-4b83-9306-54b1351c0893
+2015-12-08 13:55:27,344 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:55:27,573 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:55:27,594 INFO  [RMIClient] This request has id :b8614f84-dc47-4d6e-acca-b25e83a0a718
+2015-12-08 13:55:27,757 INFO  [RMIClient] Client 1:Color is Red
+2015-12-08 13:55:27,989 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:55:28,012 INFO  [RMIClient] This request has id :efea30e2-b026-470f-b9a2-4106a569f0a9
+2015-12-08 13:55:28,198 INFO  [RMIClient] Client 1:Color is Yellow
+2015-12-08 13:55:28,428 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:55:28,459 INFO  [RMIClient] This request has id :0c027a33-b40c-4168-a42f-cdaa4494f529
+2015-12-08 13:55:28,647 INFO  [RMIClient] Client 1:Color is Orange
+2015-12-08 13:55:28,884 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:55:28,910 INFO  [RMIClient] This request has id :94fe5243-5931-4411-b002-835c23b00f97
+2015-12-08 13:55:29,115 INFO  [RMIClient] Client 1:Color is Green
+2015-12-08 13:55:29,355 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:55:29,380 INFO  [RMIClient] This request has id :a6914b9f-b556-4d60-936c-3c0c555d3bf0
+2015-12-08 13:55:29,556 INFO  [RMIClient] Client 1:Color is Yellowish-Green
+2015-12-08 13:55:29,779 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:55:29,804 INFO  [RMIClient] This request has id :3b6a6d82-2cad-4b03-b567-826c3d13fee7
+2015-12-08 13:55:29,966 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:55:30,180 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:55:30,202 INFO  [RMIClient] This request has id :f3f04163-7d65-451d-8381-05777b776027
+2015-12-08 13:55:30,379 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:55:30,599 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:55:30,620 INFO  [RMIClient] This request has id :931abfe1-d40b-4c37-b292-bca4e254f1d7
+2015-12-08 13:55:30,804 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:55:31,029 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:55:31,051 INFO  [RMIClient] This request has id :2284eb60-b0a7-4fff-9022-2236ca158f62
+2015-12-08 13:55:31,236 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:55:31,465 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:55:31,485 INFO  [RMIClient] This request has id :4de3282d-8574-412c-ac61-ddb66bcb410f
+2015-12-08 13:55:31,696 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:55:31,919 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:55:31,941 INFO  [RMIClient] This request has id :bfd5928a-2aba-4684-9490-6987d7d9f1d4
+2015-12-08 13:55:32,101 INFO  [RMIClient] Client 1:No key Apple matches db 
+2015-12-08 13:55:32,319 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:55:32,341 INFO  [RMIClient] This request has id :0690e5a8-5033-4c46-88fe-b3130eefc9e3
+2015-12-08 13:55:32,515 INFO  [RMIClient] Client 1:No key Banana matches db 
+2015-12-08 13:55:32,746 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:55:32,767 INFO  [RMIClient] This request has id :daa51ace-a38e-4398-839a-9a882bf31915
+2015-12-08 13:55:32,936 INFO  [RMIClient] Client 1:No key Orange matches db 
+2015-12-08 13:55:33,158 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:55:33,179 INFO  [RMIClient] This request has id :61052a9f-47de-4b46-8d70-c1cb17b4c181
+2015-12-08 13:55:33,357 INFO  [RMIClient] Client 1:No key Kiwi matches db 
+2015-12-08 13:55:33,583 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:55:33,604 INFO  [RMIClient] This request has id :e6854b92-c99f-45b4-acef-9803d902715a
+2015-12-08 13:55:33,778 INFO  [RMIClient] Client 1:No key Pineapple matches db 
+2015-12-08 13:55:34,049 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:55:34,050 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:55:34,076 INFO  [RMIClient] This request has id :43fe7a1a-e208-4c08-8499-df5cf2bf291d
+2015-12-08 13:55:34,078 INFO  [RMIClient] This request has id :16e2bf8c-ec55-4f6c-afca-11ce9669f05e
+2015-12-08 13:55:34,177 INFO  [RMIClient] Client 1: killing localhost : 1234
+2015-12-08 13:55:35,691 INFO  [RMIClient] Client 1: 
+2015-12-08 13:55:37,590 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:55:37,814 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:55:37,836 INFO  [RMIClient] This request has id :795e3d78-6197-4a57-984b-656e6bf07da8
+2015-12-08 13:55:39,821 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:55:40,039 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:55:40,059 INFO  [RMIClient] This request has id :8ce2e150-f636-4283-a6d6-2d3c9b62d9bc
+2015-12-08 13:55:40,184 INFO  [RMIClient] Contact server 1 at hostname:port localhost : 1234 FAILED. Trying others..
+2015-12-08 13:55:42,071 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:55:42,283 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:55:42,305 INFO  [RMIClient] This request has id :ba67328f-2e94-4dcf-856a-0832c6971053
+2015-12-08 13:55:44,298 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:55:44,513 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:55:44,538 INFO  [RMIClient] This request has id :6c15e82e-4855-4791-969b-7b6333168a8b
+2015-12-08 13:55:44,722 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:55:44,933 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:55:44,954 INFO  [RMIClient] This request has id :eea80b2c-40bc-4acd-a089-73b1eb661ef6
+2015-12-08 13:55:45,142 INFO  [RMIClient] Client 1:ACK
+2015-12-08 13:55:57,443 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:55:57,464 INFO  [RMIClient] This request has id :13a7ca04-5483-4951-bb89-b8de3305a846
+2015-12-08 13:55:57,667 INFO  [RMIClient] Client 1:Color is Red
+2015-12-08 13:55:57,949 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:55:57,975 INFO  [RMIClient] This request has id :7583c5f7-9c27-4c85-9b4c-feb0cbd17ed9
+2015-12-08 13:55:58,139 INFO  [RMIClient] Client 1:Color is Yellow
+2015-12-08 13:55:58,348 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:55:58,370 INFO  [RMIClient] This request has id :fbf3961c-e459-4ab7-8e8e-65a5e9a22241
+2015-12-08 13:55:58,535 INFO  [RMIClient] Client 1:Color is Orange
+2015-12-08 13:55:58,764 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:55:58,785 INFO  [RMIClient] This request has id :77f5dca4-61ce-46c0-95c8-07636fba259e
+2015-12-08 13:55:58,937 INFO  [RMIClient] Client 1:Color is Green
+2015-12-08 13:55:59,179 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 13:55:59,208 INFO  [RMIClient] This request has id :4b66af62-e45d-4f70-8bc4-60ab9d28aab9
+2015-12-08 13:55:59,366 INFO  [RMIClient] Client 1:Color is Yellowish-Green
+2015-12-08 14:06:39,840 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:06:39,861 INFO  [RMIClient] This request has id :80dad52a-b79d-4c27-9672-3e74129a7d90
+2015-12-08 14:06:40,163 INFO  [RMIClient] RESULT FROM localhost : 1234!!!: Client 1:ACK
+2015-12-08 14:06:40,387 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:06:40,408 INFO  [RMIClient] This request has id :88570a7e-626e-4fc4-87a1-d7a5e7de9e1e
+2015-12-08 14:06:40,587 INFO  [RMIClient] RESULT FROM localhost : 2345!!!: Client 1:ACK
+2015-12-08 14:06:40,819 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:06:40,840 INFO  [RMIClient] This request has id :a763ac9f-cf82-4b75-8711-8da51b8667d1
+2015-12-08 14:06:41,040 INFO  [RMIClient] RESULT FROM localhost : 3445!!!: Client 1:ACK
+2015-12-08 14:06:41,285 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:06:41,305 INFO  [RMIClient] This request has id :53df9958-c5c2-4470-8122-43e0a15c0e22
+2015-12-08 14:06:41,515 INFO  [RMIClient] RESULT FROM localhost : 4542!!!: Client 1:ACK
+2015-12-08 14:06:41,764 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:06:41,790 INFO  [RMIClient] This request has id :00b4be71-c738-4b80-bfa5-d759e2595164
+2015-12-08 14:06:42,002 INFO  [RMIClient] RESULT FROM localhost : 2334!!!: Client 1:ACK
+2015-12-08 14:06:42,221 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:06:42,246 INFO  [RMIClient] This request has id :07b2b22c-284c-4455-8c41-de3c080b8ed6
+2015-12-08 14:06:42,411 INFO  [RMIClient] RESULT FROM localhost : 2334!!!: Client 1:Color is Red
+2015-12-08 14:06:42,620 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:06:42,641 INFO  [RMIClient] This request has id :be86c0d1-3a30-4ba3-81cb-79aba53530eb
+2015-12-08 14:06:42,823 INFO  [RMIClient] RESULT FROM localhost : 2345!!!: Client 1:Color is Yellow
+2015-12-08 14:06:43,055 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:06:43,076 INFO  [RMIClient] This request has id :5dd8331e-529d-4463-9dab-f4823d7ede90
+2015-12-08 14:06:43,247 INFO  [RMIClient] RESULT FROM localhost : 3445!!!: Client 1:Color is Orange
+2015-12-08 14:06:43,474 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:06:43,494 INFO  [RMIClient] This request has id :f15588e9-ac7d-42e8-bcd1-2bb8c4ccc39f
+2015-12-08 14:06:43,689 INFO  [RMIClient] RESULT FROM localhost : 1234!!!: Client 1:Color is Green
+2015-12-08 14:06:43,934 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:06:43,961 INFO  [RMIClient] This request has id :8cbba1b6-8742-47db-bc8b-b58c1618c697
+2015-12-08 14:06:44,138 INFO  [RMIClient] RESULT FROM localhost : 4542!!!: Client 1:Color is Yellowish-Green
+2015-12-08 14:06:44,365 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:06:44,385 INFO  [RMIClient] This request has id :7bfaa14a-39ab-42ef-99cc-0b5c848877ff
+2015-12-08 14:06:44,555 INFO  [RMIClient] RESULT FROM localhost : 1234!!!: Client 1:ACK
+2015-12-08 14:06:44,781 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:06:44,806 INFO  [RMIClient] This request has id :a17e02d1-ec1b-4383-90c7-9066c153d5e9
+2015-12-08 14:06:44,981 INFO  [RMIClient] RESULT FROM localhost : 3445!!!: Client 1:ACK
+2015-12-08 14:06:45,208 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:06:45,231 INFO  [RMIClient] This request has id :edc66613-31b4-4289-934d-f9ebc6a54a83
+2015-12-08 14:06:45,407 INFO  [RMIClient] RESULT FROM localhost : 4542!!!: Client 1:ACK
+2015-12-08 14:06:45,635 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:06:45,656 INFO  [RMIClient] This request has id :913079f4-2d60-453c-acae-80f4dcfac260
+2015-12-08 14:06:45,848 INFO  [RMIClient] RESULT FROM localhost : 2345!!!: Client 1:ACK
+2015-12-08 14:06:46,076 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:06:46,098 INFO  [RMIClient] This request has id :fd476621-148f-450c-a5b7-3b108203012d
+2015-12-08 14:06:46,291 INFO  [RMIClient] RESULT FROM localhost : 2334!!!: Client 1:ACK
+2015-12-08 14:06:46,510 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:06:46,537 INFO  [RMIClient] This request has id :b43dc18e-ad54-4773-9114-34cf10ec1c6b
+2015-12-08 14:06:46,712 INFO  [RMIClient] RESULT FROM localhost : 2334!!!: Client 1:No key Apple matches db 
+2015-12-08 14:06:46,941 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:06:46,966 INFO  [RMIClient] This request has id :8f23d1b6-916e-4ba9-a044-c8caa5b8983c
+2015-12-08 14:06:47,151 INFO  [RMIClient] RESULT FROM localhost : 1234!!!: Client 1:No key Banana matches db 
+2015-12-08 14:06:47,369 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:06:47,389 INFO  [RMIClient] This request has id :bae43100-bc9d-4cf1-b04d-444f5276f44b
+2015-12-08 14:06:47,552 INFO  [RMIClient] RESULT FROM localhost : 2345!!!: Client 1:No key Orange matches db 
+2015-12-08 14:06:47,787 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:06:47,812 INFO  [RMIClient] This request has id :fff85f9d-c544-4fd1-86b6-374310e1b30f
+2015-12-08 14:06:48,009 INFO  [RMIClient] RESULT FROM localhost : 3445!!!: Client 1:No key Kiwi matches db 
+2015-12-08 14:06:48,289 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:06:48,315 INFO  [RMIClient] This request has id :126858bd-6469-44df-9a04-7cd14a7c9109
+2015-12-08 14:06:48,520 INFO  [RMIClient] RESULT FROM localhost : 4542!!!: Client 1:No key Pineapple matches db 
+2015-12-08 14:06:48,799 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:06:48,800 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:06:48,824 INFO  [RMIClient] This request has id :3d7a3e40-f9f5-4679-927a-e1f11e6fd6df
+2015-12-08 14:06:48,828 INFO  [RMIClient] This request has id :2583f3b5-fdfa-45b0-9f12-46b63fd5197d
+2015-12-08 14:06:48,927 INFO  [RMIClient] RESULT FROM localhost : 1234!!!: Client 1: killing localhost : 1234
+2015-12-08 14:06:50,444 INFO  [RMIClient] RESULT FROM localhost : 1234!!!: Client 1: 
+2015-12-08 14:06:52,337 INFO  [RMIClient] RESULT FROM localhost : 2345!!!: Client 1:ACK
+2015-12-08 14:06:52,559 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:06:52,580 INFO  [RMIClient] This request has id :5a80e082-6055-4722-8ddf-c79c535356fe
+2015-12-08 14:06:54,562 INFO  [RMIClient] RESULT FROM localhost : 4542!!!: Client 1:ACK
+2015-12-08 14:06:54,781 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:06:54,801 INFO  [RMIClient] This request has id :2da14052-bbb3-45fc-81a1-58799db168d0
+2015-12-08 14:06:54,932 INFO  [RMIClient] Contact server 1 at hostname:port localhost : 1234 FAILED. Trying others..
+2015-12-08 14:06:56,801 INFO  [RMIClient] RESULT FROM localhost : 2345!!!: Client 1:ACK
+2015-12-08 14:06:57,018 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:06:57,040 INFO  [RMIClient] This request has id :287c7bd1-582d-4931-b90e-6b87c12eb5ee
+2015-12-08 14:06:59,035 INFO  [RMIClient] RESULT FROM localhost : 3445!!!: Client 1:ACK
+2015-12-08 14:06:59,254 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:06:59,276 INFO  [RMIClient] This request has id :0643e71d-d350-4e86-9318-f6328867cf42
+2015-12-08 14:06:59,450 INFO  [RMIClient] RESULT FROM localhost : 4542!!!: Client 1:ACK
+2015-12-08 14:06:59,679 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:06:59,700 INFO  [RMIClient] This request has id :07ac9940-79e9-4982-bc7f-edc8d6441325
+2015-12-08 14:06:59,901 INFO  [RMIClient] RESULT FROM localhost : 2334!!!: Client 1:ACK
+2015-12-08 14:07:12,221 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:07:12,244 INFO  [RMIClient] This request has id :b395abde-2a20-4e77-a40f-55c4d6419acc
+2015-12-08 14:07:12,617 INFO  [RMIClient] RESULT FROM localhost : 1234!!!: Client 1:Color is Red
+2015-12-08 14:07:12,864 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:07:12,886 INFO  [RMIClient] This request has id :7d2d2a87-4f15-44a4-9852-eac564affca7
+2015-12-08 14:07:13,037 INFO  [RMIClient] RESULT FROM localhost : 1234!!!: Client 1:Color is Yellow
+2015-12-08 14:07:13,288 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:07:13,310 INFO  [RMIClient] This request has id :f0bd62d2-83ea-4543-97c2-0e856e8bc45d
+2015-12-08 14:07:13,464 INFO  [RMIClient] RESULT FROM localhost : 1234!!!: Client 1:Color is Orange
+2015-12-08 14:07:13,685 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:07:13,707 INFO  [RMIClient] This request has id :8a3ddafb-0290-419f-b8b9-6cf41f008cd8
+2015-12-08 14:07:13,863 INFO  [RMIClient] RESULT FROM localhost : 1234!!!: Client 1:Color is Green
+2015-12-08 14:07:14,095 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:07:14,119 INFO  [RMIClient] This request has id :1d7f72e9-a5f5-42ed-a9b9-76cd5597ef13
+2015-12-08 14:07:14,268 INFO  [RMIClient] RESULT FROM localhost : 1234!!!: Client 1:Color is Yellowish-Green
+2015-12-08 14:10:22,606 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:10:22,626 INFO  [RMIClient] This request has id :7f7c9b9e-f121-4172-a358-90672f47bfe7
+2015-12-08 14:10:22,808 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:ACK
+2015-12-08 14:10:23,042 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:10:23,065 INFO  [RMIClient] This request has id :158bf394-2c16-4cd5-819d-5304e1c021ad
+2015-12-08 14:10:23,252 INFO  [RMIClient] RESULT FROM localhost:2345!!!: Client 1:ACK
+2015-12-08 14:10:23,479 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:10:23,504 INFO  [RMIClient] This request has id :3dd3a86c-fd6a-4ee9-960f-ac26b0577546
+2015-12-08 14:10:23,696 INFO  [RMIClient] RESULT FROM localhost:3445!!!: Client 1:ACK
+2015-12-08 14:10:23,918 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:10:23,938 INFO  [RMIClient] This request has id :04881028-f8ff-44aa-b064-af2aae617144
+2015-12-08 14:10:24,133 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:ACK
+2015-12-08 14:10:24,359 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:10:24,382 INFO  [RMIClient] This request has id :6d88b20b-f181-4c84-93c7-a87681842222
+2015-12-08 14:10:24,597 INFO  [RMIClient] RESULT FROM localhost:2334!!!: Client 1:ACK
+2015-12-08 14:10:24,837 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:10:24,868 INFO  [RMIClient] This request has id :ecdba1d5-cfc4-43d2-a1f9-43653f68b3d5
+2015-12-08 14:10:25,044 INFO  [RMIClient] RESULT FROM localhost:2334!!!: Client 1:Color is Red
+2015-12-08 14:10:25,280 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:10:25,301 INFO  [RMIClient] This request has id :0d7ef6fd-baa3-4454-9f51-7a5c36cf54d8
+2015-12-08 14:10:25,482 INFO  [RMIClient] RESULT FROM localhost:2345!!!: Client 1:Color is Yellow
+2015-12-08 14:10:25,713 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:10:25,734 INFO  [RMIClient] This request has id :4cd60363-2426-4169-ba22-da57bff488ac
+2015-12-08 14:10:25,903 INFO  [RMIClient] RESULT FROM localhost:3445!!!: Client 1:Color is Orange
+2015-12-08 14:10:26,125 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:10:26,146 INFO  [RMIClient] This request has id :83abbf37-9027-42fb-b79a-9607a4962260
+2015-12-08 14:10:26,340 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:Color is Green
+2015-12-08 14:10:26,595 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:10:26,620 INFO  [RMIClient] This request has id :d43f06f1-d5fc-4870-9281-c4c354938746
+2015-12-08 14:10:26,794 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:Color is Yellowish-Green
+2015-12-08 14:10:27,020 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:10:27,043 INFO  [RMIClient] This request has id :6aca5f81-5831-42a6-9407-4d9e5a3bb200
+2015-12-08 14:10:27,210 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:ACK
+2015-12-08 14:10:27,440 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:10:27,461 INFO  [RMIClient] This request has id :40256648-73b8-411c-afb5-554a696aa55e
+2015-12-08 14:10:27,635 INFO  [RMIClient] RESULT FROM localhost:3445!!!: Client 1:ACK
+2015-12-08 14:10:27,868 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:10:27,889 INFO  [RMIClient] This request has id :56e58121-f018-485d-9701-66d371972444
+2015-12-08 14:10:28,068 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:ACK
+2015-12-08 14:10:28,285 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:10:28,308 INFO  [RMIClient] This request has id :86e76b54-f019-44b7-9050-fcd52e454e35
+2015-12-08 14:10:28,515 INFO  [RMIClient] RESULT FROM localhost:2345!!!: Client 1:ACK
+2015-12-08 14:10:28,755 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:10:28,779 INFO  [RMIClient] This request has id :063fb78f-a5f7-47b5-ab1d-076913ecd533
+2015-12-08 14:10:28,983 INFO  [RMIClient] RESULT FROM localhost:2334!!!: Client 1:ACK
+2015-12-08 14:10:29,229 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:10:29,252 INFO  [RMIClient] This request has id :d4ead84d-89ce-4882-8610-97d92c98ffe0
+2015-12-08 14:10:29,413 INFO  [RMIClient] RESULT FROM localhost:2334!!!: Client 1:No key Apple matches db 
+2015-12-08 14:10:29,646 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:10:29,666 INFO  [RMIClient] This request has id :885bc122-7692-4171-a1ed-cdaab142d3b5
+2015-12-08 14:10:29,847 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:No key Banana matches db 
+2015-12-08 14:10:30,072 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:10:30,093 INFO  [RMIClient] This request has id :af385017-8493-4cde-9ce2-d31734a8e408
+2015-12-08 14:10:30,255 INFO  [RMIClient] RESULT FROM localhost:2345!!!: Client 1:No key Orange matches db 
+2015-12-08 14:10:30,497 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:10:30,519 INFO  [RMIClient] This request has id :40b73012-0cca-488d-b945-aebfe077ff94
+2015-12-08 14:10:30,694 INFO  [RMIClient] RESULT FROM localhost:3445!!!: Client 1:No key Kiwi matches db 
+2015-12-08 14:10:30,914 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:10:30,936 INFO  [RMIClient] This request has id :55f59904-d7f7-4ec8-90b5-8482b0a4579d
+2015-12-08 14:10:31,113 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:No key Pineapple matches db 
+2015-12-08 14:10:31,377 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:10:31,381 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:10:31,403 INFO  [RMIClient] This request has id :b28e523c-dad1-4a41-8440-5d9ea9007a40
+2015-12-08 14:10:31,406 INFO  [RMIClient] This request has id :36e8ff92-c376-4353-8152-2d2d7de4df4b
+2015-12-08 14:10:31,533 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1: killing localhost : 1234
+2015-12-08 14:10:33,417 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:ACK
+2015-12-08 14:10:33,637 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:10:33,657 INFO  [RMIClient] This request has id :f1e76f78-ad11-4e92-bc2f-5fdf56cce943
+2015-12-08 14:10:35,632 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:ACK
+2015-12-08 14:10:35,865 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:10:35,886 INFO  [RMIClient] This request has id :2a3a2eda-814a-43d1-adfb-8eb67e3e2f34
+2015-12-08 14:10:37,540 INFO  [RMIClient] Contact server 1 at hostname:port localhost : 1234 FAILED. Trying others..
+2015-12-08 14:10:37,875 INFO  [RMIClient] RESULT FROM localhost:2345!!!: Client 1:ACK
+2015-12-08 14:10:38,100 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:10:38,122 INFO  [RMIClient] This request has id :ff28a7e9-a90a-4978-b957-acfe47f732cb
+2015-12-08 14:10:40,132 INFO  [RMIClient] RESULT FROM localhost:3445!!!: Client 1:ACK
+2015-12-08 14:10:40,359 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:10:40,379 INFO  [RMIClient] This request has id :ac0221db-ceb1-4312-bae2-7f6bd9bf8c33
+2015-12-08 14:10:42,372 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:ACK
+2015-12-08 14:10:42,604 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:10:42,625 INFO  [RMIClient] This request has id :b39b2498-276e-4529-9539-80e6ba825ef5
+2015-12-08 14:10:42,813 INFO  [RMIClient] RESULT FROM localhost:2334!!!: Client 1:ACK
+2015-12-08 14:10:55,111 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:10:55,132 INFO  [RMIClient] This request has id :a4002d6a-8b56-4645-aa0f-c37c47f14868
+2015-12-08 14:10:55,320 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:Color is Red
+2015-12-08 14:10:55,555 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:10:55,576 INFO  [RMIClient] This request has id :a0ff4768-c456-45c8-baba-a630b258c433
+2015-12-08 14:10:55,726 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:Color is Yellow
+2015-12-08 14:10:56,001 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:10:56,028 INFO  [RMIClient] This request has id :dc746c55-6d64-407a-869d-6fa7d7462320
+2015-12-08 14:10:56,192 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:Color is Orange
+2015-12-08 14:10:56,431 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:10:56,454 INFO  [RMIClient] This request has id :9eef330b-a8e2-4453-be46-c8b00fb7d2a3
+2015-12-08 14:10:56,623 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:Color is Green
+2015-12-08 14:10:56,854 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:10:56,877 INFO  [RMIClient] This request has id :bf7be48e-1d2f-463b-8c7f-c43b9e0e760c
+2015-12-08 14:10:57,029 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:Color is Yellowish-Green
+2015-12-08 14:23:34,914 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:23:34,935 INFO  [RMIClient] This request has id :7bd133bd-adfa-498a-bf12-df4f2e4f9b2a
+2015-12-08 14:23:35,127 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:ACK
+2015-12-08 14:23:35,358 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:23:35,378 INFO  [RMIClient] This request has id :15f4603d-c62c-4609-9da9-cba6fa0a8072
+2015-12-08 14:23:35,564 INFO  [RMIClient] RESULT FROM localhost:2345!!!: Client 1:ACK
+2015-12-08 14:23:35,802 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:23:35,822 INFO  [RMIClient] This request has id :1202f1ec-fa34-4964-aa53-ac2a1ac61989
+2015-12-08 14:23:36,003 INFO  [RMIClient] RESULT FROM localhost:3445!!!: Client 1:ACK
+2015-12-08 14:23:36,216 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:23:36,239 INFO  [RMIClient] This request has id :de51c536-72ad-4edc-93aa-900d9b810f2d
+2015-12-08 14:23:36,441 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:ACK
+2015-12-08 14:23:36,682 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:23:36,703 INFO  [RMIClient] This request has id :170449c8-64fb-4042-8b3a-2c777ad93788
+2015-12-08 14:23:36,908 INFO  [RMIClient] RESULT FROM localhost:2334!!!: Client 1:ACK
+2015-12-08 14:23:37,134 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:23:37,155 INFO  [RMIClient] This request has id :16dc0f0d-cb7c-42e4-b7ca-47ceae6534f7
+2015-12-08 14:23:37,315 INFO  [RMIClient] RESULT FROM localhost:2334!!!: Client 1:Color is Red
+2015-12-08 14:23:37,548 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:23:37,568 INFO  [RMIClient] This request has id :aac3b276-6545-4b3b-83c1-63d684b12a17
+2015-12-08 14:23:37,749 INFO  [RMIClient] RESULT FROM localhost:2345!!!: Client 1:Color is Yellow
+2015-12-08 14:23:38,007 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:23:38,033 INFO  [RMIClient] This request has id :bd004dcd-ed40-4716-8669-bdbc43d3e004
+2015-12-08 14:23:38,204 INFO  [RMIClient] RESULT FROM localhost:3445!!!: Client 1:Color is Orange
+2015-12-08 14:23:38,413 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:23:38,435 INFO  [RMIClient] This request has id :a8fdc675-45ce-4881-98d7-710c3fb7eb83
+2015-12-08 14:23:38,627 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:Color is Green
+2015-12-08 14:23:38,840 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:23:38,861 INFO  [RMIClient] This request has id :7ed0f91f-2b70-4467-b4c1-0f43e460a61a
+2015-12-08 14:23:39,032 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:Color is Yellowish-Green
+2015-12-08 14:23:39,252 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:23:39,273 INFO  [RMIClient] This request has id :c5dbc062-8d17-43f2-b05c-2a1f95bc7f52
+2015-12-08 14:23:39,438 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:ACK
+2015-12-08 14:23:39,655 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:23:39,676 INFO  [RMIClient] This request has id :0674c765-71f4-4078-bec5-8533cabdcf53
+2015-12-08 14:23:39,851 INFO  [RMIClient] RESULT FROM localhost:3445!!!: Client 1:ACK
+2015-12-08 14:23:40,075 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:23:40,096 INFO  [RMIClient] This request has id :a0a018a0-29f5-45ce-826d-2572d46f760d
+2015-12-08 14:23:40,268 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:ACK
+2015-12-08 14:23:40,526 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:23:40,548 INFO  [RMIClient] This request has id :6ba4c032-7f31-4c00-9aa8-a4f721fc1fdd
+2015-12-08 14:23:42,156 INFO  [RMIClient] RESULT FROM localhost:2345!!!: Client 1: 
+2015-12-08 14:23:42,241 INFO  [RMIClient] RESULT FROM localhost:3445!!!: Client 1:ACK
+2015-12-08 14:23:42,450 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:23:42,473 INFO  [RMIClient] This request has id :b9bf63b1-a35d-49d9-9ad0-587a9f934042
+2015-12-08 14:23:44,061 INFO  [RMIClient] RESULT FROM localhost:2334!!!: Client 1: 
+2015-12-08 14:23:44,154 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:ACK
+2015-12-08 14:23:44,367 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:23:44,388 INFO  [RMIClient] This request has id :5591a17a-98a5-4677-af74-c39734135414
+2015-12-08 14:23:44,575 INFO  [RMIClient] RESULT FROM localhost:2334!!!: Client 1:No key Apple matches db 
+2015-12-08 14:23:44,792 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:23:44,813 INFO  [RMIClient] This request has id :789559f0-d6ea-4354-a62e-679733f0bb51
+2015-12-08 14:23:44,964 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:No key Banana matches db 
+2015-12-08 14:23:45,192 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:23:45,213 INFO  [RMIClient] This request has id :68ff0344-2ab4-4ff7-906e-7eddcc147e1a
+2015-12-08 14:23:45,401 INFO  [RMIClient] RESULT FROM localhost:2345!!!: Client 1:No key Orange matches db 
+2015-12-08 14:23:45,622 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:23:45,643 INFO  [RMIClient] This request has id :6245fa07-6020-491e-9f24-2dc8c8b80bb1
+2015-12-08 14:23:45,803 INFO  [RMIClient] RESULT FROM localhost:3445!!!: Client 1:No key Kiwi matches db 
+2015-12-08 14:23:46,027 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:23:46,051 INFO  [RMIClient] This request has id :a9aaa211-ac26-46e5-86a5-aad5ce127e53
+2015-12-08 14:23:46,225 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:No key Pineapple matches db 
+2015-12-08 14:23:46,498 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:23:46,498 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:23:46,528 INFO  [RMIClient] This request has id :d1d4d13b-2a92-4f8e-bb81-2c8e92ed715c
+2015-12-08 14:23:46,529 INFO  [RMIClient] This request has id :0fe1193f-fb5c-4bd4-86e4-53a5e8b3766c
+2015-12-08 14:23:46,681 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1: killing localhost : 1234
+2015-12-08 14:23:46,744 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:ACK
+2015-12-08 14:23:46,957 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:23:46,980 INFO  [RMIClient] This request has id :419c753b-a352-4465-8b99-228e9104860a
+2015-12-08 14:23:48,961 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:ACK
+2015-12-08 14:23:49,174 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:23:49,195 INFO  [RMIClient] This request has id :1f0b35c4-d147-4f7e-be00-398238b09292
+2015-12-08 14:23:50,835 INFO  [RMIClient] RESULT FROM localhost:2345!!!: Client 1: 
+2015-12-08 14:23:52,686 INFO  [RMIClient] Contact server 1 at hostname:port localhost : 1234 FAILED. Trying others..
+2015-12-08 14:23:52,733 INFO  [RMIClient] RESULT FROM localhost:3445!!!: Client 1:ACK
+2015-12-08 14:23:52,944 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:23:52,965 INFO  [RMIClient] This request has id :04285ed7-4fe4-4415-960d-ee3f7d427e48
+2015-12-08 14:23:54,945 INFO  [RMIClient] RESULT FROM localhost:3445!!!: Client 1:ACK
+2015-12-08 14:23:55,154 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:23:55,175 INFO  [RMIClient] This request has id :474c7bac-06fb-4967-b4f4-253d041329c9
+2015-12-08 14:23:57,165 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:ACK
+2015-12-08 14:23:57,392 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:23:57,414 INFO  [RMIClient] This request has id :0d870198-dd5a-4df1-9fa0-68462ecb53dc
+2015-12-08 14:23:57,605 INFO  [RMIClient] RESULT FROM localhost:2334!!!: Client 1:ACK
+2015-12-08 14:24:09,909 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:24:09,930 INFO  [RMIClient] This request has id :82bf7414-cb6c-4a7d-a8d4-83acdfb4d296
+2015-12-08 14:24:10,130 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:Color is Red
+2015-12-08 14:24:10,351 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:24:10,372 INFO  [RMIClient] This request has id :8b5901c3-4479-438a-8791-9bdc50ad837e
+2015-12-08 14:24:10,520 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:Color is Yellow
+2015-12-08 14:24:10,750 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:24:10,771 INFO  [RMIClient] This request has id :b92849a5-66fb-4f52-8125-3a1cde029b4b
+2015-12-08 14:24:10,925 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:Color is Orange
+2015-12-08 14:24:11,164 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:24:11,185 INFO  [RMIClient] This request has id :f9ba947b-1a8f-43ca-8695-34eca9165bb7
+2015-12-08 14:24:11,336 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:Color is Green
+2015-12-08 14:24:11,674 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:24:11,706 INFO  [RMIClient] This request has id :9f5dd56c-da77-45d6-bc40-07a80b308454
+2015-12-08 14:24:13,366 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1: 
+2015-12-08 14:24:13,482 INFO  [RMIClient] RESULT FROM localhost:2345!!!: Client 1:Color is Yellowish-Green
+2015-12-08 14:26:12,424 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:26:12,444 INFO  [RMIClient] This request has id :4d1d695b-d0f7-4bb9-964b-8b04348648de
+2015-12-08 14:26:12,620 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:ACK
+2015-12-08 14:26:12,896 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:26:12,919 INFO  [RMIClient] This request has id :2c46847f-6acb-4984-95c8-f2f686c9a690
+2015-12-08 14:26:13,097 INFO  [RMIClient] RESULT FROM localhost:2345!!!: Client 1:ACK
+2015-12-08 14:26:13,310 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:26:13,339 INFO  [RMIClient] This request has id :d956eb0e-52ef-407f-a90e-49becbd5c35c
+2015-12-08 14:26:13,532 INFO  [RMIClient] RESULT FROM localhost:3445!!!: Client 1:ACK
+2015-12-08 14:26:13,757 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:26:13,781 INFO  [RMIClient] This request has id :2f91075d-f693-4828-af6b-c6232fa32fe0
+2015-12-08 14:26:13,969 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:ACK
+2015-12-08 14:26:14,180 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:26:14,202 INFO  [RMIClient] This request has id :73bb4da1-afe7-43c1-b111-30adcc354589
+2015-12-08 14:26:14,403 INFO  [RMIClient] RESULT FROM localhost:2334!!!: Client 1:ACK
+2015-12-08 14:26:14,623 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:26:14,643 INFO  [RMIClient] This request has id :0790ae5e-d060-4584-9bbf-571d14269a76
+2015-12-08 14:26:14,805 INFO  [RMIClient] RESULT FROM localhost:2334!!!: Client 1:Color is Red
+2015-12-08 14:26:15,046 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:26:15,067 INFO  [RMIClient] This request has id :581cff51-2b3a-4f2e-80b2-d8aa36d97320
+2015-12-08 14:26:15,242 INFO  [RMIClient] RESULT FROM localhost:2345!!!: Client 1:Color is Yellow
+2015-12-08 14:26:15,483 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:26:15,507 INFO  [RMIClient] This request has id :c09e1836-d20f-47ac-8a01-ec8d4b94f6ec
+2015-12-08 14:26:21,616 INFO  [RMIClient] Contact server 3 at hostname:port localhost : 3445 FAILED. Trying others..
+2015-12-08 14:26:23,512 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:Color is Orange
+2015-12-08 14:26:23,724 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:26:23,750 INFO  [RMIClient] This request has id :2ddb1a17-8bc4-48ee-a64c-d70943d8ce28
+2015-12-08 14:26:29,841 INFO  [RMIClient] Contact server 1 at hostname:port localhost : 1234 FAILED. Trying others..
+2015-12-08 14:26:35,852 INFO  [RMIClient] Contact server 2 at hostname:port localhost : 2345 FAILED. Trying others..
+2015-12-08 14:26:37,765 INFO  [RMIClient] RESULT FROM localhost:3445!!!: Client 1:Color is Green
+2015-12-08 14:26:37,981 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:26:38,002 INFO  [RMIClient] This request has id :7e81ed13-cafe-4e9e-94c6-54c63616d984
+2015-12-08 14:26:39,980 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:Color is Yellowish-Green
+2015-12-08 14:26:40,206 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:26:40,228 INFO  [RMIClient] This request has id :3b959d52-65ab-4299-94d3-ca4854dd71bc
+2015-12-08 14:26:40,417 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:ACK
+2015-12-08 14:26:40,633 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:26:40,654 INFO  [RMIClient] This request has id :da28731f-9895-45b2-abce-aa7551da018f
+2015-12-08 14:26:40,821 INFO  [RMIClient] RESULT FROM localhost:3445!!!: Client 1:ACK
+2015-12-08 14:26:41,052 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:26:41,082 INFO  [RMIClient] This request has id :506a571d-b0e6-4c91-bf61-fdf3bfbb0164
+2015-12-08 14:26:41,266 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:ACK
+2015-12-08 14:26:41,492 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:26:41,517 INFO  [RMIClient] This request has id :63c5c712-8d0d-494a-82de-435b1d7066c1
+2015-12-08 14:26:41,719 INFO  [RMIClient] RESULT FROM localhost:2345!!!: Client 1:ACK
+2015-12-08 14:26:41,933 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:26:41,955 INFO  [RMIClient] This request has id :55c3fb15-b329-4da3-8759-5205537765bf
+2015-12-08 14:26:42,147 INFO  [RMIClient] RESULT FROM localhost:2334!!!: Client 1:ACK
+2015-12-08 14:26:42,363 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:26:42,385 INFO  [RMIClient] This request has id :cbf5027a-67be-4108-ba5b-5d0859a1021a
+2015-12-08 14:26:42,536 INFO  [RMIClient] RESULT FROM localhost:2334!!!: Client 1:No key Apple matches db 
+2015-12-08 14:26:42,768 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:26:42,796 INFO  [RMIClient] This request has id :08947f0b-f40e-436a-9f9b-c3a508c4ad30
+2015-12-08 14:26:42,987 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:No key Banana matches db 
+2015-12-08 14:26:43,192 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:26:43,212 INFO  [RMIClient] This request has id :1f350151-b037-481b-97bf-44488ff6fee6
+2015-12-08 14:26:43,385 INFO  [RMIClient] RESULT FROM localhost:2345!!!: Client 1:No key Orange matches db 
+2015-12-08 14:26:43,617 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:26:43,639 INFO  [RMIClient] This request has id :897720af-87c9-4401-bfb5-da58c4a64e89
+2015-12-08 14:26:43,822 INFO  [RMIClient] RESULT FROM localhost:3445!!!: Client 1:No key Kiwi matches db 
+2015-12-08 14:26:44,039 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:26:44,059 INFO  [RMIClient] This request has id :4cd1628c-525e-41b3-8608-1b478c18db04
+2015-12-08 14:26:50,151 INFO  [RMIClient] Contact server 4 at hostname:port localhost : 4542 FAILED. Trying others..
+2015-12-08 14:26:50,152 ERROR [RMIClient] Error occured while connecting to RMI server with error, -1
+2015-12-08 14:26:50,419 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:26:50,419 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:26:50,450 INFO  [RMIClient] This request has id :e5564afb-e7f7-4b6b-a116-2bf53c41491e
+2015-12-08 14:26:50,451 INFO  [RMIClient] This request has id :0a8128bc-2928-4264-9a67-7288f620d943
+2015-12-08 14:26:50,556 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1: killing localhost : 1234
+2015-12-08 14:26:52,067 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1: 
+2015-12-08 14:26:55,887 INFO  [RMIClient] RESULT FROM localhost:2345!!!: Client 1:ACK
+2015-12-08 14:26:56,102 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:26:56,123 INFO  [RMIClient] This request has id :9b7a1a42-3237-465a-ad63-889d570f5f7c
+2015-12-08 14:26:56,561 INFO  [RMIClient] Contact server 1 at hostname:port localhost : 1234 FAILED. Trying others..
+2015-12-08 14:26:58,135 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:ACK
+2015-12-08 14:26:58,360 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:26:58,383 INFO  [RMIClient] This request has id :3ea44112-6e89-4355-8377-2c1c18a31572
+2015-12-08 14:27:00,364 INFO  [RMIClient] RESULT FROM localhost:2345!!!: Client 1:ACK
+2015-12-08 14:27:00,591 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:27:00,619 INFO  [RMIClient] This request has id :1ece4a7a-63d5-4bf1-a33a-f21354e874e3
+2015-12-08 14:27:06,707 INFO  [RMIClient] Contact server 3 at hostname:port localhost : 3445 FAILED. Trying others..
+2015-12-08 14:27:08,609 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:ACK
+2015-12-08 14:27:08,844 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:27:08,864 INFO  [RMIClient] This request has id :2610a834-5476-41a3-9fb9-c51d65666e73
+2015-12-08 14:27:14,950 INFO  [RMIClient] Contact server 4 at hostname:port localhost : 4542 FAILED. Trying others..
+2015-12-08 14:27:14,951 ERROR [RMIClient] Error occured while connecting to RMI server with error, -1
+2015-12-08 14:27:15,173 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:27:15,195 INFO  [RMIClient] This request has id :6a14cf7b-192a-4946-bb95-9da11e16ad4d
+2015-12-08 14:27:17,218 INFO  [RMIClient] RESULT FROM localhost:2334!!!: Client 1:ACK
+2015-12-08 14:27:29,511 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:27:29,531 INFO  [RMIClient] This request has id :f8dce837-736b-4550-b5ef-15a39fc316a0
+2015-12-08 14:27:29,794 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:Color is Red
+2015-12-08 14:27:30,008 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:27:30,032 INFO  [RMIClient] This request has id :f1f508cc-b4f4-4c3d-a1cd-92b6dadeaf39
+2015-12-08 14:27:30,177 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:Color is Yellow
+2015-12-08 14:27:30,405 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:27:30,425 INFO  [RMIClient] This request has id :c3dc876e-90e0-40aa-8259-1ef32b8ff640
+2015-12-08 14:27:30,577 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:Color is Orange
+2015-12-08 14:27:30,803 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:27:30,824 INFO  [RMIClient] This request has id :60fe5676-9b45-4964-adc8-6e9582d13ee9
+2015-12-08 14:27:30,971 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:No key Kiwi matches db 
+2015-12-08 14:27:31,195 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:27:31,218 INFO  [RMIClient] This request has id :1dee3a13-d575-4e45-996f-42a37f58d264
+2015-12-08 14:27:31,367 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:Color is Yellowish-Green
+2015-12-08 14:36:24,256 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:36:24,277 INFO  [RMIClient] This request has id :9de4435e-0a16-48dc-b488-21bfd76e4144
+2015-12-08 14:36:24,574 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:ACK
+2015-12-08 14:36:24,822 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:36:24,844 INFO  [RMIClient] This request has id :1bfe885d-3ca0-4a76-9d94-fbbc9bf8051a
+2015-12-08 14:36:25,036 INFO  [RMIClient] RESULT FROM localhost:2345!!!: Client 1:ACK
+2015-12-08 14:36:25,341 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:36:25,368 INFO  [RMIClient] This request has id :0f4f963e-e49a-4043-94d6-11a3d3180742
+2015-12-08 14:36:25,577 INFO  [RMIClient] RESULT FROM localhost:3445!!!: Client 1:ACK
+2015-12-08 14:36:25,821 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:36:25,843 INFO  [RMIClient] This request has id :18e60d91-7d90-4c15-9b31-9d46ee5e1bea
+2015-12-08 14:36:26,049 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:ACK
+2015-12-08 14:36:26,299 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:36:26,321 INFO  [RMIClient] This request has id :bf63b5c2-c458-44c1-9d2c-39055857d3ba
+2015-12-08 14:36:32,421 INFO  [RMIClient] Contact server 5 at hostname:port localhost : 2334 FAILED. Trying others..
+2015-12-08 14:36:34,337 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:ACK
+2015-12-08 14:36:34,574 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:36:34,596 INFO  [RMIClient] This request has id :fc44b4bd-f7af-44db-8cd7-df9c3c890724
+2015-12-08 14:36:36,196 INFO  [RMIClient] RESULT FROM localhost:2334!!!: Client 1: 
+2015-12-08 14:36:36,270 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:Color is Red
+2015-12-08 14:36:36,515 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:36:36,541 INFO  [RMIClient] This request has id :bedc9c38-d234-4be5-b0f1-82150a926d4e
+2015-12-08 14:36:42,639 INFO  [RMIClient] Contact server 2 at hostname:port localhost : 2345 FAILED. Trying others..
+2015-12-08 14:36:48,651 INFO  [RMIClient] Contact server 3 at hostname:port localhost : 3445 FAILED. Trying others..
+2015-12-08 14:36:50,540 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:Color is Yellow
+2015-12-08 14:36:50,777 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:36:50,799 INFO  [RMIClient] This request has id :ea513207-bc69-47f3-8f97-efd4ca415668
+2015-12-08 14:36:52,406 INFO  [RMIClient] RESULT FROM localhost:3445!!!: Client 1: 
+2015-12-08 14:36:52,481 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:Color is Orange
+2015-12-08 14:36:52,705 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:36:52,726 INFO  [RMIClient] This request has id :2c9e7cf5-d737-4f1e-b15b-d4a6c0d737e3
+2015-12-08 14:36:52,881 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:Color is Green
+2015-12-08 14:36:53,128 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:36:53,151 INFO  [RMIClient] This request has id :4556f61c-748d-4098-9234-6ed7a9efffa9
+2015-12-08 14:36:53,309 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:Color is Yellowish-Green
+2015-12-08 14:36:53,551 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:36:53,573 INFO  [RMIClient] This request has id :38c350ed-657b-4e0b-a38c-89c4a1e435a6
+2015-12-08 14:36:53,743 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:ACK
+2015-12-08 14:36:53,974 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:36:53,996 INFO  [RMIClient] This request has id :9d7f5e3b-5c5d-4a2b-ae3a-d6f1adfac270
+2015-12-08 14:37:00,099 INFO  [RMIClient] Contact server 3 at hostname:port localhost : 3445 FAILED. Trying others..
+2015-12-08 14:37:02,000 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:ACK
+2015-12-08 14:37:02,224 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:37:02,250 INFO  [RMIClient] This request has id :c44a59f4-896b-405d-b95d-1b98cbe373fb
+2015-12-08 14:37:04,233 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:ACK
+2015-12-08 14:37:04,466 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:37:04,491 INFO  [RMIClient] This request has id :66dc634b-4452-41ac-96fe-2bd62f0ee2cd
+2015-12-08 14:37:10,583 INFO  [RMIClient] Contact server 2 at hostname:port localhost : 2345 FAILED. Trying others..
+2015-12-08 14:37:12,539 INFO  [RMIClient] RESULT FROM localhost:3445!!!: Client 1:ACK
+2015-12-08 14:37:12,805 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:37:12,829 INFO  [RMIClient] This request has id :5984242f-e95f-4924-9635-afa6df11bb9f
+2015-12-08 14:37:14,893 INFO  [RMIClient] RESULT FROM localhost:2334!!!: Client 1:ACK
+2015-12-08 14:37:15,125 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:37:15,146 INFO  [RMIClient] This request has id :c34cd0c8-5972-46a7-9320-dad17fe3f630
+2015-12-08 14:37:15,294 INFO  [RMIClient] RESULT FROM localhost:2334!!!: Client 1:No key Apple matches db 
+2015-12-08 14:37:15,537 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:37:15,564 INFO  [RMIClient] This request has id :8cb0f2c2-0978-4ccc-9316-7a92bd668fa2
+2015-12-08 14:37:15,739 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:No key Banana matches db 
+2015-12-08 14:37:15,993 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:37:16,017 INFO  [RMIClient] This request has id :3502a872-9229-4c53-9440-1068e608d059
+2015-12-08 14:37:22,111 INFO  [RMIClient] Contact server 2 at hostname:port localhost : 2345 FAILED. Trying others..
+2015-12-08 14:37:28,119 INFO  [RMIClient] Contact server 3 at hostname:port localhost : 3445 FAILED. Trying others..
+2015-12-08 14:37:30,022 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:No key Orange matches db 
+2015-12-08 14:37:30,233 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:37:30,255 INFO  [RMIClient] This request has id :cc189484-68b1-4e09-9f2d-a19794c6c52a
+2015-12-08 14:37:31,848 INFO  [RMIClient] RESULT FROM localhost:3445!!!: Client 1: 
+2015-12-08 14:37:37,855 INFO  [RMIClient] Contact server 4 at hostname:port localhost : 4542 FAILED. Trying others..
+2015-12-08 14:37:37,856 ERROR [RMIClient] Error occured while connecting to RMI server with error, -1
+2015-12-08 14:37:38,099 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:37:38,120 INFO  [RMIClient] This request has id :5d90216f-47bf-4598-a79d-f5098d079c51
+2015-12-08 14:37:39,710 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1: 
+2015-12-08 14:37:39,711 ERROR [RMIClient] Error occured while connecting to RMI server with error, -1
+2015-12-08 14:37:40,012 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:37:40,027 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:37:40,054 INFO  [RMIClient] This request has id :bec94e76-5952-4cc3-8d1a-4bc94db176b7
+2015-12-08 14:37:40,063 INFO  [RMIClient] This request has id :8cf25ca7-d355-4842-a87d-7ba0b04a59ed
+2015-12-08 14:37:40,165 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1: killing localhost : 1234
+2015-12-08 14:37:41,673 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1: 
+2015-12-08 14:37:42,437 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:37:42,460 INFO  [RMIClient] This request has id :ef577471-3143-401e-b3c5-a4307e7bfc5e
+2015-12-08 14:37:46,173 INFO  [RMIClient] Contact server 1 at hostname:port localhost : 1234 FAILED. Trying others..
+2015-12-08 14:41:23,719 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:41:23,745 INFO  [RMIClient] This request has id :bd75aa74-e9be-474f-94ba-69941bc7ddab
+2015-12-08 14:41:23,920 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:ACK
+2015-12-08 14:41:24,152 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:41:24,175 INFO  [RMIClient] This request has id :f237fb94-e6de-47ba-ab0d-dbeddfd65f8f
+2015-12-08 14:41:24,340 INFO  [RMIClient] RESULT FROM localhost:2345!!!: Client 1:ACK
+2015-12-08 14:41:24,555 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:41:24,575 INFO  [RMIClient] This request has id :2b51d153-7d9e-4c52-a9a5-798bc5bbb676
+2015-12-08 14:41:24,768 INFO  [RMIClient] RESULT FROM localhost:3445!!!: Client 1:ACK
+2015-12-08 14:41:25,056 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:41:25,082 INFO  [RMIClient] This request has id :ba218da5-4c0d-4347-81c9-bb1380f40be6
+2015-12-08 14:41:25,266 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:ACK
+2015-12-08 14:41:25,483 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:41:25,506 INFO  [RMIClient] This request has id :7dcd729d-b327-43d5-8d34-6063c98842a8
+2015-12-08 14:41:25,708 INFO  [RMIClient] RESULT FROM localhost:2334!!!: Client 1:ACK
+2015-12-08 14:42:14,474 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:42:14,495 INFO  [RMIClient] This request has id :60053b53-49c0-485d-a506-729c9efbc6cf
+2015-12-08 14:42:14,672 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:ACK
+2015-12-08 14:42:14,900 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:42:14,920 INFO  [RMIClient] This request has id :c39fa16f-eb3f-494d-991b-1d1cfc39530b
+2015-12-08 14:42:15,090 INFO  [RMIClient] RESULT FROM localhost:2345!!!: Client 1:ACK
+2015-12-08 14:42:15,300 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:42:15,321 INFO  [RMIClient] This request has id :99943802-d1cc-4e4f-afdd-9cae2606fed1
+2015-12-08 14:42:15,508 INFO  [RMIClient] RESULT FROM localhost:3445!!!: Client 1:ACK
+2015-12-08 14:42:15,726 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:42:15,747 INFO  [RMIClient] This request has id :6257e6e0-e325-40af-9da8-3474284f19cc
+2015-12-08 14:42:21,845 INFO  [RMIClient] Contact server 4 at hostname:port localhost : 4542 FAILED. Trying others..
+2015-12-08 14:42:21,846 ERROR [RMIClient] Error occured while connecting to RMI server with error, -1
+2015-12-08 14:42:22,064 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:42:22,085 INFO  [RMIClient] This request has id :eaacc31f-85aa-408d-8c54-60ee1920ac0b
+2015-12-08 14:42:24,090 INFO  [RMIClient] RESULT FROM localhost:2334!!!: Client 1:ACK
+2015-12-08 14:42:24,311 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:42:24,332 INFO  [RMIClient] This request has id :646ae9db-e7ae-4404-809f-fb3f1797a28d
+2015-12-08 14:42:26,299 INFO  [RMIClient] RESULT FROM localhost:2334!!!: Client 1:Color is Red
+2015-12-08 14:42:26,538 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:42:26,562 INFO  [RMIClient] This request has id :be4be55c-79bf-4a3a-85da-aa87a7edd878
+2015-12-08 14:42:26,737 INFO  [RMIClient] RESULT FROM localhost:2345!!!: Client 1:Color is Yellow
+2015-12-08 14:42:26,968 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:42:26,995 INFO  [RMIClient] This request has id :626ebe12-ac2c-448a-a644-733d9a6d9bf1
+2015-12-08 14:42:27,183 INFO  [RMIClient] RESULT FROM localhost:3445!!!: Client 1:Color is Orange
+2015-12-08 14:42:27,411 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:42:27,439 INFO  [RMIClient] This request has id :37bb55ff-1ffd-4008-b38b-cdf729f04036
+2015-12-08 14:42:27,619 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:No key Kiwi matches db 
+2015-12-08 14:42:27,850 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:42:27,871 INFO  [RMIClient] This request has id :6ce817ac-5196-459a-910a-676ac27e8ca1
+2015-12-08 14:42:28,083 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:Color is Yellowish-Green
+2015-12-08 14:42:28,334 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:42:28,361 INFO  [RMIClient] This request has id :5364817a-88c2-4d98-8812-33ec5998f34a
+2015-12-08 14:42:28,531 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:ACK
+2015-12-08 14:42:28,775 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:42:28,805 INFO  [RMIClient] This request has id :51c0181d-556f-4dea-8a45-6b7c9e8dea61
+2015-12-08 14:42:28,986 INFO  [RMIClient] RESULT FROM localhost:3445!!!: Client 1:ACK
+2015-12-08 14:42:29,218 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:42:29,241 INFO  [RMIClient] This request has id :84711472-9b89-4372-9a66-da56c37ff783
+2015-12-08 14:42:29,423 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:ACK
+2015-12-08 14:42:29,632 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:42:29,653 INFO  [RMIClient] This request has id :a224dd99-b9b7-410e-b50b-22ade889e88e
+2015-12-08 14:42:29,837 INFO  [RMIClient] RESULT FROM localhost:2345!!!: Client 1:No such key - Kiwi exists
+2015-12-08 14:42:30,049 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:42:30,070 INFO  [RMIClient] This request has id :7e616793-b7b4-4240-a66c-babf70228140
+2015-12-08 14:42:36,164 INFO  [RMIClient] Contact server 5 at hostname:port localhost : 2334 FAILED. Trying others..
+2015-12-08 14:42:38,068 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:ACK
+2015-12-08 14:42:38,282 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:42:38,303 INFO  [RMIClient] This request has id :00b50b23-73f7-4d29-afc5-e293c1aaa434
+2015-12-08 14:42:39,905 INFO  [RMIClient] RESULT FROM localhost:2334!!!: Client 1: 
+2015-12-08 14:42:39,975 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:No key Apple matches db 
+2015-12-08 14:42:40,191 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:42:40,211 INFO  [RMIClient] This request has id :976a695e-4d8e-4817-af63-fe8f4c309471
+2015-12-08 14:42:40,363 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:No key Banana matches db 
+2015-12-08 14:42:40,595 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:42:40,615 INFO  [RMIClient] This request has id :4ed95857-6e23-49bc-9263-80be3182af20
+2015-12-08 14:42:40,773 INFO  [RMIClient] RESULT FROM localhost:2345!!!: Client 1:No key Orange matches db 
+2015-12-08 14:42:40,984 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:42:41,008 INFO  [RMIClient] This request has id :4d902c33-42fa-4698-acce-63e0fdc4feaf
+2015-12-08 14:42:41,200 INFO  [RMIClient] RESULT FROM localhost:3445!!!: Client 1:No key Kiwi matches db 
+2015-12-08 14:42:41,417 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:42:41,441 INFO  [RMIClient] This request has id :ab582fb6-ae1a-40b3-b756-480729464a45
+2015-12-08 14:42:41,627 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:No key Pineapple matches db 
+2015-12-08 14:42:41,894 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:42:41,896 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:42:41,919 INFO  [RMIClient] This request has id :98a92e7c-3ae6-4a05-9e82-36b0fcebc216
+2015-12-08 14:42:41,922 INFO  [RMIClient] This request has id :3bff0bf1-e0de-4f2e-9f7e-95ff3ea5ca2d
+2015-12-08 14:42:42,028 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1: killing localhost : 1234
+2015-12-08 14:42:43,537 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1: 
+2015-12-08 14:42:45,434 INFO  [RMIClient] RESULT FROM localhost:2345!!!: Client 1:ACK
+2015-12-08 14:42:45,642 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:42:45,665 INFO  [RMIClient] This request has id :e339d3a0-f5ff-4bed-b6f1-f15cd5087120
+2015-12-08 14:42:47,645 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:ACK
+2015-12-08 14:42:47,917 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:42:47,941 INFO  [RMIClient] This request has id :2714816f-786e-49b3-a18d-c83d932e9a32
+2015-12-08 14:42:48,035 INFO  [RMIClient] Contact server 1 at hostname:port localhost : 1234 FAILED. Trying others..
+2015-12-08 14:42:49,926 INFO  [RMIClient] RESULT FROM localhost:2345!!!: Client 1:ACK
+2015-12-08 14:42:50,134 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:42:50,155 INFO  [RMIClient] This request has id :043a923b-4dea-4641-b149-90b4affd0271
+2015-12-08 14:42:56,244 INFO  [RMIClient] Contact server 3 at hostname:port localhost : 3445 FAILED. Trying others..
+2015-12-08 14:42:58,145 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:ACK
+2015-12-08 14:42:58,418 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:42:58,438 INFO  [RMIClient] This request has id :e53a2d2e-e538-469b-a2a4-b4766b2d7958
+2015-12-08 14:43:00,412 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:ACK
+2015-12-08 14:43:12,707 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:43:12,729 INFO  [RMIClient] This request has id :f003277f-c1a9-4c6a-9d2b-9b887a945f32
+2015-12-08 14:43:12,930 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:iPhone6
+2015-12-08 14:43:13,173 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:43:13,198 INFO  [RMIClient] This request has id :83f6c76c-d6bf-4b99-851e-78be8ed0f2ea
+2015-12-08 14:43:13,362 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:Band
+2015-12-08 14:43:13,579 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:43:13,599 INFO  [RMIClient] This request has id :8aa41417-b0d1-44a0-88ee-052429b51332
+2015-12-08 14:43:19,693 INFO  [RMIClient] Contact server 1 at hostname:port localhost : 1234 FAILED. Trying others..
+2015-12-08 14:43:21,604 INFO  [RMIClient] RESULT FROM localhost:2345!!!: Client 1:Fire
+2015-12-08 14:43:21,826 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:43:21,847 INFO  [RMIClient] This request has id :c03747b9-26f5-4f6b-a841-12d8ff3bc78e
+2015-12-08 14:43:23,440 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1: 
+2015-12-08 14:43:23,508 INFO  [RMIClient] RESULT FROM localhost:2345!!!: Client 1:Nexus
+2015-12-08 14:43:23,725 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 14:43:23,751 INFO  [RMIClient] This request has id :1309bb6a-05c1-4c7d-80ba-13bff3a6a697
+2015-12-08 14:43:23,900 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:Aspire-V5 Notebook PC
+2015-12-08 15:44:14,061 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 15:44:14,086 INFO  [RMIClient] This request has id :52571a11-7108-45e0-b8cb-eba7a36371fe
+2015-12-08 15:44:14,396 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:ACK
+2015-12-08 15:44:14,643 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 15:44:14,669 INFO  [RMIClient] This request has id :cab310b6-7e47-47e9-8f58-1dae0bd7cf75
+2015-12-08 15:44:20,764 INFO  [RMIClient] Contact server 2 at hostname:port localhost : 2345 FAILED. Trying others..
+2015-12-08 15:44:22,680 INFO  [RMIClient] RESULT FROM localhost:3445!!!: Client 1:ACK
+2015-12-08 15:44:22,919 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 15:44:22,942 INFO  [RMIClient] This request has id :2bb5bbad-b07b-4c4c-85ae-0dc495ff0887
+2015-12-08 15:44:24,935 INFO  [RMIClient] RESULT FROM localhost:3445!!!: Client 1:ACK
+2015-12-08 15:44:25,193 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 15:44:25,224 INFO  [RMIClient] This request has id :8bd08d6d-1cad-4ca0-8c9f-df64b397179a
+2015-12-08 15:44:25,471 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:ACK
+2015-12-08 15:44:25,734 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 15:44:25,757 INFO  [RMIClient] This request has id :1b3c6690-8375-46dc-af23-e98a8e9b01db
+2015-12-08 15:44:26,090 INFO  [RMIClient] RESULT FROM localhost:2334!!!: Client 1:ACK
+2015-12-08 15:44:26,341 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 15:44:26,372 INFO  [RMIClient] This request has id :bd13c00e-b0af-49eb-b435-150891d1ed63
+2015-12-08 15:44:26,695 INFO  [RMIClient] RESULT FROM localhost:2334!!!: Client 1:Color is Red
+2015-12-08 15:44:26,938 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 15:44:26,962 INFO  [RMIClient] This request has id :513d8f64-0fec-4bef-92f7-53a86939f6b1
+2015-12-08 15:44:33,067 INFO  [RMIClient] Contact server 2 at hostname:port localhost : 2345 FAILED. Trying others..
+2015-12-08 15:44:34,976 INFO  [RMIClient] RESULT FROM localhost:3445!!!: Client 1:Color is Yellow
+2015-12-08 15:44:35,210 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 15:44:35,232 INFO  [RMIClient] This request has id :584d6b62-f6a3-4046-ab5f-8b8fcaf31e27
+2015-12-08 15:44:37,232 INFO  [RMIClient] RESULT FROM localhost:3445!!!: Client 1:Color is Orange
+2015-12-08 15:44:37,465 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 15:44:37,486 INFO  [RMIClient] This request has id :8357bba0-e1e9-47d5-ae6e-93dd4d6862a2
+2015-12-08 15:44:37,679 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:Color is Green
+2015-12-08 15:44:37,916 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 15:44:37,939 INFO  [RMIClient] This request has id :da75882a-43a9-483a-be94-363c088fb5eb
+2015-12-08 15:44:38,122 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:Color is Yellowish-Green
+2015-12-08 15:44:38,374 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 15:44:38,399 INFO  [RMIClient] This request has id :16703e5f-301f-4b94-a37e-caa8111854ca
+2015-12-08 15:44:38,565 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:ACK
+2015-12-08 15:44:38,811 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 15:44:38,835 INFO  [RMIClient] This request has id :832191aa-a3e1-43da-970e-af24f140acf6
+2015-12-08 15:44:39,012 INFO  [RMIClient] RESULT FROM localhost:3445!!!: Client 1:ACK
+2015-12-08 15:44:39,264 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 15:44:39,287 INFO  [RMIClient] This request has id :0f6718d4-685d-4293-9655-779a199ae49c
+2015-12-08 15:44:39,476 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:ACK
+2015-12-08 15:44:39,733 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 15:44:39,757 INFO  [RMIClient] This request has id :fcb6ccfa-2aef-41ad-8906-5ddd3d82bc3e
+2015-12-08 15:44:40,025 INFO  [RMIClient] RESULT FROM localhost:2345!!!: Client 1:ACK
+2015-12-08 15:44:40,274 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 15:44:40,297 INFO  [RMIClient] This request has id :81e2a8bd-a47b-4f13-b026-8fd23fed2acd
+2015-12-08 15:44:46,394 INFO  [RMIClient] Contact server 5 at hostname:port localhost : 2334 FAILED. Trying others..
+2015-12-08 15:44:52,406 INFO  [RMIClient] Contact server 1 at hostname:port localhost : 1234 FAILED. Trying others..
+2015-12-08 15:44:54,304 INFO  [RMIClient] RESULT FROM localhost:2345!!!: Client 1:ACK
+2015-12-08 15:44:54,538 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 15:44:54,564 INFO  [RMIClient] This request has id :73327627-0e02-47e9-8013-69b837f7d460
+2015-12-08 15:45:00,661 INFO  [RMIClient] Contact server 5 at hostname:port localhost : 2334 FAILED. Trying others..
+2015-12-08 15:45:02,582 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:No key Apple matches db 
+2015-12-08 15:45:02,833 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 15:45:02,855 INFO  [RMIClient] This request has id :5245e131-178a-413e-afe9-0d45377d8f83
+2015-12-08 15:45:04,830 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:No key Banana matches db 
+2015-12-08 15:45:05,078 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 15:45:05,101 INFO  [RMIClient] This request has id :01fb82f5-f142-4200-8827-8297f934566a
+2015-12-08 15:45:05,261 INFO  [RMIClient] RESULT FROM localhost:2345!!!: Client 1:No key Orange matches db 
+2015-12-08 15:45:05,518 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 15:45:05,540 INFO  [RMIClient] This request has id :87a38cad-b9a7-42f5-97bf-09812141f3d1
+2015-12-08 15:45:05,732 INFO  [RMIClient] RESULT FROM localhost:3445!!!: Client 1:No key Kiwi matches db 
+2015-12-08 15:45:05,977 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 15:45:06,003 INFO  [RMIClient] This request has id :3f64f11d-31eb-4e34-99ca-e1a49baf8f83
+2015-12-08 15:45:06,193 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:No key Pineapple matches db 
+2015-12-08 15:45:06,534 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 15:45:06,535 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 15:45:06,577 INFO  [RMIClient] This request has id :c5ef9453-88cf-496f-a727-b63707a6ec88
+2015-12-08 15:45:06,587 INFO  [RMIClient] This request has id :85cb6e48-a7b1-41d5-a4f2-374a5799ff83
+2015-12-08 15:45:06,769 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1: killing localhost : 1234
+2015-12-08 15:45:06,800 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:ACK
+2015-12-08 15:45:07,116 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 15:45:07,145 INFO  [RMIClient] This request has id :6718cda5-a9f7-4d5a-89ab-2231211af2db
+2015-12-08 15:45:12,775 INFO  [RMIClient] Contact server 1 at hostname:port localhost : 1234 FAILED. Trying others..
+2015-12-08 15:45:13,248 INFO  [RMIClient] Contact server 4 at hostname:port localhost : 4542 FAILED. Trying others..
+2015-12-08 15:45:13,248 ERROR [RMIClient] Error occured while connecting to RMI server with error, -1
+2015-12-08 15:45:13,489 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 15:45:13,514 INFO  [RMIClient] This request has id :509fa50c-abfe-4fc8-923b-e3d47a25be0a
+2015-12-08 15:45:17,445 INFO  [RMIClient] RESULT FROM localhost:2345!!!: Client 1:ACK
+2015-12-08 15:45:17,690 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 15:45:17,714 INFO  [RMIClient] This request has id :69d5d805-12f1-4951-8441-59bab4067bbe
+2015-12-08 15:45:17,912 INFO  [RMIClient] RESULT FROM localhost:3445!!!: Client 1:ACK
+2015-12-08 15:45:18,165 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 15:45:18,187 INFO  [RMIClient] This request has id :cd230552-008d-41ce-ac7e-47fca6908d69
+2015-12-08 15:45:18,378 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:ACK
+2015-12-08 15:45:30,701 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 15:45:30,724 INFO  [RMIClient] This request has id :126579a0-8190-40c6-82f1-81df5784d5e7
+2015-12-08 15:45:30,920 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:iPhone6
+2015-12-08 15:45:31,170 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 15:45:31,194 INFO  [RMIClient] This request has id :f5c2ec7f-76f5-40fc-8aaa-08359c22e356
+2015-12-08 15:45:31,349 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:Band
+2015-12-08 15:45:31,622 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 15:45:31,649 INFO  [RMIClient] This request has id :66813635-4c13-4490-8f3b-675ce6a8200b
+2015-12-08 15:45:31,809 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:Fire
+2015-12-08 15:45:32,057 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 15:45:32,081 INFO  [RMIClient] This request has id :3f41f2f1-7c23-4c82-9599-0c34180c2a8a
+2015-12-08 15:45:32,246 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:Nexus
+2015-12-08 15:45:32,478 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 15:45:32,503 INFO  [RMIClient] This request has id :f43a9022-4fc8-4f87-b6a8-f7eb7f73f024
+2015-12-08 15:45:32,676 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:Aspire-V5 Notebook PC
+2015-12-08 16:01:46,205 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 16:01:46,229 INFO  [RMIClient] This request has id :03db94d2-037d-4c81-b366-6deac5027f32
+2015-12-08 16:01:46,556 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:ACK
+2015-12-08 16:01:46,836 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 16:01:46,863 INFO  [RMIClient] This request has id :aec8ee3b-a318-4f93-898c-49d95d7c5ebd
+2015-12-08 16:01:47,191 INFO  [RMIClient] RESULT FROM localhost:2345!!!: Client 1:ACK
+2015-12-08 16:01:47,471 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 16:01:47,517 INFO  [RMIClient] This request has id :eeecb0aa-803c-490c-b8e2-6cb5acba5feb
+2015-12-08 16:01:47,876 INFO  [RMIClient] RESULT FROM localhost:3445!!!: Client 1:ACK
+2015-12-08 16:01:48,352 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 16:01:48,374 INFO  [RMIClient] This request has id :a06e1104-a4f3-4bc9-bccd-ca1304638fab
+2015-12-08 16:01:48,782 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:ACK
+2015-12-08 16:01:49,075 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 16:01:49,100 INFO  [RMIClient] This request has id :89fae295-4e81-4bde-8f5f-9a452d763b38
+2015-12-08 16:01:49,536 INFO  [RMIClient] RESULT FROM localhost:2334!!!: Client 1:ACK
+2015-12-08 16:01:49,840 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 16:01:49,870 INFO  [RMIClient] This request has id :ebfd5c30-22bc-4cd0-81cb-a530913cf0f1
+2015-12-08 16:01:50,077 INFO  [RMIClient] RESULT FROM localhost:2334!!!: Client 1:Color is Red
+2015-12-08 16:01:50,424 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 16:01:50,482 INFO  [RMIClient] This request has id :5b875b0d-227d-4003-9631-03b948d1f5f8
+2015-12-08 16:01:50,870 INFO  [RMIClient] RESULT FROM localhost:2345!!!: Client 1:Color is Yellow
+2015-12-08 16:01:51,274 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 16:01:51,333 INFO  [RMIClient] This request has id :cc8b2940-e41b-461b-8d70-6c8513685b05
+2015-12-08 16:01:51,629 INFO  [RMIClient] RESULT FROM localhost:3445!!!: Client 1:Color is Orange
+2015-12-08 16:01:51,948 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 16:01:51,976 INFO  [RMIClient] This request has id :3bc8726f-25bb-4438-964d-a0a35cbf179f
+2015-12-08 16:01:52,253 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:Color is Green
+2015-12-08 16:01:52,596 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 16:01:52,624 INFO  [RMIClient] This request has id :9997b455-f3b1-4532-a8a0-0b95583844c3
+2015-12-08 16:01:52,959 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:Color is Yellowish-Green
+2015-12-08 16:01:53,362 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 16:01:53,392 INFO  [RMIClient] This request has id :3a81e6e4-e9be-499a-a165-ae990e39d285
+2015-12-08 16:01:53,772 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:ACK
+2015-12-08 16:01:54,192 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 16:01:54,233 INFO  [RMIClient] This request has id :a3aeae72-e2d1-43f3-8a9f-c6d51d6aa95d
+2015-12-08 16:01:54,474 INFO  [RMIClient] RESULT FROM localhost:3445!!!: Client 1:ACK
+2015-12-08 16:01:54,814 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 16:01:54,855 INFO  [RMIClient] This request has id :3b61423d-252f-46ee-b10f-c65a6f20519f
+2015-12-08 16:01:55,111 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:ACK
+2015-12-08 16:01:55,519 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 16:01:55,554 INFO  [RMIClient] This request has id :ca339743-cd04-4d21-97df-59b0919924e4
+2015-12-08 16:01:55,760 INFO  [RMIClient] RESULT FROM localhost:2345!!!: Client 1:ACK
+2015-12-08 16:01:56,000 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 16:01:56,027 INFO  [RMIClient] This request has id :29547689-c60a-464c-a8d6-36ec86047189
+2015-12-08 16:02:02,127 INFO  [RMIClient] Contact server 5 at hostname:port localhost : 2334 FAILED. Trying others..
+2015-12-08 16:02:04,041 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:ACK
+2015-12-08 16:02:04,274 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 16:02:04,297 INFO  [RMIClient] This request has id :0092dde1-ce3d-47ec-b79d-5b55560cd2ab
+2015-12-08 16:02:05,918 INFO  [RMIClient] RESULT FROM localhost:2334!!!: Client 1: 
+2015-12-08 16:02:05,988 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:No key Apple matches db 
+2015-12-08 16:02:06,214 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 16:02:06,235 INFO  [RMIClient] This request has id :788022d9-3561-48cc-b00b-c644ff5be8c8
+2015-12-08 16:02:06,406 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:No key Banana matches db 
+2015-12-08 16:02:06,649 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 16:02:06,671 INFO  [RMIClient] This request has id :59f4c3d1-4c6f-4349-b3fb-42d305efc1d6
+2015-12-08 16:02:06,838 INFO  [RMIClient] RESULT FROM localhost:2345!!!: Client 1:No key Orange matches db 
+2015-12-08 16:02:07,066 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 16:02:07,090 INFO  [RMIClient] This request has id :c3d2643a-6603-44d1-8199-c6142c80f4a0
+2015-12-08 16:02:07,274 INFO  [RMIClient] RESULT FROM localhost:3445!!!: Client 1:No key Kiwi matches db 
+2015-12-08 16:02:07,502 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 16:02:07,524 INFO  [RMIClient] This request has id :d00b95b5-2cd4-4ca9-a570-fdcafba87d31
+2015-12-08 16:02:07,701 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:No key Pineapple matches db 
+2015-12-08 16:02:07,991 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 16:02:08,010 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 16:02:08,038 INFO  [RMIClient] This request has id :6dc59fa1-5fb6-4826-80ad-dcfa20b1b1d4
+2015-12-08 16:02:08,069 INFO  [RMIClient] This request has id :5166987b-a4da-425a-9753-87eb18a6f890
+2015-12-08 16:02:08,158 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1: killing localhost : 1234
+2015-12-08 16:02:09,704 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1: 
+2015-12-08 16:02:11,602 INFO  [RMIClient] RESULT FROM localhost:2345!!!: Client 1:ACK
+2015-12-08 16:02:11,824 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 16:02:11,845 INFO  [RMIClient] This request has id :fb89c12f-9bc3-43a7-8336-b510290c4799
+2015-12-08 16:02:13,835 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:ACK
+2015-12-08 16:02:14,052 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 16:02:14,081 INFO  [RMIClient] This request has id :e241c424-9013-46d0-915b-6215a7f3abf6
+2015-12-08 16:02:14,165 INFO  [RMIClient] Contact server 1 at hostname:port localhost : 1234 FAILED. Trying others..
+2015-12-08 16:02:16,059 INFO  [RMIClient] RESULT FROM localhost:2345!!!: Client 1:ACK
+2015-12-08 16:02:16,305 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 16:02:16,331 INFO  [RMIClient] This request has id :25e6819e-c9cf-473e-a25d-c79749e0f4de
+2015-12-08 16:02:18,334 INFO  [RMIClient] RESULT FROM localhost:3445!!!: Client 1:ACK
+2015-12-08 16:02:18,555 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 16:02:18,578 INFO  [RMIClient] This request has id :c4a13042-7019-41a1-b573-8986855aa8cb
+2015-12-08 16:02:18,758 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:ACK
+2015-12-08 16:02:31,060 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 16:02:31,082 INFO  [RMIClient] This request has id :13fca52a-f670-4883-98b5-555db8e83f5a
+2015-12-08 16:02:31,295 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:iPhone6
+2015-12-08 16:02:31,541 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 16:02:31,563 INFO  [RMIClient] This request has id :091c9dfa-1c00-4cde-b061-a02f585dc989
+2015-12-08 16:02:31,713 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:Band
+2015-12-08 16:02:31,948 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 16:02:31,970 INFO  [RMIClient] This request has id :4dbf29e4-b212-402a-9d31-3003a4a70098
+2015-12-08 16:02:32,138 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:Fire
+2015-12-08 16:02:32,386 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 16:02:32,408 INFO  [RMIClient] This request has id :d38c7b9a-b519-4e54-aefc-9010b47e410b
+2015-12-08 16:02:32,569 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:Nexus
+2015-12-08 16:02:32,814 INFO  [RMIClient] Loading configurations from configs.txt..
+2015-12-08 16:02:32,837 INFO  [RMIClient] This request has id :277bf8da-37e7-40f5-941e-90469be07a9d
+2015-12-08 16:02:33,001 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:Aspire-V5 Notebook PC
+2016-04-04 13:55:18,217 INFO  [RMIClient] Loading configurations from configs.txt..
+2016-04-04 13:55:18,238 INFO  [RMIClient] This request has id :c64dbe1d-a8cd-424e-9801-5b609734a0eb
+2016-04-04 13:55:18,533 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:ACK
+2016-04-04 13:55:18,757 INFO  [RMIClient] Loading configurations from configs.txt..
+2016-04-04 13:55:18,783 INFO  [RMIClient] This request has id :421ca56c-f602-416f-9545-836bd853e642
+2016-04-04 13:55:18,965 INFO  [RMIClient] RESULT FROM localhost:2345!!!: Client 1:ACK
+2016-04-04 13:55:19,172 INFO  [RMIClient] Loading configurations from configs.txt..
+2016-04-04 13:55:19,193 INFO  [RMIClient] This request has id :676c7b2e-9137-41bf-836d-725729dc6d2d
+2016-04-04 13:55:19,369 INFO  [RMIClient] RESULT FROM localhost:3445!!!: Client 1:ACK
+2016-04-04 13:55:19,597 INFO  [RMIClient] Loading configurations from configs.txt..
+2016-04-04 13:55:19,619 INFO  [RMIClient] This request has id :abc20920-6b49-49ec-8589-0bdbc3004f39
+2016-04-04 13:55:19,808 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:ACK
+2016-04-04 13:55:20,061 INFO  [RMIClient] Loading configurations from configs.txt..
+2016-04-04 13:55:20,084 INFO  [RMIClient] This request has id :8905d2df-b321-49d9-9314-0516c993239d
+2016-04-04 13:55:20,403 INFO  [RMIClient] RESULT FROM localhost:2334!!!: Client 1:ACK
+2016-04-04 13:55:20,624 INFO  [RMIClient] Loading configurations from configs.txt..
+2016-04-04 13:55:20,645 INFO  [RMIClient] This request has id :c3042c08-6354-485b-a87d-75582be432e2
+2016-04-04 13:55:20,800 INFO  [RMIClient] RESULT FROM localhost:2334!!!: Client 1:Color is Red
+2016-04-04 13:55:21,008 INFO  [RMIClient] Loading configurations from configs.txt..
+2016-04-04 13:55:21,030 INFO  [RMIClient] This request has id :6833effc-f4e7-40f2-8c8c-980cdacc96f4
+2016-04-04 13:55:21,203 INFO  [RMIClient] RESULT FROM localhost:2345!!!: Client 1:Color is Yellow
+2016-04-04 13:55:21,427 INFO  [RMIClient] Loading configurations from configs.txt..
+2016-04-04 13:55:21,449 INFO  [RMIClient] This request has id :1eb3f34c-dce2-45ce-8ea4-90fee54d039d
+2016-04-04 13:55:21,617 INFO  [RMIClient] RESULT FROM localhost:3445!!!: Client 1:Color is Orange
+2016-04-04 13:55:21,830 INFO  [RMIClient] Loading configurations from configs.txt..
+2016-04-04 13:55:21,850 INFO  [RMIClient] This request has id :a564cf41-2801-4b1e-b8f7-2f28ef3ebc3a
+2016-04-04 13:55:22,024 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:Color is Green
+2016-04-04 13:55:22,234 INFO  [RMIClient] Loading configurations from configs.txt..
+2016-04-04 13:55:22,255 INFO  [RMIClient] This request has id :4d7c0fc8-1b5f-4de3-bda7-4ee6db653694
+2016-04-04 13:55:22,417 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:Color is Yellowish-Green
+2016-04-04 13:55:22,640 INFO  [RMIClient] Loading configurations from configs.txt..
+2016-04-04 13:55:22,661 INFO  [RMIClient] This request has id :5ba94413-604b-4ed9-a3c9-12b36915fe07
+2016-04-04 13:55:22,819 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:ACK
+2016-04-04 13:55:23,034 INFO  [RMIClient] Loading configurations from configs.txt..
+2016-04-04 13:55:23,055 INFO  [RMIClient] This request has id :bbcefb3d-7b7d-45e7-8760-d99f03decc7b
+2016-04-04 13:55:23,216 INFO  [RMIClient] RESULT FROM localhost:3445!!!: Client 1:ACK
+2016-04-04 13:55:23,438 INFO  [RMIClient] Loading configurations from configs.txt..
+2016-04-04 13:55:23,458 INFO  [RMIClient] This request has id :be5d59fc-b088-473f-91af-6df493040ee9
+2016-04-04 13:55:23,630 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:ACK
+2016-04-04 13:55:23,859 INFO  [RMIClient] Loading configurations from configs.txt..
+2016-04-04 13:55:23,880 INFO  [RMIClient] This request has id :643f1aad-15d7-4c8a-bafb-cad407a13933
+2016-04-04 13:55:24,061 INFO  [RMIClient] RESULT FROM localhost:2345!!!: Client 1:ACK
+2016-04-04 13:55:24,267 INFO  [RMIClient] Loading configurations from configs.txt..
+2016-04-04 13:55:24,289 INFO  [RMIClient] This request has id :3b4f3195-52fd-400d-b76c-6bb1178df393
+2016-04-04 13:55:30,373 INFO  [RMIClient] Contact server 5 at hostname:port localhost : 2334 FAILED. Trying others..
+2016-04-04 13:55:32,280 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:ACK
+2016-04-04 13:55:32,501 INFO  [RMIClient] Loading configurations from configs.txt..
+2016-04-04 13:55:32,524 INFO  [RMIClient] This request has id :f0af7d14-0bf3-4763-83d6-92b94ea814c3
+2016-04-04 13:55:34,164 INFO  [RMIClient] RESULT FROM localhost:2334!!!: Client 1: 
+2016-04-04 13:55:34,235 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:No key Apple matches db 
+2016-04-04 13:55:34,441 INFO  [RMIClient] Loading configurations from configs.txt..
+2016-04-04 13:55:34,464 INFO  [RMIClient] This request has id :db9d85d9-3579-49aa-a278-80eb6c5e73c0
+2016-04-04 13:55:34,614 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:No key Banana matches db 
+2016-04-04 13:55:34,848 INFO  [RMIClient] Loading configurations from configs.txt..
+2016-04-04 13:55:34,870 INFO  [RMIClient] This request has id :69160b44-e56d-482f-bdd2-e575db5370a5
+2016-04-04 13:55:35,031 INFO  [RMIClient] RESULT FROM localhost:2345!!!: Client 1:No key Orange matches db 
+2016-04-04 13:55:35,243 INFO  [RMIClient] Loading configurations from configs.txt..
+2016-04-04 13:55:35,264 INFO  [RMIClient] This request has id :1b0c0683-b7a3-4622-bc8b-4cbd4b3cd504
+2016-04-04 13:55:35,439 INFO  [RMIClient] RESULT FROM localhost:3445!!!: Client 1:No key Kiwi matches db 
+2016-04-04 13:55:35,652 INFO  [RMIClient] Loading configurations from configs.txt..
+2016-04-04 13:55:35,674 INFO  [RMIClient] This request has id :c1853bef-2ffa-410a-a2f6-0343e0d3bcbe
+2016-04-04 13:55:35,842 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:No key Pineapple matches db 
+2016-04-04 13:55:36,098 INFO  [RMIClient] Loading configurations from configs.txt..
+2016-04-04 13:55:36,098 INFO  [RMIClient] Loading configurations from configs.txt..
+2016-04-04 13:55:36,123 INFO  [RMIClient] This request has id :fcba15e9-2c93-453b-8eb2-65ab7c1d3868
+2016-04-04 13:55:36,127 INFO  [RMIClient] This request has id :62987a64-4e26-47b6-8129-ad1575200e08
+2016-04-04 13:55:36,223 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1: killing localhost : 1234
+2016-04-04 13:55:37,729 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1: 
+2016-04-04 13:55:39,619 INFO  [RMIClient] RESULT FROM localhost:2345!!!: Client 1:ACK
+2016-04-04 13:55:39,841 INFO  [RMIClient] Loading configurations from configs.txt..
+2016-04-04 13:55:39,861 INFO  [RMIClient] This request has id :66aaeea6-8cca-47d5-9d5d-56bd48f33616
+2016-04-04 13:55:41,830 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:ACK
+2016-04-04 13:55:42,042 INFO  [RMIClient] Loading configurations from configs.txt..
+2016-04-04 13:55:42,066 INFO  [RMIClient] This request has id :19cc7264-82c4-400b-8e67-05d2f21152b2
+2016-04-04 13:55:42,231 INFO  [RMIClient] Contact server 1 at hostname:port localhost : 1234 FAILED. Trying others..
+2016-04-04 13:55:44,042 INFO  [RMIClient] RESULT FROM localhost:2345!!!: Client 1:ACK
+2016-04-04 13:55:44,246 INFO  [RMIClient] Loading configurations from configs.txt..
+2016-04-04 13:55:44,267 INFO  [RMIClient] This request has id :2900a252-4a18-4fb9-b427-f92ad053df05
+2016-04-04 13:55:46,258 INFO  [RMIClient] RESULT FROM localhost:3445!!!: Client 1:ACK
+2016-04-04 13:55:46,501 INFO  [RMIClient] Loading configurations from configs.txt..
+2016-04-04 13:55:46,526 INFO  [RMIClient] This request has id :f0855501-37c2-4c58-bc18-c27684d4e322
+2016-04-04 13:55:46,693 INFO  [RMIClient] RESULT FROM localhost:4542!!!: Client 1:ACK
+2016-04-04 13:55:58,985 INFO  [RMIClient] Loading configurations from configs.txt..
+2016-04-04 13:55:59,014 INFO  [RMIClient] This request has id :558b08bc-d520-493b-996d-09617689b9a3
+2016-04-04 13:55:59,247 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:iPhone6
+2016-04-04 13:55:59,452 INFO  [RMIClient] Loading configurations from configs.txt..
+2016-04-04 13:55:59,475 INFO  [RMIClient] This request has id :21d8e9a1-9416-4fda-9120-5c9f462b9b9b
+2016-04-04 13:55:59,620 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:Band
+2016-04-04 13:55:59,844 INFO  [RMIClient] Loading configurations from configs.txt..
+2016-04-04 13:55:59,865 INFO  [RMIClient] This request has id :88b1a0ff-a0ee-4cc6-83c5-2640238cbb9c
+2016-04-04 13:56:05,947 INFO  [RMIClient] Contact server 1 at hostname:port localhost : 1234 FAILED. Trying others..
+2016-04-04 13:56:07,845 INFO  [RMIClient] RESULT FROM localhost:2345!!!: Client 1:Fire
+2016-04-04 13:56:08,058 INFO  [RMIClient] Loading configurations from configs.txt..
+2016-04-04 13:56:08,079 INFO  [RMIClient] This request has id :617854b4-0efe-44cd-a27e-69f65abfe530
+2016-04-04 13:56:09,662 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1: 
+2016-04-04 13:56:15,668 INFO  [RMIClient] Contact server 2 at hostname:port localhost : 2345 FAILED. Trying others..
+2016-04-04 13:56:17,555 INFO  [RMIClient] RESULT FROM localhost:3445!!!: Client 1:Nexus
+2016-04-04 13:56:17,807 INFO  [RMIClient] Loading configurations from configs.txt..
+2016-04-04 13:56:17,839 INFO  [RMIClient] This request has id :5644637e-9876-48b8-83a1-ae42d10fc712
+2016-04-04 13:56:19,866 INFO  [RMIClient] RESULT FROM localhost:1234!!!: Client 1:Aspire-V5 Notebook PC

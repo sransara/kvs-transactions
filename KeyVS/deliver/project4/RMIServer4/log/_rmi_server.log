@@ -1,0 +1,540 @@
+2015-12-08 03:06:57,693 ERROR [RMIServerInterfaceImpl] No key Apple matches db 
+2015-12-08 03:06:57,698 ERROR [RMIServerInterfaceImpl] No key Banana matches db 
+2015-12-08 03:06:57,698 ERROR [RMIServerInterfaceImpl] No key Orange matches db 
+2015-12-08 03:06:57,699 ERROR [RMIServerInterfaceImpl] No key Kiwi matches db 
+2015-12-08 03:06:57,700 ERROR [RMIServerInterfaceImpl] No key Pineapple matches db 
+2015-12-08 03:19:42,136 ERROR [RMIServerInterfaceImpl] No key Apple matches db 
+2015-12-08 03:19:42,137 ERROR [RMIServerInterfaceImpl] No key Banana matches db 
+2015-12-08 03:19:42,137 ERROR [RMIServerInterfaceImpl] No key Orange matches db 
+2015-12-08 03:19:42,138 ERROR [RMIServerInterfaceImpl] No key Kiwi matches db 
+2015-12-08 03:19:42,138 ERROR [RMIServerInterfaceImpl] No key Pineapple matches db 
+2015-12-08 13:44:28,760 INFO  [RMIServer] Paxos RMIServer 4  started successfully
+2015-12-08 13:44:33,216 INFO  [Paxos] Accepted number = 5
+2015-12-08 13:44:33,217 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 13:44:33,231 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Apple Color is Red, fromClient=1, requestId=e8a0c0f4-fbd6-4a43-94b5-ae8c55a85b31]
+2015-12-08 13:44:33,245 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Banana Color is Yellow, fromClient=1, requestId=fa2d8121-32a9-4ddc-a616-191010309121]
+2015-12-08 13:44:33,250 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Orange Color is Orange, fromClient=1, requestId=455570ea-b1b1-419b-94b6-496264e453a2]
+2015-12-08 13:44:33,259 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Kiwi Color is Green, fromClient=1, requestId=1aa0e115-5c00-44a1-898f-4e8202bf1864]
+2015-12-08 13:44:35,760 INFO  [Paxos] Accepted number = 5
+2015-12-08 13:44:35,760 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 13:44:35,797 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Pineapple Color is Yellowish-Green, fromClient=1, requestId=8eb82534-e5f3-43ef-9055-95541530d00a]
+2015-12-08 13:44:35,807 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Apple null, fromClient=1, requestId=40b59b01-69ae-4600-bbe0-dd2b73450140]
+2015-12-08 13:44:35,809 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Banana null, fromClient=1, requestId=6e1d97a9-d994-4cc1-ac9a-5edd2b8a2658]
+2015-12-08 13:44:35,812 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Orange null, fromClient=1, requestId=313d2de1-96df-46a7-94d7-928261498f45]
+2015-12-08 13:44:35,814 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Kiwi null, fromClient=1, requestId=d7a21a04-b6fe-4ad4-bf56-cf6d8bdd13dc]
+2015-12-08 13:44:35,816 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Pineapple null, fromClient=1, requestId=a0d89c82-2792-4b1e-8975-30b1c5d2d1e4]
+2015-12-08 13:44:37,155 INFO  [Paxos] Accepted number = 5
+2015-12-08 13:44:37,156 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 13:44:37,198 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Apple null, fromClient=1, requestId=c5b43927-cde0-4110-b299-48eb92c5915c]
+2015-12-08 13:44:37,208 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Banana null, fromClient=1, requestId=ef1fab94-0f70-4877-8525-97587877c9d2]
+2015-12-08 13:44:37,215 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Orange null, fromClient=1, requestId=f5aab230-d26c-464a-ab46-8f483898c1a7]
+2015-12-08 13:44:40,062 INFO  [Paxos] Accepted number = 5
+2015-12-08 13:44:40,063 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 13:44:40,103 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Kiwi null, fromClient=1, requestId=cb6cad20-0973-40a3-82e5-dbd824017819]
+2015-12-08 13:44:40,113 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Pineapple null, fromClient=1, requestId=740eca8b-e2fd-4a22-be65-e03572125fea]
+2015-12-08 13:44:40,119 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Apple null, fromClient=1, requestId=57dd0d92-e74a-44c1-9077-0bbb67227fd6]
+2015-12-08 13:44:40,120 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Banana null, fromClient=1, requestId=a3bcdb4a-0d1d-401a-bb52-633fd6b73c30]
+2015-12-08 13:44:40,121 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Orange null, fromClient=1, requestId=ab6e4f29-417b-4dc2-94f2-05a175e598d0]
+2015-12-08 13:44:40,122 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Kiwi null, fromClient=1, requestId=a51abaa6-9951-48fa-a074-d51ac73af2dc]
+2015-12-08 13:44:40,122 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Pineapple null, fromClient=1, requestId=345b50b5-0e89-4a82-9ea0-895bda452c31]
+2015-12-08 13:44:50,634 INFO  [Paxos] Accepted number = 5
+2015-12-08 13:44:50,634 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 13:44:50,680 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Apple Color is Red, fromClient=1, requestId=cd1730a6-8269-4800-9a4c-08edcc43a367]
+2015-12-08 13:44:50,690 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Apple Color is Red, fromClient=1, requestId=6bf10a2a-e356-42b9-97fc-aa103a200522]
+2015-12-08 13:44:51,896 INFO  [Paxos] Accepted number = 5
+2015-12-08 13:44:51,896 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 13:44:51,946 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Banana Color is Yellow, fromClient=1, requestId=a0c9d765-dbe9-4d11-b8f3-5ffe7e6430a9]
+2015-12-08 13:44:51,956 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Orange Color is Orange, fromClient=1, requestId=7df90312-220f-4f25-9b8e-b7858be3200c]
+2015-12-08 13:44:51,963 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Kiwi Color is Green, fromClient=1, requestId=6a19a1a1-af91-4671-bd8a-20662913496b]
+2015-12-08 13:45:56,472 INFO  [RMIServer] Paxos RMIServer 4  started successfully
+2015-12-08 13:46:01,461 INFO  [Paxos] Accepted number = 5
+2015-12-08 13:46:01,461 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 13:46:01,487 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Apple Color is Red, fromClient=1, requestId=907f84ed-ab2c-4068-8991-46a7b04b3d41]
+2015-12-08 13:46:01,504 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Banana Color is Yellow, fromClient=1, requestId=9d231667-19dc-4dc3-9bfd-bf3b63161342]
+2015-12-08 13:46:01,511 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Orange Color is Orange, fromClient=1, requestId=460ec93a-bd80-4559-b2a3-e21c0fcca7a7]
+2015-12-08 13:46:01,517 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Kiwi Color is Green, fromClient=1, requestId=4247ac4d-fb51-448f-ac41-537c507ef1c1]
+2015-12-08 13:46:04,106 INFO  [Paxos] Accepted number = 5
+2015-12-08 13:46:04,107 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 13:46:04,139 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Pineapple Color is Yellowish-Green, fromClient=1, requestId=37e17330-f292-40c3-a48d-f92d924ef040]
+2015-12-08 13:46:04,150 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Apple null, fromClient=1, requestId=d790d40d-3bb9-474a-a30b-6494337a6288]
+2015-12-08 13:46:04,151 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Banana null, fromClient=1, requestId=69378216-71b3-41e6-b454-6323605845b4]
+2015-12-08 13:46:04,152 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Orange null, fromClient=1, requestId=78c697b4-0da2-43f3-809c-142bccc0b34a]
+2015-12-08 13:46:04,154 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Kiwi null, fromClient=1, requestId=a9520a52-8db8-413a-b97a-eeb71aec3768]
+2015-12-08 13:46:04,155 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Pineapple null, fromClient=1, requestId=2e85c414-3149-484c-83ea-1db28f73e1cc]
+2015-12-08 13:46:05,365 INFO  [Paxos] Accepted number = 5
+2015-12-08 13:46:05,367 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 13:46:05,411 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Apple null, fromClient=1, requestId=1ac20b04-669b-4976-95c3-0ba6b7658d56]
+2015-12-08 13:46:05,423 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Banana null, fromClient=1, requestId=08952191-2763-4e66-a66e-278a89444f26]
+2015-12-08 13:46:05,429 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Orange null, fromClient=1, requestId=bcdaa1e3-b917-41a2-a6f2-3beaa25d6c26]
+2015-12-08 13:46:08,435 INFO  [Paxos] Accepted number = 5
+2015-12-08 13:46:08,436 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 13:46:08,477 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Kiwi null, fromClient=1, requestId=83839ecd-b995-42bd-93a3-66aa715aabd1]
+2015-12-08 13:46:08,487 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Pineapple null, fromClient=1, requestId=08da75f4-1fd9-40cc-a35e-35e6f69fedcb]
+2015-12-08 13:46:08,495 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Apple null, fromClient=1, requestId=8c391726-066a-4bd1-9dc9-dbdc9f3e1fa5]
+2015-12-08 13:46:08,496 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Banana null, fromClient=1, requestId=1706e009-d621-46a5-b81b-bfa235057097]
+2015-12-08 13:46:08,496 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Orange null, fromClient=1, requestId=672c9ef5-544e-499e-ae72-ba2922cf6e0f]
+2015-12-08 13:46:08,497 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Kiwi null, fromClient=1, requestId=53a2a6a1-fa56-4ab4-b35f-aabd203246e2]
+2015-12-08 13:46:08,497 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Pineapple null, fromClient=1, requestId=92bcd8ee-6c8a-453f-95b1-9c85dfd875c0]
+2015-12-08 13:46:18,956 INFO  [Paxos] Accepted number = 5
+2015-12-08 13:46:18,957 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 13:46:19,006 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Apple Color is Red, fromClient=1, requestId=f454c78f-6b6c-4c71-aabb-b16f1f934610]
+2015-12-08 13:46:19,015 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Apple Color is Red, fromClient=1, requestId=0057b98f-de52-4eb4-8f64-f427e32bd5e4]
+2015-12-08 13:46:20,306 INFO  [Paxos] Accepted number = 5
+2015-12-08 13:46:20,306 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 13:46:20,357 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Banana Color is Yellow, fromClient=1, requestId=dfca4853-2829-4052-8adb-f0a5cbee983f]
+2015-12-08 13:46:20,369 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Orange Color is Orange, fromClient=1, requestId=71d422d3-1274-4366-b7e6-f8b42b02bc68]
+2015-12-08 13:46:20,374 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Kiwi Color is Green, fromClient=1, requestId=6f4b4cc7-2c9a-4741-b3a0-a29e469db9e6]
+2015-12-08 13:55:22,130 INFO  [RMIServer] Paxos RMIServer 4  started successfully
+2015-12-08 13:55:26,687 INFO  [Paxos] Accepted number = 5
+2015-12-08 13:55:26,687 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 13:55:26,804 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Apple Color is Red, fromClient=1, requestId=9a275b06-0f40-4d71-b896-f89eb5de4a77]
+2015-12-08 13:55:26,824 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Banana Color is Yellow, fromClient=1, requestId=8adbe3f9-ec7e-4058-881d-5e286705a39d]
+2015-12-08 13:55:26,830 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Orange Color is Orange, fromClient=1, requestId=c150d690-ace6-41d3-ad91-271187b1e8bd]
+2015-12-08 13:55:26,837 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Kiwi Color is Green, fromClient=1, requestId=f08ee612-7136-4808-87bc-d2b978dd1d4a]
+2015-12-08 13:55:29,491 INFO  [Paxos] Accepted number = 5
+2015-12-08 13:55:29,491 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 13:55:29,532 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Pineapple Color is Yellowish-Green, fromClient=1, requestId=a1f53f08-996f-4b83-9306-54b1351c0893]
+2015-12-08 13:55:29,544 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Apple null, fromClient=1, requestId=b8614f84-dc47-4d6e-acca-b25e83a0a718]
+2015-12-08 13:55:29,546 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Banana null, fromClient=1, requestId=efea30e2-b026-470f-b9a2-4106a569f0a9]
+2015-12-08 13:55:29,548 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Orange null, fromClient=1, requestId=0c027a33-b40c-4168-a42f-cdaa4494f529]
+2015-12-08 13:55:29,551 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Kiwi null, fromClient=1, requestId=94fe5243-5931-4411-b002-835c23b00f97]
+2015-12-08 13:55:29,553 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Pineapple null, fromClient=1, requestId=a6914b9f-b556-4d60-936c-3c0c555d3bf0]
+2015-12-08 13:55:30,733 INFO  [Paxos] Accepted number = 5
+2015-12-08 13:55:30,734 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 13:55:30,782 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Apple null, fromClient=1, requestId=3b6a6d82-2cad-4b03-b567-826c3d13fee7]
+2015-12-08 13:55:30,792 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Banana null, fromClient=1, requestId=f3f04163-7d65-451d-8381-05777b776027]
+2015-12-08 13:55:30,798 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Orange null, fromClient=1, requestId=931abfe1-d40b-4c37-b292-bca4e254f1d7]
+2015-12-08 13:55:33,715 INFO  [Paxos] Accepted number = 5
+2015-12-08 13:55:33,716 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 13:55:33,758 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Kiwi null, fromClient=1, requestId=2284eb60-b0a7-4fff-9022-2236ca158f62]
+2015-12-08 13:55:33,768 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Pineapple null, fromClient=1, requestId=4de3282d-8574-412c-ac61-ddb66bcb410f]
+2015-12-08 13:55:33,774 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Apple null, fromClient=1, requestId=bfd5928a-2aba-4684-9490-6987d7d9f1d4]
+2015-12-08 13:55:33,774 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Banana null, fromClient=1, requestId=0690e5a8-5033-4c46-88fe-b3130eefc9e3]
+2015-12-08 13:55:33,775 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Orange null, fromClient=1, requestId=daa51ace-a38e-4398-839a-9a882bf31915]
+2015-12-08 13:55:33,776 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Kiwi null, fromClient=1, requestId=61052a9f-47de-4b46-8d70-c1cb17b4c181]
+2015-12-08 13:55:33,776 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Pineapple null, fromClient=1, requestId=e6854b92-c99f-45b4-acef-9803d902715a]
+2015-12-08 13:55:38,941 INFO  [Paxos] localhost:1234 unreachable didn't accept 
+2015-12-08 13:55:38,949 INFO  [Paxos] Accepted number = 4
+2015-12-08 13:55:38,949 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 13:55:39,801 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Apple Color is Red, fromClient=1, requestId=16e2bf8c-ec55-4f6c-afca-11ce9669f05e]
+2015-12-08 13:55:39,812 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Apple Color is Red, fromClient=1, requestId=795e3d78-6197-4a57-984b-656e6bf07da8]
+2015-12-08 13:55:44,645 INFO  [Paxos] Accepted number = 5
+2015-12-08 13:55:44,645 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 13:55:44,697 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Banana Color is Yellow, fromClient=1, requestId=8ce2e150-f636-4283-a6d6-2d3c9b62d9bc]
+2015-12-08 13:55:44,708 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Orange Color is Orange, fromClient=1, requestId=ba67328f-2e94-4dcf-856a-0832c6971053]
+2015-12-08 13:55:44,713 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Kiwi Color is Green, fromClient=1, requestId=6c15e82e-4855-4791-969b-7b6333168a8b]
+2015-12-08 14:06:36,759 INFO  [RMIServer] Paxos RMIServer 4  started successfully
+2015-12-08 14:06:41,438 INFO  [Paxos] Accepted number = 5
+2015-12-08 14:06:41,438 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 14:06:41,464 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Apple Color is Red, fromClient=1, requestId=80dad52a-b79d-4c27-9672-3e74129a7d90]
+2015-12-08 14:06:41,486 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Banana Color is Yellow, fromClient=1, requestId=88570a7e-626e-4fc4-87a1-d7a5e7de9e1e]
+2015-12-08 14:06:41,495 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Orange Color is Orange, fromClient=1, requestId=a763ac9f-cf82-4b75-8711-8da51b8667d1]
+2015-12-08 14:06:41,502 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Kiwi Color is Green, fromClient=1, requestId=53df9958-c5c2-4470-8122-43e0a15c0e22]
+2015-12-08 14:06:44,080 INFO  [Paxos] Accepted number = 5
+2015-12-08 14:06:44,081 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 14:06:44,119 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Pineapple Color is Yellowish-Green, fromClient=1, requestId=00b4be71-c738-4b80-bfa5-d759e2595164]
+2015-12-08 14:06:44,129 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Apple null, fromClient=1, requestId=07b2b22c-284c-4455-8c41-de3c080b8ed6]
+2015-12-08 14:06:44,130 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Banana null, fromClient=1, requestId=be86c0d1-3a30-4ba3-81cb-79aba53530eb]
+2015-12-08 14:06:44,132 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Orange null, fromClient=1, requestId=5dd8331e-529d-4463-9dab-f4823d7ede90]
+2015-12-08 14:06:44,133 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Kiwi null, fromClient=1, requestId=f15588e9-ac7d-42e8-bcd1-2bb8c4ccc39f]
+2015-12-08 14:06:44,134 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Pineapple null, fromClient=1, requestId=8cbba1b6-8742-47db-bc8b-b58c1618c697]
+2015-12-08 14:06:45,333 INFO  [Paxos] Accepted number = 5
+2015-12-08 14:06:45,335 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 14:06:45,382 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Apple null, fromClient=1, requestId=7bfaa14a-39ab-42ef-99cc-0b5c848877ff]
+2015-12-08 14:06:45,393 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Banana null, fromClient=1, requestId=a17e02d1-ec1b-4383-90c7-9066c153d5e9]
+2015-12-08 14:06:45,400 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Orange null, fromClient=1, requestId=edc66613-31b4-4289-934d-f9ebc6a54a83]
+2015-12-08 14:06:48,451 INFO  [Paxos] Accepted number = 5
+2015-12-08 14:06:48,452 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 14:06:48,493 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Kiwi null, fromClient=1, requestId=913079f4-2d60-453c-acae-80f4dcfac260]
+2015-12-08 14:06:48,500 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Pineapple null, fromClient=1, requestId=fd476621-148f-450c-a5b7-3b108203012d]
+2015-12-08 14:06:48,506 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Apple null, fromClient=1, requestId=b43dc18e-ad54-4773-9114-34cf10ec1c6b]
+2015-12-08 14:06:48,506 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Banana null, fromClient=1, requestId=8f23d1b6-916e-4ba9-a044-c8caa5b8983c]
+2015-12-08 14:06:48,510 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Orange null, fromClient=1, requestId=bae43100-bc9d-4cf1-b04d-444f5276f44b]
+2015-12-08 14:06:48,511 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Kiwi null, fromClient=1, requestId=fff85f9d-c544-4fd1-86b6-374310e1b30f]
+2015-12-08 14:06:48,513 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Pineapple null, fromClient=1, requestId=126858bd-6469-44df-9a04-7cd14a7c9109]
+2015-12-08 14:06:53,678 INFO  [Paxos] localhost:1234 unreachable didn't accept 
+2015-12-08 14:06:53,685 INFO  [Paxos] Accepted number = 4
+2015-12-08 14:06:53,685 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 14:06:54,541 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Apple Color is Red, fromClient=1, requestId=2583f3b5-fdfa-45b0-9f12-46b63fd5197d]
+2015-12-08 14:06:54,553 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Apple Color is Red, fromClient=1, requestId=5a80e082-6055-4722-8ddf-c79c535356fe]
+2015-12-08 14:06:59,375 INFO  [Paxos] Accepted number = 5
+2015-12-08 14:06:59,376 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 14:06:59,424 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Banana Color is Yellow, fromClient=1, requestId=2da14052-bbb3-45fc-81a1-58799db168d0]
+2015-12-08 14:06:59,438 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Orange Color is Orange, fromClient=1, requestId=287c7bd1-582d-4931-b90e-6b87c12eb5ee]
+2015-12-08 14:06:59,442 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Kiwi Color is Green, fromClient=1, requestId=0643e71d-d350-4e86-9318-f6328867cf42]
+2015-12-08 14:10:19,554 INFO  [RMIServer] Paxos RMIServer 4  started successfully
+2015-12-08 14:10:24,079 INFO  [Paxos] Accepted number = 5
+2015-12-08 14:10:24,079 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 14:10:24,098 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Apple Color is Red, fromClient=1, requestId=7f7c9b9e-f121-4172-a358-90672f47bfe7]
+2015-12-08 14:10:24,112 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Banana Color is Yellow, fromClient=1, requestId=158bf394-2c16-4cd5-819d-5304e1c021ad]
+2015-12-08 14:10:24,120 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Orange Color is Orange, fromClient=1, requestId=3dd3a86c-fd6a-4ee9-960f-ac26b0577546]
+2015-12-08 14:10:24,125 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Kiwi Color is Green, fromClient=1, requestId=04881028-f8ff-44aa-b064-af2aae617144]
+2015-12-08 14:10:26,750 INFO  [Paxos] Accepted number = 5
+2015-12-08 14:10:26,751 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 14:10:26,779 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Pineapple Color is Yellowish-Green, fromClient=1, requestId=6d88b20b-f181-4c84-93c7-a87681842222]
+2015-12-08 14:10:26,788 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Apple null, fromClient=1, requestId=ecdba1d5-cfc4-43d2-a1f9-43653f68b3d5]
+2015-12-08 14:10:26,789 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Banana null, fromClient=1, requestId=0d7ef6fd-baa3-4454-9f51-7a5c36cf54d8]
+2015-12-08 14:10:26,790 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Orange null, fromClient=1, requestId=4cd60363-2426-4169-ba22-da57bff488ac]
+2015-12-08 14:10:26,791 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Kiwi null, fromClient=1, requestId=83abbf37-9027-42fb-b79a-9607a4962260]
+2015-12-08 14:10:26,792 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Pineapple null, fromClient=1, requestId=d43f06f1-d5fc-4870-9281-c4c354938746]
+2015-12-08 14:10:27,993 INFO  [Paxos] Accepted number = 5
+2015-12-08 14:10:27,995 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 14:10:28,038 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Apple null, fromClient=1, requestId=6aca5f81-5831-42a6-9407-4d9e5a3bb200]
+2015-12-08 14:10:28,051 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Banana null, fromClient=1, requestId=40256648-73b8-411c-afb5-554a696aa55e]
+2015-12-08 14:10:28,059 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Orange null, fromClient=1, requestId=56e58121-f018-485d-9701-66d371972444]
+2015-12-08 14:10:31,050 INFO  [Paxos] Accepted number = 5
+2015-12-08 14:10:31,050 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 14:10:31,091 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Kiwi null, fromClient=1, requestId=86e76b54-f019-44b7-9050-fcd52e454e35]
+2015-12-08 14:10:31,104 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Pineapple null, fromClient=1, requestId=063fb78f-a5f7-47b5-ab1d-076913ecd533]
+2015-12-08 14:10:31,108 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Apple null, fromClient=1, requestId=d4ead84d-89ce-4882-8610-97d92c98ffe0]
+2015-12-08 14:10:31,109 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Banana null, fromClient=1, requestId=885bc122-7692-4171-a1ed-cdaab142d3b5]
+2015-12-08 14:10:31,110 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Orange null, fromClient=1, requestId=af385017-8493-4cde-9ce2-d31734a8e408]
+2015-12-08 14:10:31,110 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Kiwi null, fromClient=1, requestId=40b73012-0cca-488d-b945-aebfe077ff94]
+2015-12-08 14:10:31,111 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Pineapple null, fromClient=1, requestId=55f59904-d7f7-4ec8-90b5-8482b0a4579d]
+2015-12-08 14:10:34,754 INFO  [Paxos] localhost:1234 unreachable didn't accept 
+2015-12-08 14:10:34,762 INFO  [Paxos] Accepted number = 4
+2015-12-08 14:10:34,762 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 14:10:35,617 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Apple Color is Red, fromClient=1, requestId=b28e523c-dad1-4a41-8440-5d9ea9007a40]
+2015-12-08 14:10:35,625 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Apple Color is Red, fromClient=1, requestId=f1e76f78-ad11-4e92-bc2f-5fdf56cce943]
+2015-12-08 14:10:41,476 INFO  [Paxos] localhost:1234 unreachable didn't accept 
+2015-12-08 14:10:41,483 INFO  [Paxos] Accepted number = 4
+2015-12-08 14:10:41,483 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 14:10:42,346 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Banana Color is Yellow, fromClient=1, requestId=2a3a2eda-814a-43d1-adfb-8eb67e3e2f34]
+2015-12-08 14:10:42,357 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Orange Color is Orange, fromClient=1, requestId=ff28a7e9-a90a-4978-b957-acfe47f732cb]
+2015-12-08 14:10:42,366 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Kiwi Color is Green, fromClient=1, requestId=ac0221db-ceb1-4312-bae2-7f6bd9bf8c33]
+2015-12-08 14:23:31,962 INFO  [RMIServer] Paxos RMIServer 4  started successfully
+2015-12-08 14:23:36,373 INFO  [Paxos] Accepted number = 5
+2015-12-08 14:23:36,373 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 14:23:36,397 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Apple Color is Red, fromClient=1, requestId=7bd133bd-adfa-498a-bf12-df4f2e4f9b2a]
+2015-12-08 14:23:36,417 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Banana Color is Yellow, fromClient=1, requestId=15f4603d-c62c-4609-9da9-cba6fa0a8072]
+2015-12-08 14:23:36,425 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Orange Color is Orange, fromClient=1, requestId=1202f1ec-fa34-4964-aa53-ac2a1ac61989]
+2015-12-08 14:23:36,432 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Kiwi Color is Green, fromClient=1, requestId=de51c536-72ad-4edc-93aa-900d9b810f2d]
+2015-12-08 14:23:38,977 INFO  [Paxos] Accepted number = 5
+2015-12-08 14:23:38,977 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 14:23:39,013 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Pineapple Color is Yellowish-Green, fromClient=1, requestId=170449c8-64fb-4042-8b3a-2c777ad93788]
+2015-12-08 14:23:39,023 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Apple null, fromClient=1, requestId=16dc0f0d-cb7c-42e4-b7ca-47ceae6534f7]
+2015-12-08 14:23:39,024 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Banana null, fromClient=1, requestId=aac3b276-6545-4b3b-83c1-63d684b12a17]
+2015-12-08 14:23:39,025 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Orange null, fromClient=1, requestId=bd004dcd-ed40-4716-8669-bdbc43d3e004]
+2015-12-08 14:23:39,027 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Kiwi null, fromClient=1, requestId=a8fdc675-45ce-4881-98d7-710c3fb7eb83]
+2015-12-08 14:23:39,028 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Pineapple null, fromClient=1, requestId=7ed0f91f-2b70-4467-b4c1-0f43e460a61a]
+2015-12-08 14:23:40,200 INFO  [Paxos] Accepted number = 5
+2015-12-08 14:23:40,201 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 14:23:40,247 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Apple null, fromClient=1, requestId=c5dbc062-8d17-43f2-b05c-2a1f95bc7f52]
+2015-12-08 14:23:40,256 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Banana null, fromClient=1, requestId=0674c765-71f4-4078-bec5-8533cabdcf53]
+2015-12-08 14:23:40,262 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Orange null, fromClient=1, requestId=a0a018a0-29f5-45ce-826d-2572d46f760d]
+2015-12-08 14:23:46,159 INFO  [Paxos] Accepted number = 5
+2015-12-08 14:23:46,160 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 14:23:46,206 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Kiwi null, fromClient=1, requestId=6ba4c032-7f31-4c00-9aa8-a4f721fc1fdd]
+2015-12-08 14:23:46,216 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Pineapple null, fromClient=1, requestId=b9bf63b1-a35d-49d9-9ad0-587a9f934042]
+2015-12-08 14:23:46,222 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Apple null, fromClient=1, requestId=5591a17a-98a5-4677-af74-c39734135414]
+2015-12-08 14:23:46,222 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Banana null, fromClient=1, requestId=789559f0-d6ea-4354-a62e-679733f0bb51]
+2015-12-08 14:23:46,223 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Orange null, fromClient=1, requestId=68ff0344-2ab4-4ff7-906e-7eddcc147e1a]
+2015-12-08 14:23:46,223 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Kiwi null, fromClient=1, requestId=6245fa07-6020-491e-9f24-2dc8c8b80bb1]
+2015-12-08 14:23:46,224 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Pineapple null, fromClient=1, requestId=a9aaa211-ac26-46e5-86a5-aad5ce127e53]
+2015-12-08 14:23:48,085 INFO  [Paxos] localhost:1234 unreachable didn't accept 
+2015-12-08 14:23:48,092 INFO  [Paxos] Accepted number = 4
+2015-12-08 14:23:48,092 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 14:23:48,942 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Apple Color is Red, fromClient=1, requestId=0fe1193f-fb5c-4bd4-86e4-53a5e8b3766c]
+2015-12-08 14:23:48,954 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Apple Color is Red, fromClient=1, requestId=419c753b-a352-4465-8b99-228e9104860a]
+2015-12-08 14:23:56,272 INFO  [Paxos] localhost:1234 unreachable didn't accept 
+2015-12-08 14:23:56,280 INFO  [Paxos] Accepted number = 4
+2015-12-08 14:23:56,280 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 14:23:57,140 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Banana Color is Yellow, fromClient=1, requestId=1f0b35c4-d147-4f7e-be00-398238b09292]
+2015-12-08 14:23:57,151 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Orange Color is Orange, fromClient=1, requestId=04285ed7-4fe4-4415-960d-ee3f7d427e48]
+2015-12-08 14:23:57,156 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Kiwi Color is Green, fromClient=1, requestId=474c7bac-06fb-4967-b4f4-253d041329c9]
+2015-12-08 14:26:09,501 INFO  [RMIServer] Paxos RMIServer 4  started successfully
+2015-12-08 14:26:13,919 INFO  [Paxos] Accepted number = 5
+2015-12-08 14:26:13,919 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 14:26:13,935 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Apple Color is Red, fromClient=1, requestId=4d1d695b-d0f7-4bb9-964b-8b04348648de]
+2015-12-08 14:26:13,949 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Banana Color is Yellow, fromClient=1, requestId=2c46847f-6acb-4984-95c8-f2f686c9a690]
+2015-12-08 14:26:13,956 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Orange Color is Orange, fromClient=1, requestId=d956eb0e-52ef-407f-a90e-49becbd5c35c]
+2015-12-08 14:26:13,961 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Kiwi Color is Green, fromClient=1, requestId=2f91075d-f693-4828-af6b-c6232fa32fe0]
+2015-12-08 14:26:22,647 INFO  [Paxos] localhost:3445 unreachable didn't accept 
+2015-12-08 14:26:22,651 INFO  [Paxos] Accepted number = 4
+2015-12-08 14:26:22,651 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 14:26:23,495 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Pineapple Color is Yellowish-Green, fromClient=1, requestId=73bb4da1-afe7-43c1-b111-30adcc354589]
+2015-12-08 14:26:23,507 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Apple null, fromClient=1, requestId=0790ae5e-d060-4584-9bbf-571d14269a76]
+2015-12-08 14:26:23,509 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Banana null, fromClient=1, requestId=581cff51-2b3a-4f2e-80b2-d8aa36d97320]
+2015-12-08 14:26:23,510 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Orange null, fromClient=1, requestId=c09e1836-d20f-47ac-8a01-ec8d4b94f6ec]
+2015-12-08 14:26:39,121 INFO  [Paxos] localhost:2345 unreachable didn't accept 
+2015-12-08 14:26:39,129 INFO  [Paxos] Accepted number = 4
+2015-12-08 14:26:39,131 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 14:26:39,976 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Kiwi null, fromClient=1, requestId=2ddb1a17-8bc4-48ee-a64c-d70943d8ce28]
+2015-12-08 14:26:39,977 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Pineapple null, fromClient=1, requestId=7e81ed13-cafe-4e9e-94c6-54c63616d984]
+2015-12-08 14:26:41,202 INFO  [Paxos] Accepted number = 5
+2015-12-08 14:26:41,202 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 14:26:41,245 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Apple null, fromClient=1, requestId=3b959d52-65ab-4299-94d3-ca4854dd71bc]
+2015-12-08 14:26:41,251 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Banana null, fromClient=1, requestId=da28731f-9895-45b2-abce-aa7551da018f]
+2015-12-08 14:26:41,255 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Orange null, fromClient=1, requestId=506a571d-b0e6-4c91-bf61-fdf3bfbb0164]
+2015-12-08 14:26:44,146 INFO  [RMIServerInterfaceImpl] crashing server 4
+2015-12-08 14:26:57,239 INFO  [Paxos] localhost:1234 unreachable didn't accept 
+2015-12-08 14:26:57,247 INFO  [Paxos] Accepted number = 4
+2015-12-08 14:26:57,247 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 14:26:58,098 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Kiwi null, fromClient=1, requestId=63c5c712-8d0d-494a-82de-435b1d7066c1]
+2015-12-08 14:26:58,110 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Pineapple null, fromClient=1, requestId=55c3fb15-b329-4da3-8759-5205537765bf]
+2015-12-08 14:26:58,120 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Apple null, fromClient=1, requestId=cbf5027a-67be-4108-ba5b-5d0859a1021a]
+2015-12-08 14:26:58,121 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Banana null, fromClient=1, requestId=08947f0b-f40e-436a-9f9b-c3a508c4ad30]
+2015-12-08 14:26:58,122 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Orange null, fromClient=1, requestId=1f350151-b037-481b-97bf-44488ff6fee6]
+2015-12-08 14:26:58,122 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Kiwi null, fromClient=1, requestId=897720af-87c9-4401-bfb5-da58c4a64e89]
+2015-12-08 14:26:58,123 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Apple Color is Red, fromClient=1, requestId=0a8128bc-2928-4264-9a67-7288f620d943]
+2015-12-08 14:26:58,128 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Apple Color is Red, fromClient=1, requestId=9b7a1a42-3237-465a-ad63-889d570f5f7c]
+2015-12-08 14:27:07,729 INFO  [Paxos] localhost:3445 unreachable didn't accept 
+2015-12-08 14:27:07,732 INFO  [Paxos] Accepted number = 4
+2015-12-08 14:27:07,733 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 14:27:08,590 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Banana Color is Yellow, fromClient=1, requestId=3ea44112-6e89-4355-8377-2c1c18a31572]
+2015-12-08 14:27:08,602 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Orange Color is Orange, fromClient=1, requestId=1ece4a7a-63d5-4bf1-a33a-f21354e874e3]
+2015-12-08 14:27:08,947 INFO  [RMIServerInterfaceImpl] crashing server 4
+2015-12-08 14:36:21,331 INFO  [RMIServer] Paxos RMIServer 4  started successfully
+2015-12-08 14:36:25,981 INFO  [Paxos] Accepted number = 5
+2015-12-08 14:36:25,981 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 14:36:26,003 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Apple Color is Red, fromClient=1, requestId=9de4435e-0a16-48dc-b488-21bfd76e4144]
+2015-12-08 14:36:26,023 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Banana Color is Yellow, fromClient=1, requestId=1bfe885d-3ca0-4a76-9d94-fbbc9bf8051a]
+2015-12-08 14:36:26,029 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Orange Color is Orange, fromClient=1, requestId=0f4f963e-e49a-4043-94d6-11a3d3180742]
+2015-12-08 14:36:26,036 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Kiwi Color is Green, fromClient=1, requestId=18e60d91-7d90-4c15-9b31-9d46ee5e1bea]
+2015-12-08 14:36:49,684 INFO  [Paxos] localhost:3445 unreachable didn't accept 
+2015-12-08 14:36:49,688 INFO  [Paxos] Accepted number = 4
+2015-12-08 14:36:49,688 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 14:36:50,532 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Pineapple Color is Yellowish-Green, fromClient=1, requestId=bf63b5c2-c458-44c1-9d2c-39055857d3ba]
+2015-12-08 14:36:50,537 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Apple null, fromClient=1, requestId=fc44b4bd-f7af-44db-8cd7-df9c3c890724]
+2015-12-08 14:36:50,538 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Banana null, fromClient=1, requestId=bedc9c38-d234-4be5-b0f1-82150a926d4e]
+2015-12-08 14:36:52,434 INFO  [Paxos] Accepted number = 5
+2015-12-08 14:36:52,435 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 14:36:52,478 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Orange null, fromClient=1, requestId=ea513207-bc69-47f3-8f97-efd4ca415668]
+2015-12-08 14:36:53,258 INFO  [Paxos] Accepted number = 5
+2015-12-08 14:36:53,258 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 14:36:53,306 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Kiwi null, fromClient=1, requestId=2c9e7cf5-d737-4f1e-b15b-d4a6c0d737e3]
+2015-12-08 14:36:53,307 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Pineapple null, fromClient=1, requestId=4556f61c-748d-4098-9234-6ed7a9efffa9]
+2015-12-08 14:37:01,122 INFO  [Paxos] localhost:3445 unreachable didn't accept 
+2015-12-08 14:37:01,124 INFO  [Paxos] Accepted number = 4
+2015-12-08 14:37:01,124 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 14:37:01,981 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Apple null, fromClient=1, requestId=38c350ed-657b-4e0b-a38c-89c4a1e435a6]
+2015-12-08 14:37:01,993 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Banana null, fromClient=1, requestId=9d7f5e3b-5c5d-4a2b-ae3a-d6f1adfac270]
+2015-12-08 14:37:03,367 INFO  [Paxos] localhost:3445 unreachable didn't accept 
+2015-12-08 14:37:03,369 INFO  [Paxos] Accepted number = 4
+2015-12-08 14:37:03,370 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 14:37:04,221 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Orange null, fromClient=1, requestId=c44a59f4-896b-405d-b95d-1b98cbe373fb]
+2015-12-08 14:37:29,170 INFO  [Paxos] localhost:3445 unreachable didn't accept 
+2015-12-08 14:37:29,173 INFO  [Paxos] Accepted number = 4
+2015-12-08 14:37:29,173 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 14:37:30,004 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Kiwi null, fromClient=1, requestId=66dc634b-4452-41ac-96fe-2bd62f0ee2cd]
+2015-12-08 14:37:30,013 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Pineapple null, fromClient=1, requestId=5984242f-e95f-4924-9635-afa6df11bb9f]
+2015-12-08 14:37:30,018 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Apple null, fromClient=1, requestId=c34cd0c8-5972-46a7-9320-dad17fe3f630]
+2015-12-08 14:37:30,019 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Banana null, fromClient=1, requestId=8cb0f2c2-0978-4ccc-9316-7a92bd668fa2]
+2015-12-08 14:37:30,020 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Orange null, fromClient=1, requestId=3502a872-9229-4c53-9440-1068e608d059]
+2015-12-08 14:37:31,854 INFO  [RMIServerInterfaceImpl] crashing server 4
+2015-12-08 14:37:43,565 INFO  [Paxos] localhost:1234 unreachable didn't accept 
+2015-12-08 14:37:43,569 INFO  [Paxos] localhost:2345 simply didn't accept 
+2015-12-08 14:37:43,572 INFO  [Paxos] localhost:3445 simply didn't accept 
+2015-12-08 14:37:43,573 INFO  [Paxos] localhost:4542 simply didn't accept 
+2015-12-08 14:37:43,575 INFO  [Paxos] localhost:2334 simply didn't accept 
+2015-12-08 14:37:43,575 INFO  [Paxos] Accepted number = 0
+2015-12-08 14:37:43,575 INFO  [Paxos]  REQUEST REJECTED :)
+2015-12-08 14:37:44,586 INFO  [Paxos] localhost:1234 unreachable didn't accept 
+2015-12-08 14:37:44,588 INFO  [Paxos] localhost:2345 simply didn't accept 
+2015-12-08 14:37:44,592 INFO  [Paxos] localhost:3445 simply didn't accept 
+2015-12-08 14:37:44,592 INFO  [Paxos] localhost:4542 simply didn't accept 
+2015-12-08 14:37:44,594 INFO  [Paxos] localhost:2334 simply didn't accept 
+2015-12-08 14:37:44,595 INFO  [Paxos] Accepted number = 0
+2015-12-08 14:37:44,595 INFO  [Paxos]  REQUEST REJECTED :)
+2015-12-08 14:37:45,608 INFO  [Paxos] localhost:1234 unreachable didn't accept 
+2015-12-08 14:37:45,612 INFO  [Paxos] localhost:2345 simply didn't accept 
+2015-12-08 14:37:45,615 INFO  [Paxos] localhost:3445 simply didn't accept 
+2015-12-08 14:37:45,615 INFO  [Paxos] localhost:4542 simply didn't accept 
+2015-12-08 14:37:45,617 INFO  [Paxos] localhost:2334 simply didn't accept 
+2015-12-08 14:37:45,617 INFO  [Paxos] Accepted number = 0
+2015-12-08 14:37:45,618 INFO  [Paxos]  REQUEST REJECTED :)
+2015-12-08 14:37:46,629 INFO  [Paxos] localhost:1234 unreachable didn't accept 
+2015-12-08 14:37:46,633 INFO  [Paxos] localhost:2345 simply didn't accept 
+2015-12-08 14:37:46,635 INFO  [Paxos] localhost:3445 simply didn't accept 
+2015-12-08 14:37:46,636 INFO  [Paxos] localhost:4542 simply didn't accept 
+2015-12-08 14:37:46,638 INFO  [Paxos] localhost:2334 simply didn't accept 
+2015-12-08 14:37:46,638 INFO  [Paxos] Accepted number = 0
+2015-12-08 14:37:46,638 INFO  [Paxos]  REQUEST REJECTED :)
+2015-12-08 14:37:47,652 INFO  [Paxos] localhost:1234 unreachable didn't accept 
+2015-12-08 14:37:47,655 INFO  [Paxos] localhost:2345 simply didn't accept 
+2015-12-08 14:37:47,658 INFO  [Paxos] localhost:3445 simply didn't accept 
+2015-12-08 14:37:47,658 INFO  [Paxos] localhost:4542 simply didn't accept 
+2015-12-08 14:37:47,661 INFO  [Paxos] localhost:2334 simply didn't accept 
+2015-12-08 14:37:47,661 INFO  [Paxos] Accepted number = 0
+2015-12-08 14:37:47,661 INFO  [Paxos]  REQUEST REJECTED :)
+2015-12-08 14:37:48,676 INFO  [Paxos] localhost:1234 unreachable didn't accept 
+2015-12-08 14:37:48,680 INFO  [Paxos] localhost:2345 simply didn't accept 
+2015-12-08 14:37:48,682 INFO  [Paxos] localhost:3445 simply didn't accept 
+2015-12-08 14:37:48,683 INFO  [Paxos] localhost:4542 simply didn't accept 
+2015-12-08 14:37:48,685 INFO  [Paxos] localhost:2334 simply didn't accept 
+2015-12-08 14:37:48,685 INFO  [Paxos] Accepted number = 0
+2015-12-08 14:37:48,686 INFO  [Paxos]  REQUEST REJECTED :)
+2015-12-08 14:37:49,701 INFO  [Paxos] localhost:1234 unreachable didn't accept 
+2015-12-08 14:37:49,703 INFO  [Paxos] localhost:2345 simply didn't accept 
+2015-12-08 14:37:49,705 INFO  [Paxos] localhost:3445 simply didn't accept 
+2015-12-08 14:37:49,706 INFO  [Paxos] localhost:4542 simply didn't accept 
+2015-12-08 14:37:49,708 INFO  [Paxos] localhost:2334 simply didn't accept 
+2015-12-08 14:37:49,708 INFO  [Paxos] Accepted number = 0
+2015-12-08 14:37:49,708 INFO  [Paxos]  REQUEST REJECTED :)
+2015-12-08 14:37:49,722 INFO  [Paxos] Accepted number = 5
+2015-12-08 14:37:49,722 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 14:37:50,192 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Microsoft Band, fromClient=1, requestId=ef577471-3143-401e-b3c5-a4307e7bfc5e]
+2015-12-08 14:41:25,199 INFO  [Paxos] Accepted number = 5
+2015-12-08 14:41:25,199 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 14:41:25,235 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Apple iPhone6, fromClient=1, requestId=bec94e76-5952-4cc3-8d1a-4bc94db176b7]
+2015-12-08 14:41:25,243 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Apple Color is Red, fromClient=1, requestId=bd75aa74-e9be-474f-94ba-69941bc7ddab]
+2015-12-08 14:41:25,249 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Banana Color is Yellow, fromClient=1, requestId=f237fb94-e6de-47ba-ab0d-dbeddfd65f8f]
+2015-12-08 14:41:25,253 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Orange Color is Orange, fromClient=1, requestId=2b51d153-7d9e-4c52-a9a5-798bc5bbb676]
+2015-12-08 14:41:25,259 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Kiwi Color is Green, fromClient=1, requestId=ba218da5-4c0d-4347-81c9-bb1380f40be6]
+2015-12-08 14:42:10,937 INFO  [RMIServer] Paxos RMIServer 4  started successfully
+2015-12-08 14:42:15,839 INFO  [RMIServerInterfaceImpl] FAIL/CRASH server 4: CAUSED BY RANDOM FAILURE
+2015-12-08 14:42:24,843 INFO  [RMIServerInterfaceImpl] RESUSCITATED ZOMBIE SERVER 4 : IS ALIVE AGAIN! 
+2015-12-08 14:42:28,010 INFO  [Paxos] Accepted number = 5
+2015-12-08 14:42:28,010 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 14:42:28,038 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Apple Color is Red, fromClient=1, requestId=60053b53-49c0-485d-a506-729c9efbc6cf]
+2015-12-08 14:42:28,052 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Banana Color is Yellow, fromClient=1, requestId=c39fa16f-eb3f-494d-991b-1d1cfc39530b]
+2015-12-08 14:42:28,065 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Orange Color is Orange, fromClient=1, requestId=99943802-d1cc-4e4f-afdd-9cae2606fed1]
+2015-12-08 14:42:28,071 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Pineapple Color is Yellowish-Green, fromClient=1, requestId=eaacc31f-85aa-408d-8c54-60ee1920ac0b]
+2015-12-08 14:42:28,077 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Apple null, fromClient=1, requestId=646ae9db-e7ae-4404-809f-fb3f1797a28d]
+2015-12-08 14:42:28,078 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Banana null, fromClient=1, requestId=be4be55c-79bf-4a3a-85da-aa87a7edd878]
+2015-12-08 14:42:28,079 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Orange null, fromClient=1, requestId=626ebe12-ac2c-448a-a644-733d9a6d9bf1]
+2015-12-08 14:42:28,080 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Kiwi null, fromClient=1, requestId=37bb55ff-1ffd-4008-b38b-cdf729f04036]
+2015-12-08 14:42:28,081 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Pineapple null, fromClient=1, requestId=6ce817ac-5196-459a-910a-676ac27e8ca1]
+2015-12-08 14:42:29,363 INFO  [Paxos] Accepted number = 5
+2015-12-08 14:42:29,363 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 14:42:29,399 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Apple null, fromClient=1, requestId=5364817a-88c2-4d98-8812-33ec5998f34a]
+2015-12-08 14:42:29,412 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Banana null, fromClient=1, requestId=51c0181d-556f-4dea-8a45-6b7c9e8dea61]
+2015-12-08 14:42:29,417 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Orange null, fromClient=1, requestId=84711472-9b89-4372-9a66-da56c37ff783]
+2015-12-08 14:42:41,562 INFO  [Paxos] Accepted number = 5
+2015-12-08 14:42:41,562 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 14:42:41,607 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Kiwi null, fromClient=1, requestId=a224dd99-b9b7-410e-b50b-22ade889e88e]
+2015-12-08 14:42:41,616 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Pineapple null, fromClient=1, requestId=7e616793-b7b4-4240-a66c-babf70228140]
+2015-12-08 14:42:41,622 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Apple null, fromClient=1, requestId=00b50b23-73f7-4d29-afc5-e293c1aaa434]
+2015-12-08 14:42:41,623 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Banana null, fromClient=1, requestId=976a695e-4d8e-4817-af63-fe8f4c309471]
+2015-12-08 14:42:41,624 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Orange null, fromClient=1, requestId=4ed95857-6e23-49bc-9263-80be3182af20]
+2015-12-08 14:42:41,624 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Kiwi null, fromClient=1, requestId=4d902c33-42fa-4698-acce-63e0fdc4feaf]
+2015-12-08 14:42:41,625 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Pineapple null, fromClient=1, requestId=ab582fb6-ae1a-40b3-b756-480729464a45]
+2015-12-08 14:42:46,775 INFO  [Paxos] localhost:1234 unreachable didn't accept 
+2015-12-08 14:42:46,786 INFO  [Paxos] Accepted number = 4
+2015-12-08 14:42:46,786 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 14:42:47,633 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Apple iPhone6, fromClient=1, requestId=3bff0bf1-e0de-4f2e-9f7e-95ff3ea5ca2d]
+2015-12-08 14:42:47,639 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Microsoft Band, fromClient=1, requestId=e339d3a0-f5ff-4bed-b6f1-f15cd5087120]
+2015-12-08 14:42:57,269 INFO  [Paxos] localhost:3445 unreachable didn't accept 
+2015-12-08 14:42:57,272 INFO  [Paxos] Accepted number = 4
+2015-12-08 14:42:57,273 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 14:42:58,129 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Amazon Fire, fromClient=1, requestId=2714816f-786e-49b3-a18d-c83d932e9a32]
+2015-12-08 14:42:58,138 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Google Nexus, fromClient=1, requestId=043a923b-4dea-4641-b149-90b4affd0271]
+2015-12-08 14:42:59,545 INFO  [Paxos] localhost:3445 unreachable didn't accept 
+2015-12-08 14:42:59,548 INFO  [Paxos] Accepted number = 4
+2015-12-08 14:42:59,548 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 14:43:00,401 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Acer Aspire-V5 Notebook PC, fromClient=1, requestId=e53a2d2e-e538-469b-a2a4-b4766b2d7958]
+2015-12-08 15:44:11,389 INFO  [RMIServer] Paxos RMIServer 4  started successfully
+2015-12-08 15:44:25,395 INFO  [Paxos] Accepted number = 5
+2015-12-08 15:44:25,395 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 15:44:25,414 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Apple Color is Red, fromClient=1, requestId=52571a11-7108-45e0-b8cb-eba7a36371fe]
+2015-12-08 15:44:25,443 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Banana Color is Yellow, fromClient=1, requestId=cab310b6-7e47-47e9-8f58-1dae0bd7cf75]
+2015-12-08 15:44:25,454 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Orange Color is Orange, fromClient=1, requestId=2bb5bbad-b07b-4c4c-85ae-0dc495ff0887]
+2015-12-08 15:44:25,461 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Kiwi Color is Green, fromClient=1, requestId=8bd08d6d-1cad-4ca0-8c9f-df64b397179a]
+2015-12-08 15:44:38,056 INFO  [Paxos] Accepted number = 5
+2015-12-08 15:44:38,056 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 15:44:38,103 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Pineapple Color is Yellowish-Green, fromClient=1, requestId=1b3c6690-8375-46dc-af23-e98a8e9b01db]
+2015-12-08 15:44:38,114 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Apple null, fromClient=1, requestId=bd13c00e-b0af-49eb-b435-150891d1ed63]
+2015-12-08 15:44:38,116 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Banana null, fromClient=1, requestId=513d8f64-0fec-4bef-92f7-53a86939f6b1]
+2015-12-08 15:44:38,117 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Orange null, fromClient=1, requestId=584d6b62-f6a3-4046-ab5f-8b8fcaf31e27]
+2015-12-08 15:44:38,118 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Kiwi null, fromClient=1, requestId=8357bba0-e1e9-47d5-ae6e-93dd4d6862a2]
+2015-12-08 15:44:38,119 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Pineapple null, fromClient=1, requestId=da75882a-43a9-483a-be94-363c088fb5eb]
+2015-12-08 15:44:39,405 INFO  [Paxos] Accepted number = 5
+2015-12-08 15:44:39,407 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 15:44:39,450 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Apple null, fromClient=1, requestId=16703e5f-301f-4b94-a37e-caa8111854ca]
+2015-12-08 15:44:39,460 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Banana null, fromClient=1, requestId=832191aa-a3e1-43da-970e-af24f140acf6]
+2015-12-08 15:44:39,468 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Orange null, fromClient=1, requestId=0f6718d4-685d-4293-9655-779a199ae49c]
+2015-12-08 15:45:06,132 INFO  [Paxos] Accepted number = 5
+2015-12-08 15:45:06,132 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 15:45:06,172 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Kiwi null, fromClient=1, requestId=fcb6ccfa-2aef-41ad-8906-5ddd3d82bc3e]
+2015-12-08 15:45:06,182 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Pineapple null, fromClient=1, requestId=81e2a8bd-a47b-4f13-b026-8fd23fed2acd]
+2015-12-08 15:45:06,188 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Apple null, fromClient=1, requestId=73327627-0e02-47e9-8013-69b837f7d460]
+2015-12-08 15:45:06,188 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Banana null, fromClient=1, requestId=5245e131-178a-413e-afe9-0d45377d8f83]
+2015-12-08 15:45:06,189 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Orange null, fromClient=1, requestId=01fb82f5-f142-4200-8827-8297f934566a]
+2015-12-08 15:45:06,190 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Kiwi null, fromClient=1, requestId=87a38cad-b9a7-42f5-97bf-09812141f3d1]
+2015-12-08 15:45:06,191 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Pineapple null, fromClient=1, requestId=3f64f11d-31eb-4e34-99ca-e1a49baf8f83]
+2015-12-08 15:45:07,242 INFO  [RMIServerInterfaceImpl] FAIL/CRASH server 4: CAUSED BY RANDOM FAILURE
+2015-12-08 15:45:16,247 INFO  [RMIServerInterfaceImpl] RESUSCITATED ZOMBIE SERVER 4 : IS ALIVE AGAIN! 
+2015-12-08 15:45:18,312 INFO  [Paxos] Accepted number = 5
+2015-12-08 15:45:18,312 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 15:45:18,351 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Apple iPhone6, fromClient=1, requestId=c5ef9453-88cf-496f-a727-b63707a6ec88]
+2015-12-08 15:45:18,360 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Amazon Fire, fromClient=1, requestId=509fa50c-abfe-4fc8-923b-e3d47a25be0a]
+2015-12-08 15:45:18,366 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Google Nexus, fromClient=1, requestId=69d5d805-12f1-4951-8441-59bab4067bbe]
+2015-12-08 15:45:18,372 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Acer Aspire-V5 Notebook PC, fromClient=1, requestId=cd230552-008d-41ce-ac7e-47fca6908d69]
+2015-12-08 16:01:43,691 INFO  [RMIServer] Paxos RMIServer 4  started successfully
+2015-12-08 16:01:48,585 INFO  [Paxos] Accepted number = 5
+2015-12-08 16:01:48,587 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 16:01:48,714 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Apple Color is Red, fromClient=1, requestId=03db94d2-037d-4c81-b366-6deac5027f32]
+2015-12-08 16:01:48,746 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Banana Color is Yellow, fromClient=1, requestId=aec8ee3b-a318-4f93-898c-49d95d7c5ebd]
+2015-12-08 16:01:48,761 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Orange Color is Orange, fromClient=1, requestId=eeecb0aa-803c-490c-b8e2-6cb5acba5feb]
+2015-12-08 16:01:48,769 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Kiwi Color is Green, fromClient=1, requestId=a06e1104-a4f3-4bc9-bccd-ca1304638fab]
+2015-12-08 16:01:52,809 INFO  [Paxos] Accepted number = 5
+2015-12-08 16:01:52,810 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 16:01:52,940 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Pineapple Color is Yellowish-Green, fromClient=1, requestId=89fae295-4e81-4bde-8f5f-9a452d763b38]
+2015-12-08 16:01:52,951 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Apple null, fromClient=1, requestId=ebfd5c30-22bc-4cd0-81cb-a530913cf0f1]
+2015-12-08 16:01:52,953 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Banana null, fromClient=1, requestId=5b875b0d-227d-4003-9631-03b948d1f5f8]
+2015-12-08 16:01:52,955 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Orange null, fromClient=1, requestId=cc8b2940-e41b-461b-8d70-6c8513685b05]
+2015-12-08 16:01:52,956 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Kiwi null, fromClient=1, requestId=3bc8726f-25bb-4438-964d-a0a35cbf179f]
+2015-12-08 16:01:52,957 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Pineapple null, fromClient=1, requestId=9997b455-f3b1-4532-a8a0-0b95583844c3]
+2015-12-08 16:01:55,028 INFO  [Paxos] Accepted number = 5
+2015-12-08 16:01:55,030 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 16:01:55,061 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Apple null, fromClient=1, requestId=3a81e6e4-e9be-499a-a165-ae990e39d285]
+2015-12-08 16:01:55,073 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Banana null, fromClient=1, requestId=a3aeae72-e2d1-43f3-8a9f-c6d51d6aa95d]
+2015-12-08 16:01:55,082 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Orange null, fromClient=1, requestId=3b61423d-252f-46ee-b10f-c65a6f20519f]
+2015-12-08 16:02:07,635 INFO  [Paxos] Accepted number = 5
+2015-12-08 16:02:07,635 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 16:02:07,678 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Kiwi null, fromClient=1, requestId=ca339743-cd04-4d21-97df-59b0919924e4]
+2015-12-08 16:02:07,689 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Pineapple null, fromClient=1, requestId=29547689-c60a-464c-a8d6-36ec86047189]
+2015-12-08 16:02:07,696 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Apple null, fromClient=1, requestId=0092dde1-ce3d-47ec-b79d-5b55560cd2ab]
+2015-12-08 16:02:07,696 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Banana null, fromClient=1, requestId=788022d9-3561-48cc-b00b-c644ff5be8c8]
+2015-12-08 16:02:07,697 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Orange null, fromClient=1, requestId=59f4c3d1-4c6f-4349-b3fb-42d305efc1d6]
+2015-12-08 16:02:07,698 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Kiwi null, fromClient=1, requestId=c3d2643a-6603-44d1-8199-c6142c80f4a0]
+2015-12-08 16:02:07,699 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Pineapple null, fromClient=1, requestId=d00b95b5-2cd4-4ca9-a570-fdcafba87d31]
+2015-12-08 16:02:12,953 INFO  [Paxos] localhost:1234 unreachable didn't accept 
+2015-12-08 16:02:12,958 INFO  [Paxos] Accepted number = 4
+2015-12-08 16:02:12,959 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 16:02:13,821 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Apple iPhone6, fromClient=1, requestId=5166987b-a4da-425a-9753-87eb18a6f890]
+2015-12-08 16:02:13,829 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Microsoft Band, fromClient=1, requestId=fb89c12f-9bc3-43a7-8336-b510290c4799]
+2015-12-08 16:02:18,679 INFO  [Paxos] Accepted number = 5
+2015-12-08 16:02:18,679 INFO  [Paxos]  REQUEST ACCEPTED :)
+2015-12-08 16:02:18,728 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Amazon Fire, fromClient=1, requestId=e241c424-9013-46d0-915b-6215a7f3abf6]
+2015-12-08 16:02:18,737 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Google Nexus, fromClient=1, requestId=25e6819e-c9cf-473e-a25d-c79749e0f4de]
+2015-12-08 16:02:18,745 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Acer Aspire-V5 Notebook PC, fromClient=1, requestId=c4a13042-7019-41a1-b573-8986855aa8cb]
+2016-04-04 13:55:15,229 INFO  [RMIServer] Paxos RMIServer 4  started successfully
+2016-04-04 13:55:19,751 INFO  [Paxos] Accepted number = 5
+2016-04-04 13:55:19,751 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-04-04 13:55:19,769 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Apple Color is Red, fromClient=1, requestId=c64dbe1d-a8cd-424e-9801-5b609734a0eb]
+2016-04-04 13:55:19,782 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Banana Color is Yellow, fromClient=1, requestId=421ca56c-f602-416f-9545-836bd853e642]
+2016-04-04 13:55:19,789 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Orange Color is Orange, fromClient=1, requestId=676c7b2e-9137-41bf-836d-725729dc6d2d]
+2016-04-04 13:55:19,796 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Kiwi Color is Green, fromClient=1, requestId=abc20920-6b49-49ec-8589-0bdbc3004f39]
+2016-04-04 13:55:22,361 INFO  [Paxos] Accepted number = 5
+2016-04-04 13:55:22,362 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-04-04 13:55:22,399 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Pineapple Color is Yellowish-Green, fromClient=1, requestId=8905d2df-b321-49d9-9314-0516c993239d]
+2016-04-04 13:55:22,411 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Apple null, fromClient=1, requestId=c3042c08-6354-485b-a87d-75582be432e2]
+2016-04-04 13:55:22,412 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Banana null, fromClient=1, requestId=6833effc-f4e7-40f2-8c8c-980cdacc96f4]
+2016-04-04 13:55:22,413 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Orange null, fromClient=1, requestId=1eb3f34c-dce2-45ce-8ea4-90fee54d039d]
+2016-04-04 13:55:22,414 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Kiwi null, fromClient=1, requestId=a564cf41-2801-4b1e-b8f7-2f28ef3ebc3a]
+2016-04-04 13:55:22,415 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Pineapple null, fromClient=1, requestId=4d7c0fc8-1b5f-4de3-bda7-4ee6db653694]
+2016-04-04 13:55:23,556 INFO  [Paxos] Accepted number = 5
+2016-04-04 13:55:23,557 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-04-04 13:55:23,604 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Apple null, fromClient=1, requestId=5ba94413-604b-4ed9-a3c9-12b36915fe07]
+2016-04-04 13:55:23,617 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Banana null, fromClient=1, requestId=bbcefb3d-7b7d-45e7-8760-d99f03decc7b]
+2016-04-04 13:55:23,623 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Orange null, fromClient=1, requestId=be5d59fc-b088-473f-91af-6df493040ee9]
+2016-04-04 13:55:35,780 INFO  [Paxos] Accepted number = 5
+2016-04-04 13:55:35,780 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-04-04 13:55:35,823 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Kiwi null, fromClient=1, requestId=643f1aad-15d7-4c8a-bafb-cad407a13933]
+2016-04-04 13:55:35,831 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [DELETE Pineapple null, fromClient=1, requestId=3b4f3195-52fd-400d-b76c-6bb1178df393]
+2016-04-04 13:55:35,837 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Apple null, fromClient=1, requestId=f0af7d14-0bf3-4763-83d6-92b94ea814c3]
+2016-04-04 13:55:35,838 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Banana null, fromClient=1, requestId=db9d85d9-3579-49aa-a278-80eb6c5e73c0]
+2016-04-04 13:55:35,839 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Orange null, fromClient=1, requestId=69160b44-e56d-482f-bdd2-e575db5370a5]
+2016-04-04 13:55:35,839 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Kiwi null, fromClient=1, requestId=1b0c0683-b7a3-4622-bc8b-4cbd4b3cd504]
+2016-04-04 13:55:35,840 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [GET Pineapple null, fromClient=1, requestId=c1853bef-2ffa-410a-a2f6-0343e0d3bcbe]
+2016-04-04 13:55:40,953 INFO  [Paxos] localhost:1234 unreachable didn't accept 
+2016-04-04 13:55:40,960 INFO  [Paxos] Accepted number = 4
+2016-04-04 13:55:40,960 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-04-04 13:55:41,812 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Apple iPhone6, fromClient=1, requestId=fcba15e9-2c93-453b-8eb2-65ab7c1d3868]
+2016-04-04 13:55:41,823 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Microsoft Band, fromClient=1, requestId=66aaeea6-8cca-47d5-9d5d-56bd48f33616]
+2016-04-04 13:55:46,622 INFO  [Paxos] Accepted number = 5
+2016-04-04 13:55:46,622 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-04-04 13:55:46,673 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Amazon Fire, fromClient=1, requestId=19cc7264-82c4-400b-8e67-05d2f21152b2]
+2016-04-04 13:55:46,682 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Google Nexus, fromClient=1, requestId=2900a252-4a18-4fb9-b427-f92ad053df05]
+2016-04-04 13:55:46,687 INFO  [RMIServerInterfaceImpl] Apply update at server 4:Operation [PUT Acer Aspire-V5 Notebook PC, fromClient=1, requestId=f0855501-37c2-4c58-bc18-c27684d4e322]
