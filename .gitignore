@@ -2,3 +2,5 @@
 .idea/
 bin/
 .settings/
+._kickstart.sh
+._killall.sh
