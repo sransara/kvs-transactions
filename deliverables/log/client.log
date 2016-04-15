@@ -375,3 +375,298 @@
 2016-04-15 10:58:14,924 INFO  [Client] Loading configurations from configs.txt..
 2016-04-15 10:58:14,942 INFO  [Client] This request has id :92250701-011a-4fb7-bab6-315c331972d9
 2016-04-15 10:58:15,056 INFO  [Client] RESULT FROM xinu00.cs.purdue.edu:3700!!!: Client 1:Aspire-V5 Notebook PC
+2016-04-15 11:28:13,057 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:28:13,074 INFO  [Client] This request has id :e0e10069-671a-4982-b59a-381a9ef2bf4e
+2016-04-15 11:28:19,134 INFO  [Client] Contact server 1 at hostname:port xinu00.cs.purdue.edu : 3700 FAILED. Trying others..
+2016-04-15 11:28:21,013 INFO  [Client] RESULT FROM xinu01.cs.purdue.edu:3700!!!: Client 1:ACK
+2016-04-15 11:28:21,160 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:28:21,177 INFO  [Client] This request has id :33aa7c6e-a962-4c7d-ad22-856f1e7b6acb
+2016-04-15 11:28:23,093 INFO  [Client] RESULT FROM xinu01.cs.purdue.edu:3700!!!: Client 1:ACK
+2016-04-15 11:28:23,248 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:28:23,266 INFO  [Client] This request has id :c83cd299-8206-415b-bdb8-68411a175f0d
+2016-04-15 11:28:23,391 INFO  [Client] RESULT FROM xinu02.cs.purdue.edu:3700!!!: Client 1:ACK
+2016-04-15 11:28:23,536 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:28:23,554 INFO  [Client] This request has id :77172b32-0d94-4fef-94a7-992b7e3523b6
+2016-04-15 11:28:23,681 INFO  [Client] RESULT FROM xinu03.cs.purdue.edu:3700!!!: Client 1:ACK
+2016-04-15 11:28:23,818 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:28:23,835 INFO  [Client] This request has id :8aa8c338-f06f-4df3-bada-04c72f34acd7
+2016-04-15 11:28:29,896 INFO  [Client] Contact server 5 at hostname:port xinu04.cs.purdue.edu : 3700 FAILED. Trying others..
+2016-04-15 11:28:31,778 INFO  [Client] RESULT FROM xinu00.cs.purdue.edu:3700!!!: Client 1:ACK
+2016-04-15 11:28:31,925 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:28:31,944 INFO  [Client] This request has id :953b01d6-7fd3-4b62-be15-85ac6efc15ec
+2016-04-15 11:28:33,500 INFO  [Client] RESULT FROM xinu04.cs.purdue.edu:3700!!!: Client 1: 
+2016-04-15 11:28:39,510 INFO  [Client] Contact server 1 at hostname:port xinu00.cs.purdue.edu : 3700 FAILED. Trying others..
+2016-04-15 11:28:41,386 INFO  [Client] RESULT FROM xinu01.cs.purdue.edu:3700!!!: Client 1:Color is Red
+2016-04-15 11:28:41,531 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:28:41,549 INFO  [Client] This request has id :714c3e59-c45e-4df1-9600-715ca17cbf80
+2016-04-15 11:28:43,465 INFO  [Client] RESULT FROM xinu01.cs.purdue.edu:3700!!!: Client 1:Color is Yellow
+2016-04-15 11:28:43,611 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:28:43,628 INFO  [Client] This request has id :1e1f8ea8-cb9f-4cbd-99c6-d527eacc8b09
+2016-04-15 11:28:43,757 INFO  [Client] RESULT FROM xinu02.cs.purdue.edu:3700!!!: Client 1:Color is Orange
+2016-04-15 11:28:43,895 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:28:43,913 INFO  [Client] This request has id :8b703230-e114-4b22-b696-44ea833594b9
+2016-04-15 11:28:49,971 INFO  [Client] Contact server 1 at hostname:port xinu00.cs.purdue.edu : 3700 FAILED. Trying others..
+2016-04-15 11:28:51,843 INFO  [Client] RESULT FROM xinu01.cs.purdue.edu:3700!!!: Client 1:Color is Green
+2016-04-15 11:28:51,989 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:28:52,007 INFO  [Client] This request has id :55bf5c14-c56d-4e78-b161-72acdb8e5097
+2016-04-15 11:28:53,939 INFO  [Client] RESULT FROM xinu03.cs.purdue.edu:3700!!!: Client 1:Color is Yellowish-Green
+2016-04-15 11:28:54,085 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:28:54,103 INFO  [Client] This request has id :b852e9de-e173-4330-9208-ee1d7876ba8a
+2016-04-15 11:28:54,223 INFO  [Client] RESULT FROM xinu00.cs.purdue.edu:3700!!!: Client 1:ACK
+2016-04-15 11:28:54,369 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:28:54,387 INFO  [Client] This request has id :ef7dcfee-d9d5-4853-8815-53f9ff073b1b
+2016-04-15 11:28:54,508 INFO  [Client] RESULT FROM xinu02.cs.purdue.edu:3700!!!: Client 1:ACK
+2016-04-15 11:28:54,649 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:28:54,667 INFO  [Client] This request has id :1e3513f4-b52a-4825-af71-9d2d3b348666
+2016-04-15 11:28:54,784 INFO  [Client] RESULT FROM xinu03.cs.purdue.edu:3700!!!: Client 1:ACK
+2016-04-15 11:28:54,930 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:28:54,947 INFO  [Client] This request has id :fc446d05-fb6f-448f-9513-dae08b3c3e54
+2016-04-15 11:29:01,007 INFO  [Client] Contact server 2 at hostname:port xinu01.cs.purdue.edu : 3700 FAILED. Trying others..
+2016-04-15 11:29:02,879 INFO  [Client] RESULT FROM xinu02.cs.purdue.edu:3700!!!: Client 1:ACK
+2016-04-15 11:29:03,028 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:29:03,047 INFO  [Client] This request has id :e8ebee6c-b7d8-4a0e-8ab8-832340b260bd
+2016-04-15 11:29:04,990 INFO  [Client] RESULT FROM xinu04.cs.purdue.edu:3700!!!: Client 1:ACK
+2016-04-15 11:29:05,136 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:29:05,154 INFO  [Client] This request has id :84cd4c55-0706-45a0-b965-1aa5ca21e60d
+2016-04-15 11:29:05,272 INFO  [Client] RESULT FROM xinu04.cs.purdue.edu:3700!!!: Client 1:No key Apple matches db 
+2016-04-15 11:29:05,390 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:29:05,405 INFO  [Client] This request has id :01b4b8c5-0e7f-4b0e-aac6-0288827ae97f
+2016-04-15 11:29:05,523 INFO  [Client] RESULT FROM xinu00.cs.purdue.edu:3700!!!: Client 1:No key Banana matches db 
+2016-04-15 11:29:05,665 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:29:05,683 INFO  [Client] This request has id :0ccca7d1-23b9-4c6b-b949-33976463d1a4
+2016-04-15 11:29:05,807 INFO  [Client] RESULT FROM xinu01.cs.purdue.edu:3700!!!: Client 1:No key Orange matches db 
+2016-04-15 11:29:05,953 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:29:05,971 INFO  [Client] This request has id :c75cd8aa-9969-4b22-9b07-46489e7353e9
+2016-04-15 11:29:06,090 INFO  [Client] RESULT FROM xinu02.cs.purdue.edu:3700!!!: Client 1:No key Kiwi matches db 
+2016-04-15 11:29:06,234 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:29:06,252 INFO  [Client] This request has id :b0f98ac2-d80f-4122-8824-fed637e3ccbe
+2016-04-15 11:29:06,373 INFO  [Client] RESULT FROM xinu03.cs.purdue.edu:3700!!!: Client 1:No key Pineapple matches db 
+2016-04-15 11:29:06,514 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:29:06,514 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:29:06,531 INFO  [Client] This request has id :9696b353-459a-4187-8b93-596f9b310afb
+2016-04-15 11:29:06,532 INFO  [Client] This request has id :148c883b-deff-4a96-8406-b8697944ab80
+2016-04-15 11:29:06,587 INFO  [Client] RESULT FROM xinu00.cs.purdue.edu:3700!!!: Client 1: killing xinu00.cs.purdue.edu : 3700
+2016-04-15 11:29:08,090 INFO  [Client] RESULT FROM xinu00.cs.purdue.edu:3700!!!: Client 1: 
+2016-04-15 11:29:12,593 INFO  [Client] Contact server 1 at hostname:port xinu00.cs.purdue.edu : 3700 FAILED. Trying others..
+2016-04-15 11:29:14,101 INFO  [Client] Contact server 2 at hostname:port xinu01.cs.purdue.edu : 3700 FAILED. Trying others..
+2016-04-15 11:29:17,892 INFO  [Client] RESULT FROM xinu02.cs.purdue.edu:3700!!!: Client 1:ACK
+2016-04-15 11:29:18,041 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:29:18,059 INFO  [Client] This request has id :e4d22ad8-9095-49d7-87d8-63e978f68d2b
+2016-04-15 11:29:18,176 INFO  [Client] RESULT FROM xinu03.cs.purdue.edu:3700!!!: Client 1:ACK
+2016-04-15 11:29:18,317 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:29:18,334 INFO  [Client] This request has id :a5687150-a30c-4605-b2f0-14c57afb7dbd
+2016-04-15 11:29:18,450 INFO  [Client] RESULT FROM xinu01.cs.purdue.edu:3700!!!: Client 1:ACK
+2016-04-15 11:29:18,596 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:29:18,614 INFO  [Client] This request has id :d76a1213-6ad1-4f32-bb9b-379344ff1580
+2016-04-15 11:29:18,730 INFO  [Client] RESULT FROM xinu02.cs.purdue.edu:3700!!!: Client 1:ACK
+2016-04-15 11:29:18,876 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:29:18,893 INFO  [Client] This request has id :2c65c42f-8acb-4303-9c10-00cd8a369f71
+2016-04-15 11:29:24,949 INFO  [Client] Contact server 4 at hostname:port xinu03.cs.purdue.edu : 3700 FAILED. Trying others..
+2016-04-15 11:29:24,951 ERROR [Client] Error occured while connecting to RMI server with error, -1
+2016-04-15 11:29:37,110 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:29:37,129 INFO  [Client] This request has id :921ea6a0-f543-405e-ae56-735a400af1be
+2016-04-15 11:29:37,251 INFO  [Client] RESULT FROM xinu00.cs.purdue.edu:3700!!!: Client 1:iPhone6
+2016-04-15 11:29:37,396 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:29:37,414 INFO  [Client] This request has id :c261ceb7-47c4-4dae-bf5b-cdead366acb1
+2016-04-15 11:29:43,469 INFO  [Client] Contact server 1 at hostname:port xinu00.cs.purdue.edu : 3700 FAILED. Trying others..
+2016-04-15 11:29:49,483 INFO  [Client] Contact server 2 at hostname:port xinu01.cs.purdue.edu : 3700 FAILED. Trying others..
+2016-04-15 11:29:55,495 INFO  [Client] Contact server 3 at hostname:port xinu02.cs.purdue.edu : 3700 FAILED. Trying others..
+2016-04-15 11:29:57,368 INFO  [Client] RESULT FROM xinu03.cs.purdue.edu:3700!!!: Client 1:Band
+2016-04-15 11:29:57,515 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:29:57,532 INFO  [Client] This request has id :9fabcb84-edcb-4367-b65e-2f5b0d8dcd64
+2016-04-15 11:29:59,449 INFO  [Client] RESULT FROM xinu00.cs.purdue.edu:3700!!!: Client 1:Fire
+2016-04-15 11:29:59,593 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:29:59,610 INFO  [Client] This request has id :b84b311d-bab6-492c-a705-16cf9b941e32
+2016-04-15 11:29:59,725 INFO  [Client] RESULT FROM xinu00.cs.purdue.edu:3700!!!: Client 1:Nexus
+2016-04-15 11:29:59,871 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:29:59,888 INFO  [Client] This request has id :ef52020c-0c35-4294-944e-02724c91b3a5
+2016-04-15 11:30:00,003 INFO  [Client] RESULT FROM xinu00.cs.purdue.edu:3700!!!: Client 1:No key Acer matches db 
+2016-04-15 11:31:35,074 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:31:35,092 INFO  [Client] This request has id :8b81b06a-a5f6-4857-b98e-669ec33f9fff
+2016-04-15 11:31:35,337 INFO  [Client] RESULT FROM xinu00.cs.purdue.edu:3700!!!: Client 1:ACK
+2016-04-15 11:31:35,486 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:31:35,504 INFO  [Client] This request has id :d269bf51-656a-4fff-8c14-975e43272780
+2016-04-15 11:31:35,629 INFO  [Client] RESULT FROM xinu01.cs.purdue.edu:3700!!!: Client 1:ACK
+2016-04-15 11:31:35,772 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:31:35,789 INFO  [Client] This request has id :9ae9446b-c621-4160-9db4-f98bbe79cce7
+2016-04-15 11:31:35,914 INFO  [Client] RESULT FROM xinu02.cs.purdue.edu:3700!!!: Client 1:ACK
+2016-04-15 11:31:36,061 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:31:36,079 INFO  [Client] This request has id :f296493d-7e08-482f-a84c-981841293259
+2016-04-15 11:31:36,206 INFO  [Client] RESULT FROM xinu03.cs.purdue.edu:3700!!!: Client 1:ACK
+2016-04-15 11:31:36,354 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:31:36,372 INFO  [Client] This request has id :27ecf26a-c9fa-4cb2-b61a-25c21a6c322b
+2016-04-15 11:31:36,501 INFO  [Client] RESULT FROM xinu04.cs.purdue.edu:3700!!!: Client 1:ACK
+2016-04-15 11:31:36,647 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:31:36,665 INFO  [Client] This request has id :48fb0922-1646-4c28-a45b-faa9ab3abff9
+2016-04-15 11:31:36,781 INFO  [Client] RESULT FROM xinu04.cs.purdue.edu:3700!!!: Client 1:Color is Red
+2016-04-15 11:31:36,927 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:31:36,945 INFO  [Client] This request has id :72463c8a-2a0d-4ae9-8e16-77a2da133175
+2016-04-15 11:31:37,065 INFO  [Client] RESULT FROM xinu01.cs.purdue.edu:3700!!!: Client 1:Color is Yellow
+2016-04-15 11:31:37,212 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:31:37,230 INFO  [Client] This request has id :2f25b22c-3c01-40a7-b881-60d242ef0507
+2016-04-15 11:31:37,353 INFO  [Client] RESULT FROM xinu02.cs.purdue.edu:3700!!!: Client 1:Color is Orange
+2016-04-15 11:31:37,502 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:31:37,520 INFO  [Client] This request has id :2fa226f7-c8ef-42d1-8b65-f3f9f78c3db1
+2016-04-15 11:31:37,645 INFO  [Client] RESULT FROM xinu00.cs.purdue.edu:3700!!!: Client 1:Color is Green
+2016-04-15 11:31:37,796 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:31:37,814 INFO  [Client] This request has id :5eac473b-91dc-417c-a7c4-a55d650437ab
+2016-04-15 11:31:37,937 INFO  [Client] RESULT FROM xinu03.cs.purdue.edu:3700!!!: Client 1:Color is Yellowish-Green
+2016-04-15 11:31:38,084 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:31:38,102 INFO  [Client] This request has id :6a2220ea-b3b8-423e-bf6e-f34073134b06
+2016-04-15 11:31:38,220 INFO  [Client] RESULT FROM xinu00.cs.purdue.edu:3700!!!: Client 1:ACK
+2016-04-15 11:31:38,367 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:31:38,385 INFO  [Client] This request has id :b7304b5d-23e6-4037-a218-bd3e79cca8b5
+2016-04-15 11:31:38,508 INFO  [Client] RESULT FROM xinu02.cs.purdue.edu:3700!!!: Client 1:ACK
+2016-04-15 11:31:38,655 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:31:38,672 INFO  [Client] This request has id :e64648c6-ac62-4c93-9472-425b4de08dd6
+2016-04-15 11:31:38,794 INFO  [Client] RESULT FROM xinu03.cs.purdue.edu:3700!!!: Client 1:ACK
+2016-04-15 11:31:38,943 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:31:38,962 INFO  [Client] This request has id :c79e3d51-853d-43c7-8b7a-20a718d09558
+2016-04-15 11:31:39,094 INFO  [Client] RESULT FROM xinu01.cs.purdue.edu:3700!!!: Client 1:ACK
+2016-04-15 11:31:39,239 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:31:39,257 INFO  [Client] This request has id :8de5ab72-5353-4998-ad62-bb42043689dc
+2016-04-15 11:31:39,380 INFO  [Client] RESULT FROM xinu04.cs.purdue.edu:3700!!!: Client 1:ACK
+2016-04-15 11:31:39,520 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:31:39,537 INFO  [Client] This request has id :2bb8f3b7-e4ef-4f14-93fa-66bab99c991b
+2016-04-15 11:31:39,651 INFO  [Client] RESULT FROM xinu04.cs.purdue.edu:3700!!!: Client 1:No key Apple matches db 
+2016-04-15 11:31:39,781 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:31:39,797 INFO  [Client] This request has id :b68a116d-2105-45af-ac8b-a38922af34a6
+2016-04-15 11:31:39,917 INFO  [Client] RESULT FROM xinu00.cs.purdue.edu:3700!!!: Client 1:No key Banana matches db 
+2016-04-15 11:31:40,064 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:31:40,082 INFO  [Client] This request has id :8272f45d-c28b-45e5-99ce-ce7d0c478759
+2016-04-15 11:31:40,199 INFO  [Client] RESULT FROM xinu01.cs.purdue.edu:3700!!!: Client 1:No key Orange matches db 
+2016-04-15 11:31:40,345 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:31:40,363 INFO  [Client] This request has id :744691d6-1cbe-4e8a-982e-17eeef155b6a
+2016-04-15 11:31:40,483 INFO  [Client] RESULT FROM xinu02.cs.purdue.edu:3700!!!: Client 1:No key Kiwi matches db 
+2016-04-15 11:31:40,627 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:31:40,645 INFO  [Client] This request has id :8fa56fc1-3494-4eaf-b164-7b2bccb817c3
+2016-04-15 11:31:40,766 INFO  [Client] RESULT FROM xinu03.cs.purdue.edu:3700!!!: Client 1:No key Pineapple matches db 
+2016-04-15 11:31:40,914 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:31:40,916 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:31:40,932 INFO  [Client] This request has id :71501518-439a-48d1-bef9-dd2917dda434
+2016-04-15 11:31:40,935 INFO  [Client] This request has id :cc5734d5-3d5e-4e31-bf7a-3160a7e9fc31
+2016-04-15 11:31:40,989 INFO  [Client] RESULT FROM xinu00.cs.purdue.edu:3700!!!: Client 1: killing xinu00.cs.purdue.edu : 3700
+2016-04-15 11:31:42,495 INFO  [Client] RESULT FROM xinu00.cs.purdue.edu:3700!!!: Client 1: 
+2016-04-15 11:31:44,365 INFO  [Client] RESULT FROM xinu01.cs.purdue.edu:3700!!!: Client 1:ACK
+2016-04-15 11:31:44,512 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:31:44,529 INFO  [Client] This request has id :08418799-9cfc-4a67-adb9-17f2ef47aa35
+2016-04-15 11:31:46,446 INFO  [Client] RESULT FROM xinu03.cs.purdue.edu:3700!!!: Client 1:ACK
+2016-04-15 11:31:46,595 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:31:46,613 INFO  [Client] This request has id :accf1730-bce7-4671-a949-16ac4a89c6a7
+2016-04-15 11:31:46,996 INFO  [Client] Contact server 1 at hostname:port xinu00.cs.purdue.edu : 3700 FAILED. Trying others..
+2016-04-15 11:31:48,532 INFO  [Client] RESULT FROM xinu01.cs.purdue.edu:3700!!!: Client 1:ACK
+2016-04-15 11:31:48,697 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:31:48,714 INFO  [Client] This request has id :792a2141-01e6-4f3f-9777-34e889177bbf
+2016-04-15 11:31:50,633 INFO  [Client] RESULT FROM xinu02.cs.purdue.edu:3700!!!: Client 1:ACK
+2016-04-15 11:31:50,781 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:31:50,799 INFO  [Client] This request has id :63c788ea-f003-4b30-b9e6-20ecd50a391b
+2016-04-15 11:31:50,916 INFO  [Client] RESULT FROM xinu03.cs.purdue.edu:3700!!!: Client 1:ACK
+2016-04-15 11:32:03,086 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:32:03,105 INFO  [Client] This request has id :2cd2f4eb-d287-4f7b-b482-9a20bb7c34a7
+2016-04-15 11:32:03,229 INFO  [Client] RESULT FROM xinu00.cs.purdue.edu:3700!!!: Client 1:iPhone6
+2016-04-15 11:32:03,375 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:32:03,393 INFO  [Client] This request has id :48e1f6ec-6ff2-4b9e-9da1-3cdcea49cfa2
+2016-04-15 11:32:03,508 INFO  [Client] RESULT FROM xinu00.cs.purdue.edu:3700!!!: Client 1:Band
+2016-04-15 11:32:03,649 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:32:03,667 INFO  [Client] This request has id :3f84ce9d-74d4-40c2-b005-87ca64a6daf2
+2016-04-15 11:32:03,781 INFO  [Client] RESULT FROM xinu00.cs.purdue.edu:3700!!!: Client 1:Fire
+2016-04-15 11:32:03,928 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:32:03,945 INFO  [Client] This request has id :9523f312-11e4-454c-9c22-9b0752cc8e79
+2016-04-15 11:32:04,060 INFO  [Client] RESULT FROM xinu00.cs.purdue.edu:3700!!!: Client 1:Nexus
+2016-04-15 11:32:04,203 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:32:04,221 INFO  [Client] This request has id :a55a47a5-c80a-413f-be4f-e38264b7581c
+2016-04-15 11:32:04,338 INFO  [Client] RESULT FROM xinu00.cs.purdue.edu:3700!!!: Client 1:Aspire-V5 Notebook PC
+2016-04-15 11:32:30,454 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:32:30,472 INFO  [Client] This request has id :b1ec366d-13f5-410b-a529-406d2e077753
+2016-04-15 11:32:30,719 INFO  [Client] RESULT FROM xinu00.cs.purdue.edu:3700!!!: Client 1:ACK
+2016-04-15 11:32:30,864 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:32:30,881 INFO  [Client] This request has id :cfb16df8-2790-4522-a388-230c8ba6b489
+2016-04-15 11:32:31,029 INFO  [Client] RESULT FROM xinu01.cs.purdue.edu:3700!!!: Client 1:ACK
+2016-04-15 11:32:31,175 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:32:31,193 INFO  [Client] This request has id :32844ba3-5cc0-483b-94b3-84991456e8b9
+2016-04-15 11:32:31,319 INFO  [Client] RESULT FROM xinu02.cs.purdue.edu:3700!!!: Client 1:ACK
+2016-04-15 11:32:31,467 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:32:31,485 INFO  [Client] This request has id :5df6f2a0-a3b7-43d9-b1ee-3aca23086a44
+2016-04-15 11:32:31,614 INFO  [Client] RESULT FROM xinu03.cs.purdue.edu:3700!!!: Client 1:ACK
+2016-04-15 11:32:31,761 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:32:31,779 INFO  [Client] This request has id :8cd67d1f-2322-4390-a7b0-740fccd9e247
+2016-04-15 11:32:31,907 INFO  [Client] RESULT FROM xinu04.cs.purdue.edu:3700!!!: Client 1:ACK
+2016-04-15 11:32:32,053 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:32:32,071 INFO  [Client] This request has id :3edd6e94-47dd-4ceb-9a86-c4f2cf67d609
+2016-04-15 11:32:32,189 INFO  [Client] RESULT FROM xinu04.cs.purdue.edu:3700!!!: Client 1:Color is Red
+2016-04-15 11:32:32,339 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:32:32,357 INFO  [Client] This request has id :c1053bdf-ced9-4d8c-8f6f-8c9812d8aa08
+2016-04-15 11:32:32,479 INFO  [Client] RESULT FROM xinu01.cs.purdue.edu:3700!!!: Client 1:Color is Yellow
+2016-04-15 11:32:32,607 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:32:32,624 INFO  [Client] This request has id :83bfe18a-02b1-43a5-be05-3b350670d6af
+2016-04-15 11:32:32,742 INFO  [Client] RESULT FROM xinu02.cs.purdue.edu:3700!!!: Client 1:Color is Orange
+2016-04-15 11:32:32,872 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:32:32,888 INFO  [Client] This request has id :33c4e9ee-a6bf-499c-a015-4c19e0b653db
+2016-04-15 11:32:33,011 INFO  [Client] RESULT FROM xinu00.cs.purdue.edu:3700!!!: Client 1:Color is Green
+2016-04-15 11:32:33,159 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:32:33,177 INFO  [Client] This request has id :65e660b7-759a-4756-8e0f-5efada5c8cc8
+2016-04-15 11:32:33,299 INFO  [Client] RESULT FROM xinu03.cs.purdue.edu:3700!!!: Client 1:Color is Yellowish-Green
+2016-04-15 11:32:33,447 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:32:33,465 INFO  [Client] This request has id :e9d8bd6e-8b81-4104-a39b-4b99f4f51fd5
+2016-04-15 11:32:33,593 INFO  [Client] RESULT FROM xinu00.cs.purdue.edu:3700!!!: Client 1:ACK
+2016-04-15 11:32:33,736 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:32:33,753 INFO  [Client] This request has id :02432a0b-8287-4fa9-98ed-cbc94e8495e7
+2016-04-15 11:32:33,873 INFO  [Client] RESULT FROM xinu02.cs.purdue.edu:3700!!!: Client 1:ACK
+2016-04-15 11:32:34,021 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:32:34,038 INFO  [Client] This request has id :6ccd350a-05f4-4498-9651-728e59bc4fc0
+2016-04-15 11:32:34,157 INFO  [Client] RESULT FROM xinu03.cs.purdue.edu:3700!!!: Client 1:ACK
+2016-04-15 11:32:34,303 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:32:34,322 INFO  [Client] This request has id :60d4e57f-abae-48c4-9590-a4b42db964e0
+2016-04-15 11:32:34,444 INFO  [Client] RESULT FROM xinu01.cs.purdue.edu:3700!!!: Client 1:ACK
+2016-04-15 11:32:34,591 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:32:34,608 INFO  [Client] This request has id :c38698cd-c423-46ce-b93f-86f11514f066
+2016-04-15 11:32:34,733 INFO  [Client] RESULT FROM xinu04.cs.purdue.edu:3700!!!: Client 1:ACK
+2016-04-15 11:32:34,879 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:32:34,897 INFO  [Client] This request has id :4f64cec6-2b7c-4830-ab1d-47e831fd1dd2
+2016-04-15 11:32:35,012 INFO  [Client] RESULT FROM xinu04.cs.purdue.edu:3700!!!: Client 1:No key Apple matches db 
+2016-04-15 11:32:35,154 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:32:35,172 INFO  [Client] This request has id :f31886f8-b0f4-468b-b940-3b3b1bef904e
+2016-04-15 11:32:35,291 INFO  [Client] RESULT FROM xinu00.cs.purdue.edu:3700!!!: Client 1:No key Banana matches db 
+2016-04-15 11:32:35,437 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:32:35,454 INFO  [Client] This request has id :179a6ca5-99ad-4a7d-bd06-1b4de6b7883c
+2016-04-15 11:32:35,572 INFO  [Client] RESULT FROM xinu01.cs.purdue.edu:3700!!!: Client 1:No key Orange matches db 
+2016-04-15 11:32:35,710 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:32:35,728 INFO  [Client] This request has id :977e7a50-f573-48bc-bcdc-0431b15d6a57
+2016-04-15 11:32:35,847 INFO  [Client] RESULT FROM xinu02.cs.purdue.edu:3700!!!: Client 1:No key Kiwi matches db 
+2016-04-15 11:32:35,992 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:32:36,010 INFO  [Client] This request has id :7513a576-f796-4868-80aa-0643ed2dfea4
+2016-04-15 11:32:36,131 INFO  [Client] RESULT FROM xinu03.cs.purdue.edu:3700!!!: Client 1:No key Pineapple matches db 
+2016-04-15 11:32:36,262 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:32:36,263 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:32:36,278 INFO  [Client] This request has id :daf0b68b-9619-498a-98b6-c73a3143e12d
+2016-04-15 11:32:36,280 INFO  [Client] This request has id :1d6fb9f4-57d9-4d2e-a58f-fe8fe8f4c9a5
+2016-04-15 11:32:36,334 INFO  [Client] RESULT FROM xinu00.cs.purdue.edu:3700!!!: Client 1: killing xinu00.cs.purdue.edu : 3700
+2016-04-15 11:32:38,201 INFO  [Client] RESULT FROM xinu00.cs.purdue.edu:3700!!!: Client 1:ACK
+2016-04-15 11:32:38,349 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:32:38,366 INFO  [Client] This request has id :97cc5817-0d27-4f2b-a7bc-957f7b690e21
+2016-04-15 11:32:40,284 INFO  [Client] RESULT FROM xinu03.cs.purdue.edu:3700!!!: Client 1:ACK
+2016-04-15 11:32:40,433 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:32:40,451 INFO  [Client] This request has id :d8d59c95-41d4-4b54-9422-2b2e4553c7eb
+2016-04-15 11:32:42,342 INFO  [Client] Contact server 1 at hostname:port xinu00.cs.purdue.edu : 3700 FAILED. Trying others..
+2016-04-15 11:32:42,373 INFO  [Client] RESULT FROM xinu01.cs.purdue.edu:3700!!!: Client 1:ACK
+2016-04-15 11:32:42,519 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:32:42,537 INFO  [Client] This request has id :d3fae778-6743-4418-8ff8-c0772c1d6cca
+2016-04-15 11:32:44,456 INFO  [Client] RESULT FROM xinu02.cs.purdue.edu:3700!!!: Client 1:ACK
+2016-04-15 11:32:44,605 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:32:44,623 INFO  [Client] This request has id :7d1f1a36-2c3f-4233-ba85-bda3ac457aca
+2016-04-15 11:32:46,546 INFO  [Client] RESULT FROM xinu03.cs.purdue.edu:3700!!!: Client 1:ACK
+2016-04-15 11:32:58,706 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:32:58,725 INFO  [Client] This request has id :3c9f3f44-77c1-4024-a3c5-e85c2f0b2ef3
+2016-04-15 11:32:58,845 INFO  [Client] RESULT FROM xinu00.cs.purdue.edu:3700!!!: Client 1:iPhone6
+2016-04-15 11:32:58,990 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:32:59,008 INFO  [Client] This request has id :e2cd4c87-83d0-43ff-b00a-20bedb91d74f
+2016-04-15 11:32:59,123 INFO  [Client] RESULT FROM xinu00.cs.purdue.edu:3700!!!: Client 1:Band
+2016-04-15 11:32:59,270 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:32:59,288 INFO  [Client] This request has id :f5d730c7-a41e-4156-a492-a41c7e6e6f51
+2016-04-15 11:32:59,403 INFO  [Client] RESULT FROM xinu00.cs.purdue.edu:3700!!!: Client 1:Fire
+2016-04-15 11:32:59,536 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:32:59,552 INFO  [Client] This request has id :821d94f0-8d4c-43c6-ad75-b2fa4a370548
+2016-04-15 11:32:59,664 INFO  [Client] RESULT FROM xinu00.cs.purdue.edu:3700!!!: Client 1:Nexus
+2016-04-15 11:32:59,781 INFO  [Client] Loading configurations from configs.txt..
+2016-04-15 11:32:59,796 INFO  [Client] This request has id :9d00bab4-c62f-401d-8145-dce21eb366d8
+2016-04-15 11:32:59,908 INFO  [Client] RESULT FROM xinu00.cs.purdue.edu:3700!!!: Client 1:Aspire-V5 Notebook PC

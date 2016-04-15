@@ -202,6 +202,7 @@ public class Client {
 		}
 		catch(Exception e)
 		{
+			e.printStackTrace();
 			log.error("Error occured while connecting to RMI server with error, " + e.getMessage());
 		}
 	}}

@@ -366,7 +366,8 @@ public class DbServerInterfaceImpl extends UnicastRemoteObject implements DbServ
 		else{
 			Random r = new Random();
 			//crash rate 12.5% i.e 1/8
-			int randInt = r.nextInt(7);
+			int randInt = 6;
+			//randInt = r.nextInt(10000);
 			if ( randInt == 5){
 		 		log.info("FAIL/CRASH server " + (me+1) + ": CAUSED BY RANDOM FAILURE");
 				crashed = true;
