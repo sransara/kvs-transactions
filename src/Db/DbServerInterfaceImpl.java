@@ -1,14 +1,11 @@
-package ShardCoordinator;
+package Db;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.net.InetAddress;
 import java.net.InetSocketAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.net.UnknownHostException;
-import java.rmi.Naming;
 import java.rmi.RemoteException;
 import java.rmi.server.RMISocketFactory;
 import java.rmi.server.UnicastRemoteObject;
@@ -18,8 +15,6 @@ import java.util.List;
 import java.util.Random;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentNavigableMap;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 import java.util.concurrent.Semaphore;
 
 import org.apache.log4j.ConsoleAppender;
@@ -35,27 +30,62 @@ import Utility.UtilityClasses.*;
 
 
 @SuppressWarnings("serial")
-public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements CoordinatorInterface{
-	final static Logger log = Logger.getLogger(CoordinatorInterfaceImpl.class);
+public class DbServerInterfaceImpl extends UnicastRemoteObject implements DbServerInterface{
+	final static Logger log = Logger.getLogger(DbServerInterfaceImpl.class);
 	final static String PATTERN = "%d [%p|%c|%C{1}] %m%n";
+	private static PersistentHash hash ;
 	private static String[][] hostPorts;
 	private static int port;
 	private static String hostname;
-	private final long CRASH_DURATION = 1500;
+	private static final String ACK = "ACK";
+	private static final long CRASH_DURATION = 1500;
 	private static int me;
-	private volatile int currentSeqNo;
+	private static volatile int currentSeqNo;
 	private static volatile HashMap<UUID, Response> responseLog;
 	private static final int numReplicas = 5;
 	private Paxos paxosHelper;
-	static final int hostPortColumn = 2;
+	final static int hostPortColumn = 2;
 	private static final int TIMEOUT = 1000;
-	static volatile boolean crashed;
-	volatile Semaphore mutex = new Semaphore(1);
-	
-	static final String JOIN = "JOIN";
-	static final String MOVE = "MOVE";
-	static final String QUERY = "QUERY";
-	static final String LEAVE = "LEAVE";
+	public static volatile boolean crashed;
+	public Semaphore mutex = new Semaphore(1);
+
+	/*
+	 * Flavor of hash that persists to disk
+	 */
+	private static class PersistentHash{
+
+		private static ConcurrentNavigableMap<String,String> treeMap;
+		private static DB db;
+		public PersistentHash()
+		{
+			initializeDB();
+		}
+		public static void initializeDB()
+		{
+			db = DBMaker.fileDB(new File("testdb"))
+					.closeOnJvmShutdown()
+					.make();
+			treeMap = db.treeMap("map");
+		}
+		public boolean containsKey(String key)
+		{
+			return treeMap.containsKey(key);
+		}
+		public String get(String key)
+		{
+			return treeMap.get(key);
+		}
+		public void remove(String key)
+		{
+			treeMap.remove(key);
+			db.commit();
+		}
+		public void put(String key,String value)
+		{
+			treeMap.put(key, value);
+			db.commit();
+		}
+	}
 
 	public Paxos getPaxosHelper()
 	{
@@ -83,7 +113,7 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 					}
 		} );
 	}
-	protected CoordinatorInterfaceImpl(String host, int portNumber) throws RemoteException,Exception {
+	protected DbServerInterfaceImpl(String host, int portNumber) throws RemoteException,Exception {
 		super();
 		port = portNumber;
 		hostname = host;
@@ -127,9 +157,10 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 	/*
 	 * Setup server when constructor is called
 	 */
-	protected void initializeServer() throws Exception
+	protected  void initializeServer() throws Exception
 	{
 		configureLogger();
+		hash = new PersistentHash();
 		hostPorts= readConfigFile();
 		List<HostPorts> peers = new ArrayList<HostPorts>();
 		me = 0;
@@ -143,6 +174,35 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 		paxosHelper = new Paxos(peers,me);
 
 	}
+	/*
+	 * (non-Javadoc)
+	 * @see project3.RMIServerInterface#PUT(boolean, java.lang.String, java.lang.String, java.lang.String)
+	 * Two phase commit for PUT operation. Only if go is true. we would commit to disk.
+	 */
+	@Override
+	public Response PUT(String clientId, String key,String value, UUID requestId) throws Exception
+	{	
+		//	log.info("Server at " + hostname + ":" + port + " "+ "received [PUT " + key +"|"+value.trim() + "] from client " + clientId);
+		DbOperation putOp = new DbOperation("PUT", key, value, clientId, requestId);
+		return stallIfCrashedExecuteIfNot(putOp);
+	}
+
+	@Override
+	public Response GET(String clientId, String key, UUID requestId) throws Exception
+	{
+		//log.info("Server at " + hostname + ":" + port + " "+ "received [GET " + key + "] from client " + clientId + " has crashed " + crashed);
+		DbOperation getOp = new DbOperation("GET", key, null, clientId, requestId);
+		return stallIfCrashedExecuteIfNot(getOp);
+	}
+
+	@Override
+	public Response DELETE( String clientId, String key, UUID requestId) throws Exception
+	{
+		//log.info("Server at " + hostname + ":" + port + " "+ "received [DELETE " + key + "] from client " + clientId);
+		DbOperation deleteOp = new DbOperation("DELETE", key, null, clientId, requestId);
+		return stallIfCrashedExecuteIfNot(deleteOp);
+	}
+
 
 
 
@@ -171,13 +231,76 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 		return hostPorts;
 	}
 
-	public void applyOperation(ShardOperation operation)
+	/*
+	 * Below are helper methods for the get, delete and put operations
+	 * that directly update the db.
+	 */
+
+	public String getOperation(String key)
 	{
-		
+		String response;
+		if(hash.containsKey(key))
+			response = hash.get(key);
+		else
+		{
+			response = "No key "+ key + " matches db ";
+		}
+		return response;
+	}
+
+	public String putOperation(String key, String value)
+	{
+		String response = "";
+		// this would overwrite the values of the key
+		hash.put(key,value);
+		response = ACK;
+		return response;
+	}
+
+	public String deleteOperation(String key)
+	{
+		String response = "";
+		if(hash.containsKey(key))
+		{
+			hash.remove(key);
+			response = ACK;
+		}
+		else
+		{
+			response = "No such key - " + key +  " exists";
+		}
+		return response;
+
+	}
+	/*
+	 * Generic method that takes an operation argument and applies it to the 
+	 * db directly.
+	 */
+	public void applyOperation(DbOperation operation)
+	{
+		String result ="";
+		switch(operation.type.trim().toUpperCase()){
+		case "GET":
+			result = getOperation(operation.key);
+			responseLog.put(operation.requestId, new Response(result,true));
+			break;
+		case "PUT":
+			result = putOperation(operation.key,operation.value);
+			responseLog.put(operation.requestId, new Response(result,true));
+			break;
+		case "DELETE":
+			result = deleteOperation(operation.key);
+			responseLog.put(operation.requestId, new Response(result,true));
+			break;
+		default:
+			String response = "Client "+ operation.from + ":" +  "Invalid command " + operation.key + " was received";
+			log.error(response);
+			break;
+		}
 	}
 
 
-	public Response threePhaseCommit(ShardOperation operation)  throws Exception
+	public Response threePhaseCommit(DbOperation operation)  throws Exception
 	{
 		Response toSendBack = new Response("", false);
 		try{
@@ -212,21 +335,21 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 	 * that hasn't been utilized by any other operation 
 	 * during Paxos
 	 */
-	public int DoPaxos(ShardOperation operation) throws IOException, Exception
+	public int DoPaxos(DbOperation operation) throws IOException, Exception
 	{
 		int sequence = currentSeqNo;
 		for(;;)
 		{
-			paxosHelper.StartConsensus(sequence, UtilityClasses.encodeShardOperation(operation));
+			paxosHelper.StartConsensus(sequence, UtilityClasses.encodeDbOperation(operation));
 
 			long sleepFor = 60;
-			ShardOperation processed = null;
+			DbOperation processed = null;
 			for(;;)
 			{ Status status = paxosHelper.Status(sequence);
 
 			if(status.done)
 			{
-				processed = UtilityClasses.decodeShardOperation(status.value);
+				processed = UtilityClasses.decodeDbOperation(status.value);
 				break;
 			}
 			else
@@ -259,7 +382,7 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 			Status status = paxosHelper.Status(i);
 			if(status.done)
 			{
-				ShardOperation consensusOperation = UtilityClasses.decodeShardOperation(status.getValue());
+				DbOperation consensusOperation = UtilityClasses.decodeDbOperation(status.getValue());
 				if(!responseLog.containsKey((consensusOperation.requestId)))
 				{
 					log.info("Apply update at server " + (me()+1) + ":"  + consensusOperation.toString());
@@ -273,7 +396,7 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 	 * Pseudo-Random generator that either crashes the node or conducts a three phase commit 
 	 * on the original request.
 	 */
-	public Response stallIfCrashedExecuteIfNot(ShardOperation operation) throws Exception
+	public Response stallIfCrashedExecuteIfNot(DbOperation operation) throws Exception
 	{
 		if(crashed)
 			Thread.sleep(CRASH_DURATION);
@@ -308,7 +431,7 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 	public void KILL() throws Exception {
  		crashed = true;
  		Paxos.crashed = true;
- 		log.info("FAIL/CRASH server " + (me+1) + ": CAUSED BY RMI CALL TO ShardMaster KILL");
+ 		log.info("FAIL/CRASH server " + (me+1) + ": CAUSED BY RMI CALL TO KILL");
  		try {
  			Thread.sleep((numReplicas+1)*CRASH_DURATION);
  		} catch (InterruptedException e) {
@@ -320,28 +443,5 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
  		log.info("RESUSCITATED ZOMBIE SERVER " + (me+1) + " : IS ALIVE AGAIN! ") ;
 	    return;
 	  
-	}
-
-	@Override
-	public Response Join(JoinArgs joinArgs) throws Exception {
-		ShardOperation shardOp = new ShardOperation(JOIN,joinArgs.groupId, joinArgs.servers,0, joinArgs.uuid);
-		return stallIfCrashedExecuteIfNot(shardOp);	
-	}
-	@Override
-	public Response Query(QueryArgs queryArgs) throws Exception {
-		ShardOperation shardOp = new ShardOperation(QUERY, null,null, 0, queryArgs.uuid);
-		return stallIfCrashedExecuteIfNot(shardOp);
-	}
-
-	@Override
-	public Response Leave(LeaveArgs leaveArgs) throws Exception {
-		ShardOperation shardOp = new ShardOperation(LEAVE,null,null, 0, leaveArgs.uuid);
-		return stallIfCrashedExecuteIfNot(shardOp);
-	}
-
-	@Override
-	public Response Move(MoveArgs moveArgs) throws Exception {
-		ShardOperation shardOp = new ShardOperation(MOVE,null,null, 0, moveArgs.uuid);
-		return stallIfCrashedExecuteIfNot(shardOp);
 	}
 }

@@ -1,4 +1,4 @@
-package ShardCoordinator;
+package Shards;
 
 import java.rmi.Naming;
 import java.rmi.RemoteException;

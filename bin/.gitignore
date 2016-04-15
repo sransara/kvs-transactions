@@ -6,3 +6,5 @@
 /Utility/
 /StorageServer/
 /ShardCoordinator/
+/DbServer/
+/Sharding/

@@ -1,4 +1,4 @@
-package StorageServer;
+package Db;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -13,8 +13,8 @@ import org.apache.log4j.PatternLayout;
 
 import Paxos.PaxosInterface;
 
-public class StorageServer {
-	final static Logger log = Logger.getLogger(StorageServer.class);
+public class DbServer {
+	final static Logger log = Logger.getLogger(DbServer.class);
 	final static String PATTERN = "%d [%p|%c|%C{1}] %m%n";
 	static void configureLogger()
 	{
@@ -41,11 +41,11 @@ public class StorageServer {
 		//repeat with all other desired appenders
 	}
 	// Takes a port number to initialize the server
-	public StorageServer(String hostname, Integer portNumber) throws Exception
+	public DbServer(String hostname, Integer portNumber) throws Exception
 	{		
 		// create the registry 
-		StorageServerInterfaceImpl rmiImpl;
-		StorageServerInterface rmiMethods = (rmiImpl = new StorageServerInterfaceImpl(hostname, portNumber));
+		DbServerInterfaceImpl rmiImpl;
+		DbServerInterface rmiMethods = (rmiImpl = new DbServerInterfaceImpl(hostname, portNumber));
 		PaxosInterface paxosMethods = rmiImpl.getPaxosHelper();
 		LocateRegistry.createRegistry(portNumber);
 		//bind the method to this name so the client can search for it
@@ -85,7 +85,7 @@ public class StorageServer {
 			System.exit(-1);
 		}
 		try{
-			new StorageServer(args[0],portNumber);
+			new DbServer(args[0],portNumber);
 		}
 		catch(Exception e)
 		{

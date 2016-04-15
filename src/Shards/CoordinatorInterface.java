@@ -1,4 +1,4 @@
-package ShardCoordinator;
+package Shards;
 import java.rmi.Remote;
 
 import Utility.UtilityClasses.*;
