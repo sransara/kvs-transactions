@@ -4,11 +4,9 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.Serializable;
 import java.net.InetSocketAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.net.SocketException;
 import java.rmi.Naming;
 import java.rmi.server.RMISocketFactory;
 import java.util.UUID;
@@ -19,7 +17,6 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.PatternLayout;
 
 import Db.DbServerInterface;
-import Utility.UtilityClasses;
 import Utility.UtilityClasses.Response;
 
 public class Client {
