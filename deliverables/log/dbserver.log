@@ -1,0 +1,6 @@
+2016-04-15 09:12:59,180 INFO  [DbServer] Enter hostname
+2016-04-15 09:12:59,183 INFO  [DbServer] Enter hostname
+2016-04-15 09:18:55,880 INFO  [DbServer] Enter hostname
+2016-04-15 09:18:55,882 INFO  [DbServer] Enter hostname
+2016-04-15 09:24:21,305 INFO  [DbServer] Enter port
+2016-04-15 09:24:21,306 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
