@@ -14,6 +14,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Random;
 import java.util.UUID;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentNavigableMap;
 import java.util.concurrent.Semaphore;
 
@@ -33,7 +34,7 @@ import Utility.UtilityClasses.*;
 public class DbServerInterfaceImpl extends UnicastRemoteObject implements DbServerInterface{
 	final static Logger log = Logger.getLogger(DbServerInterfaceImpl.class);
 	final static String PATTERN = "%d [%p|%c|%C{1}] %m%n";
-	private static PersistentHash hash ;
+	private static ConcurrentHashMap<String,String> hash ;
 	private static String[][] hostPorts;
 	private static int port;
 	private static String hostname;
@@ -52,40 +53,40 @@ public class DbServerInterfaceImpl extends UnicastRemoteObject implements DbServ
 	/*
 	 * Flavor of hash that persists to disk
 	 */
-	private static class PersistentHash{
-
-		private static ConcurrentNavigableMap<String,String> treeMap;
-		private static DB db;
-		public PersistentHash()
-		{
-			initializeDB();
-		}
-		public static void initializeDB()
-		{
-			db = DBMaker.fileDB(new File("testdb"))
-					.closeOnJvmShutdown()
-					.make();
-			treeMap = db.treeMap("map");
-		}
-		public boolean containsKey(String key)
-		{
-			return treeMap.containsKey(key);
-		}
-		public String get(String key)
-		{
-			return treeMap.get(key);
-		}
-		public void remove(String key)
-		{
-			treeMap.remove(key);
-			db.commit();
-		}
-		public void put(String key,String value)
-		{
-			treeMap.put(key, value);
-			db.commit();
-		}
-	}
+//	private static class PersistentHash{
+//
+//		private static ConcurrentNavigableMap<String,String> treeMap;
+//		private static DB db;
+//		public PersistentHash()
+//		{
+//			initializeDB();
+//		}
+//		public static void initializeDB()
+//		{
+//			db = DBMaker.fileDB(new File("testdb"))
+//					.closeOnJvmShutdown()
+//					.make();
+//			treeMap = db.treeMap("map");
+//		}
+//		public boolean containsKey(String key)
+//		{
+//			return treeMap.containsKey(key);
+//		}
+//		public String get(String key)
+//		{
+//			return treeMap.get(key);
+//		}
+//		public void remove(String key)
+//		{
+//			treeMap.remove(key);
+//			db.commit();
+//		}
+//		public void put(String key,String value)
+//		{
+//			treeMap.put(key, value);
+//			db.commit();
+//		}
+//	}
 
 	public Paxos getPaxosHelper()
 	{
@@ -160,7 +161,7 @@ public class DbServerInterfaceImpl extends UnicastRemoteObject implements DbServ
 	protected  void initializeServer() throws Exception
 	{
 		configureLogger();
-		hash = new PersistentHash();
+		hash = new ConcurrentHashMap<String,String>();
 		hostPorts= readConfigFile();
 		List<HostPorts> peers = new ArrayList<HostPorts>();
 		me = 0;
