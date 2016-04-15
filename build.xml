@@ -26,9 +26,6 @@
 	</target>
 	<target name="clean">
 		<delete dir="bin"/>
-		<delete>
-				<fileset dir="deliverables" includes="**/*.log, **/*.sh, **/*.jar"/>
-		</delete>
 	</target>
 	<target depends="clean" name="cleanall"/>
 	<target depends="build-subprojects,build-project" name="build"/>
@@ -42,38 +39,9 @@
 	</target>
 	<!--this file was created by Eclipse Runnable JAR Export Wizard-->
 	<!--ANT 1.7 is required                                        -->
-	<target name="jar" depends="cleanall,build">
-		<jar destfile="/deliverables/Client.jar" filesetmanifest="mergewithoutmain">
-		            <manifest>
-		                <attribute name="Main-Class" value="Client.Client"/>
-		                <attribute name="Class-Path" value="."/>
-		            </manifest>
-		            <fileset dir="bin"/>
-		            <zipfileset excludes="META-INF/*.SF" src="resources/commons-io-2.4.jar"/>
-		            <zipfileset excludes="META-INF/*.SF" src="log4j-1.2.17.jar"/>
-		            <zipfileset excludes="META-INF/*.SF" src="mapdb-2.0-beta10.jar"/>
-		</jar>
-		<jar destfile="/deliverables/DbServer.jar" filesetmanifest="mergewithoutmain">
-				            <manifest>
-				            	<attribute name="Main-Class" value="Db.DbServer"/>
-				                <attribute name="Class-Path" value="."/>
-				            </manifest>
-				            <fileset dir="bin"/>
-				            <zipfileset excludes="META-INF/*.SF" src="resources/commons-io-2.4.jar"/>
-				            <zipfileset excludes="META-INF/*.SF" src="log4j-1.2.17.jar"/>
-				            <zipfileset excludes="META-INF/*.SF" src="mapdb-2.0-beta10.jar"/>
-		</jar>
-		<jar destfile="Coordinator.jar" filesetmanifest="mergewithoutmain">
-		            <manifest>
-		                <attribute name="Main-Class" value="Shards.Coordinator"/>
-		                <attribute name="Class-Path" value="."/>
-		            </manifest>
-		            <fileset dir="bin"/>
-		            <zipfileset excludes="META-INF/*.SF" src="resources/commons-io-2.4.jar"/>
-		            <zipfileset excludes="META-INF/*.SF" src="resources/log4j-1.2.17.jar"/>
-		            <zipfileset excludes="META-INF/*.SF" src="resources/mapdb-2.0-beta10.jar"/>
-		</jar>
+	<target name="jar" depends="build">
+
 	</target>
-		
+
 
 </project>
