@@ -50,44 +50,6 @@ public class DbServerInterfaceImpl extends UnicastRemoteObject implements DbServ
 	public static volatile boolean crashed;
 	public Semaphore mutex = new Semaphore(1);
 
-	/*
-	 * Flavor of hash that persists to disk
-	 */
-//	private static class PersistentHash{
-//
-//		private static ConcurrentNavigableMap<String,String> treeMap;
-//		private static DB db;
-//		public PersistentHash()
-//		{
-//			initializeDB();
-//		}
-//		public static void initializeDB()
-//		{
-//			db = DBMaker.fileDB(new File("testdb"))
-//					.closeOnJvmShutdown()
-//					.make();
-//			treeMap = db.treeMap("map");
-//		}
-//		public boolean containsKey(String key)
-//		{
-//			return treeMap.containsKey(key);
-//		}
-//		public String get(String key)
-//		{
-//			return treeMap.get(key);
-//		}
-//		public void remove(String key)
-//		{
-//			treeMap.remove(key);
-//			db.commit();
-//		}
-//		public void put(String key,String value)
-//		{
-//			treeMap.put(key, value);
-//			db.commit();
-//		}
-//	}
-
 	public Paxos getPaxosHelper()
 	{
 		return paxosHelper;
@@ -445,4 +407,43 @@ public class DbServerInterfaceImpl extends UnicastRemoteObject implements DbServ
 	    return;
 	  
 	}
+	
+	/*
+	 * Flavor of hash that persists to disk
+	 */
+//	private static class PersistentHash{
+//
+//		private static ConcurrentNavigableMap<String,String> treeMap;
+//		private static DB db;
+//		public PersistentHash()
+//		{
+//			initializeDB();
+//		}
+//		public static void initializeDB()
+//		{
+//			db = DBMaker.fileDB(new File("testdb"))
+//					.closeOnJvmShutdown()
+//					.make();
+//			treeMap = db.treeMap("map");
+//		}
+//		public boolean containsKey(String key)
+//		{
+//			return treeMap.containsKey(key);
+//		}
+//		public String get(String key)
+//		{
+//			return treeMap.get(key);
+//		}
+//		public void remove(String key)
+//		{
+//			treeMap.remove(key);
+//			db.commit();
+//		}
+//		public void put(String key,String value)
+//		{
+//			treeMap.put(key, value);
+//			db.commit();
+//		}
+//	}
+	
 }

@@ -1,97 +1,97 @@
-xinu00.cs.purdue.edu
-xinu01.cs.purdue.edu
-xinu02.cs.purdue.edu
-xinu03.cs.purdue.edu
-xinu04.cs.purdue.edu
-xinu05.cs.purdue.edu
-xinu06.cs.purdue.edu
-xinu07.cs.purdue.edu
-xinu08.cs.purdue.edu
-xinu09.cs.purdue.edu
-xinu10.cs.purdue.edu
-xinu11.cs.purdue.edu
-xinu12.cs.purdue.edu
-xinu13.cs.purdue.edu
-xinu14.cs.purdue.edu
-xinu15.cs.purdue.edu
-xinu16.cs.purdue.edu
-xinu17.cs.purdue.edu
-xinu18.cs.purdue.edu
-xinu19.cs.purdue.edu
-xinu20.cs.purdue.edu
-xinu21.cs.purdue.edu
-borg00.cs.purdue.edu
-borg01.cs.purdue.edu
-borg02.cs.purdue.edu
-borg03.cs.purdue.edu
-borg04.cs.purdue.edu
-borg05.cs.purdue.edu
-borg06.cs.purdue.edu
-borg07.cs.purdue.edu
-borg08.cs.purdue.edu
-borg09.cs.purdue.edu
-borg10.cs.purdue.edu
-borg11.cs.purdue.edu
-borg12.cs.purdue.edu
-borg13.cs.purdue.edu
-borg14.cs.purdue.edu
-borg15.cs.purdue.edu
-borg16.cs.purdue.edu
-borg17.cs.purdue.edu
-borg18.cs.purdue.edu
-borg19.cs.purdue.edu
-borg20.cs.purdue.edu
-borg21.cs.purdue.edu
-borg22.cs.purdue.edu
-borg23.cs.purdue.edu
-borg24.cs.purdue.edu
-sslab00.cs.purdue.edu
-sslab01.cs.purdue.edu
-sslab02.cs.purdue.edu
-sslab03.cs.purdue.edu
-sslab04.cs.purdue.edu
-sslab05.cs.purdue.edu
-sslab06.cs.purdue.edu
-sslab07.cs.purdue.edu
-sslab08.cs.purdue.edu
-sslab09.cs.purdue.edu
-sslab10.cs.purdue.edu
-sslab11.cs.purdue.edu
-sslab12.cs.purdue.edu
-sslab13.cs.purdue.edu
-sslab14.cs.purdue.edu
-sslab15.cs.purdue.edu
-sslab16.cs.purdue.edu
-sslab17.cs.purdue.edu
-sslab18.cs.purdue.edu
-sslab19.cs.purdue.edu
-sslab20.cs.purdue.edu
-sslab21.cs.purdue.edu
-sslab22.cs.purdue.edu
-sslab23.cs.purdue.edu
-sslab24.cs.purdue.edu
-moore00.cs.purdue.edu
-moore01.cs.purdue.edu
-moore02.cs.purdue.edu
-moore03.cs.purdue.edu
-moore04.cs.purdue.edu
-moore05.cs.purdue.edu
-moore06.cs.purdue.edu
-moore07.cs.purdue.edu
-moore08.cs.purdue.edu
-moore09.cs.purdue.edu
-moore10.cs.purdue.edu
-moore11.cs.purdue.edu
-moore12.cs.purdue.edu
-moore13.cs.purdue.edu
-moore14.cs.purdue.edu
-moore15.cs.purdue.edu
-moore16.cs.purdue.edu
-moore17.cs.purdue.edu
-moore18.cs.purdue.edu
-moore19.cs.purdue.edu
-moore20.cs.purdue.edu
-moore21.cs.purdue.edu
-moore22.cs.purdue.edu
-moore23.cs.purdue.edu
-moore24.cs.purdue.edu
+xinu00.cs.purdue.edu  3700
+xinu01.cs.purdue.edu  3700
+xinu02.cs.purdue.edu  3700
+xinu03.cs.purdue.edu  3700
+xinu04.cs.purdue.edu  3700
+xinu05.cs.purdue.edu  3700
+xinu06.cs.purdue.edu  3700
+xinu07.cs.purdue.edu  3700
+xinu08.cs.purdue.edu  3700
+xinu09.cs.purdue.edu  3700
+xinu10.cs.purdue.edu  3700
+xinu11.cs.purdue.edu  3700
+xinu12.cs.purdue.edu  3700
+xinu13.cs.purdue.edu  3700
+xinu14.cs.purdue.edu  3700
+xinu15.cs.purdue.edu  3700
+xinu16.cs.purdue.edu  3700
+xinu17.cs.purdue.edu  3700
+xinu18.cs.purdue.edu  3700
+xinu19.cs.purdue.edu  3700
+xinu20.cs.purdue.edu  3700
+xinu21.cs.purdue.edu  3700
+borg00.cs.purdue.edu  3700
+borg01.cs.purdue.edu  3700
+borg02.cs.purdue.edu  3700
+borg03.cs.purdue.edu  3700
+borg04.cs.purdue.edu  3700
+borg05.cs.purdue.edu  3700
+borg06.cs.purdue.edu  3700
+borg07.cs.purdue.edu  3700
+borg08.cs.purdue.edu  3700
+borg09.cs.purdue.edu  3700
+borg10.cs.purdue.edu  3700
+borg11.cs.purdue.edu  3700
+borg12.cs.purdue.edu  3700
+borg13.cs.purdue.edu  3700
+borg14.cs.purdue.edu  3700
+borg15.cs.purdue.edu  3700
+borg16.cs.purdue.edu  3700
+borg17.cs.purdue.edu  3700
+borg18.cs.purdue.edu  3700
+borg19.cs.purdue.edu  3700
+borg20.cs.purdue.edu  3700
+borg21.cs.purdue.edu  3700
+borg22.cs.purdue.edu  3700
+borg23.cs.purdue.edu  3700
+borg24.cs.purdue.edu  3700
+sslab00.cs.purdue.edu  3700
+sslab01.cs.purdue.edu  3700
+sslab02.cs.purdue.edu  3700
+sslab03.cs.purdue.edu  3700
+sslab04.cs.purdue.edu  3700
+sslab05.cs.purdue.edu  3700
+sslab06.cs.purdue.edu  3700
+sslab07.cs.purdue.edu  3700
+sslab08.cs.purdue.edu  3700
+sslab09.cs.purdue.edu  3700
+sslab10.cs.purdue.edu  3700
+sslab11.cs.purdue.edu  3700
+sslab12.cs.purdue.edu  3700
+sslab13.cs.purdue.edu  3700
+sslab14.cs.purdue.edu  3700
+sslab15.cs.purdue.edu  3700
+sslab16.cs.purdue.edu  3700
+sslab17.cs.purdue.edu  3700
+sslab18.cs.purdue.edu  3700
+sslab19.cs.purdue.edu  3700
+sslab20.cs.purdue.edu  3700
+sslab21.cs.purdue.edu  3700
+sslab22.cs.purdue.edu  3700
+sslab23.cs.purdue.edu  3700
+sslab24.cs.purdue.edu  3700
+moore00.cs.purdue.edu  3700
+moore01.cs.purdue.edu  3700
+moore02.cs.purdue.edu  3700
+moore03.cs.purdue.edu  3700
+moore04.cs.purdue.edu  3700
+moore05.cs.purdue.edu  3700
+moore06.cs.purdue.edu  3700
+moore07.cs.purdue.edu  3700
+moore08.cs.purdue.edu  3700
+moore09.cs.purdue.edu  3700
+moore10.cs.purdue.edu  3700
+moore11.cs.purdue.edu  3700
+moore12.cs.purdue.edu  3700
+moore13.cs.purdue.edu  3700
+moore14.cs.purdue.edu  3700
+moore15.cs.purdue.edu  3700
+moore16.cs.purdue.edu  3700
+moore17.cs.purdue.edu  3700
+moore18.cs.purdue.edu  3700
+moore19.cs.purdue.edu  3700
+moore20.cs.purdue.edu  3700
+moore21.cs.purdue.edu  3700
+moore22.cs.purdue.edu  3700
+moore23.cs.purdue.edu  3700
+moore24.cs.purdue.edu  3700
