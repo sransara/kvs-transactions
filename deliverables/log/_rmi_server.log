@@ -1,0 +1,111 @@
+2016-04-15 06:57:09,884 INFO  [Paxos] Accepted number = 5
+2016-04-15 06:57:09,885 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-04-15 06:57:09,994 INFO  [DbServerInterfaceImpl] Apply update at server 1:Operation [PUT Apple Color is Red, fromClient=1, requestId=364acc97-3b85-4f0e-b968-c21f4410d4d0]
+ update at server 2:Operation [PUT Apple Color is Red, fro2016-04-15 10:57:10,854 INFO  [DbServerInterfaceImpl] FAIL/CRASH server 4: CAUSED BY RANDOM FAILURE
+Color is Red, fromClient=1, requestId=364acc97-3b85-4f0e-b968-c21f4410d4d0]
+2016-04-15 10:57:10,634 INFO  [DbServerInterfaceImpl] Apply update at server 3:Operation [PUT Banana Color is Yellow, fromClient=1, requestId=a105afad-f5e5-4717-a24a-2e6c094fda1a]
+2016-04-15 10:57:10,634 INFO  [DbServerInterfaceImpl] Apply update at server 3:Operation [PUT Orange Color is Orange, fromClient=1, requestId=a92af36a-d66a-4a2d-a6a1-c9a6f251c4c6]
+2016-04-15 10:57:18,160 INFO  [Paxos] xinu03.cs.purdue.edu:3700 unreachable didn't accept 
+2016-04-15 10:57:18,160 INFO  [Paxos] Accepted number = 4
+2016-04-15 10:57:18,161 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-04-15 10:57:19,855 INFO  [DbServerInterfaceImpl] RESUSCITATED ZOMBIE SERVER 4 : IS ALIVE AGAIN! 
+lor is Red, fromClient=1, requestId=364acc97-3b85-4f0e-b968-c21f4410d4d0]
+2016-04-15 10:57:18,976 INFO  [DbServerInterfaceImpl] Apply update at server 5:Operation [PUT Banana Color is Yellow, fromClient=1, requestId=a105afad-f5e5-4717-a24a-2e6c094fda1a]
+2016-04-15 10:57:18,976 INFO  [DbServerInterfaceImpl] Apply update at server 5:Operation [PUT Orange Color is Orange, fromClient=1, requestId=a92af36a-d66a-4a2d-a6a1-c9a6f251c4c6]
+2016-04-15 10:57:18,977 INFO  [DbServerInterfaceImpl] Apply update at server 5:Operation [PUT Pineapple Color is Yellowish-Green, fromClient=1, requestId=3e7be53e-b16f-497e-b5f2-071d858e9cee]
+2016-04-15 10:57:22,199 INFO  [Paxos] Accepted number = 5
+2016-04-15 10:57:21,619 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-04-15 06:57:21,336 INFO  [DbServerInterfaceImpl] Apply update at server 2:Operation [P2016-04-15 10:57:21,063 INFO  [DbServerInterfaceImpl] Apply update at server 5:Operation [GET Apple null, fromClient=1, requestId=1fb0d2df-9af2-484c-bade-231ee1fc2af2]
+Operation [PUT Pineapple Color is Yellowish-Green, fromClient=1, requestId=3e7be53e-b16f-497e-b5f2-071d858e9cee]
+2016-04-15 06:57:21,337 INFO  [DbServerInterfaceImpl] Apply update at server 2:Operation [GET Apple null, fromClient=1, requestId=1fb0d2df-9af2-484c-bade-231ee1fc2af2]
+2016-04-15 06:57:21,338 INFO  [DbServerInterfaceImpl] Apply update at server 2:Operation [GET Banana null, fromClient=1, requestId=74de6b3c-25ce-4de3-9358-1701915f96fc]
+2016-04-15 06:57:23,267 INFO  [DbServerInterfaceImpl] FAIL/CRASH server 2: CAUSED BY RANDOM FAILURE
+4-15 10:57:22,221 INFO  [DbServerInterfaceImpl] Apply update at server 4:Operation [PUT Pineapple Color is Yellowish-Green, fromClient=1, requestId=3e7be53e-b16f-497e-b5f2-071d858e9cee]
+2016-04-15 10:57:22,222 INFO  [DbServerInterfaceImpl] Apply update at server 4:Operation [GET Apple null, fromClient=1, requestId=1fb0d2df-9af2-484c-bade-231ee1fc2af2]
+2016-04-15 10:57:22,222 INFO  [DbServerInterfaceImpl] Apply update at server 4:Operation [GET Banana null, fromClient=1, requestId=74de6b3c-25ce-4de3-9358-1701915f96fc]
+2016-04-15 10:57:22,223 INFO  [DbServerInterfaceImpl] Apply update at server 4:Operation [GET Orange null, fromClient=1, requestId=ba3297d1-b5c2-49d0-9adb-d8a9757cc689]
+2016-04-15 10:57:22,223 INFO  [DbServerInterfaceI2016-04-15 06:57:22,499 INFO  [DbServerInterfaceImpl] Apply update at server 1:Operation [GET Pineapple null, fromClient=1, requestId=7b0f2b2f-af47-4c0e-b486-18e353d6731c]
+2016-04-15 06:57:22,501 INFO  [DbServerInterfaceImpl] Apply update at server 1:Operation [DELETE Apple null, fromClient=1, requestId=318a35ed-8f3c-4f21-99e6-4b1973433df8]
+ent=1, requestId=7b0f2b2f-af47-4c0e-b486-18e353d6731c]
+2016-04-15 10:57:22,791 INFO  [DbServerInterfaceImpl] Apply update at server 3:Operation [DELETE Apple null, fromClient=1, requestId=318a35ed-8f3c-4f21-99e6-4b1973433df8]
+2016-04-15 10:57:22,792 INFO  [DbServerInterfaceImpl] Apply update at server 3:Operation [DELETE Banana null, fromClient=1, requestId=1b859c3a-370e-4110-8d74-ff0e161cde29]
+61cde29]
+2016-04-15 10:57:23,070 INFO  [DbServerInterfaceImpl] Apply update at server 4:Operation [DELETE Orange null, fromClient=1, requestId=a8547868-1532-4b99-a89e-5b68b885ab9d]
+2016-04-15 10:57:30,313 INFO  [Paxos] xinu01.cs.purdue.edu:3700 unreachable didn't accept 
+2016-04-15 10:57:30,320 INFO  [Paxos] Accepted number = 4
+2016-04-15 10:57:30,320 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-04-15 10:57:31,379 INFO  [DbServerInterfaceImpl] FAIL/CRASH server 5: CAUSED BY RANDOM FAILURE
+ 
+e null, fromClient=1, requestId=a8547868-1532-4b99-a89e-5b68b885ab9d]
+2016-04-15 10:57:31,157 INFO  [DbServerInterfaceImpl] Apply update at server 3:Operation [DELETE Kiwi null, fromClient=1, requestId=e416aafb-b76d-4e64-ac24-3e2281338b03]
+2016-04-15 06:57:38,414 INFO  [Paxos] xinu04.cs.purdue.edu:3700 unreachable didn't accept 
+2016-04-15 06:57:38,415 INFO  [Paxos] Accepted number = 4
+2016-04-15 06:57:38,415 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-04-15 10:57:40,380 INFO  [DbServerInterfaceImpl] RESUSCITATED ZOMBIE SERVER 5 : IS ALIVE AGAIN! 
+a null, fromClient=1, requestId=1b859c3a-370e-4110-8d74-ff0e161cde29]
+2016-04-15 06:57:39,256 INFO  [DbServerInterfaceImpl] Apply update at server 1:Operation [DELETE Orange null, fromClient=1, requestId=a8547868-1532-4b99-a89e-5b68b885ab9d]
+2016-04-15 06:57:39,256 INFO  [DbServerInterfaceImpl] Apply update at server 1:Operation [DELETE Kiwi null, fromClient=1, requestId=e416aafb-b76d-4e64-ac24-3e2281338b03]
+2016-04-15 06:57:39,257 INFO  [DbServerInterfaceImpl] Apply update at server 1:Operation [DELETE Pineapple null, fromClient=1, requestId=e70696ff-cbcd-4f56-8cbb-57665019a10b]
+2016-04-15 06:57:40,986 INFO  [DbServerInterfaceImpl] FAIL/CRASH server 1: CAUSED BY RANDOM FAILURE
+2016-04-15 06:57:48,010 INFO  [Paxos] xinu00.cs.purdue.edu:3700 unreachable didn't accept 
+2016-04-15 06:57:48,020 INFO  [Paxos] Accepted number = 4
+2016-04-15 06:57:48,020 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-04-15 06:57:49,986 INFO  [DbServerInterfaceImpl] RESUSCITATED ZOMBIE SERVER 1 : IS ALIVE AGAIN! 
+2016-04-15 06:57:51,716 INFO  [DbServerInterfaceImpl] FAIL/CRASH server 1: CAUSED BY RMI CALL TO KILL
+rverInterfaceImpl] Apply update at server 2:Operation [GET Kiwi null, fromClient=1, requestId=3b6e04a8-8359-46dc-9675-b7a9d00d02cb]
+2016-04-15 06:57:48,854 INFO  [DbServerInterfaceImpl] Apply update at server 2:Operation [GET Pineapple null, fromClient=1, requestId=7b0f2b2f-af47-4c0e-b486-18e353d6731c]
+2016-04-15 06:57:48,854 INFO  [DbServerInterfaceImpl] Apply update at server 2:Operation [DELETE Apple null, fromClient=1, requestId=318a35ed-8f3c-4f21-99e6-4b1973433df8]
+2016-04-15 06:57:48,855 INFO  [DbServerInterfaceImpl] Apply update at server 2:Operation [DELETE Banana null, fromClient=1, requestId=1b859c3a-370e-4110-8d74-ff0e161cde29]
+2016-04-15 06:57:48,856 INFO  [DbServerInterfaceImpl] Apply update at server 2:Operation [DELETE Orange null, fromClient=1, requestId=a8547868-1532-4b99-a89e-5b68b885ab9d]
+2016-04-15 06:57:48,856 INFO  [DbServerInterfaceImpl] Apply update at server 2:Operation [DELETE Kiwi null, fromClient=1, requestId=e416aafb-b76d-4e64-ac24-3e2281338b03]
+2016-04-15 06:57:48,857 INFO  [DbServerInterfaceImpl] Apply update at server 2:Operation [DELETE Pineapple null, fromClient=1, requestId=e70696ff-cbcd-4f56-8cbb-57665019a10b]
+2016-04-15 06:57:48,857 INFO  [DbServerInterfaceImpl] Apply update at server 2:Operation [GET Apple null, fromClient=1, requestId=76e8d2e3-2f82-40f6-9de2-5a0a5c0946a4]
+2016-04-15 06:57:50,602 INFO  [Paxos] Accepted number = 5
+2016-04-15 06:57:50,603 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-04-15 06:57:50,643 INFO  [DbServerInterfaceImpl] Apply update at server 2:Operation [GET Banana null, fromClient=1, requestId=b591e08d-44d7-4fbd-a212-2053f9fcb9d0]
+2016-04-15 06:57:50,886 INFO  [Paxos] Accepted number = 5
+2016-04-15 06:57:50,887 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-04-15 10:57:51,175 INFO  [Paxos] Accepted number = 5
+2016-04-15 10:57:51,175 INFOon [GET Orange null, fromClient2016-04-15 10:57:51,214 INFO  [DbServerInterfaceImpl] Apply update at server 3:Operation [DELETE Pineapple null, from2016-04-15 10:57:51,488 INFO  [DbServerInterfaceImpl] Apply update at server 4:Operation [DELETE Kiwi null, fromClient=1, requestId=e416aafb-b76d-4e64-ac24-3e2281338b03]
+2016-04-15 10:57:51,489 INFO  [DbServe2016-04-15 06:57:55,077 INFO  [DbServerInterfaceImpl] Apply update at server 2:Operation [GET Kiwi null, fromClient=1, requestId=3d9db5c4-aafb-413d-ba2c-2d86fd32ce09]
+2016-04-15 06:57:55,078 INFO  [DbServerInterfaceImpl] Apply update at server 2:Operation [GET Pineapple null, fromClient=1, requestId=7d0daa63-0910-420a-8a73-470411f3eb96]
+2016-04-15 06:57:55,079 INFO  [DbServerInterfaceImpl] Apply update at server 2:Operation [PUT Apple iPhone6, fromClient=1, requestId=e66d5873-db1b-4888-a034-f7e90d3dddf2]
+verInterfaceImpl] Apply update at server 4:Operation [GET Orange null, fromClient=1, requestId=5d0c2b38-1177-470c-9ad7-381fef76c59b]
+2016-04-15 10:57:51,491 INFO  [DbServerInterfaceImpl] Apply update at server 4:Operation [GET Kiwi null, fromClient=1, requestId=3d9db5c4-aafb-413d-ba2c-2d86fd32ce09]
+2016-04-15 10:57:51,492 INFO  [DbServerInterfaceImpl] Apply update at server 4:Operation [GET Pineapple null, fromClient=1, requestId=7d0daa63-0910-420a-8a73-470411f3eb96]
+2016-04-15 10:57:56,332 INFO  [Paxos] xinu00.cs.purdue.edu:3700 unreachable didn't accept 
+2016-04-15 10:57:56,342 INFO  [Paxos] Accepted number = 4
+2016-04-15 10:57:56,342 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-04-15 10:57:57,179 INFO  [DbServerInterfaceImpl] Apply update at server 4:Operation [PUT Apple iPhone6, fromClient=1, requestId=e66d5873-db1b-4888-a034-f7e90d3dddf2]
+2016-04-15 10:57:57,180 INFO  [DbServ2016-04-15 06:58:00,716 INFO  [DbServerInterfaceImpl] RESUSCITATED ZOMBIE SERVER 1 : IS ALIVE AGAIN! 
+t Band, fromClient=1, requestId=d24debc9-0883-469d-9ef9-7b05c0ae4108]
+2016-04-15 06:57:59,248 INFO  [DbSer2016-04-15 10:58:01,346 INFO  [DbServerInterfaceImpl] Apply update at server 3:Operation [GET Pineapple null, fromCli2016-04-15 10:58:01,624 INFO  [DbServerInterfaceImpl] Apply update at server 4:Operation [PUT Amazon Fire, fromClient=1, requestId=7ab81b48-95c8-4e1c-94ae-560ca02fcd4f]
+2016-04-15 10:58:01,625 INFO  [DbServerInterfaceImpl] Apply update at server 4:Operation [PUT Google Nexus, fromClient=1, requestId=af53f93a-9535-4e77-92b7-c172bd23271c]
+2016-04-15 10:58:01,625 INFO  [DbServerInterfaceImpl] Apply update at server 4:Operation [PUT Acer Aspire-V5 Notebook PC, fromClient=1, requestId=217311cf-a1db-4b19-9f56-48c376a8388f]
+estId=7ab81b48-95c8-4e1c-94ae-560ca02fcd4f]
+2016-04-15 10:58:01,348 INFO  [DbServerInterfaceImpl] Apply update at server 3:Operation [PUT Google Nexus, fromClient=1, requestId=af53f93a-9535-4e77-92b7-c172bd23271c]
+2016-04-15 06:58:13,890 INFO  [Paxos] Accepted number = 5
+2016-04-15 06:58:13,891 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-04-15 06:58:13,927 INFO  [DbServerInterfaceImpl] Apply update at server 1:Operation [GET Apple null, fromClient=1, requestId=76e8d2e3-2f82-40f6-9de2-5a0a5c0946a4]
+2016-04-15 06:58:13,928 INFO  [DbServerInterfaceImpl] Apply update at server 1:Operation [GET Banana null, fromClient=1, requestId=b591e08d-44d7-4fbd-a212-2053f9fcb9d0]
+2016-04-15 06:58:13,928 INFO  [DbServerInterfaceImpl] Apply update at server 1:Operation [GET Orange null, fromClient=1, requestId=5d0c2b38-1177-470c-9ad7-381fef76c59b]
+2016-04-15 06:58:13,929 INFO  [DbServerInterfaceImpl] Apply update at server 1:Operation [GET Kiwi null, fromClient=1, requestId=3d9db5c4-aafb-413d-ba2c-2d86fd32ce09]
+2016-04-15 06:58:13,929 INFO  [DbServerInterfaceImpl] Apply update at server 1:Operation [GET Pineapple null, fromClient=1, requestId=7d0daa63-0910-420a-8a73-470411f3eb96]
+2016-04-15 06:58:13,930 INFO  [DbServerInterfaceImpl] Apply update at server 1:Operation [PUT Apple iPhone6, fromClient=1, requestId=e66d5873-db1b-4888-a034-f7e90d3dddf2]
+2016-04-15 06:58:13,930 INFO  [DbServerInterfaceImpl] Apply update at server 1:Operation [PUT Microsoft Band, fromClient=1, requestId=d24debc9-0883-469d-9ef9-7b05c0ae4108]
+2016-04-15 06:58:13,930 INFO  [DbServerInterfaceImpl] Apply update at server 1:Operation [PUT Amazon Fire, fromClient=1, requestId=7ab81b48-95c8-4e1c-94ae-560ca02fcd4f]
+2016-04-15 06:58:13,931 INFO  [DbServerInterfaceImpl] Apply update at server 1:Operation [PUT Google Nexus, fromClient=1, requestId=af53f93a-9535-4e77-92b7-c172bd23271c]
+2016-04-15 06:58:13,931 INFO  [DbServerInterfaceImpl] Apply update at server 1:Operation [PUT Acer Aspire-V5 Notebook PC, fromClient=1, requestId=217311cf-a1db-4b19-9f56-48c376a8388f]
+2016-04-15 06:58:13,931 INFO  [DbServerInterfaceImpl] Apply update at server 1:Operation [GET Apple null, fromClient=1, requestId=c026d7b9-0f6d-4007-8116-686c2f6b7274]
+2016-04-15 06:58:14,171 INFO  [Paxos] Accepted number = 5
+2016-04-15 06:58:14,172 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-04-15 06:58:14,212 INFO  [DbServerInterfaceImpl] Apply update at server 1:Operation [GET Microsoft null, fromClient=1, requestId=763e0c2f-9075-4b1c-955e-ec7ed83d4993]
+2016-04-15 06:58:14,450 INFO  [Paxos] Accepted number = 5
+2016-04-15 06:58:14,451 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-04-15 06:58:14,494 INFO  [DbServerInterfaceImpl] Apply update at server 1:Operation [GET Amazon null, fromClient=1, requestId=23a6e109-dfaf-41b9-af70-fcb3345a4a2d]
+2016-04-15 06:58:14,733 INFO  [Paxos] Accepted number = 5
+2016-04-15 06:58:14,734 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-04-15 06:58:14,776 INFO  [DbServerInterfaceImpl] Apply update at server 1:Operation [GET Google null, fromClient=1, requestId=d0822cd3-a20d-4a74-9ee6-67c4a9d8f068]
+2016-04-15 06:58:15,005 INFO  [Paxos] Accepted number = 5
+2016-04-15 06:58:15,006 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-04-15 06:58:15,049 INFO  [DbServerInterfaceImpl] Apply update at server 1:Operation [GET Acer null, fromClient=1, requestId=92250701-011a-4fb7-bab6-315c331972d9]
