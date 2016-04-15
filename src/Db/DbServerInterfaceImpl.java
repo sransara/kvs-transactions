@@ -173,7 +173,7 @@ public class DbServerInterfaceImpl extends UnicastRemoteObject implements DbServ
 	{		
 		String hostPorts [][] = new String[numReplicas][hostPortColumn];
 		try {
-			BufferedReader fileReader = new BufferedReader(new FileReader("../configs.txt"));			
+			BufferedReader fileReader = new BufferedReader(new FileReader("configs.txt"));			
 			int c = 0;
 
 			while(c++!=numReplicas)

@@ -80,7 +80,7 @@ public class Client {
 	{		
 		String hostPorts [][] = new String[numReplicas][hostPortColumn];
 		try {
-			BufferedReader fileReader = new BufferedReader(new FileReader("../configs.txt"));			
+			BufferedReader fileReader = new BufferedReader(new FileReader("configs.txt"));			
 			log.info("Loading configurations from configs.txt..");
 			int c = 0;
 
