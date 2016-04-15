@@ -29,7 +29,7 @@ public class DbServer {
 		// This is for the tcp_client log file
 		FileAppender fa = new FileAppender();
 		fa.setName("FileLogger");
-		fa.setFile("log/_rmi_server.log");
+		fa.setFile("log/dbserver.log");
 		fa.setLayout(new PatternLayout("%d %-5p [%c{1}] %m%n"));
 		fa.setThreshold(Level.ALL);
 		fa.setAppend(true);

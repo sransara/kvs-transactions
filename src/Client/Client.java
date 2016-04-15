@@ -12,15 +12,6 @@ import java.net.SocketException;
 import java.rmi.Naming;
 import java.rmi.server.RMISocketFactory;
 import java.util.UUID;
-
-
-
-
-
-
-
-
-
 import org.apache.log4j.ConsoleAppender;
 import org.apache.log4j.FileAppender;
 import org.apache.log4j.Level;
@@ -31,8 +22,8 @@ import Db.DbServerInterface;
 import Utility.UtilityClasses;
 import Utility.UtilityClasses.Response;
 
-public class RMIClient {
-	final static Logger log = Logger.getLogger(RMIClient.class);
+public class Client {
+	final static Logger log = Logger.getLogger(Client.class);
 	final static String PATTERN = "%d [%p|%c|%C{1}] %m%n";
 	final static int numReplicas = 5;
 	final static int hostPortColumn = 2;
@@ -50,7 +41,7 @@ public class RMIClient {
 		// This is for the tcp_client log file
 		FileAppender fa = new FileAppender();
 		fa.setName("FileLogger");
-		fa.setFile("log/_rmi_client.log");
+		fa.setFile("log/client.log");
 		fa.setLayout(new PatternLayout("%d %-5p [%c{1}] %m%n"));
 		fa.setThreshold(Level.ALL);
 		fa.setAppend(true);
