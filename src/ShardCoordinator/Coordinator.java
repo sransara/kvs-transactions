@@ -1,4 +1,4 @@
-package Shards;
+package ShardCoordinator;
 
 import java.rmi.Naming;
 import java.rmi.RemoteException;
@@ -13,9 +13,9 @@ import org.apache.log4j.PatternLayout;
 
 import Paxos.PaxosInterface;
 
-public class ShardMaster {
+public class Coordinator {
 	
-	final static Logger log = Logger.getLogger(ShardMaster.class);
+	final static Logger log = Logger.getLogger(Coordinator.class);
 	final static String PATTERN = "%d [%p|%c|%C{1}] %m%n";
 	private volatile Semaphore mutex ;
 	
@@ -44,11 +44,11 @@ public class ShardMaster {
 		//repeat with all other desired appenders
 	}
 	
-	public ShardMaster(String hostname, int portNumber) throws RemoteException, Exception
+	public Coordinator(String hostname, int portNumber) throws RemoteException, Exception
 	{
 		// create the registry 
-		ShardMasterInterfaceImpl shardMasterImpl;
-		ShardMasterInterface shardMethods = (shardMasterImpl = new ShardMasterInterfaceImpl(hostname, portNumber));
+		CoordinatorInterfaceImpl shardMasterImpl;
+		CoordinatorInterface shardMethods = (shardMasterImpl = new CoordinatorInterfaceImpl(hostname, portNumber));
 		PaxosInterface paxosMethods = shardMasterImpl.getPaxosHelper();
 		LocateRegistry.createRegistry(portNumber);
 		//bind the method to this name so the client can search for it

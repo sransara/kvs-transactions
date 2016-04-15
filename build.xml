@@ -10,7 +10,7 @@
 	<property name="debuglevel" value="source,lines,vars"/>
 	<property name="target" value="1.7"/>
 	<property name="source" value="1.7"/>
-	<path id="KeyVS.classpath">
+	<path id="KVSTransactions.classpath">
 		<pathelement location="bin"/>
 		<pathelement location="resources/commons-io-2.4.jar"/>
 		<pathelement location="resources/log4j-1.2.17.jar"/>
@@ -34,86 +34,13 @@
 		<echo message="${ant.project.name}: ${ant.file}"/>
 		<javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
 			<src path="src"/>
-			<classpath refid="KeyVS.classpath"/>
+			<classpath refid="KVSTransactions.classpath"/>
 		</javac>
-	</target>
-	<target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
-	<target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
-		<copy todir="${ant.library.dir}">
-			<fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
-		</copy>
-		<unzip dest="${ant.library.dir}">
-			<patternset includes="jdtCompilerAdapter.jar"/>
-			<fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
-		</unzip>
-	</target>
-	<target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
-		<property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
-		<antcall target="build"/>
 	</target>
 	<!--this file was created by Eclipse Runnable JAR Export Wizard-->
 	<!--ANT 1.7 is required                                        -->
 	<target name="jar" depends="build">
-		<jar destfile="deliver/project/RMIServer1/RMIServer.jar" filesetmanifest="mergewithoutmain">
-							<manifest>
-								<attribute name="Main-Class" value="project.RMIServer"/>
-								<attribute name="Class-Path" value="."/>
-							</manifest>
-							<fileset dir="bin"/>
-							<zipfileset excludes="META-INF/*.SF" src="resources/commons-io-2.4.jar"/>
-							<zipfileset excludes="META-INF/*.SF" src="resources/log4j-1.2.17.jar"/>
-							<zipfileset excludes="META-INF/*.SF" src="resources/mapdb-2.0-beta10.jar"/>
-						</jar>
-				<jar destfile="deliver/project/RMIServer2/RMIServer.jar" filesetmanifest="mergewithoutmain">
-										<manifest>
-											<attribute name="Main-Class" value="project.RMIServer"/>
-											<attribute name="Class-Path" value="."/>
-										</manifest>
-										<fileset dir="bin"/>
-										<zipfileset excludes="META-INF/*.SF" src="resources/commons-io-2.4.jar"/>
-										<zipfileset excludes="META-INF/*.SF" src="resources/log4j-1.2.17.jar"/>
-										<zipfileset excludes="META-INF/*.SF" src="resources/mapdb-2.0-beta10.jar"/>
-									</jar>
-							<jar destfile="deliver/project/RMIServer3/RMIServer.jar" filesetmanifest="mergewithoutmain">
-											<manifest>
-												<attribute name="Main-Class" value="project.RMIServer"/>
-												<attribute name="Class-Path" value="."/>
-											</manifest>
-											<fileset dir="bin"/>
-											<zipfileset excludes="META-INF/*.SF" src="resources/commons-io-2.4.jar"/>
-											<zipfileset excludes="META-INF/*.SF" src="resources/log4j-1.2.17.jar"/>
-											<zipfileset excludes="META-INF/*.SF" src="resources/mapdb-2.0-beta10.jar"/>
-										</jar>
-							<jar destfile="deliver/project/RMIServer4/RMIServer.jar" filesetmanifest="mergewithoutmain">
-											<manifest>
-												<attribute name="Main-Class" value="project.RMIServer"/>
-												<attribute name="Class-Path" value="."/>
-											</manifest>
-											<fileset dir="bin"/>
-											<zipfileset excludes="META-INF/*.SF" src="resources/commons-io-2.4.jar"/>
-											<zipfileset excludes="META-INF/*.SF" src="resources/log4j-1.2.17.jar"/>
-											<zipfileset excludes="META-INF/*.SF" src="resources/mapdb-2.0-beta10.jar"/>
-										</jar>
-							<jar destfile="deliver/project/RMIServer5/RMIServer.jar" filesetmanifest="mergewithoutmain">
-											<manifest>
-												<attribute name="Main-Class" value="project.RMIServer"/>
-												<attribute name="Class-Path" value="."/>
-											</manifest>
-											<fileset dir="bin"/>
-											<zipfileset excludes="META-INF/*.SF" src="resources/commons-io-2.4.jar"/>
-											<zipfileset excludes="META-INF/*.SF" src="resources/log4j-1.2.17.jar"/>
-											<zipfileset excludes="META-INF/*.SF" src="resources/mapdb-2.0-beta10.jar"/>
-										</jar>
-						<jar destfile="deliver/project/RMIClient/RMIClient.jar" filesetmanifest="mergewithoutmain">
-							<manifest>
-								<attribute name="Main-Class" value="project.RMIClient"/>
-								<attribute name="Class-Path" value="."/>
-							</manifest>
-							<fileset dir="bin"/>
-							<zipfileset excludes="META-INF/*.SF" src="resources/commons-io-2.4.jar"/>
-							<zipfileset excludes="META-INF/*.SF" src="resources/log4j-1.2.17.jar"/>
-							<zipfileset excludes="META-INF/*.SF" src="resources/mapdb-2.0-beta10.jar"/>
-						</jar>
+
 	</target>
 
 

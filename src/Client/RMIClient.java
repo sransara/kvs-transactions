@@ -18,13 +18,14 @@ import java.util.UUID;
 
 
 
+
 import org.apache.log4j.ConsoleAppender;
 import org.apache.log4j.FileAppender;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PatternLayout;
 
-import Db.RMIServerInterface;
+import StorageServer.StorageServerInterface;
 import Utility.UtilityClasses;
 import Utility.UtilityClasses.Response;
 
@@ -176,7 +177,7 @@ public class RMIClient {
 				values = values.trim();
 				try{
 					// locate the remote object initialize the proxy using the binder
-					RMIServerInterface hostImpl = (RMIServerInterface) Naming.lookup("rmi://" + hostname + ":" + port + "/Calls" );
+					StorageServerInterface hostImpl = (StorageServerInterface) Naming.lookup("rmi://" + hostname + ":" + port + "/Calls" );
 					switch(command.trim().toUpperCase()){
 					case "GET":
 						response = hostImpl.GET(clientId,key, uuid);

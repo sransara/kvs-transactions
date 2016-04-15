@@ -1,9 +1,9 @@
-package Shards;
+package ShardCoordinator;
 import java.rmi.Remote;
 
 import Utility.UtilityClasses.*;
 
-public interface ShardMasterInterface extends Remote {
+public interface CoordinatorInterface extends Remote {
 
 	public Response Join(JoinArgs joinArgs) throws Exception;
 	public Response Query(QueryArgs queryArgs)throws Exception;

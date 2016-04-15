@@ -1,4 +1,4 @@
-package Shards;
+package ShardCoordinator;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -35,8 +35,8 @@ import Utility.UtilityClasses.*;
 
 
 @SuppressWarnings("serial")
-public class ShardMasterInterfaceImpl extends UnicastRemoteObject implements ShardMasterInterface{
-	final static Logger log = Logger.getLogger(ShardMasterInterfaceImpl.class);
+public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements CoordinatorInterface{
+	final static Logger log = Logger.getLogger(CoordinatorInterfaceImpl.class);
 	final static String PATTERN = "%d [%p|%c|%C{1}] %m%n";
 	private static String[][] hostPorts;
 	private static int port;
@@ -83,7 +83,7 @@ public class ShardMasterInterfaceImpl extends UnicastRemoteObject implements Sha
 					}
 		} );
 	}
-	protected ShardMasterInterfaceImpl(String host, int portNumber) throws RemoteException,Exception {
+	protected CoordinatorInterfaceImpl(String host, int portNumber) throws RemoteException,Exception {
 		super();
 		port = portNumber;
 		hostname = host;

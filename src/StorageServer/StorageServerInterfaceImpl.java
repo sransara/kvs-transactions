@@ -1,4 +1,4 @@
-package Db;
+package StorageServer;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -30,8 +30,8 @@ import Utility.UtilityClasses.*;
 
 
 @SuppressWarnings("serial")
-public class RMIServerInterfaceImpl extends UnicastRemoteObject implements RMIServerInterface{
-	final static Logger log = Logger.getLogger(RMIServerInterfaceImpl.class);
+public class StorageServerInterfaceImpl extends UnicastRemoteObject implements StorageServerInterface{
+	final static Logger log = Logger.getLogger(StorageServerInterfaceImpl.class);
 	final static String PATTERN = "%d [%p|%c|%C{1}] %m%n";
 	private static PersistentHash hash ;
 	private static String[][] hostPorts;
@@ -113,7 +113,7 @@ public class RMIServerInterfaceImpl extends UnicastRemoteObject implements RMISe
 					}
 		} );
 	}
-	protected RMIServerInterfaceImpl(String host, int portNumber) throws RemoteException,Exception {
+	protected StorageServerInterfaceImpl(String host, int portNumber) throws RemoteException,Exception {
 		super();
 		port = portNumber;
 		hostname = host;
