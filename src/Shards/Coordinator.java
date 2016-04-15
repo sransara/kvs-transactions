@@ -58,4 +58,11 @@ public class Coordinator {
 		Naming.bind(bindMePaxos, paxosMethods);
 		log.info("Paxos RMIServer " + (shardMasterImpl.me()+1) + "  started successfully");
 	}
+	
+	
+	public static void main(String args[])
+	{
+		
+		
+	}
 }

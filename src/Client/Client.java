@@ -1,5 +1,4 @@
 package Client;
-
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -12,15 +11,6 @@ import java.net.SocketException;
 import java.rmi.Naming;
 import java.rmi.server.RMISocketFactory;
 import java.util.UUID;
-
-
-
-
-
-
-
-
-
 import org.apache.log4j.ConsoleAppender;
 import org.apache.log4j.FileAppender;
 import org.apache.log4j.Level;
@@ -31,8 +21,8 @@ import Db.DbServerInterface;
 import Utility.UtilityClasses;
 import Utility.UtilityClasses.Response;
 
-public class RMIClient {
-	final static Logger log = Logger.getLogger(RMIClient.class);
+public class Client {
+	final static Logger log = Logger.getLogger(Client.class);
 	final static String PATTERN = "%d [%p|%c|%C{1}] %m%n";
 	final static int numReplicas = 5;
 	final static int hostPortColumn = 2;
