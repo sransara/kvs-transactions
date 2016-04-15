@@ -3,5 +3,5 @@ while read line; do
 	echo " Killing DbServer, Coordinator, Client on host " $line
 	ssh -T ${stringarray[0]} <<'ENDSSH0' &
 	jps -l | grep -E 'DbServer.jar|Coordinator.jar|Client.jar' | awk '{print $1}' | xargs kill -9
-#ENDSSH0
+ENDSSH0
 done < configs.txt

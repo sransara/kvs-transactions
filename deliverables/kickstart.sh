@@ -5,5 +5,5 @@ stringarray=($line)
 ssh -T ${stringarray[0]} <<'ENDSSH0' &
 cd /u/antor/u7/ravi18/KVSTransactions/deliverables
 java -jar DbServer.jar
-#ENDSSH0
+ENDSSH0
 done < configs.txt
