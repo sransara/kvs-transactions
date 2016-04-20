@@ -17,13 +17,16 @@ public class UtilityClasses {
 	{
 		private static final long serialVersionUID = 1L;
 		public Configuration(int confNo,
+				HashMap<Integer, UUID> shardToGroupId,
 				HashMap<UUID, List<HostPorts>> replicaGroupMap) {
 			super();
 			this.confNo = confNo;
+			this.shardToGroupIdMap = shardToGroupId;
 			this.replicaGroupMap = replicaGroupMap;
 		}
 		public int confNo;
 		public HashMap<UUID, List<HostPorts>> replicaGroupMap;
+		public HashMap<Integer, UUID> shardToGroupIdMap;
 	}
 
 	 /** Write the object to a Base64 string. */
