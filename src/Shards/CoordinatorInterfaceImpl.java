@@ -1,6 +1,5 @@
 package Shards;
 import java.io.BufferedReader;
-
 import java.io.FileReader;
 import java.io.IOException;
 import java.net.InetSocketAddress;
@@ -289,12 +288,17 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 		if(maximumConfigurationNo == 0)
 		{
 			HashMap<UUID, List<HostPorts>> replicaGroupMap = new HashMap<UUID, List<HostPorts>>();
-			newConfiguration = new Configuration(maximumConfigurationNo,replicaGroupMap);
+			replicaGroupMap.put(joinArgs.groupId, joinArgs.servers);
+			HashMap<Integer, UUID> shardToGroupId = new HashMap<Integer, UUID>();
+			newConfiguration = new Configuration(maximumConfigurationNo,shardToGroupId, replicaGroupMap);
 		}
 		else
 		{
 			Configuration oldConfiguration = configurations.get(maximumConfigurationNo-1);
-			newConfiguration = new Configuration(maximumConfigurationNo, new HashMap<UUID, List<HostPorts>>(oldConfiguration.replicaGroupMap));			
+			HashMap<UUID, List<HostPorts>> replicaGroupMap =new HashMap<UUID, List<HostPorts>>(oldConfiguration.replicaGroupMap);
+			HashMap<Integer, UUID> shardToGroupId = new HashMap<Integer, UUID>(oldConfiguration.shardToGroupIdMap);
+			replicaGroupMap.put(joinArgs.groupId, joinArgs.servers);
+			newConfiguration = new Configuration(maximumConfigurationNo,shardToGroupId,replicaGroupMap);			
 		}
 		reconfigure(newConfiguration);
 		configurations.add(newConfiguration);
@@ -313,7 +317,7 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 			return new LeaveReply();
 		}
 		Configuration oldConfiguration = configurations.get(maximumConfigurationNo-1);
-		
+		HashMap<Integer, UUID> shardToGroupId = new HashMap<Integer, UUID>(oldConfiguration.shardToGroupIdMap);
 		HashMap<UUID, List<HostPorts>> replicaGroupMap  = new HashMap<UUID, List<HostPorts>>(oldConfiguration.replicaGroupMap);
 		if(replicaGroupMap.containsKey(leaveArgs.groupId))
 		{
@@ -323,7 +327,7 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 		{
 			log.info("Error: Request to leave failed. Group Id " + leaveArgs.groupId + " doesn't exist in latest configuration.");
 		}
-		Configuration newConfiguration = new Configuration(maximumConfigurationNo,replicaGroupMap);
+		Configuration newConfiguration = new Configuration(maximumConfigurationNo,shardToGroupId, replicaGroupMap);
 		configurations.add(newConfiguration);
 		reconfigure(newConfiguration);
 		maximumConfigurationNo = maximumConfigurationNo + 1;
@@ -333,7 +337,7 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 	public PollReply pollOperation(PollArgs pollArgs)
 	{
 		log.info(" Called pollOperation");
-		return new PollReply(null);
+		return new PollReply(configurations.get(maximumConfigurationNo));
 	}
 	
 	public void reconfigure(Configuration configuration)
