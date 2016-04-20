@@ -9,9 +9,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.rmi.Naming;
 import java.rmi.server.RMISocketFactory;
-import java.util.HashMap;
-import java.util.Random;
-import java.util.UUID;
+import java.util.*;
 
 import Shards.CoordinatorInterface;
 import Utility.UtilityClasses;
@@ -31,8 +29,8 @@ public class Client {
     private static final int TIMEOUT = 1000;
 
 
-    private static HashMap<String, String> local = new HashMap<String, String>();
-    private static ClientTransaction.Context transactionContext = new ClientTransaction.Context();
+    private static HashMap<String, String> local = new HashMap<>();
+    private static ClientTransaction.LocalTransactionContext localTransactionContext = new ClientTransaction.LocalTransactionContext();
     private static UtilityClasses.Configuration configuration;
 
     static void configureLogger() {
@@ -106,10 +104,23 @@ public class Client {
 
         String line;
         String tokens[];
+        ArrayList<String> program = new ArrayList<>();
+        int current = 0;
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        while((line = br.readLine()) != null) {
-            line = line.trim();
+
+        while(true) {
+            if(current < program.size()) {
+                line = program.get(current);
+            }
+            else {
+                line = br.readLine();
+                if(line == null) {
+                    break;
+                }
+                line = line.trim();
+                program.add(line);
+            }
 
             tokens = line.split("\\s+");
             String command = tokens[0];
@@ -119,6 +130,7 @@ public class Client {
             switch (command) {
                 case "GET":
                     // GET [KEY] [$REG]
+
                     String key = tokens[1];
                     String reg = tokens[2];
                     handleGet(key, reg, uuid);
@@ -135,25 +147,60 @@ public class Client {
 
                 case "ADD":
                     // ADD [$REG1] [$REG2] [$REGD]
+
                     String reg1 = tokens[1];
                     String reg2 = tokens[2];
                     String regd = tokens[3];
 
                     local.put(regd, local.get(reg1) + local.get(reg2));
+
                     break;
 
                 case "START_TRANSACTOIN":
                     // START_TRANSACTION
-                    if(!transactionContext.isCommited) {
-                        handleCommitTransaction();
+
+                    localTransactionContext = new ClientTransaction.LocalTransactionContext();
+
+                    // Implicitly wrap with transaction
+                    if(!localTransactionContext.tried) {
+                        localTransactionContext.tried = false;
+                        if(!tryCommitTransaction()) {
+                            // transaction was aborted: retry transaction
+                            log.info("Retrying transaction");
+                            current = localTransactionContext.startLine;
+                            localTransactionContext.startLine = current;
+                            continue;
+                        }
                     }
-                    transactionContext = new ClientTransaction.Context();
+                    else {
+                        localTransactionContext.startLine = current;
+                    }
+
                     break;
 
                 case "COMMIT_TRANSACTION":
                     // COMMIT_TRANSACTION
+                    localTransactionContext = new ClientTransaction.LocalTransactionContext();
+
+                    if(!tryCommitTransaction()) {
+                        // transaction was aborted: retry transaction
+                        log.info("Retrying transaction");
+                        current = localTransactionContext.startLine;
+
+                        // recreate transaction
+                        localTransactionContext.startLine = current;
+
+                        continue;
+                    }
+                    else {
+                        localTransactionContext = new ClientTransaction.LocalTransactionContext();
+                        localTransactionContext.startLine = current;
+                    }
+
                     break;
             }
+
+            current++;
         }
     }
 
@@ -186,7 +233,7 @@ public class Client {
         }
     }
 
-    public static void handleGet(String key, String reg, UUID uuid) {
+    public static boolean handleGet(String key, String reg, UUID uuid) {
         String hostname;
         int port;
 
@@ -194,7 +241,11 @@ public class Client {
 
         if (local.containsKey(key)) {
             value = local.get(key);
-        } else {
+        }
+        else if(localTransactionContext.store.containsKey(key)) {
+            value = localTransactionContext.store.get(key);
+        }
+        else {
             UtilityClasses.HostPorts hostPorts[] = configuration.getDbServersForKey(key);
             int i = new Random().nextInt(hostPorts.length);
             Response r = new Response("", false);
@@ -212,14 +263,48 @@ public class Client {
                 i = (i + 1) % hostPorts.length;
             }
             value = (String) r.getValue();
-            transactionContext.readSet.add(new ClientTransaction.KeyValue(key, value));
+            localTransactionContext.txContext.readSet.add(new ClientTransaction.KeyValue(key, value));
         }
 
-        local.put(reg, value);
+        localTransactionContext.store.put(reg, value);
+
+        return true;
     }
 
-    public static void handleCommitTransaction() {
+    public static boolean tryCommitTransaction() {
+        String hostname;
+        int port;
+        String firstKey = localTransactionContext.txContext.readSet
+        UtilityClasses.HostPorts hostPorts[] = configuration.getDbServersForKey(key);
+        int i = new Random().nextInt(hostPorts.length);
+        Response r = new Response("", false);
+        while (!r.done) {
+            UtilityClasses.HostPorts hostPort = hostPorts[i];
+            hostname = hostPort.getHostName();
+            port = hostPort.getPort();
+            try {
+                DbServerInterface hostImpl = (DbServerInterface) Naming.lookup("rmi://" + hostname + ":" + port + "/Calls");
+                // TODO: change next line
+                r = hostImpl.COMMIT(localTransactionContext.txContext);
+            } catch (Exception e) {
+                log.info("Contact server hostname:port " + hostname + " : " + port + " FAILED. Trying others..");
+            }
+            i = (i + 1) % hostPorts.length;
+        }
 
+        // TODO: change next line
+        if(r.getValue() == "commited") {
+            localTransactionContext.tried = true;
+            // merge transaction store with local
+            for (Map.Entry<String, String> entry : localTransactionContext.store.entrySet()) {
+                String key = entry.getKey();
+                String value = entry.getValue();
+
+                localTransactionContext.store.put(key, value);
+            }
+            return true;
+        }
+        // else
+        return false;
     }
 }
-

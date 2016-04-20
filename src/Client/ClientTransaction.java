@@ -16,9 +16,15 @@ public class ClientTransaction {
         }
     }
 
-    public static class Context implements  Serializable{
-        boolean isCommited = false;
+    public static class TransactionContext implements  Serializable{
         public List<KeyValue> readSet = new ArrayList<>();
         public List<String> writeSet = new ArrayList<>();
+    }
+
+    public static class LocalTransactionContext {
+        TransactionContext txContext = new TransactionContext();
+        HashMap<String, String> store = new HashMap<>();
+        boolean tried = false;
+        int startLine = 0;
     }
 }
