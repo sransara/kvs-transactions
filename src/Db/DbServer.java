@@ -60,7 +60,6 @@ public class DbServer {
 		configureLogger();
 		if(args.length != 2 )
 		{
-			log.info("Enter hostname");
 			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 			args = new String[2];
 			try{
