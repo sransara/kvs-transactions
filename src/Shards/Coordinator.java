@@ -52,8 +52,8 @@ public class Coordinator {
 		PaxosInterface paxosMethods = shardMasterImpl.getPaxosHelper();
 		LocateRegistry.createRegistry(portNumber);
 		//bind the method to this name so the client can search for it
-		String bindMeShardMaster = "rmi://" + hostname + ":" + portNumber + "/Shards";
-		String bindMePaxos = "rmi://" + hostname + ":" + portNumber + "/ShardPaxos";
+		String bindMeShardMaster = "rmi://" + hostname + ":" + portNumber + "/ShardCoordinator";
+		String bindMePaxos = "rmi://" + hostname + ":" + portNumber + "/ShardCoordinatorPaxos";
 		Naming.bind(bindMeShardMaster, shardMethods);
 		Naming.bind(bindMePaxos, paxosMethods);
 		log.info("Paxos RMIServer " + (shardMasterImpl.me()+1) + "  started successfully");

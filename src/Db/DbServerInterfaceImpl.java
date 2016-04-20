@@ -134,8 +134,8 @@ public class DbServerInterfaceImpl extends UnicastRemoteObject implements DbServ
 				me =a;
 			peers.add(newHostPort);
 		}
-		paxosHelper = new Paxos(peers,me);
-
+		paxosHelper = new Paxos(peers,me,"/Paxos");
+	
 	}
 	/*
 	 * (non-Javadoc)
@@ -412,7 +412,7 @@ public class DbServerInterfaceImpl extends UnicastRemoteObject implements DbServ
 	/*
 	 * Flavor of hash that persists to disk
 	 */
-//	private static class PersistentHash{
+/*	private static class PersistentHash{
 //
 //		private static ConcurrentNavigableMap<String,String> treeMap;
 //		private static DB db;
@@ -446,5 +446,5 @@ public class DbServerInterfaceImpl extends UnicastRemoteObject implements DbServ
 //			db.commit();
 //		}
 //	}
-	
+*/	
 }

@@ -13,11 +13,11 @@ import java.util.UUID;
 
 public class UtilityClasses {
 	
-	public static class Configuration implements Serializable
+	public static class Configuration implements Serializable 
 	{
 		private static final long serialVersionUID = 1L;
 		public Configuration(int sequenceNo, Integer[] shardsGroup,
-				HashMap<Integer, List<Integer>> replicaGroupMap) {
+				HashMap<Integer, List<HostPorts>> replicaGroupMap) {
 			super();
 			this.sequenceNo = sequenceNo;
 			this.ShardsGroupId = shardsGroup;
@@ -25,72 +25,10 @@ public class UtilityClasses {
 		}
 		public int sequenceNo;
 		public Integer [] ShardsGroupId;
-		public HashMap<Integer, List<Integer>> replicaGroupMap;
+		public HashMap<Integer, List<HostPorts>> replicaGroupMap;
 	}
 	
 	
-	public static class LeaveArgs implements Serializable
-	{
-		private static final long serialVersionUID = 1L;
-		public int groupId;
-		public UUID uuid;
-		public LeaveArgs(int groupId, UUID uuid) {
-			super();
-			this.groupId = groupId;
-			this.uuid = uuid;
-		}
-		
-		
-	}
-	
-	public static class MoveArgs implements Serializable
-	{
-		private static final long serialVersionUID = 1L;
-		public Integer shard;
-		public Integer groupId;
-		public UUID uuid;
-		public MoveArgs(Integer shard, Integer groupId, UUID uuid) {
-			super();
-			this.shard = shard;
-			this.groupId = groupId;
-			this.uuid = uuid;
-		}
-	}
-	public static class JoinArgs implements Serializable
-	{
-		private static final long serialVersionUID = 1L;
-		public Integer groupId;
-		public UUID uuid;
-		public List<Integer> servers;
-		public JoinArgs(Integer groupId, List<Integer> servers, UUID uuid) {
-			super();
-			this.groupId = groupId;
-			this.servers = servers;
-			this.uuid = uuid;
-		}
-		
-	}
-	public static class QueryArgs implements Serializable
-	{
-		private static final long serialVersionUID = 1L;
-		public int configurationSequenceNumber;
-		public UUID uuid;
-		public QueryArgs(int configurationSequenceNumber, UUID uuid) {
-			super();
-			this.configurationSequenceNumber = configurationSequenceNumber;
-			this.uuid = uuid;
-		}
-		
-	}
-	public static class QueryReply implements Serializable
-	{
-		private static final long serialVersionUID = 1L;
-		Configuration configuration;
-		public QueryReply(Configuration configuration) {
-			super();
-			this.configuration = configuration;
-		}
-	}
 
 	 /** Write the object to a Base64 string. */
    private static String toString( Serializable o ) throws IOException {
@@ -486,33 +424,113 @@ public class UtilityClasses {
 		
 	}
 	public static class ShardOperation implements Serializable{
-		 /**
+
+		/**
 		 * 
 		 */
 		private static final long serialVersionUID = 1L;
-		public String type;
-		public Integer groupId;
-		public List<Integer> servers;
-		public Integer shard;
-		public UUID requestId;
 		
-		public ShardOperation(String type, Integer groupId,
-				List<Integer> servers, Integer shard, UUID requestId) {
-			super();
-			this.type = type;
-			this.groupId = groupId;
-			this.servers = servers;
-			this.shard = shard;
-			this.requestId = requestId;
-		}
 		@Override
 		public String toString() {
-			return "ShardOperation [type=" + type + ", groupId=" + groupId
-					+ ", servers=" + servers + ", shard=" + shard
-					+ ", requestId=" + requestId + "]";
+			return "ShardOperation [type=" + type + ", shardArgs=" + shardArgs
+					+ "]";
 		}
-
-
+		public String type;
+		public ShardArgs shardArgs;
+		public ShardOperation(String type, ShardArgs shardArgs) {
+			super();
+			this.type = type;
+			this.shardArgs = shardArgs;
+		}
 	}
 	
+	public static interface ShardArgs extends Serializable{
+		
+		public UUID getUUID();
+		
+	}
+	
+	public static interface ShardReply extends Serializable{
+		
+	}
+	
+	public static class LeaveArgs implements ShardArgs
+	{
+		private static final long serialVersionUID = 1L;
+		public int groupId;
+		public UUID uuid;
+		public LeaveArgs(int groupId, UUID uuid) {
+			super();
+			this.groupId = groupId;
+			this.uuid = uuid;
+		}
+		@Override
+		public UUID getUUID() {
+			return uuid;
+		}
+		
+		
+	}
+	
+	public static class LeaveReply implements ShardReply
+	{
+		
+	}
+	
+	public static class JoinReply implements ShardReply
+	{
+		
+	}
+
+	public static class JoinArgs implements ShardArgs
+	{
+		private static final long serialVersionUID = 1L;
+		public Integer groupId;
+		public UUID uuid;
+		public List<HostPorts> servers;
+		public JoinArgs(Integer groupId, List<HostPorts> servers, UUID uuid) {
+			super();
+			this.groupId = groupId;
+			this.servers = servers;
+			this.uuid = uuid;
+		}
+		@Override
+		public UUID getUUID() {
+			
+			return uuid;
+		}
+		
+	}
+	public static class PollArgs implements ShardArgs
+	{
+		private static final long serialVersionUID = 1L;
+		public int configurationSequenceNumber;
+		public UUID uuid;
+		public PollArgs(int configurationSequenceNumber, UUID uuid) {
+			super();
+			this.configurationSequenceNumber = configurationSequenceNumber;
+			this.uuid = uuid;
+		}
+		@Override
+		public UUID getUUID() {
+			return uuid;
+		}
+		
+		
+	}
+	public static class PollReply implements ShardReply
+	{
+		private static final long serialVersionUID = 1L;
+		Configuration configuration;
+		public PollReply(Configuration configuration) {
+			super();
+			this.configuration = configuration;
+		}
+	}
+	
+	public static class InvalidReply implements ShardReply
+	{
+		
+	}
+
 }

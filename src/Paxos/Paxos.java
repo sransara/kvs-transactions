@@ -50,13 +50,16 @@ public class Paxos extends UnicastRemoteObject implements PaxosInterface{
 	public static volatile HashMap<Integer, Integer> peersDoneValue;
 	public static volatile int min;
 	public static volatile boolean crashed;
+	public static String paxosRMIpath = "";
 	private static final long CRASH_DURATION = 1500;
-	public Paxos(List<HostPorts> peers, int me) throws AlreadyBoundException, IOException {
+	
+	public Paxos(List<HostPorts> peers, int me, String paxosRMIpath) throws AlreadyBoundException, IOException {
 		super();
 		configureLogger();
 		this.peers = peers;
 		this.me = me;
 		int length = peers.size();
+		Paxos.paxosRMIpath = paxosRMIpath;  
 		acceptorStateMap = new HashMap<Integer,AcceptorState>();
 		statusMap = new HashMap<Integer, Status>();
 		max =-1;
@@ -291,6 +294,8 @@ public class Paxos extends UnicastRemoteObject implements PaxosInterface{
 								log.info(peer.getHostName() + ":" + peer.getPort() + " simply didn't accept " );
 					}
 					log.info("Accepted number = " + accept_ok_count);
+					
+					
 //				   if accept_ok(n) from majority:
 //			       send decided(v') to all
 					if(accept_ok_count > (length /2))
@@ -308,7 +313,7 @@ public class Paxos extends UnicastRemoteObject implements PaxosInterface{
 								Learn(LearnArgs);
 							else
 							{
-								PaxosInterface peerImpl = (PaxosInterface) Naming.lookup("rmi://" + peer.getHostName() + ":" + peer.getPort() + "/Paxos" );
+								PaxosInterface peerImpl = (PaxosInterface) Naming.lookup("rmi://" + peer.getHostName() + ":" + peer.getPort() + paxosRMIpath );
 								peerImpl.Learn(LearnArgs);
 							}
 						}

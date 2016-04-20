@@ -44,8 +44,8 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 	private final long CRASH_DURATION = 1500;
 	private static int me;
 	private volatile int currentSeqNo;
-	private static volatile HashMap<UUID, Response> responseLog;
-	private static final int numReplicas = 5;
+	private static volatile HashMap<UUID, ShardReply> responseLog;
+	private static final int numReplicas = 10;
 	private Paxos paxosHelper;
 	static final int hostPortColumn = 2;
 	private static final int TIMEOUT = 1000;
@@ -53,9 +53,8 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 	volatile Semaphore mutex = new Semaphore(1);
 	
 	static final String JOIN = "JOIN";
-	static final String MOVE = "MOVE";
-	static final String QUERY = "QUERY";
 	static final String LEAVE = "LEAVE";
+	static final String POLL = "POLL";
 
 	public Paxos getPaxosHelper()
 	{
@@ -89,10 +88,8 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 		hostname = host;
 		initializeServer();
 		configureRMI();
-		crashed = false;
-		Paxos.crashed = false;
 		currentSeqNo =0;
-		responseLog= new HashMap<UUID, Response>();
+		responseLog= new HashMap<UUID, ShardReply>();
 	}
 
 	/* Configure the log4j appenders
@@ -109,7 +106,7 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 		// This is for the rmi_server log file
 		FileAppender fa = new FileAppender();
 		fa.setName("FileLogger");
-		fa.setFile("log/_rmi_server.log");
+		fa.setFile("log/shardCoordinator.log");
 		fa.setLayout(new PatternLayout("%d %-5p [%c{1}] %m%n"));
 		fa.setThreshold(Level.ALL);
 		fa.setAppend(true);
@@ -140,7 +137,7 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 				me =a;
 			peers.add(newHostPort);
 		}
-		paxosHelper = new Paxos(peers,me);
+		paxosHelper = new Paxos(peers,me, "/ShardCoordinatorPaxos");
 
 	}
 
@@ -173,34 +170,52 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 
 	public void applyOperation(ShardOperation operation)
 	{
-		
+		ShardReply result = new InvalidReply();
+		switch(operation.type.trim().toUpperCase()){
+		case JOIN:
+			result = joinOperation((JoinArgs)operation.shardArgs);
+			responseLog.put(operation.shardArgs.getUUID(), result);
+			break;
+		case LEAVE:
+			result = leaveOperation((LeaveArgs)operation.shardArgs);
+			responseLog.put(operation.shardArgs.getUUID(), result);
+			break;
+		case POLL:
+			result = pollOperation((PollArgs)operation.shardArgs);
+			responseLog.put(operation.shardArgs.getUUID(), result);
+			break;
+		default:
+			String response = "Invalid operation " + operation + " was received";
+			log.error(response);
+			break;
+		}
 	}
 
 
-	public Response threePhaseCommit(ShardOperation operation)  throws Exception
+	public ShardReply commitOperation(ShardOperation operation)  throws Exception
 	{
-		Response toSendBack = new Response("", false);
+		ShardReply shardReply = new InvalidReply();
 		try{
 			mutex.acquire();
 
 			//check to see if a Status 
-			if(responseLog.containsKey(operation.requestId))
+			if(responseLog.containsKey(operation.shardArgs.getUUID()))
 			{
 				log.info("request id already exists, returning stored result");
-				return responseLog.get(operation.requestId);
+				return responseLog.get(operation.shardArgs.getUUID());
 			}
 			int sequenceAssigned = DoPaxos(operation);
 			// apply updates from currentSequence to sequenceAssigned by Paxos algorithm
 
 			updateResponseLog(currentSeqNo, sequenceAssigned);
 
-			toSendBack = responseLog.get(operation.requestId);
+			shardReply = responseLog.get(operation.shardArgs.getUUID());
 
 			paxosHelper.Done(sequenceAssigned);
 
 			currentSeqNo = sequenceAssigned + 1;
 
-			return toSendBack;  
+			return shardReply;  
 		}
 		finally{
 			mutex.release();
@@ -236,7 +251,7 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 					sleepFor *= 2;
 			}
 			}
-			if(operation.requestId.compareTo(processed.requestId) == 0)
+			if(operation.shardArgs.getUUID().compareTo(processed.shardArgs.getUUID()) == 0)
 				break;
 			else	
 				sequence ++;
@@ -260,7 +275,7 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 			if(status.done)
 			{
 				ShardOperation consensusOperation = UtilityClasses.decodeShardOperation(status.getValue());
-				if(!responseLog.containsKey((consensusOperation.requestId)))
+				if(!responseLog.containsKey((consensusOperation.shardArgs.getUUID())))
 				{
 					log.info("Apply update at server " + (me()+1) + ":"  + consensusOperation.toString());
 					applyOperation(consensusOperation);
@@ -269,79 +284,42 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 		}
 
 	}
-	/*
-	 * Pseudo-Random generator that either crashes the node or conducts a three phase commit 
-	 * on the original request.
-	 */
-	public Response stallIfCrashedExecuteIfNot(ShardOperation operation) throws Exception
+
+	public JoinReply joinOperation(JoinArgs joinArgs)
 	{
-		if(crashed)
-			Thread.sleep(CRASH_DURATION);
-		else{
-			Random r = new Random();
-			//crash rate 12.5% i.e 1/8
-			int randInt = r.nextInt(7);
-			if ( randInt == 5){
-		 		log.info("FAIL/CRASH server " + (me+1) + ": CAUSED BY RANDOM FAILURE");
-				crashed = true;
-				Paxos.crashed = true;
-				try {
-					Thread.sleep((numReplicas+1)*CRASH_DURATION);
-				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-				crashed = false;
-				Paxos.crashed = false;
-		 		log.info("RESUSCITATED ZOMBIE SERVER " + (me+1) + " : IS ALIVE AGAIN! ") ;
-				return new Response(" ", false);
-			}
-			else
-			{
-				return threePhaseCommit(operation);
-			}
-		}
-		return new Response(" ", false);
+		log.info(" Called join Args");
+		return new JoinReply();
+		
+	}
+	
+	public LeaveReply leaveOperation(LeaveArgs leaveArgs)
+	{
+		log.info(" Called leaveArgs");
+		return new LeaveReply();
+	}
+	
+	public PollReply pollOperation(PollArgs pollArgs)
+	{
+		log.info(" Called pollOperation");
+		return new PollReply(null);
+	}
+	
+	@Override
+	public ShardReply Join(JoinArgs joinArgs) throws Exception {
+		ShardOperation shardOp = new ShardOperation(JOIN,joinArgs);
+		return commitOperation(shardOp);
 	}
 
 	@Override
-	public void KILL() throws Exception {
- 		crashed = true;
- 		Paxos.crashed = true;
- 		log.info("FAIL/CRASH server " + (me+1) + ": CAUSED BY RMI CALL TO ShardMaster KILL");
- 		try {
- 			Thread.sleep((numReplicas+1)*CRASH_DURATION);
- 		} catch (InterruptedException e) {
- 			// TODO Auto-generated catch block
- 			e.printStackTrace();
- 		}
- 		crashed = false;
- 		Paxos.crashed = false;
- 		log.info("RESUSCITATED ZOMBIE SERVER " + (me+1) + " : IS ALIVE AGAIN! ") ;
-	    return;
-	  
+	public ShardReply Leave(LeaveArgs leaveArgs) throws Exception {
+		ShardOperation shardOp = new ShardOperation(LEAVE,leaveArgs);
+		return commitOperation(shardOp);
 	}
 
 	@Override
-	public Response Join(JoinArgs joinArgs) throws Exception {
-		ShardOperation shardOp = new ShardOperation(JOIN,joinArgs.groupId, joinArgs.servers,0, joinArgs.uuid);
-		return stallIfCrashedExecuteIfNot(shardOp);	
-	}
-	@Override
-	public Response Query(QueryArgs queryArgs) throws Exception {
-		ShardOperation shardOp = new ShardOperation(QUERY, null,null, 0, queryArgs.uuid);
-		return stallIfCrashedExecuteIfNot(shardOp);
+	public ShardReply Poll(PollArgs pollArgs) throws Exception {
+		ShardOperation shardOp = new ShardOperation(POLL, pollArgs);
+		return commitOperation(shardOp);
 	}
 
-	@Override
-	public Response Leave(LeaveArgs leaveArgs) throws Exception {
-		ShardOperation shardOp = new ShardOperation(LEAVE,null,null, 0, leaveArgs.uuid);
-		return stallIfCrashedExecuteIfNot(shardOp);
-	}
-
-	@Override
-	public Response Move(MoveArgs moveArgs) throws Exception {
-		ShardOperation shardOp = new ShardOperation(MOVE,null,null, 0, moveArgs.uuid);
-		return stallIfCrashedExecuteIfNot(shardOp);
-	}
 }
