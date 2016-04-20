@@ -9,7 +9,12 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.rmi.Naming;
 import java.rmi.server.RMISocketFactory;
+import java.util.HashMap;
+import java.util.Random;
 import java.util.UUID;
+
+import Shards.CoordinatorInterface;
+import Utility.UtilityClasses;
 import org.apache.log4j.ConsoleAppender;
 import org.apache.log4j.FileAppender;
 import org.apache.log4j.Level;
@@ -20,189 +25,201 @@ import Db.DbServerInterface;
 import Utility.UtilityClasses.Response;
 
 public class Client {
-	final static Logger log = Logger.getLogger(Client.class);
-	final static String PATTERN = "%d [%p|%c|%C{1}] %m%n";
-	final static int numReplicas = 5;
-	final static int hostPortColumn = 2;
-	private static final int TIMEOUT = 1000;
-	static void configureLogger()
-	{
-		ConsoleAppender console = new ConsoleAppender(); //create appender
-		//configure the appender
-		console.setLayout(new PatternLayout(PATTERN)); 
-		console.setThreshold(Level.ALL);
-		console.activateOptions();
-		//add appender to any Logger (here is root)
-		log.addAppender(console);
+    final static Logger log = Logger.getLogger(Client.class);
+    final static String PATTERN = "%d [%p|%c|%C{1}] %m%n";
+    final static int coordinatorRepilcas = 5;
+    private static final int TIMEOUT = 1000;
 
-		// This is for the tcp_client log file
-		FileAppender fa = new FileAppender();
-		fa.setName("FileLogger");
-		fa.setFile("log/client.log");
-		fa.setLayout(new PatternLayout("%d %-5p [%c{1}] %m%n"));
-		fa.setThreshold(Level.ALL);
-		fa.setAppend(true);
-		fa.activateOptions();
 
-		//add appender to any Logger (here is root)
-		log.addAppender(fa);
-		log.setAdditivity(false);
-		//repeat with all other desired appenders
-	}
-	public static void configureRMI() throws IOException
-	{
-		RMISocketFactory.setSocketFactory( new RMISocketFactory()
-		{
-			public Socket createSocket( String host, int port )
-					throws IOException
-					{
-				Socket socket = new Socket();
-				socket.setSoTimeout((numReplicas + 1)*TIMEOUT);
-				socket.setSoLinger( false, 0 );
-				socket.connect( new InetSocketAddress( host, port ), (numReplicas + 1)*TIMEOUT );
-				return socket;
-					}
+    private static HashMap<String, String> local = new HashMap<String, String>();
+    private static ClientTransaction.Context transactionContext = new ClientTransaction.Context();
+    private static UtilityClasses.Configuration configuration;
 
-			public ServerSocket createServerSocket( int port )
-					throws IOException
-					{
-				return new ServerSocket( port );
-					}
-		} );
-	}
+    static void configureLogger() {
+        ConsoleAppender console = new ConsoleAppender(); //create appender
+        //configure the appender
+        console.setLayout(new PatternLayout(PATTERN));
+        console.setThreshold(Level.ALL);
+        console.activateOptions();
+        //add appender to any Logger (here is root)
+        log.addAppender(console);
 
-	public static int getNumReplicas()
-	{
-		return numReplicas;
-	}
+        // This is for the tcp_client log file
+        FileAppender fa = new FileAppender();
+        fa.setName("FileLogger");
+        fa.setFile("log/client.log");
+        fa.setLayout(new PatternLayout("%d %-5p [%c{1}] %m%n"));
+        fa.setThreshold(Level.ALL);
+        fa.setAppend(true);
+        fa.activateOptions();
 
-	public static String[][] readConfigFile()
-	{		
-		String hostPorts [][] = new String[numReplicas][hostPortColumn];
-		try {
-			BufferedReader fileReader = new BufferedReader(new FileReader("configs.txt"));			
-			log.info("Loading configurations from configs.txt..");
-			int c = 0;
+        //add appender to any Logger (here is root)
+        log.addAppender(fa);
+        log.setAdditivity(false);
+        //repeat with all other desired appenders
+    }
 
-			while(c++!=numReplicas)
-			{
-				hostPorts[c-1] = fileReader.readLine().split("\\s+");
-				if(hostPorts[c-1][0].isEmpty() || !hostPorts[c-1][1].matches("[0-9]+") || hostPorts[c-1][1].isEmpty())
-				{
-					log.info("You have made incorrect entries for addresses in config file, please investigate.");
-					System.exit(-1);
-				}
-			}
-			fileReader.close();
-		} catch (IOException e) {
-			log.info("System exited with error " +e.getMessage());
-			System.exit(-1);
-		}
-		return hostPorts;
-	}
+    public static void configureRMI() throws IOException {
+        RMISocketFactory.setSocketFactory(new RMISocketFactory() {
+            public Socket createSocket(String host, int port)
+                    throws IOException {
+                Socket socket = new Socket();
+                socket.setSoTimeout((coordinatorRepilcas + 1) * TIMEOUT);
+                socket.setSoLinger(false, 0);
+                socket.connect(new InetSocketAddress(host, port), (coordinatorRepilcas + 1) * TIMEOUT);
+                return socket;
+            }
 
-	public static void main(String args[]) throws IOException
-	{
-		configureLogger();
-		configureRMI();
-		String clientId = "NA";
-		// 4 arguments must be passed in.
-		String hostPorts [][] = new String[numReplicas][hostPortColumn];
-		String command = "";
-		String key = "";
-		String inkVal[];
-		String values = "";		
-		int serverNum =0;
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		if(args.length == 0)
-		{
-			log.info("Give client an Identifier, any number,string etc");
-			try {
-				clientId = br.readLine();
-				log.info("Enter, instruction key value");
-				inkVal = br.readLine().split("\\s+");
-				command = inkVal[0];
-				key = inkVal[1];
-				for(int a = 2; a <inkVal.length; a++)
-					values +=" " + inkVal[a];
-				hostPorts = readConfigFile();
-				log.info("Which replica to invoke? #1-5");
-				serverNum = Integer.parseInt(br.readLine());
-				log.info("You selected: RMI Server " + hostPorts[serverNum-1][0] + ":"+ hostPorts[serverNum-1][1]);
-			} catch (IOException e) {
+            public ServerSocket createServerSocket(int port)
+                    throws IOException {
+                return new ServerSocket(port);
+            }
+        });
+    }
 
-				log.info("Please follow instructions closely on next run");
-				log.info("Error with message, " + e.getMessage());
-				System.exit(-1);
-			}
-		}
-		else if(args.length < 2  )
-		{
-			log.fatal("Fatal error : instruction key value" );
-			System.exit(-1);
-		}
-		else
-		{
-			hostPorts = readConfigFile();
-			command = args[0];
-			key = args[1];
-			for(int a = 2; a <args.length; a++)
-				values +=" " + args[a];
-			serverNum =  Integer.parseInt(System.getProperty("serverChoice"));
-		}
+    public static String[][] readCoordinatorConfig() {
+        String hostPorts[][] = new String[coordinatorRepilcas][2];
+        try {
+            BufferedReader fileReader = new BufferedReader(new FileReader("coordinator_config.txt"));
+            log.info("Loading configurations from coordinator_config.txt..");
+            for(int c = 0; c < coordinatorRepilcas; c++) {
+                hostPorts[c] = fileReader.readLine().split("\\s+");
+                if (hostPorts[c][0].isEmpty() || !hostPorts[c][1].matches("[0-9]+") || hostPorts[c][1].isEmpty()) {
+                    log.info("You have made incorrect entries for addresses in config file, please investigate.");
+                    System.exit(-1);
+                }
+            }
+            fileReader.close();
+        } catch (IOException e) {
+            log.info("System exited with error " + e.getMessage());
+            System.exit(-1);
+        }
+        return hostPorts;
+    }
 
-		try{
+    public static void main(String args[]) throws IOException {
+        configureLogger();
+        configureRMI();
+        String clientId = "NA";
+        String coordinators[][] = readCoordinatorConfig();
+        configuration = getShardConfig(coordinators);
 
-			Response response = new Response("",false);
-			UUID uuid = UUID.randomUUID();
-			log.info("This request has id :" + uuid);
-			if(System.getProperty("clientId") != null)
-				clientId = System.getProperty("clientId");
-			while(!response.done){
-				String hostname = hostPorts[serverNum-1][0];
-				String port = hostPorts[serverNum-1][1];
-				// call the corresponding methods
-				key = key.trim();
-				values = values.trim();
-				try{
-					// locate the remote object initialize the proxy using the binder
-					DbServerInterface hostImpl = (DbServerInterface) Naming.lookup("rmi://" + hostname + ":" + port + "/Calls" );
-					switch(command.trim().toUpperCase()){
-					case "GET":
-						response = hostImpl.GET(clientId,key, uuid);
-						log.info("RESULT FROM " + hostname + ":" + port + "!!!: " + "Client "+ clientId + ":" + (String) response.getValue() );
-						break;
-					case "PUT":
-						response = hostImpl.PUT(clientId,key,values, uuid);
-						log.info("RESULT FROM " + hostname + ":" + port + "!!!: " + "Client "+ clientId + ":" +(String) response.getValue());
-						break;
-					case "DELETE":
-						response = hostImpl.DELETE(clientId,key,uuid);
-						log.info("RESULT FROM " + hostname + ":" + port + "!!!: " +"Client "+ clientId + ":" + (String) response.getValue());
-						break;
-					case "KILL":
-						log.info("RESULT FROM " + hostname + ":" + port + "!!!: " + "Client "+ clientId + ":" + " killing " + hostname + " : " + port);
-						response = new Response("",true);
-						hostImpl.KILL();
-						break;
-					default:
-						String errorResponse = "Client "+clientId + ":" +  "Invalid command " + command + " was received";
-						log.error(errorResponse);
-						break;
-					}
-				}
-				catch(Exception e)
-				{
-					log.info("Contact server " + serverNum + " at hostname:port " + hostname + " : " + port + " FAILED. Trying others..");
+        String line;
+        String tokens[];
 
-				}
-				serverNum = (serverNum + 1) % getNumReplicas();
-			}
-		}
-		catch(Exception e)
-		{
-			e.printStackTrace();
-			log.error("Error occured while connecting to RMI server with error, " + e.getMessage());
-		}
-	}}
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        while((line = br.readLine()) != null) {
+            line = line.trim();
+
+            tokens = line.split("\\s+");
+            String command = tokens[0];
+
+            UUID uuid = UUID.randomUUID();
+
+            switch (command) {
+                case "GET":
+                    // GET [KEY] [$REG]
+                    String key = tokens[1];
+                    String reg = tokens[2];
+                    handleGet(key, reg, uuid);
+
+                    break;
+
+                case "PUT":
+                    // PUT [KEY], [VALUE]
+                    break;
+
+                case "DELETE":
+                    // DELETE [KEY]
+                    break;
+
+                case "ADD":
+                    // ADD [$REG1] [$REG2] [$REGD]
+                    String reg1 = tokens[1];
+                    String reg2 = tokens[2];
+                    String regd = tokens[3];
+
+                    local.put(regd, local.get(reg1) + local.get(reg2));
+                    break;
+
+                case "START_TRANSACTOIN":
+                    // START_TRANSACTION
+                    if(!transactionContext.isCommited) {
+                        handleCommitTransaction();
+                    }
+                    transactionContext = new ClientTransaction.Context();
+                    break;
+
+                case "COMMIT_TRANSACTION":
+                    // COMMIT_TRANSACTION
+                    break;
+            }
+        }
+    }
+
+    public static UtilityClasses.Configuration getShardConfig(String[][] coordinators) {
+        try {
+
+            UtilityClasses.PollReply pollReply;
+            UUID uuid = UUID.randomUUID();
+            log.info("This request has id :" + uuid);
+            int serverNum = new Random().nextInt(coordinatorRepilcas);
+
+            while (true) {
+                String hostname = coordinators[serverNum][0];
+                String port = coordinators[serverNum][1];
+
+                try {
+                    // locate the remote object initialize the proxy using the binder
+                    CoordinatorInterface hostImpl = (CoordinatorInterface) Naming.lookup("rmi://" + hostname + ":" + port + "/Calls");
+                    pollReply = hostImpl.Poll(new UtilityClasses.PollArgs(-1, uuid));
+                } catch (Exception e) {
+                    log.info("Contact server " + serverNum + " at hostname:port " + hostname + " : " + port + " FAILED. Trying others..");
+
+                }
+                serverNum = (serverNum + 1) % coordinatorRepilcas;
+            }
+            return pollReply.getConfiguration();
+        } catch (Exception e) {
+            e.printStackTrace();
+            log.error("Error occured while connecting to RMI server with error, " + e.getMessage());
+        }
+    }
+
+    public static void handleGet(String key, String reg, UUID uuid) {
+        String hostname;
+        int port;
+
+        String value;
+
+        if (local.containsKey(key)) {
+            value = local.get(key);
+        } else {
+            UtilityClasses.HostPorts hostPorts[] = configuration.getDbServersForKey(key);
+            int i = new Random().nextInt(hostPorts.length);
+            Response r = new Response("", false);
+            while (!r.done) {
+                UtilityClasses.HostPorts hostPort = hostPorts[i];
+                hostname = hostPort.getHostName();
+                port = hostPort.getPort();
+                try {
+                    DbServerInterface hostImpl = (DbServerInterface) Naming.lookup("rmi://" + hostname + ":" + port + "/Calls");
+                    // TODO: change next line
+                    r = hostImpl.GET("N/A", key, uuid);
+                } catch (Exception e) {
+                    log.info("Contact server hostname:port " + hostname + " : " + port + " FAILED. Trying others..");
+                }
+                i = (i + 1) % hostPorts.length;
+            }
+            value = (String) r.getValue();
+            transactionContext.readSet.add(new ClientTransaction.KeyValue(key, value));
+        }
+
+        local.put(reg, value);
+    }
+
+    public static void handleCommitTransaction() {
+
+    }
+}
 
