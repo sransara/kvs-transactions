@@ -15,6 +15,7 @@ public class UtilityClasses {
 	
 	public static class Configuration implements Serializable 
 	{
+		private static final int NUM_SHARDS = 20;
 		private static final long serialVersionUID = 1L;
 		public Configuration(int confNo,
 				HashMap<Integer, UUID> shardToGroupId,
@@ -27,8 +28,50 @@ public class UtilityClasses {
 		public int confNo;
 		public HashMap<UUID, List<HostPorts>> replicaGroupMap;
 		public HashMap<Integer, UUID> shardToGroupIdMap;
+		
+		public List<HostPorts> getDbServersForKey(String key)
+		{
+			if(!key.isEmpty())
+			{
+				Integer strInt = atoi(key);
+				Integer shardNo = strInt % NUM_SHARDS;
+				return replicaGroupMap.get(shardToGroupIdMap.get(shardNo));				
+			}
+			else
+			{
+				return null;
+			}
+		}
 	}
 
+	private static int atoi(String str) {
+		if (str == null || str.length() < 1)
+			return 0;
+	 
+		// trim white spaces
+		str = str.trim();
+		str = str.toUpperCase();
+	 	// check negative or positive
+		int i = 0;
+		// use double to store result
+		double result = 0;
+	 
+		// calculate value
+		while (str.length() > i && str.charAt(i) >= '0' && str.charAt(i) <= '9') {
+			result = result * 10 + (str.charAt(i) - '0');
+			i++;
+		}
+		// handle max and min
+		if (result > Integer.MAX_VALUE)
+			return Integer.MAX_VALUE;
+	 
+		if (result < Integer.MIN_VALUE)
+			return Integer.MIN_VALUE;
+	 
+		return (int) result;
+	}
+	
+	
 	 /** Write the object to a Base64 string. */
    private static String toString( Serializable o ) throws IOException {
        ByteArrayOutputStream baos = new ByteArrayOutputStream();
