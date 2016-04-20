@@ -9,9 +9,34 @@ import java.io.Serializable;
 import java.util.Base64;
 import java.util.HashMap;
 import java.util.List;
+import java.util.SortedMap;
+import java.util.TreeMap;
 import java.util.UUID;
-
 public class UtilityClasses {
+	
+
+public static class ClientTransaction {
+    public static class TransactionContext implements  Serializable{
+        /**
+		 * 
+		 */
+		private static final long serialVersionUID = 1L;
+		public SortedMap<String, Object> readSet = new TreeMap<>();
+        public SortedMap<String, Object> writeSet = new TreeMap<>();
+    }
+
+    public static class LocalTransactionContext {
+        public TransactionContext txContext = new TransactionContext();
+        public HashMap<String, Object> store = new HashMap<>();
+        public int startLine = 0;
+
+        public LocalTransactionContext(int startLine) {
+            this.startLine = startLine;
+        }
+    }
+}
+
+	
 	
 	public static class Configuration implements Serializable 
 	{

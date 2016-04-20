@@ -13,6 +13,8 @@ import java.util.*;
 
 import Shards.CoordinatorInterface;
 import Utility.UtilityClasses;
+import Utility.UtilityClasses.ClientTransaction;
+
 import org.apache.log4j.ConsoleAppender;
 import org.apache.log4j.FileAppender;
 import org.apache.log4j.Level;
