@@ -474,11 +474,21 @@ public class UtilityClasses {
 	
 	public static class LeaveReply implements ShardReply
 	{
+
+		/**
+		 * 
+		 */
+		private static final long serialVersionUID = 1L;
 		
 	}
 	
 	public static class JoinReply implements ShardReply
 	{
+
+		/**
+		 * 
+		 */
+		private static final long serialVersionUID = 1L;
 		
 	}
 
@@ -530,6 +540,11 @@ public class UtilityClasses {
 	
 	public static class InvalidReply implements ShardReply
 	{
+
+		/**
+		 * 
+		 */
+		private static final long serialVersionUID = 1L;
 		
 	}
 

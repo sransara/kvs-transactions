@@ -3,7 +3,6 @@ package Shards;
 import java.rmi.Naming;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
-import java.util.concurrent.Semaphore;
 
 import org.apache.log4j.ConsoleAppender;
 import org.apache.log4j.FileAppender;
@@ -17,7 +16,6 @@ public class Coordinator {
 	
 	final static Logger log = Logger.getLogger(Coordinator.class);
 	final static String PATTERN = "%d [%p|%c|%C{1}] %m%n";
-	private volatile Semaphore mutex ;
 	
 	static void configureLogger()
 	{
@@ -32,7 +30,7 @@ public class Coordinator {
 		// This is for the tcp_client log file
 		FileAppender fa = new FileAppender();
 		fa.setName("FileLogger");
-		fa.setFile("log/coordinator.log");
+		fa.setFile("log/shardcoord.log");
 		fa.setLayout(new PatternLayout("%d %-5p [%c{1}] %m%n"));
 		fa.setThreshold(Level.ALL);
 		fa.setAppend(true);

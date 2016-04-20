@@ -1,6 +1,5 @@
 package Db;
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.net.InetSocketAddress;
@@ -12,10 +11,8 @@ import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Random;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentNavigableMap;
 import java.util.concurrent.Semaphore;
 
 import org.apache.log4j.ConsoleAppender;
@@ -23,7 +20,6 @@ import org.apache.log4j.FileAppender;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PatternLayout;
-import org.mapdb.*;
 
 import Paxos.Paxos;
 import Utility.UtilityClasses;
@@ -102,7 +98,7 @@ public class DbServerInterfaceImpl extends UnicastRemoteObject implements DbServ
 		// This is for the rmi_server log file
 		FileAppender fa = new FileAppender();
 		fa.setName("FileLogger");
-		fa.setFile("log/_rmi_server.log");
+		fa.setFile("log/dbserver.log");
 		fa.setLayout(new PatternLayout("%d %-5p [%c{1}] %m%n"));
 		fa.setThreshold(Level.ALL);
 		fa.setAppend(true);
@@ -134,7 +130,7 @@ public class DbServerInterfaceImpl extends UnicastRemoteObject implements DbServ
 				me =a;
 			peers.add(newHostPort);
 		}
-		paxosHelper = new Paxos(peers,me,"/Paxos");
+		paxosHelper = new Paxos(peers,me,"/Paxos", "log/dbserver.log");
 	
 	}
 	/*
@@ -187,7 +183,6 @@ public class DbServerInterfaceImpl extends UnicastRemoteObject implements DbServ
 			}
 			fileReader.close();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			log.info("System exited with error " +e.getMessage());
 			System.exit(-1);
 		}
@@ -364,7 +359,7 @@ public class DbServerInterfaceImpl extends UnicastRemoteObject implements DbServ
 		if(crashed)
 			Thread.sleep(CRASH_DURATION);
 		else{
-			Random r = new Random();
+			//Random r = new Random();
 			//crash rate 12.5% i.e 1/8
 			int randInt = 6;
 			//randInt = r.nextInt(10000);
@@ -375,7 +370,6 @@ public class DbServerInterfaceImpl extends UnicastRemoteObject implements DbServ
 				try {
 					Thread.sleep((numReplicas+1)*CRASH_DURATION);
 				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 				crashed = false;
@@ -399,7 +393,7 @@ public class DbServerInterfaceImpl extends UnicastRemoteObject implements DbServ
  		try {
  			Thread.sleep((numReplicas+1)*CRASH_DURATION);
  		} catch (InterruptedException e) {
- 			// TODO Auto-generated catch block
+
  			e.printStackTrace();
  		}
  		crashed = false;

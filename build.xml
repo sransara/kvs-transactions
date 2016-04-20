@@ -27,7 +27,9 @@
 	</target>
 	
 	<target name="cleandel">
-		<fileset dir="deliverables" includes="**/*.jar"/>
+		<delete>
+			<fileset dir="deliverables" includes="**/*.jar"/>
+		</delete>
 	</target>
 	<target name="cleanbin">
 		<delete dir="bin"/>

@@ -95,7 +95,6 @@ public class Client {
 			}
 			fileReader.close();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			log.info("System exited with error " +e.getMessage());
 			System.exit(-1);
 		}
@@ -131,7 +130,7 @@ public class Client {
 				serverNum = Integer.parseInt(br.readLine());
 				log.info("You selected: RMI Server " + hostPorts[serverNum-1][0] + ":"+ hostPorts[serverNum-1][1]);
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
+
 				log.info("Please follow instructions closely on next run");
 				log.info("Error with message, " + e.getMessage());
 				System.exit(-1);

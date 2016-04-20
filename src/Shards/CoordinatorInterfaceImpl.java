@@ -1,25 +1,18 @@
 package Shards;
 import java.io.BufferedReader;
-import java.io.File;
+
 import java.io.FileReader;
 import java.io.IOException;
-import java.net.InetAddress;
 import java.net.InetSocketAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.net.UnknownHostException;
-import java.rmi.Naming;
 import java.rmi.RemoteException;
 import java.rmi.server.RMISocketFactory;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Random;
 import java.util.UUID;
-import java.util.concurrent.ConcurrentNavigableMap;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 import java.util.concurrent.Semaphore;
 
 import org.apache.log4j.ConsoleAppender;
@@ -27,7 +20,6 @@ import org.apache.log4j.FileAppender;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PatternLayout;
-import org.mapdb.*;
 
 import Paxos.Paxos;
 import Utility.UtilityClasses;
@@ -106,7 +98,7 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 		// This is for the rmi_server log file
 		FileAppender fa = new FileAppender();
 		fa.setName("FileLogger");
-		fa.setFile("log/shardCoordinator.log");
+		fa.setFile("log/shardcoord.log");
 		fa.setLayout(new PatternLayout("%d %-5p [%c{1}] %m%n"));
 		fa.setThreshold(Level.ALL);
 		fa.setAppend(true);
@@ -137,7 +129,7 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 				me =a;
 			peers.add(newHostPort);
 		}
-		paxosHelper = new Paxos(peers,me, "/ShardCoordinatorPaxos");
+		paxosHelper = new Paxos(peers,me, "/ShardCoordinatorPaxos", "log/shardcoord.log");
 
 	}
 
@@ -161,7 +153,6 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 			}
 			fileReader.close();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			log.info("System exited with error " +e.getMessage());
 			System.exit(-1);
 		}

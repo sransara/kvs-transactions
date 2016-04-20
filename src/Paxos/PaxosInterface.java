@@ -1,7 +1,6 @@
 package Paxos;
 import java.rmi.*;
 
-import Utility.UtilityClasses;
 import Utility.UtilityClasses.*;
 public interface PaxosInterface extends Remote {
 	

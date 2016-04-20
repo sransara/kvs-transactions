@@ -1,7 +1,6 @@
 package Paxos;
 
 import java.io.IOException;
-import java.io.Serializable;
 import java.net.InetAddress;
 import java.net.MalformedURLException;
 import java.net.UnknownHostException;
@@ -21,7 +20,6 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PatternLayout;
 
-import Utility.UtilityClasses;
 import Utility.UtilityClasses.*;
 
 /*
@@ -53,11 +51,11 @@ public class Paxos extends UnicastRemoteObject implements PaxosInterface{
 	public static String paxosRMIpath = "";
 	private static final long CRASH_DURATION = 1500;
 	
-	public Paxos(List<HostPorts> peers, int me, String paxosRMIpath) throws AlreadyBoundException, IOException {
+	public Paxos(List<HostPorts> peers, int me, String paxosRMIpath, String logFileLocation) throws AlreadyBoundException, IOException {
 		super();
-		configureLogger();
+		configureLogger(logFileLocation);
 		this.peers = peers;
-		this.me = me;
+		Paxos.me = me;
 		int length = peers.size();
 		Paxos.paxosRMIpath = paxosRMIpath;  
 		acceptorStateMap = new HashMap<Integer,AcceptorState>();
@@ -71,7 +69,7 @@ public class Paxos extends UnicastRemoteObject implements PaxosInterface{
 	
 	/* Configure the log4j appenders
 	 */
-	static void configureLogger()
+	static void configureLogger(String fileLocation)
 	{
 		ConsoleAppender console = new ConsoleAppender(); //create appender
 		//configure the appender
@@ -83,7 +81,7 @@ public class Paxos extends UnicastRemoteObject implements PaxosInterface{
 		// This is for the rmi_server log file
 		FileAppender fa = new FileAppender();
 		fa.setName("FileLogger");
-		fa.setFile("log/_rmi_server.log");
+		fa.setFile(fileLocation);
 		fa.setLayout(new PatternLayout("%d %-5p [%c{1}] %m%n"));
 		fa.setThreshold(Level.ALL);
 		fa.setAppend(true);
@@ -163,7 +161,6 @@ public class Paxos extends UnicastRemoteObject implements PaxosInterface{
 					} catch (MalformedURLException | RemoteException
 							| UnknownHostException | NotBoundException
 							| InterruptedException e) {
-						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
 			    }
