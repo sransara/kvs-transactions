@@ -4,5 +4,6 @@ bin/
 .settings/
 ._kickstart.sh
 ._killall.sh
+._*.*
 .classpath
 .project
