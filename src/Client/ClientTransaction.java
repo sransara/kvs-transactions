@@ -1,30 +1,21 @@
 package Client;
 
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 public class ClientTransaction {
-    public static class KeyValue implements Serializable{
-        String key;
-        String value;
-
-        public KeyValue(String key, String value) {
-            this.key = key;
-            this.value = value;
-        }
-    }
-
     public static class TransactionContext implements  Serializable{
-        public List<KeyValue> readSet = new ArrayList<>();
-        public List<String> writeSet = new ArrayList<>();
+        public SortedMap<String, Object> readSet = new TreeMap<>();
+        public SortedMap<String, Object> writeSet = new TreeMap<>();
     }
 
     public static class LocalTransactionContext {
         TransactionContext txContext = new TransactionContext();
-        HashMap<String, String> store = new HashMap<>();
-        boolean tried = false;
+        HashMap<String, Object> store = new HashMap<>();
         int startLine = 0;
+
+        public LocalTransactionContext(int startLine) {
+            this.startLine = startLine;
+        }
     }
 }

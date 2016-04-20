@@ -18,10 +18,9 @@ import org.apache.log4j.FileAppender;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PatternLayout;
-import Utility.UtilityClasses.*;
 
 import Db.DbServerInterface;
-
+import Utility.UtilityClasses.Response;
 
 public class Client {
     final static Logger log = Logger.getLogger(Client.class);
@@ -30,9 +29,10 @@ public class Client {
     private static final int TIMEOUT = 1000;
 
 
-    private static HashMap<String, String> local = new HashMap<>();
-    private static ClientTransaction.LocalTransactionContext localTransactionContext = new ClientTransaction.LocalTransactionContext();
-    private static Configuration configuration;
+    private static HashMap<String, Object> localStore = new HashMap<>();
+    private static ClientTransaction.LocalTransactionContext localTransactionContext = null;
+    private static UtilityClasses.Configuration configuration;
+
 
     static void configureLogger() {
         ConsoleAppender console = new ConsoleAppender(); //create appender
@@ -126,127 +126,169 @@ public class Client {
             tokens = line.split("\\s+");
             String command = tokens[0];
 
-            UUID uuid = UUID.randomUUID();
+            String key, reg;
+            Object value;
+            boolean committed;
 
             switch (command) {
                 case "GET":
-                    // GET [KEY] [$REG]
-
-                    String key = tokens[1];
-                    String reg = tokens[2];
-                    handleGet(key, reg, uuid);
-
-                    break;
-
-                case "PUT":
-                    // PUT [KEY], [VALUE]
-                    break;
-
-                case "DELETE":
-                    // DELETE [KEY]
-                    break;
-
-                case "ADD":
-                    // ADD [$REG1] [$REG2] [$REGD]
-
-                    String reg1 = tokens[1];
-                    String reg2 = tokens[2];
-                    String regd = tokens[3];
-
-                    local.put(regd, local.get(reg1) + local.get(reg2));
-
-                    break;
-
-                case "START_TRANSACTOIN":
-                    // START_TRANSACTION
-
-                    localTransactionContext = new ClientTransaction.LocalTransactionContext();
-
-                    // Implicitly wrap with transaction
-                    if(!localTransactionContext.tried) {
-                        localTransactionContext.tried = false;
-                        if(!tryCommitTransaction()) {
-                            // transaction was aborted: retry transaction
-                            log.info("Retrying transaction");
-                            current = localTransactionContext.startLine;
-                            localTransactionContext.startLine = current;
-                            continue;
-                        }
-                    }
-                    else {
-                        localTransactionContext.startLine = current;
+                    // GET [KEY] INTO [$REGD]
+                    if(localTransactionContext == null) {
+                        localTransactionContext = new ClientTransaction.LocalTransactionContext(current);
                     }
 
-                    break;
+                    key = tokens[1];
+                    reg = tokens[3];
+                    handleGet(key, reg, UUID.randomUUID());
 
-                case "COMMIT_TRANSACTION":
-                    // COMMIT_TRANSACTION
-                    localTransactionContext = new ClientTransaction.LocalTransactionContext();
-
-                    if(!tryCommitTransaction()) {
-                        // transaction was aborted: retry transaction
-                        log.info("Retrying transaction");
+                    committed = tryCommitTransaction(UUID.randomUUID());
+                    if(!committed) {
                         current = localTransactionContext.startLine;
-
-                        // recreate transaction
-                        localTransactionContext.startLine = current;
-
+                        localTransactionContext = null;
                         continue;
                     }
                     else {
-                        localTransactionContext = new ClientTransaction.LocalTransactionContext();
-                        localTransactionContext.startLine = current;
+                        localTransactionContext = null;
+                        break;
                     }
 
+                case "PUT":
+                    // PUT [VALUE] INTO [KEY]
+                    if(localTransactionContext == null) {
+                        localTransactionContext = new ClientTransaction.LocalTransactionContext(current);
+                    }
+
+                    value = valuate(tokens[1]);
+                    key = tokens[3];
+                    handlePut(key, value, UUID.randomUUID());
+
+                    committed = tryCommitTransaction(UUID.randomUUID());
+                    if(!committed) {
+                        current = localTransactionContext.startLine;
+                        localTransactionContext = null;
+                        continue;
+                    }
+                    else {
+                        localTransactionContext = null;
+                        break;
+                    }
+
+                case "DELETE":
+                    // DELETE [KEY]
+                    if(localTransactionContext == null) {
+                        localTransactionContext = new ClientTransaction.LocalTransactionContext(current);
+                    }
+
+                    key = tokens[2];
+                    handleDelete(key, UUID.randomUUID());
+
+                    committed = tryCommitTransaction(UUID.randomUUID());
+                    if(!committed) {
+                        current = localTransactionContext.startLine;
+                        localTransactionContext = null;
+                        continue;
+                    }
+                    else {
+                        localTransactionContext = null;
+                        break;
+                    }
+
+                case "ADDI":
+                    // ADDI [$REG1] [$REG2] INTO [$REGD]
+
+                    String reg1 = tokens[1]; // must be integer values
+                    String reg2 = tokens[2];
+                    String regd = tokens[4];
+
+                    Object val1 = valuate(reg1);
+                    Object val2 = valuate(reg2);
+                    try {
+                        if(val1 instanceof String) {
+                            val1 = Integer.parseInt(val1.toString());
+                        }
+
+                        if(val2 instanceof String) {
+                            val2 = Integer.parseInt(val2.toString());
+                        }
+                    }
+                    catch(NumberFormatException ex) {
+                        log.error("Argument register or literal values must be integers");
+                    }
+
+                    localTransactionContext.store.put(regd, (int) val1 + (int) val2);
+
                     break;
+
+                case "PRINT":
+                    break;
+
+                case "START_TRANSACTOIN":
+                    localTransactionContext = new ClientTransaction.LocalTransactionContext(current);
+                    break;
+
+                case "COMMIT_TRANSACTION":
+                    committed = tryCommitTransaction(UUID.randomUUID());
+                    if(!committed) {
+                        current = localTransactionContext.startLine;
+                        localTransactionContext = null;
+                        continue;
+                    }
+                    else {
+                        localTransactionContext = null;
+                        break;
+                    }
+
+                default:
+                    log.info("Unrecognized instruction");
+
             }
 
             current++;
         }
     }
 
-    public static Configuration getShardConfig(String[][] coordinators) {
-            PollReply pollReply;
-            UUID uuid = UUID.randomUUID();
-            log.info("This request has id :" + uuid);
-            int serverNum = new Random().nextInt(coordinatorRepilcas);
+    public static UtilityClasses.Configuration getShardConfig(String[][] coordinators) {
+        UtilityClasses.PollReply pollReply;
+        UUID uuid = UUID.randomUUID();
+        log.info("This request has id :" + uuid);
+        int serverNum = new Random().nextInt(coordinatorRepilcas);
 
-            while (true) {
-                String hostname = coordinators[serverNum][0];
-                String port = coordinators[serverNum][1];
+        while (true) {
+            String hostname = coordinators[serverNum][0];
+            String port = coordinators[serverNum][1];
 
-                try {
-                    // locate the remote object initialize the proxy using the binder
-                    CoordinatorInterface hostImpl = (CoordinatorInterface) Naming.lookup("rmi://" + hostname + ":" + port + "/Calls");
-                    pollReply = (PollReply)hostImpl.Poll(new PollArgs(-1,uuid));
-                    break;
-                } catch (Exception e) {
-                    log.info("Contact server " + serverNum + " at hostname:port " + hostname + " : " + port + " FAILED. Trying others..");
+            try {
+                // locate the remote object initialize the proxy using the binder
+                CoordinatorInterface hostImpl = (CoordinatorInterface) Naming.lookup("rmi://" + hostname + ":" + port + "/Calls");
+                pollReply = (UtilityClasses.PollReply) hostImpl.Poll(new UtilityClasses.PollArgs(-1, uuid));
+                break;
+            } catch (Exception e) {
+                log.info("Contact server " + serverNum + " at hostname:port " + hostname + " : " + port + " FAILED. Trying others..");
 
-                }
-                serverNum = (serverNum + 1) % coordinatorRepilcas;
             }
-            return pollReply.getConfiguration();
+            serverNum = (serverNum + 1) % coordinatorRepilcas;
+        }
+        return pollReply.getConfiguration();
     }
 
     public static boolean handleGet(String key, String reg, UUID uuid) {
         String hostname;
         int port;
 
-        String value;
+        Object value;
 
-        if (local.containsKey(key)) {
-            value = local.get(key);
+        if (localStore.containsKey(key)) {
+            value = localStore.get(key);
         }
         else if(localTransactionContext.store.containsKey(key)) {
             value = localTransactionContext.store.get(key);
         }
         else {
-            HostPorts hostPorts[] = null;  			//configuration.getDbServersForKey(key);
-            int i = new Random().nextInt(hostPorts.length);
+            List<UtilityClasses.HostPorts> hostPorts = configuration.getDbServersForKey(key);
+            int i = new Random().nextInt(hostPorts.size());
             Response r = new Response("", false);
             while (!r.done) {
-                HostPorts hostPort = hostPorts[i];
+                UtilityClasses.HostPorts hostPort = hostPorts.get(i);
                 hostname = hostPort.getHostName();
                 port = hostPort.getPort();
                 try {
@@ -256,10 +298,10 @@ public class Client {
                 } catch (Exception e) {
                     log.info("Contact server hostname:port " + hostname + " : " + port + " FAILED. Trying others..");
                 }
-                i = (i + 1) % hostPorts.length;
+                i = (i + 1) % hostPorts.size();
             }
-            value = (String) r.getValue();
-            localTransactionContext.txContext.readSet.add(new ClientTransaction.KeyValue(key, value));
+            value = r.getValue();
+            localTransactionContext.txContext.readSet.put(key, value);
         }
 
         localTransactionContext.store.put(reg, value);
@@ -267,43 +309,117 @@ public class Client {
         return true;
     }
 
-    public static boolean tryCommitTransaction() {
-//        String hostname;
-//        int port;
-//        String firstKey = // localTransactionContext.txContext.readSet
-//        HostPorts hostPorts[] = null;
-//        // configuration.getDbServersForKey(key);
-//        int i = new Random().nextInt(hostPorts.length);
-//        Response r = new Response("", false);
-//        while (!r.done) {
-//            HostPorts hostPort = hostPorts[i];
-//            hostname = hostPort.getHostName();
-//            port = hostPort.getPort();
-//            try {
-//                DbServerInterface hostImpl = (DbServerInterface) Naming.lookup("rmi://" + hostname + ":" + port + "/Calls");
-//                // TODO: change next line
-//                r = hostImpl.COMMIT(localTransactionContext.txContext);
-//            } catch (Exception e) {
-//                log.info("Contact server hostname:port " + hostname + " : " + port + " FAILED. Trying others..");
-//            }
-//            i = (i + 1) % hostPorts.length;
-//        }
-//
-//        // TODO: change next line
-//        if(r.getValue() == "commited") {
-//            localTransactionContext.tried = true;
-//            // merge transaction store with local
-//            for (Map.Entry<String, String> entry : localTransactionContext.store.entrySet()) {
-//                String key = entry.getKey();
-//                String value = entry.getValue();
-//
-//                localTransactionContext.store.put(key, value);
-//            }
-//            return true;
-//        }
-//        // else
-//        return false;
-//    }
-    	return false;
-}
+    public static boolean handlePut(String key, Object value, UUID uuid) {
+        String hostname;
+        int port;
+
+        List<UtilityClasses.HostPorts> hostPorts = configuration.getDbServersForKey(key);
+        int i = new Random().nextInt(hostPorts.size());
+        Response r = new Response("", false);
+        while (!r.done) {
+            UtilityClasses.HostPorts hostPort = hostPorts.get(i);
+            hostname = hostPort.getHostName();
+            port = hostPort.getPort();
+            try {
+                DbServerInterface hostImpl = (DbServerInterface) Naming.lookup("rmi://" + hostname + ":" + port + "/Calls");
+                // TODO: change next line
+                r = hostImpl.PUT("N/A", key, value.toString(), uuid);
+            } catch (Exception e) {
+                log.info("Contact server hostname:port " + hostname + " : " + port + " FAILED. Trying others..");
+            }
+            i = (i + 1) % hostPorts.size();
+        }
+
+        localTransactionContext.txContext.writeSet.put(key, value);
+        localTransactionContext.store.put(key, value);
+
+        return true;
+    }
+
+    public static boolean handleDelete(String key, UUID uuid) {
+        String hostname;
+        int port;
+
+        List<UtilityClasses.HostPorts> hostPorts = configuration.getDbServersForKey(key);
+        int i = new Random().nextInt(hostPorts.size());
+        Response r = new Response("", false);
+        while (!r.done) {
+            UtilityClasses.HostPorts hostPort = hostPorts.get(i);
+            hostname = hostPort.getHostName();
+            port = hostPort.getPort();
+            try {
+                DbServerInterface hostImpl = (DbServerInterface) Naming.lookup("rmi://" + hostname + ":" + port + "/Calls");
+                // TODO: change next line
+                r = hostImpl.DELETE("N/A", key, uuid);
+            } catch (Exception e) {
+                log.info("Contact server hostname:port " + hostname + " : " + port + " FAILED. Trying others..");
+            }
+            i = (i + 1) % hostPorts.size();
+        }
+
+        localTransactionContext.txContext.writeSet.put(key, null);
+        localTransactionContext.store.put(key, null);
+
+        return true;
+    }
+
+    public static boolean tryCommitTransaction(UUID uuid) {
+        String hostname;
+        int port;
+
+        String readSetFirstKey = localTransactionContext.txContext.readSet.firstKey();
+        String writeSetFirstKey = localTransactionContext.txContext.writeSet.firstKey();
+        String firstKey = readSetFirstKey.compareTo(writeSetFirstKey) < 0 ? readSetFirstKey : writeSetFirstKey;
+
+        List<UtilityClasses.HostPorts> hostPorts = configuration.getDbServersForKey(firstKey);
+        int i = new Random().nextInt(hostPorts.size());
+        Response r = new Response("", false);
+        while (!r.done) {
+            UtilityClasses.HostPorts hostPort = hostPorts.get(i);
+            hostname = hostPort.getHostName();
+            port = hostPort.getPort();
+            try {
+                DbServerInterface hostImpl = (DbServerInterface) Naming.lookup("rmi://" + hostname + ":" + port + "/Calls");
+                // TODO: change next line
+                r = hostImpl.COMMIT("N/A", localTransactionContext.txContext, uuid);
+            } catch (Exception e) {
+                log.info("Contact server hostname:port " + hostname + " : " + port + " FAILED. Trying others..");
+            }
+            i = (i + 1) % hostPorts.size();
+        }
+
+        // TODO: change next line
+        if(r.getValue() == "commited") {
+            // merge transaction store with localStore
+            for (Map.Entry<String, Object> entry : localTransactionContext.store.entrySet()) {
+                String key = entry.getKey();
+                Object value = entry.getValue();
+
+                localTransactionContext.store.put(key, value);
+            }
+            return true;
+        }
+        // else
+        return false;
+    }
+
+    public static Object valuate(String input) {
+        Object value = input;
+        boolean isRegister = input.trim().startsWith("$");
+
+        if(!isRegister) {
+            return value; // return it as a literal value
+        }
+        else if (localStore.containsKey(input)) {
+            return localStore.get(input);
+        }
+        else if(localTransactionContext != null) {
+            if(localTransactionContext.store.containsKey(input)) {
+                return localTransactionContext.store.get(input);
+            }
+        }
+
+        log.error("Couldn't valuate register: " + input);
+        return null;
+    }
 }

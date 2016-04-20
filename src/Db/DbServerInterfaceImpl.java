@@ -15,6 +15,7 @@ import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.Semaphore;
 
+import Client.ClientTransaction;
 import org.apache.log4j.ConsoleAppender;
 import org.apache.log4j.FileAppender;
 import org.apache.log4j.Level;
@@ -162,7 +163,10 @@ public class DbServerInterfaceImpl extends UnicastRemoteObject implements DbServ
 		return stallIfCrashedExecuteIfNot(deleteOp);
 	}
 
-
+	@Override
+	public Response COMMIT(String clientId, ClientTransaction.TransactionContext txContext, UUID requestId) throws Exception {
+		return null;
+	}
 
 
 	public static String[][] readConfigFile()
