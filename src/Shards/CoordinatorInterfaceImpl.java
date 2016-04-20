@@ -296,7 +296,8 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 			Configuration oldConfiguration = configurations.get(maximumConfigurationNo-1);
 			newConfiguration = new Configuration(maximumConfigurationNo, new HashMap<UUID, List<HostPorts>>(oldConfiguration.replicaGroupMap));			
 		}
-		redistribute(newConfiguration);
+		reconfigure(newConfiguration);
+		configurations.add(newConfiguration);
 		maximumConfigurationNo = maximumConfigurationNo + 1;
 		return new JoinReply();
 		
@@ -305,6 +306,27 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 	public LeaveReply leaveOperation(LeaveArgs leaveArgs)
 	{
 		log.info(" Called leaveArgs");
+		
+		if(maximumConfigurationNo == 0)
+		{
+			log.info("Error: No prior configurations. Request to leave with groupId" + leaveArgs.groupId + " requestId " + leaveArgs.uuid);
+			return new LeaveReply();
+		}
+		Configuration oldConfiguration = configurations.get(maximumConfigurationNo-1);
+		
+		HashMap<UUID, List<HostPorts>> replicaGroupMap  = new HashMap<UUID, List<HostPorts>>(oldConfiguration.replicaGroupMap);
+		if(replicaGroupMap.containsKey(leaveArgs.groupId))
+		{
+			replicaGroupMap.remove(leaveArgs.groupId);
+		}
+		else
+		{
+			log.info("Error: Request to leave failed. Group Id " + leaveArgs.groupId + " doesn't exist in latest configuration.");
+		}
+		Configuration newConfiguration = new Configuration(maximumConfigurationNo,replicaGroupMap);
+		configurations.add(newConfiguration);
+		reconfigure(newConfiguration);
+		maximumConfigurationNo = maximumConfigurationNo + 1;
 		return new LeaveReply();
 	}
 	
@@ -314,7 +336,7 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 		return new PollReply(null);
 	}
 	
-	public void redistribute(Configuration configuration)
+	public void reconfigure(Configuration configuration)
 	{
 		
 		

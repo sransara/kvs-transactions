@@ -453,9 +453,9 @@ public class UtilityClasses {
 	public static class LeaveArgs implements ShardArgs
 	{
 		private static final long serialVersionUID = 1L;
-		public int groupId;
+		public UUID groupId;
 		public UUID uuid;
-		public LeaveArgs(int groupId, UUID uuid) {
+		public LeaveArgs(UUID groupId, UUID uuid) {
 			super();
 			this.groupId = groupId;
 			this.uuid = uuid;
