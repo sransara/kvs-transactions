@@ -18,9 +18,10 @@ import org.apache.log4j.FileAppender;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PatternLayout;
+import Utility.UtilityClasses.*;
 
 import Db.DbServerInterface;
-import Utility.UtilityClasses.Response;
+
 
 public class Client {
     final static Logger log = Logger.getLogger(Client.class);
@@ -31,7 +32,7 @@ public class Client {
 
     private static HashMap<String, String> local = new HashMap<>();
     private static ClientTransaction.LocalTransactionContext localTransactionContext = new ClientTransaction.LocalTransactionContext();
-    private static UtilityClasses.Configuration configuration;
+    private static Configuration configuration;
 
     static void configureLogger() {
         ConsoleAppender console = new ConsoleAppender(); //create appender
@@ -204,10 +205,8 @@ public class Client {
         }
     }
 
-    public static UtilityClasses.Configuration getShardConfig(String[][] coordinators) {
-        try {
-
-            UtilityClasses.PollReply pollReply;
+    public static Configuration getShardConfig(String[][] coordinators) {
+            PollReply pollReply;
             UUID uuid = UUID.randomUUID();
             log.info("This request has id :" + uuid);
             int serverNum = new Random().nextInt(coordinatorRepilcas);
@@ -219,7 +218,8 @@ public class Client {
                 try {
                     // locate the remote object initialize the proxy using the binder
                     CoordinatorInterface hostImpl = (CoordinatorInterface) Naming.lookup("rmi://" + hostname + ":" + port + "/Calls");
-                    pollReply = hostImpl.Poll(new UtilityClasses.PollArgs(-1, uuid));
+                    pollReply = (PollReply)hostImpl.Poll(new PollArgs(-1,uuid));
+                    break;
                 } catch (Exception e) {
                     log.info("Contact server " + serverNum + " at hostname:port " + hostname + " : " + port + " FAILED. Trying others..");
 
@@ -227,10 +227,6 @@ public class Client {
                 serverNum = (serverNum + 1) % coordinatorRepilcas;
             }
             return pollReply.getConfiguration();
-        } catch (Exception e) {
-            e.printStackTrace();
-            log.error("Error occured while connecting to RMI server with error, " + e.getMessage());
-        }
     }
 
     public static boolean handleGet(String key, String reg, UUID uuid) {
@@ -246,11 +242,11 @@ public class Client {
             value = localTransactionContext.store.get(key);
         }
         else {
-            UtilityClasses.HostPorts hostPorts[] = configuration.getDbServersForKey(key);
+            HostPorts hostPorts[] = null;  			//configuration.getDbServersForKey(key);
             int i = new Random().nextInt(hostPorts.length);
             Response r = new Response("", false);
             while (!r.done) {
-                UtilityClasses.HostPorts hostPort = hostPorts[i];
+                HostPorts hostPort = hostPorts[i];
                 hostname = hostPort.getHostName();
                 port = hostPort.getPort();
                 try {
@@ -272,39 +268,42 @@ public class Client {
     }
 
     public static boolean tryCommitTransaction() {
-        String hostname;
-        int port;
-        String firstKey = localTransactionContext.txContext.readSet
-        UtilityClasses.HostPorts hostPorts[] = configuration.getDbServersForKey(key);
-        int i = new Random().nextInt(hostPorts.length);
-        Response r = new Response("", false);
-        while (!r.done) {
-            UtilityClasses.HostPorts hostPort = hostPorts[i];
-            hostname = hostPort.getHostName();
-            port = hostPort.getPort();
-            try {
-                DbServerInterface hostImpl = (DbServerInterface) Naming.lookup("rmi://" + hostname + ":" + port + "/Calls");
-                // TODO: change next line
-                r = hostImpl.COMMIT(localTransactionContext.txContext);
-            } catch (Exception e) {
-                log.info("Contact server hostname:port " + hostname + " : " + port + " FAILED. Trying others..");
-            }
-            i = (i + 1) % hostPorts.length;
-        }
-
-        // TODO: change next line
-        if(r.getValue() == "commited") {
-            localTransactionContext.tried = true;
-            // merge transaction store with local
-            for (Map.Entry<String, String> entry : localTransactionContext.store.entrySet()) {
-                String key = entry.getKey();
-                String value = entry.getValue();
-
-                localTransactionContext.store.put(key, value);
-            }
-            return true;
-        }
-        // else
-        return false;
-    }
+//        String hostname;
+//        int port;
+//        String firstKey = // localTransactionContext.txContext.readSet
+//        HostPorts hostPorts[] = null;
+//        // configuration.getDbServersForKey(key);
+//        int i = new Random().nextInt(hostPorts.length);
+//        Response r = new Response("", false);
+//        while (!r.done) {
+//            HostPorts hostPort = hostPorts[i];
+//            hostname = hostPort.getHostName();
+//            port = hostPort.getPort();
+//            try {
+//                DbServerInterface hostImpl = (DbServerInterface) Naming.lookup("rmi://" + hostname + ":" + port + "/Calls");
+//                // TODO: change next line
+//                r = hostImpl.COMMIT(localTransactionContext.txContext);
+//            } catch (Exception e) {
+//                log.info("Contact server hostname:port " + hostname + " : " + port + " FAILED. Trying others..");
+//            }
+//            i = (i + 1) % hostPorts.length;
+//        }
+//
+//        // TODO: change next line
+//        if(r.getValue() == "commited") {
+//            localTransactionContext.tried = true;
+//            // merge transaction store with local
+//            for (Map.Entry<String, String> entry : localTransactionContext.store.entrySet()) {
+//                String key = entry.getKey();
+//                String value = entry.getValue();
+//
+//                localTransactionContext.store.put(key, value);
+//            }
+//            return true;
+//        }
+//        // else
+//        return false;
+//    }
+    	return false;
+}
 }

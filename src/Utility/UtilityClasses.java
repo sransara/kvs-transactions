@@ -535,6 +535,12 @@ public class UtilityClasses {
 			super();
 			this.configuration = configuration;
 		}
+		public Configuration getConfiguration() {
+			return configuration;
+		}
+		public void setConfiguration(Configuration configuration) {
+			this.configuration = configuration;
+		}
 	}
 	
 	public static class InvalidReply implements ShardReply
