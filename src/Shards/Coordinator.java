@@ -1,5 +1,7 @@
 package Shards;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.rmi.Naming;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
@@ -10,6 +12,7 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PatternLayout;
 
+import Db.DbServer;
 import Paxos.PaxosInterface;
 
 public class Coordinator {
@@ -54,11 +57,45 @@ public class Coordinator {
 		String bindMePaxos = "rmi://" + hostname + ":" + portNumber + "/ShardCoordinatorPaxos";
 		Naming.bind(bindMeShardMaster, shardMethods);
 		Naming.bind(bindMePaxos, paxosMethods);
-		log.info("Paxos RMIServer " + (shardMasterImpl.me()+1) + "  started successfully");
+		log.info("Coordinator " + (shardMasterImpl.me()+1) + " and its Paxos assistant started successfully");
 	}
 	
 	public static void main(String args[])
 	{
-		
+		configureLogger();
+		if(args.length != 2 )
+		{
+			log.info("Enter hostname");
+			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+			args = new String[2];
+			try{
+				log.info("Enter hostname");
+				args[0] = br.readLine();
+				log.info("Enter port");
+				args[1] = br.readLine();
+				}
+			catch(Exception e)
+			{
+				log.fatal("Fatal error : Usage - host port#" );
+				System.exit(-1);
+			}
+		}
+		Integer portNumber =0;
+		try{
+			portNumber = Integer.parseInt(args[1]);
+		}
+		catch(Exception e)
+		{
+			log.fatal("Fatal error : Usage - hostname port#, error caused due to " + e.getMessage());
+			System.exit(-1);
+		}
+		try{
+			new Coordinator(args[0],portNumber);
+		}
+		catch(Exception e)
+		{
+			log.error("RMI server binding failed with " + e.getMessage());
+		}
 	}
+
 }

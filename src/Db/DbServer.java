@@ -71,7 +71,7 @@ public class DbServer {
 				}
 			catch(Exception e)
 			{
-				log.fatal("Fatal error : Usage - host port#" );
+				log.fatal("Fatal error : Usage - hostname port#" );
 				System.exit(-1);
 			}
 		}
