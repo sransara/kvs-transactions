@@ -9,8 +9,11 @@ import java.rmi.RemoteException;
 import java.rmi.server.RMISocketFactory;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
 import java.util.UUID;
 import java.util.concurrent.Semaphore;
 
@@ -19,6 +22,9 @@ import org.apache.log4j.FileAppender;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PatternLayout;
+
+import com.google.common.collect.HashMultimap;
+import com.google.common.collect.Multimap;
 
 import Paxos.Paxos;
 import Utility.UtilityClasses;
@@ -29,6 +35,8 @@ import Utility.UtilityClasses.*;
 public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements CoordinatorInterface{
 	final static Logger log = Logger.getLogger(CoordinatorInterfaceImpl.class);
 	final static String PATTERN = "%d [%p|%c|%C{1}] %m%n";
+	
+	final static Integer NUM_SHARDS = 20;
 	private static String[][] hostPorts;
 	private static int port;
 	private static String hostname;
@@ -290,6 +298,8 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 			HashMap<UUID, List<HostPorts>> replicaGroupMap = new HashMap<UUID, List<HostPorts>>();
 			replicaGroupMap.put(joinArgs.groupId, joinArgs.servers);
 			HashMap<Integer, UUID> shardToGroupId = new HashMap<Integer, UUID>();
+			for(Integer a = 0; a < NUM_SHARDS; a++ )
+				shardToGroupId.put(a, joinArgs.groupId);
 			newConfiguration = new Configuration(maximumConfigurationNo,shardToGroupId, replicaGroupMap);
 		}
 		else
@@ -298,9 +308,9 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 			HashMap<UUID, List<HostPorts>> replicaGroupMap =new HashMap<UUID, List<HostPorts>>(oldConfiguration.replicaGroupMap);
 			HashMap<Integer, UUID> shardToGroupId = new HashMap<Integer, UUID>(oldConfiguration.shardToGroupIdMap);
 			replicaGroupMap.put(joinArgs.groupId, joinArgs.servers);
-			newConfiguration = new Configuration(maximumConfigurationNo,shardToGroupId,replicaGroupMap);			
+			newConfiguration = new Configuration(maximumConfigurationNo,shardToGroupId,replicaGroupMap);
+			reconfigure(newConfiguration);
 		}
-		reconfigure(newConfiguration);
 		configurations.add(newConfiguration);
 		maximumConfigurationNo = maximumConfigurationNo + 1;
 		return new JoinReply();
@@ -340,13 +350,78 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 		return new PollReply(configurations.get(maximumConfigurationNo));
 	}
 	
-	public void reconfigure(Configuration configuration)
+	private void reconfigure(Configuration configuration)
 	{
+		HashMap<UUID, List<HostPorts>> replicaGroupMap = configuration.replicaGroupMap;
+		Map<Integer, UUID> shardToGroupIdMap = configuration.shardToGroupIdMap;
+		int noOfGroups = replicaGroupMap.keySet().size();
+		HashMap<UUID, List<Integer>> groupToShards = new HashMap<UUID, List<Integer>>();
+		Multimap<UUID, Integer> multiMap = HashMultimap.create();
+		for (Entry<Integer, UUID> entry : shardToGroupIdMap.entrySet()) {
+		  multiMap.put(entry.getValue(), entry.getKey());
+		}
+		for (Entry<UUID, Collection<Integer>> entry : multiMap.asMap().entrySet()) {
+			List<Integer> shards = new ArrayList<Integer>();
+			shards.addAll(entry.getValue());
+			groupToShards.put(entry.getKey(), shards);
+		}
+		for(UUID group: replicaGroupMap.keySet())
+			if (!groupToShards.containsKey(group))
+				groupToShards.put(group, new ArrayList<Integer>());
 		
+		int min = NUM_SHARDS/noOfGroups;
+		int max = NUM_SHARDS/noOfGroups;
+		if(NUM_SHARDS % noOfGroups != 0)
+			max = max + 1;
+		UUID groupA_WithMaxShards = getmaxshard(groupToShards);
+		UUID groupB_WithMinShards = getminshard(groupToShards);
+		int sizeGroupA = groupToShards.get(groupA_WithMaxShards).size();
+		int sizeGroupB = groupToShards.get(groupB_WithMinShards).size();
+		while(sizeGroupA > max || sizeGroupB < min)
+		{
+			int diff1 = (max- sizeGroupA);
+			int diff2 = (sizeGroupB - min);
+			int diff = (diff1<diff2)? diff2 : diff1;
+			
+			for (int a = 0; a < diff; a ++)
+			{
+				List<Integer> maxGroupShards = groupToShards.get(groupA_WithMaxShards);
+				List<Integer> minGroupShards = groupToShards.get(groupB_WithMinShards);
+				Integer removed = maxGroupShards.remove(0);
+				minGroupShards.add(removed);	
+			}
+			groupA_WithMaxShards = getmaxshard(groupToShards);
+			groupB_WithMinShards = getminshard(groupToShards);
+			sizeGroupA = groupToShards.get(groupA_WithMaxShards).size();
+			sizeGroupB = groupToShards.get(groupB_WithMinShards).size();
+		}
 		
-		
+		for (Entry<UUID, List<Integer>> entry : groupToShards.entrySet())
+			  for(Integer shard: entry.getValue())
+				  shardToGroupIdMap.put(shard, entry.getKey());
 	}
 	
+	
+	private UUID getminshard(HashMap<UUID, List<Integer>> groupToShards)
+	{
+		int min = NUM_SHARDS;
+		UUID minToReturn = null;
+		for( UUID group : groupToShards.keySet())
+			if(groupToShards.get(group).size() < min)
+				minToReturn = group;
+		return minToReturn;
+	}
+	
+	
+	private UUID getmaxshard(HashMap<UUID, List<Integer>> groupToShards)
+	{
+		int max = 0;
+		UUID maxToReturn = null;
+		for( UUID group : groupToShards.keySet())
+			if(groupToShards.get(group).size() > max)
+				maxToReturn = group;
+		return maxToReturn;
+	}
 	
 	@Override
 	public ShardReply Join(JoinArgs joinArgs) throws Exception {
