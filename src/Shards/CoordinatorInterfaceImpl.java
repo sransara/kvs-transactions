@@ -35,6 +35,8 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 	private static String hostname;
 	private final long CRASH_DURATION = 1500;
 	private static int me;
+	private volatile int maximumConfigurationNo;
+	private volatile List<Configuration> configurations;
 	private volatile int currentSeqNo;
 	private static volatile HashMap<UUID, ShardReply> responseLog;
 	private static final int numReplicas = 10;
@@ -81,7 +83,10 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 		initializeServer();
 		configureRMI();
 		currentSeqNo =0;
+		maximumConfigurationNo = 0;
+		configurations = new ArrayList<Configuration>();
 		responseLog= new HashMap<UUID, ShardReply>();
+		
 	}
 
 	/* Configure the log4j appenders
@@ -139,7 +144,7 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 	{		
 		String hostPorts [][] = new String[numReplicas][hostPortColumn];
 		try {
-			BufferedReader fileReader = new BufferedReader(new FileReader("../configs.txt"));			
+			BufferedReader fileReader = new BufferedReader(new FileReader("configs.txt"));			
 			int c = 0;
 
 			while(c++!=numReplicas)
@@ -278,7 +283,21 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 
 	public JoinReply joinOperation(JoinArgs joinArgs)
 	{
-		log.info(" Called join Args");
+		log.info(" Join operation invoked");
+		Configuration newConfiguration = null;
+			
+		if(maximumConfigurationNo == 0)
+		{
+			HashMap<UUID, List<HostPorts>> replicaGroupMap = new HashMap<UUID, List<HostPorts>>();
+			newConfiguration = new Configuration(maximumConfigurationNo,replicaGroupMap);
+		}
+		else
+		{
+			Configuration oldConfiguration = configurations.get(maximumConfigurationNo-1);
+			newConfiguration = new Configuration(maximumConfigurationNo, new HashMap<UUID, List<HostPorts>>(oldConfiguration.replicaGroupMap));			
+		}
+		redistribute(newConfiguration);
+		maximumConfigurationNo = maximumConfigurationNo + 1;
 		return new JoinReply();
 		
 	}
@@ -294,6 +313,14 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 		log.info(" Called pollOperation");
 		return new PollReply(null);
 	}
+	
+	public void redistribute(Configuration configuration)
+	{
+		
+		
+		
+	}
+	
 	
 	@Override
 	public ShardReply Join(JoinArgs joinArgs) throws Exception {

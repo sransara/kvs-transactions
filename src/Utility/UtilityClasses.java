@@ -16,19 +16,15 @@ public class UtilityClasses {
 	public static class Configuration implements Serializable 
 	{
 		private static final long serialVersionUID = 1L;
-		public Configuration(int sequenceNo, Integer[] shardsGroup,
-				HashMap<Integer, List<HostPorts>> replicaGroupMap) {
+		public Configuration(int confNo,
+				HashMap<UUID, List<HostPorts>> replicaGroupMap) {
 			super();
-			this.sequenceNo = sequenceNo;
-			this.ShardsGroupId = shardsGroup;
+			this.confNo = confNo;
 			this.replicaGroupMap = replicaGroupMap;
 		}
-		public int sequenceNo;
-		public Integer [] ShardsGroupId;
-		public HashMap<Integer, List<HostPorts>> replicaGroupMap;
+		public int confNo;
+		public HashMap<UUID, List<HostPorts>> replicaGroupMap;
 	}
-	
-	
 
 	 /** Write the object to a Base64 string. */
    private static String toString( Serializable o ) throws IOException {
@@ -495,10 +491,10 @@ public class UtilityClasses {
 	public static class JoinArgs implements ShardArgs
 	{
 		private static final long serialVersionUID = 1L;
-		public Integer groupId;
+		public UUID groupId;
 		public UUID uuid;
 		public List<HostPorts> servers;
-		public JoinArgs(Integer groupId, List<HostPorts> servers, UUID uuid) {
+		public JoinArgs(UUID groupId, List<HostPorts> servers, UUID uuid) {
 			super();
 			this.groupId = groupId;
 			this.servers = servers;

@@ -1,2 +1,5 @@
 2016-04-20 02:57:56,466 INFO  [Coordinator] Enter hostname
 2016-04-20 02:57:56,468 INFO  [Coordinator] Enter hostname
+2016-04-20 03:08:14,711 INFO  [Coordinator] Enter hostname
+2016-04-20 03:08:23,328 INFO  [CoordinatorInterfaceImpl] System exited with error ../configs.txt (No such file or directory)
+2016-04-20 03:09:59,769 INFO  [Coordinator] Coordinator 1 and its Paxos assistant started successfully
