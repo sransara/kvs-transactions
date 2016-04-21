@@ -556,6 +556,7 @@ public static class ClientTransaction {
 		 * 
 		 */
 		private static final long serialVersionUID = 1L;
+		public String message;
 		
 	}
 

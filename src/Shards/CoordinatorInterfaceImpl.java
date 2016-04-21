@@ -290,9 +290,14 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 
 	public JoinReply joinOperation(JoinArgs joinArgs)
 	{
+		JoinReply joinReply = new JoinReply();
 		log.info(" Join operation invoked");
 		Configuration newConfiguration = null;
-			
+		
+		// Check if servers provided are on some other replication group already
+		
+		
+		
 		if(maximumConfigurationNo == 0)
 		{
 			HashMap<UUID, List<HostPorts>> replicaGroupMap = new HashMap<UUID, List<HostPorts>>();
@@ -313,8 +318,9 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 		}
 		configurations.add(newConfiguration);
 		maximumConfigurationNo = maximumConfigurationNo + 1;
-		return new JoinReply();
 		
+		joinReply.message = "Joined with groupId " + joinArgs.groupId;
+		return joinReply;
 	}
 	
 	public LeaveReply leaveOperation(LeaveArgs leaveArgs)

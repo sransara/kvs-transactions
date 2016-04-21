@@ -24,8 +24,8 @@ import org.apache.log4j.PatternLayout;
 import Db.DbServerInterface;
 import Utility.UtilityClasses.Response;
 
-public class Client {
-    final static Logger log = Logger.getLogger(Client.class);
+public class TransactionClient {
+    final static Logger log = Logger.getLogger(TransactionClient.class);
     final static String PATTERN = "%d [%p|%c|%C{1}] %m%n";
     final static int coordinatorRepilcas = 5;
     private static final int TIMEOUT = 1000;
