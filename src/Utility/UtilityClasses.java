@@ -40,6 +40,12 @@ public static class ClientTransaction {
 	
 	public static class Configuration implements Serializable 
 	{
+		@Override
+		public String toString() {
+			return "Configuration [confNo=" + confNo + ", replicaGroupMap="
+					+ replicaGroupMap + ", shardToGroupIdMap="
+					+ shardToGroupIdMap + "]";
+		}
 		private static final int NUM_SHARDS = 20;
 		private static final long serialVersionUID = 1L;
 		public Configuration(int confNo,
@@ -546,7 +552,7 @@ public static class ClientTransaction {
 		 * 
 		 */
 		private static final long serialVersionUID = 1L;
-		
+		public String message;
 	}
 	
 	public static class JoinReply implements ShardReply

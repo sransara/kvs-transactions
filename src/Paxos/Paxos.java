@@ -48,7 +48,7 @@ public class Paxos extends UnicastRemoteObject implements PaxosInterface{
 	public static volatile HashMap<Integer, Integer> peersDoneValue;
 	public static volatile int min;
 	public static volatile boolean crashed;
-	public static String paxosRMIpath = "";
+	public static volatile String paxosRMIpath;
 	private static final long CRASH_DURATION = 1500;
 	
 	public Paxos(List<HostPorts> peers, int me, String paxosRMIpath, String logFileLocation) throws AlreadyBoundException, IOException {
@@ -219,6 +219,7 @@ public class Paxos extends UnicastRemoteObject implements PaxosInterface{
 				int n_a = 0;
 				int count = 0;
 				String v_a = null;
+				boolean sentPropose = false;
 				for(HostPorts peer: peers)
 				{
 
@@ -230,11 +231,18 @@ public class Paxos extends UnicastRemoteObject implements PaxosInterface{
 					}
 					else
 					{
-						String host = InetAddress.getByName(peer.getHostName()).getHostAddress();
-						PaxosInterface peerImpl = (PaxosInterface) Naming.lookup("rmi://" + host.trim() + ":" + peer.getPort() + "/Paxos" );
-						prepareReply = peerImpl.Prepare(prepareArgs);
+						try{
+							String host = InetAddress.getByName(peer.getHostName()).getHostAddress();
+							PaxosInterface peerImpl = (PaxosInterface) Naming.lookup("rmi://" + host.trim() + ":" + peer.getPort() + paxosRMIpath );
+							prepareReply = peerImpl.Prepare(prepareArgs);
+							sentPropose = true;
+						}
+						catch(Exception e)
+						{
+							
+						}
+						
 					}
-					
 					if(prepareReply != null)
 					{
 						if(prepareReply.getHighestPrepareNo() > maxProposalNo)
@@ -252,6 +260,7 @@ public class Paxos extends UnicastRemoteObject implements PaxosInterface{
 						}
 					}
 				}
+				if(sentPropose){
 				String v_prime;
 				if(prepare_ok_count > (length/2))
 				{
@@ -273,8 +282,8 @@ public class Paxos extends UnicastRemoteObject implements PaxosInterface{
 						}
 						else
 						{
-								PaxosInterface peerImpl = (PaxosInterface) Naming.lookup("rmi://" + peer.getHostName() + ":" + peer.getPort() + "/Paxos" );
-								try{
+							try{
+								PaxosInterface peerImpl = (PaxosInterface) Naming.lookup("rmi://" + peer.getHostName() + ":" + peer.getPort() + paxosRMIpath );
 								acceptReply = peerImpl.Accept(acceptArgs);
 								}
 								catch(Exception e)
@@ -310,8 +319,15 @@ public class Paxos extends UnicastRemoteObject implements PaxosInterface{
 								Learn(LearnArgs);
 							else
 							{
+								try{
 								PaxosInterface peerImpl = (PaxosInterface) Naming.lookup("rmi://" + peer.getHostName() + ":" + peer.getPort() + paxosRMIpath );
 								peerImpl.Learn(LearnArgs);
+								continue;
+								}
+								catch(Exception e)
+								{
+									
+								}
 							}
 						}
 
@@ -319,7 +335,13 @@ public class Paxos extends UnicastRemoteObject implements PaxosInterface{
 					else
 						log.info(" REQUEST REJECTED :)");
 				}
+				}
+				else
+				{
+					log.info(" No paxos peer servers are up. Retry later");
+				}
 			}
+			
 		}
 	}	
 	/*

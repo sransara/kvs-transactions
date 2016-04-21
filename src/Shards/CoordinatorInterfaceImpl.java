@@ -141,7 +141,7 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 				me =a;
 			peers.add(newHostPort);
 		}
-		paxosHelper = new Paxos(peers,me, "/ShardCoordinatorPaxos", "log/shardcoord.log");
+		paxosHelper = new Paxos(peers,me,"/ShardCoordinatorPaxos", "log/shardcoord.log");
 
 	}
 
@@ -309,6 +309,7 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 		}
 		else
 		{
+			try{
 			Configuration oldConfiguration = configurations.get(maximumConfigurationNo-1);
 			HashMap<UUID, List<HostPorts>> replicaGroupMap =new HashMap<UUID, List<HostPorts>>(oldConfiguration.replicaGroupMap);
 			// Check to see if servers provided are on some other replication group already
@@ -326,10 +327,24 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 					}
 				}
 			}
+			
+			
 			HashMap<Integer, UUID> shardToGroupId = new HashMap<Integer, UUID>(oldConfiguration.shardToGroupIdMap);
+			log.info(" Shard to group id map is " + shardToGroupId);
+			if(shardToGroupId.isEmpty())
+			{
+				log.info(" Shard to group id map was empty initializing" + shardToGroupId);
+				for(Integer a = 0; a < NUM_SHARDS; a++ )
+					shardToGroupId.put(a, joinArgs.groupId);
+			}
 			replicaGroupMap.put(joinArgs.groupId, joinArgs.servers);
 			newConfiguration = new Configuration(maximumConfigurationNo,shardToGroupId,replicaGroupMap);
 			reconfigure(newConfiguration);
+			}
+			catch(Exception e)
+			{
+				e.printStackTrace();
+			}
 			
 		}
 		configurations.add(newConfiguration);
@@ -341,12 +356,15 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 	
 	public LeaveReply leaveOperation(LeaveArgs leaveArgs)
 	{
-		log.info(" Called leaveArgs");
 		
+		log.info(" Called leaveArgs");
+		LeaveReply leaveReply = new LeaveReply();
+		try{
 		if(maximumConfigurationNo == 0)
 		{
-			log.info("Error: No prior configurations. Request to leave with groupId" + leaveArgs.groupId + " requestId " + leaveArgs.uuid);
-			return new LeaveReply();
+			log.info("Error: No prior configurations. Request to leave with groupId " + leaveArgs.groupId + " failed.");
+			leaveReply.message = "Error: No prior configurations. Request to leave with groupId " + leaveArgs.groupId + " failed.";
+			return leaveReply;
 		}
 		Configuration oldConfiguration = configurations.get(maximumConfigurationNo-1);
 		HashMap<Integer, UUID> shardToGroupId = new HashMap<Integer, UUID>(oldConfiguration.shardToGroupIdMap);
@@ -354,22 +372,38 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 		if(replicaGroupMap.containsKey(leaveArgs.groupId))
 		{
 			replicaGroupMap.remove(leaveArgs.groupId);
+			log.info(" Group id " + leaveArgs.groupId + " removed.");		
+			
 		}
 		else
 		{
 			log.info("Error: Request to leave failed. Group Id " + leaveArgs.groupId + " doesn't exist in latest configuration.");
+			leaveReply.message = "Error: Request to leave failed. Group Id " + leaveArgs.groupId + " doesn't exist in latest configuration.";
+			return leaveReply;
 		}
 		Configuration newConfiguration = new Configuration(maximumConfigurationNo,shardToGroupId, replicaGroupMap);
 		configurations.add(newConfiguration);
 		reconfigure(newConfiguration);
 		maximumConfigurationNo = maximumConfigurationNo + 1;
-		return new LeaveReply();
+		log.info(" Group id " + leaveArgs.groupId + " has left.");
+		leaveReply.message = " Group id " + leaveArgs.groupId + " has left.";
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		return leaveReply;
 	}
 	
 	public PollReply pollOperation(PollArgs pollArgs)
 	{
 		log.info(" Called pollOperation");
-		return new PollReply(configurations.get(maximumConfigurationNo));
+		if(configurations.isEmpty() || pollArgs.configurationSequenceNumber >= maximumConfigurationNo)
+			return new PollReply(new Configuration(0, new HashMap<Integer, UUID> () ,new HashMap<UUID, List<HostPorts>> ()));
+		else if(pollArgs.configurationSequenceNumber < 0)
+			return new PollReply(configurations.get(maximumConfigurationNo-1));
+		else
+			return new PollReply(configurations.get(pollArgs.configurationSequenceNumber));
 	}
 	
 	private void reconfigure(Configuration configuration)
@@ -385,12 +419,26 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 		for (Entry<UUID, Collection<Integer>> entry : multiMap.asMap().entrySet()) {
 			List<Integer> shards = new ArrayList<Integer>();
 			shards.addAll(entry.getValue());
-			groupToShards.put(entry.getKey(), shards);
+			if(replicaGroupMap.containsKey(entry.getKey()))
+				groupToShards.put(entry.getKey(), shards);
+
+		}
+		for (Entry<UUID, Collection<Integer>> entry : multiMap.asMap().entrySet()) {
+			List<Integer> shards = new ArrayList<Integer>();
+			shards.addAll(entry.getValue());
+			if(!replicaGroupMap.containsKey(entry.getKey()))
+			{
+				if(noOfGroups>0){
+					UUID firstKey = groupToShards.keySet().iterator().next();
+					groupToShards.get(firstKey).addAll(shards);
+				}
+			}
 		}
 		for(UUID group: replicaGroupMap.keySet())
 			if (!groupToShards.containsKey(group))
 				groupToShards.put(group, new ArrayList<Integer>());
 		
+		if(noOfGroups >0){
 		int min = NUM_SHARDS/noOfGroups;
 		int max = NUM_SHARDS/noOfGroups;
 		if(NUM_SHARDS % noOfGroups != 0)
@@ -398,17 +446,18 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 		UUID groupA_WithMaxShards = getmaxshard(groupToShards);
 		UUID groupB_WithMinShards = getminshard(groupToShards);
 		int sizeGroupA = groupToShards.get(groupA_WithMaxShards).size();
-		int sizeGroupB = groupToShards.get(groupB_WithMinShards).size();
+		int sizeGroupB = groupToShards.get(groupB_WithMinShards).size();		
 		while(sizeGroupA > max || sizeGroupB < min)
 		{
-			int diff1 = (max- sizeGroupA);
-			int diff2 = (sizeGroupB - min);
-			int diff = (diff1<diff2)? diff2 : diff1;
+			int diff1 = (max- sizeGroupB);
+			int diff2 = (sizeGroupA - min);
+			
+			int diff = (diff1<diff2)? diff1 : diff2;
+			List<Integer> maxGroupShards = groupToShards.get(groupA_WithMaxShards);
+			List<Integer> minGroupShards = groupToShards.get(groupB_WithMinShards);
 			
 			for (int a = 0; a < diff; a ++)
-			{
-				List<Integer> maxGroupShards = groupToShards.get(groupA_WithMaxShards);
-				List<Integer> minGroupShards = groupToShards.get(groupB_WithMinShards);
+			{	
 				Integer removed = maxGroupShards.remove(0);
 				minGroupShards.add(removed);	
 			}
@@ -421,16 +470,26 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 		for (Entry<UUID, List<Integer>> entry : groupToShards.entrySet())
 			  for(Integer shard: entry.getValue())
 				  shardToGroupIdMap.put(shard, entry.getKey());
+		}
+		else
+		{
+			shardToGroupIdMap.clear();
+		}
 	}
 	
 	
 	private UUID getminshard(HashMap<UUID, List<Integer>> groupToShards)
 	{
-		int min = NUM_SHARDS;
+		int min = NUM_SHARDS+1;
 		UUID minToReturn = null;
 		for( UUID group : groupToShards.keySet())
+		{	
 			if(groupToShards.get(group).size() < min)
+			{
+				min = groupToShards.get(group).size();
 				minToReturn = group;
+			}
+		}
 		return minToReturn;
 	}
 	
@@ -441,7 +500,10 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 		UUID maxToReturn = null;
 		for( UUID group : groupToShards.keySet())
 			if(groupToShards.get(group).size() > max)
+			{
+				max = groupToShards.get(group).size();
 				maxToReturn = group;
+			}
 		return maxToReturn;
 	}
 	

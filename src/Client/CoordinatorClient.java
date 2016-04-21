@@ -3,7 +3,11 @@ package Client;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.net.InetSocketAddress;
+import java.net.ServerSocket;
+import java.net.Socket;
 import java.rmi.Naming;
+import java.rmi.server.RMISocketFactory;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
@@ -27,8 +31,31 @@ public class CoordinatorClient {
 	public static final int totalServers = 97;
 	final static String PATTERN = "%d [%p|%c|%C{1}] %m%n";
 	private static String[][] hostPorts;
-	public static void main(String args[])
+	public static void configureRMI() throws IOException
 	{
+		RMISocketFactory.setSocketFactory( new RMISocketFactory()
+		{
+			public Socket createSocket( String host, int port )
+					throws IOException
+					{
+				Socket socket = new Socket();
+				socket.setSoTimeout(10000);
+				socket.setSoLinger( false, 0 );
+				socket.connect( new InetSocketAddress( host, port ),10000);
+				return socket;
+					}
+
+			public ServerSocket createServerSocket( int port )
+					throws IOException
+					{
+				return new ServerSocket( port );
+					}
+		} );
+	}
+	
+	public static void main(String args[]) throws IOException
+	{
+		configureRMI();
 		configureLogger();
 		hostPorts = readConfigFile();
 		if(args.length > 0)
@@ -43,7 +70,7 @@ public class CoordinatorClient {
 				{
 					try{
 						int serverIndex = Integer.parseInt(args[a]);
-						if(serverIndex <totalServers && serverIndex >=10)
+						if(serverIndex >=totalServers || serverIndex <10)
 						{
 						log.error("Fatal error:  You have entered an invalid server index. Must be [10-96]");
 						System.exit(-1);
@@ -70,29 +97,124 @@ public class CoordinatorClient {
 				
 				JoinArgs joinArgs = new JoinArgs(groupId, servers, uuid);
 				JoinReply joinReply;
-				for(int i = 0; i < 9; i++){
+				boolean sent = false;
+				for(int i = 0; i < 10; i++){
 					
 					try {
-						CoordinatorInterface hostImpl = (CoordinatorInterface) Naming.lookup("rmi://" + hostPorts[0][0] + ":" + hostPorts[0][1] + "/ShardCoordinator");
+						CoordinatorInterface hostImpl = (CoordinatorInterface) Naming.lookup("rmi://" + hostPorts[i][0] + ":" + hostPorts[i][1] + "/ShardCoordinator");
 						joinReply = (JoinReply) hostImpl.Join(joinArgs);
 						log.info(joinReply.message);
+						sent = true;
 						break;
 					} catch (Exception e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
+						//log.error(e.getMessage());
+						}
 					}
-					}
+				if(!sent)
+				{
+					log.error(" None of the Coordinator servers are up. Please start them.");
+				}
 				}
 			}
 			else if (args[0].equalsIgnoreCase(LEAVE))
 			{
-			
+				if(args.length == 2)
+				{
+					LeaveArgs leaveArgs = null;
+					try{
+						leaveArgs = new LeaveArgs(UUID.fromString(args[1]), UUID.randomUUID());
+					}
+					catch(Exception e )
+					{
+						log.error(" Fatal err: Leave argument can't be converted to UUID error message" + e.getMessage());
+						System.exit(-1);
+					}
+					LeaveReply leaveReply;
+					boolean sent = false;
+					for(int i = 0; i < 10; i++){
+						
+						try {
+							CoordinatorInterface hostImpl = (CoordinatorInterface) Naming.lookup("rmi://" + hostPorts[i][0] + ":" + hostPorts[i][1] + "/ShardCoordinator");
+							leaveReply = (LeaveReply) hostImpl.Leave(leaveArgs);
+							log.info(leaveReply.message);
+							sent = true;
+							break;
+						} catch (Exception e) {
+							//log.error(e.getMessage());
+							e.printStackTrace();
+							}
+						}
+					if(!sent)
+					{
+						log.error(" None of the Coordinator servers are up. Please start them.");
+					}
+
+				}
+				else
+				{
+					fatalErrorRoutine();
+				}
+			}
+			else if(args[0].equalsIgnoreCase(POLL))
+			{
+				int confId = -1;
+				if(args.length == 1)
+				{
+					confId = -1;
+				}
+				else if(args.length == 2)
+				{
+					try{
+					confId = Integer.parseInt(args[1]);
+					}
+					catch(Exception e)
+					{
+						log.error(e.getMessage());
+						fatalErrorRoutine();
+					}
+				}
+				else
+				{
+					fatalErrorRoutine();
+				}
+				PollArgs pollArgs = new PollArgs(confId, UUID.randomUUID());
+				PollReply pollReply;
+				boolean sent = false;
+				for(int i = 0; i < 10; i++){
+					
+					try {
+						CoordinatorInterface hostImpl = (CoordinatorInterface) Naming.lookup("rmi://" + hostPorts[i][0] + ":" + hostPorts[i][1] + "/ShardCoordinator");
+						pollReply = (PollReply) hostImpl.Poll(pollArgs);
+						log.info(" Received Poll Configuration " + pollReply.getConfiguration());
+						sent = true;
+						break;
+					} catch (Exception e) {
+						//log.error(e.getMessage());
+						}
+					}
+				if(!sent)
+				{
+					log.error(" None of the Coordinator servers are up. Please start them.");
+				}
+				
 			}
 			else
 			{
-			
+				fatalErrorRoutine();
 			}
 		}
+		else
+		{
+			fatalErrorRoutine();
+		}
+	}
+	
+	
+	public static void fatalErrorRoutine()
+	{
+		log.info("Fatal error: USAGE: java -jar CoordinatorClient JOIN [server index args..]");
+		log.info("OR java -jar CoordinatorClient LEAVE [groupid]");
+		log.info("OR java -jar CoordinatorClient POLL [configurationid]");
 	}
 	
 	static void configureLogger()
