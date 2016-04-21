@@ -14,6 +14,8 @@
 		<pathelement location="bin"/>
 		<pathelement location="resources/commons-io-2.4.jar"/>
 		<pathelement location="resources/log4j-1.2.17.jar"/>
+		<pathelement location="resources/mapdb-2.0-beta10.jar"/>
+		<pathelement location="resources/guava-13.0.1-redhat-1.jar"/>
 	</path>
 	<target name="init">
 		<mkdir dir="bin"/>
