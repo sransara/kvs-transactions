@@ -2,7 +2,7 @@ sh ./killall.sh
 sleep 5
 echo " Start Db Servers"
 count=1
-while [ $count -lt 6 ] && read line; do
+while [ $count -lt 60 ] && read line; do
 let count++
 TEST=$(pwd)
 echo $TEST

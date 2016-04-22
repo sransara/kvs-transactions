@@ -30,7 +30,8 @@ import static Utility.UtilityClasses.atoi;
 public class TransactionClient {
     final static Logger log = Logger.getLogger(TransactionClient.class);
     final static String PATTERN = "%d [%p|%c|%C{1}] %m%n";
-    final static int coordinatorRepilcas = 5;
+    // final static int COORDINATOR_NUM_REPLICAS = 10;
+    final static int COORDINATOR_NUM_REPLICAS = 60;
     private static final int TIMEOUT = 1000;
 
     private static HashMap<String, Object> localStore = new HashMap<>();
@@ -70,9 +71,9 @@ public class TransactionClient {
             public Socket createSocket(String host, int port)
                     throws IOException {
                 Socket socket = new Socket();
-                socket.setSoTimeout((coordinatorRepilcas + 1) * TIMEOUT);
+                socket.setSoTimeout((COORDINATOR_NUM_REPLICAS + 1) * TIMEOUT);
                 socket.setSoLinger(false, 0);
-                socket.connect(new InetSocketAddress(host, port), (coordinatorRepilcas + 1) * TIMEOUT);
+                socket.connect(new InetSocketAddress(host, port), (COORDINATOR_NUM_REPLICAS + 1) * TIMEOUT);
                 return socket;
             }
 
@@ -84,14 +85,14 @@ public class TransactionClient {
     }
 
     private static String[][] readCoordinatorConfig() {
-        String hostPorts[][] = new String[coordinatorRepilcas][2];
+        String hostPorts[][] = new String[COORDINATOR_NUM_REPLICAS][2];
         try {
-            BufferedReader fileReader = new BufferedReader(new FileReader("coordinator_config.txt"));
-            log.info("Loading configurations from coordinator_config.txt..");
-            for(int c = 0; c < coordinatorRepilcas; c++) {
+            BufferedReader fileReader = new BufferedReader(new FileReader("configs.txt"));
+            log.info("Loading configurations from configs.txt..");
+            for(int c = 0; c < COORDINATOR_NUM_REPLICAS; c++) {
                 hostPorts[c] = fileReader.readLine().split("\\s+");
                 if (hostPorts[c][0].isEmpty() || !hostPorts[c][1].matches("[0-9]+") || hostPorts[c][1].isEmpty()) {
-                    log.info("You have made incorrect entries for addresses in config file, please investigate.");
+                    log.error("You have made incorrect entries for addresses in config file, please investigate.");
                     System.exit(-1);
                 }
             }
@@ -107,7 +108,9 @@ public class TransactionClient {
         configureLogger();
         configureRMI();
         String coordinators[][] = readCoordinatorConfig();
-        configuration = getShardConfig(coordinators);
+        // configuration = getShardConfig(coordinators);
+        configuration = getStaticShardConfig(coordinators);
+
         if(args[1].startsWith("t") | args[1].startsWith("p") | args[1].startsWith("a")) {
             protocol = args[1].charAt(0);
         }
@@ -263,11 +266,11 @@ public class TransactionClient {
         }
     }
 
-    public static UtilityClasses.Configuration getShardConfig(String[][] coordinators) {
+    private static UtilityClasses.Configuration getShardConfig(String[][] coordinators) {
         UtilityClasses.PollReply pollReply;
         UUID reqId = UUID.randomUUID();
         log.info("This request has id :" + reqId);
-        int serverNum = new Random().nextInt(coordinatorRepilcas);
+        int serverNum = new Random().nextInt(COORDINATOR_NUM_REPLICAS);
 
         while (true) {
             String hostname = coordinators[serverNum][0];
@@ -282,9 +285,40 @@ public class TransactionClient {
                 log.info("Contact server " + serverNum + " at hostname:port " + hostname + " : " + port + " FAILED. Trying others..");
 
             }
-            serverNum = (serverNum + 1) % coordinatorRepilcas;
+            serverNum = (serverNum + 1) % COORDINATOR_NUM_REPLICAS;
         }
         return pollReply.getConfiguration();
+    }
+
+    private static UtilityClasses.Configuration getStaticShardConfig(String[][] coordinators) {
+        HashMap<Integer, UUID> shardToGroupId = new HashMap<>();
+        HashMap<UUID, List<UtilityClasses.HostPorts>> replicaGroupMap = new HashMap<>();
+
+        int i = 1;
+
+        UUID rgid = UUID.randomUUID();
+        shardToGroupId.put(i - 1, rgid);
+
+        // Use COORDINATOR_NUM_REPLICAS as the DB_SERVER count
+        int div = COORDINATOR_NUM_REPLICAS / UtilityClasses.Configuration.NUM_SHARDS;
+        for(String[] hostport : coordinators) {
+            List<UtilityClasses.HostPorts> h = replicaGroupMap.get(rgid);
+            if(h == null) {
+                h = new ArrayList<>();
+                replicaGroupMap.put(rgid, h);
+            }
+            h.add(new UtilityClasses.HostPorts(hostport[0], Integer.parseInt(hostport[1])));
+
+            if((i % div) == 0) {
+                i += 1;
+                rgid = UUID.randomUUID();
+                shardToGroupId.put(i - 1, rgid);
+            }
+        }
+
+        UtilityClasses.Configuration config = new UtilityClasses.Configuration(1, shardToGroupId, replicaGroupMap);
+
+        return config;
     }
 
     private static boolean handleGet(String key, String reg, UUID reqId) {
