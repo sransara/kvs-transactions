@@ -39,7 +39,7 @@ public class UtilityClasses {
                     + shardToGroupIdMap + "]";
         }
 
-        private static final int NUM_SHARDS = 20;
+        public static final int NUM_SHARDS = 20;
         private static final long serialVersionUID = 1L;
 
         public Configuration(int confNo,
@@ -55,35 +55,10 @@ public class UtilityClasses {
         public HashMap<UUID, List<HostPorts>> replicaGroupMap;
         public HashMap<Integer, UUID> shardToGroupIdMap;
 
-        public List<HostPorts> getDbServersForKey(String key) {
-            if (!key.isEmpty()) {
-                Integer strInt = atoi(key);
-                Integer shardNo = strInt % NUM_SHARDS;
-                return replicaGroupMap.get(shardToGroupIdMap.get(shardNo));
-            } else {
-                return null;
-            }
-        }
 
-        public List<List<HostPorts>> getDbServersForKeys(String[] keys) {
-            Set<UUID> rgs = new HashSet<>();
-            List<List<HostPorts>> servers = new ArrayList<>();
-
-            for (String key : keys) {
-                Integer strInt = atoi(key);
-                Integer shardNo = strInt % NUM_SHARDS;
-                UUID rgid = shardToGroupIdMap.get(shardNo);
-                if (!rgs.contains(rgid)) {
-                    servers.add(replicaGroupMap.get(rgid));
-                    rgs.add(rgid);
-                }
-            }
-
-            return servers;
-        }
     }
 
-    private static int atoi(String str) {
+    public static int atoi(String str) {
         if (str == null || str.length() < 1)
             return 0;
 

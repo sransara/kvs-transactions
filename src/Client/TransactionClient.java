@@ -25,6 +25,8 @@ import org.apache.log4j.PatternLayout;
 import Db.DbServerInterface;
 import Utility.UtilityClasses.Response;
 
+import static Utility.UtilityClasses.atoi;
+
 public class TransactionClient {
     final static Logger log = Logger.getLogger(TransactionClient.class);
     final static String PATTERN = "%d [%p|%c|%C{1}] %m%n";
@@ -295,7 +297,7 @@ public class TransactionClient {
             value = localTransactionContext.store.get(key);
         }
         else {
-            List<UtilityClasses.HostPorts> hostPorts = configuration.getDbServersForKey(key);
+            List<UtilityClasses.HostPorts> hostPorts = getDbServersForKey(configuration, key);
             int i = new Random().nextInt(hostPorts.size());
             Response r = new Response("", false);
             while (!r.done) {
@@ -348,37 +350,47 @@ public class TransactionClient {
     private static boolean tryTowPhaseCommitCommitTransaction(UUID reqId) {
         boolean commitSuccessful = true;
 
+        SortedMap<String, Object> originalReadSet = new TreeMap<>(localTransactionContext.txContext.readSet);
+        SortedMap<String, Object> originalWriteSet  = new TreeMap<>(localTransactionContext.txContext.writeSet);
+
         Set<String> allkeys = new HashSet<>();
         allkeys.addAll(localTransactionContext.txContext.readSet.keySet());
         allkeys.addAll(localTransactionContext.txContext.writeSet.keySet());
 
-        List<List<UtilityClasses.HostPorts>> groups = configuration.getDbServersForKeys(allkeys.toArray(new String[0]));
+        HashMap<UUID, ReplicaGroup> groupMap = getDbServersForKeys(configuration, allkeys.toArray(new String[0]));
 
-        ExecutorService executorService = Executors.newFixedThreadPool(groups.size());
+        ExecutorService executorService = Executors.newFixedThreadPool(groupMap.size());
         List<Future<Response>> futures = new ArrayList<>();
 
-        for(List<UtilityClasses.HostPorts> group: groups) {
-            futures.add(executorService.submit(new Callable<Response>() {
-                @Override
-                public Response call() throws Exception {
-                    String hostname;
-                    int port;
-                    int i = new Random().nextInt(group.size());
-                    Response r = new Response("", false);
-                    while (!r.done) {
-                        UtilityClasses.HostPorts hostPort = group.get(i);
-                        hostname = hostPort.getHostName();
-                        port = hostPort.getPort();
-                        try {
-                            DbServerInterface hostImpl = (DbServerInterface) Naming.lookup("rmi://" + hostname + ":" + port + "/Calls");
-                            r = hostImpl.TRY_COMMIT(clientName, localTransactionContext.txContext, reqId);
-                        } catch (Exception e) {
-                            log.info("Contact server hostname:port " + hostname + " : " + port + " FAILED. Trying others..");
-                        }
-                        i = (i + 1) % group.size();
+        for(UUID rgid: groupMap.keySet()) {
+            ReplicaGroup group = groupMap.get(rgid);
+            List<UtilityClasses.HostPorts> groupServers = group.servers;
+
+            // reset the transaction keyset
+            localTransactionContext.txContext.readSet = new TreeMap<>(originalReadSet);
+            localTransactionContext.txContext.writeSet = new TreeMap<>(originalWriteSet);
+            // filter to send only the subset of keys responsible by the replica group
+            localTransactionContext.txContext.readSet.keySet().retainAll(group.keys);
+            localTransactionContext.txContext.writeSet.keySet().retainAll(group.keys);
+
+            futures.add(executorService.submit(() -> {
+                String hostname;
+                int port;
+                int i = new Random().nextInt(groupServers.size());
+                Response r = new Response("", false);
+                while (!r.done) {
+                    UtilityClasses.HostPorts hostPort = groupServers.get(i);
+                    hostname = hostPort.getHostName();
+                    port = hostPort.getPort();
+                    try {
+                        DbServerInterface hostImpl = (DbServerInterface) Naming.lookup("rmi://" + hostname + ":" + port + "/Calls");
+                        r = hostImpl.TRY_COMMIT(clientName, localTransactionContext.txContext, reqId);
+                    } catch (Exception e) {
+                        log.info("Contact server hostname:port " + hostname + " : " + port + " FAILED. Trying others..");
                     }
-                    return r;
+                    i = (i + 1) % groupServers.size();
                 }
+                return r;
             }));
         }
 
@@ -397,33 +409,41 @@ public class TransactionClient {
         localTransactionContext.txContext.commitSuccessful = commitSuccessful;
 
         List<Callable<Response>> callables = new ArrayList<>();
-        for(List<UtilityClasses.HostPorts> group: groups) {
-            callables.add(new Callable<Response>() {
-                @Override
-                public Response call() throws Exception {
-                    String hostname;
-                    int port;
-                    int i = new Random().nextInt(group.size());
-                    Response r = new Response("", false);
-                    while (!r.done) {
-                        UtilityClasses.HostPorts hostPort = group.get(i);
-                        hostname = hostPort.getHostName();
-                        port = hostPort.getPort();
-                        try {
-                            DbServerInterface hostImpl = (DbServerInterface) Naming.lookup("rmi://" + hostname + ":" + port + "/Calls");
-                            r = hostImpl.DECIDE_COMMIT(clientName, localTransactionContext.txContext, reqId);
-                        } catch (Exception e) {
-                            log.info("Contact server hostname:port " + hostname + " : " + port + " FAILED. Trying others..");
-                        }
-                        i = (i + 1) % group.size();
+        for(UUID rgid: groupMap.keySet()) {
+            ReplicaGroup group = groupMap.get(rgid);
+            List<UtilityClasses.HostPorts> groupServers = group.servers;
+
+            // reset the transaction keyset
+            localTransactionContext.txContext.readSet = new TreeMap<>(originalReadSet);
+            localTransactionContext.txContext.writeSet = new TreeMap<>(originalWriteSet);
+            // filter to send only the subset of keys responsible by the replica group
+            localTransactionContext.txContext.readSet.keySet().retainAll(group.keys);
+            localTransactionContext.txContext.writeSet.keySet().retainAll(group.keys);
+
+            callables.add(() -> {
+                String hostname;
+                int port;
+                int i = new Random().nextInt(groupServers.size());
+                Response r = new Response("", false);
+                while (!r.done) {
+                    UtilityClasses.HostPorts hostPort = groupServers.get(i);
+                    hostname = hostPort.getHostName();
+                    port = hostPort.getPort();
+                    try {
+                        DbServerInterface hostImpl = (DbServerInterface) Naming.lookup("rmi://" + hostname + ":" + port + "/Calls");
+                        r = hostImpl.DECIDE_COMMIT(clientName, localTransactionContext.txContext, reqId);
+                    } catch (Exception e) {
+                        log.info("Contact server hostname:port " + hostname + " : " + port + " FAILED. Trying others..");
                     }
-                    return r;
+                    i = (i + 1) % groupServers.size();
                 }
+                return r;
             });
         }
 
         try {
             executorService.invokeAll(callables);
+            executorService.shutdown();
         } catch (InterruptedException e) {
             log.error(e.getMessage());
         }
@@ -431,7 +451,6 @@ public class TransactionClient {
         if(commitSuccessful) {
             // merge transaction store with localStore
             localStore.putAll(localTransactionContext.store);
-            return true;
         }
 
         return commitSuccessful;
@@ -445,7 +464,7 @@ public class TransactionClient {
         String writeSetFirstKey = localTransactionContext.txContext.writeSet.firstKey();
         String firstKey = readSetFirstKey.compareTo(writeSetFirstKey) < 0 ? readSetFirstKey : writeSetFirstKey;
 
-        List<UtilityClasses.HostPorts> hostPorts = configuration.getDbServersForKey(firstKey);
+        List<UtilityClasses.HostPorts> hostPorts = getDbServersForKey(configuration, firstKey);
         int i = new Random().nextInt(hostPorts.size());
         Response r = new Response("", false);
         while (!r.done) {
@@ -463,7 +482,7 @@ public class TransactionClient {
         }
 
         // TODO: change next line
-        if(r.getValue() == "commited") {
+        if(r.getValue().equals("commited")) {
             // merge transaction store with localStore
             localStore.putAll(localTransactionContext.store);
             return true;
@@ -473,11 +492,10 @@ public class TransactionClient {
     }
 
     private static Object valuate(String input) {
-        Object value = input;
         boolean isRegister = input.trim().startsWith("$");
 
         if(!isRegister) {
-            return value; // return it as a literal value
+            return input; // return it as a literal value
         }
         else if (localStore.containsKey(input)) {
             return localStore.get(input);
@@ -490,5 +508,48 @@ public class TransactionClient {
 
         log.error("Couldn't valuate register: " + input);
         return null;
+    }
+
+    private static List<UtilityClasses.HostPorts> getDbServersForKey(UtilityClasses.Configuration config, String key) {
+        if (!key.isEmpty()) {
+            Integer strInt = atoi(key);
+            Integer shardNo = strInt % config.NUM_SHARDS;
+            return config.replicaGroupMap.get(config.shardToGroupIdMap.get(shardNo));
+        } else {
+            return null;
+        }
+    }
+
+    private static HashMap<UUID, ReplicaGroup> getDbServersForKeys(UtilityClasses.Configuration config, String[] keys) {
+        HashMap<UUID, ReplicaGroup> replicaGroupMap = new HashMap<>();
+
+        for (String key : keys) {
+            Integer strInt = atoi(key);
+            Integer shardNo = strInt % config.NUM_SHARDS;
+            UUID rgid = config.shardToGroupIdMap.get(shardNo);
+
+            ReplicaGroup rg = replicaGroupMap.get(rgid);
+
+            if (rg == null) {
+                rg = new ReplicaGroup(config.replicaGroupMap.get(rgid));
+                rg.keys.add(key);
+                replicaGroupMap.put(rgid, rg);
+            }
+            else {
+                rg.keys.add(key);
+            }
+        }
+
+        return replicaGroupMap;
+    }
+
+    private static class ReplicaGroup {
+        List<UtilityClasses.HostPorts> servers = new ArrayList<>();
+        Set<String> keys = new HashSet<>();
+
+        ReplicaGroup(List<UtilityClasses.HostPorts> s) {
+            this.servers = s;
+        }
+
     }
 }
