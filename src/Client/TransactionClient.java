@@ -13,7 +13,6 @@ import java.util.*;
 
 import Shards.CoordinatorInterface;
 import Utility.UtilityClasses;
-import Utility.UtilityClasses.ClientTransaction;
 
 import org.apache.log4j.ConsoleAppender;
 import org.apache.log4j.FileAppender;
@@ -30,13 +29,14 @@ public class TransactionClient {
     final static int coordinatorRepilcas = 5;
     private static final int TIMEOUT = 1000;
 
-
     private static HashMap<String, Object> localStore = new HashMap<>();
-    private static ClientTransaction.LocalTransactionContext localTransactionContext = null;
+    private static UtilityClasses.LocalTransactionContext localTransactionContext = null;
     private static UtilityClasses.Configuration configuration;
+    private static UUID clientUUId = UUID.randomUUID();
+    private static char protocol; // [t]wophase / [p]axos / [a]cyclic
 
 
-    static void configureLogger() {
+    private static void configureLogger() {
         ConsoleAppender console = new ConsoleAppender(); //create appender
         //configure the appender
         console.setLayout(new PatternLayout(PATTERN));
@@ -60,7 +60,7 @@ public class TransactionClient {
         //repeat with all other desired appenders
     }
 
-    public static void configureRMI() throws IOException {
+    private static void configureRMI() throws IOException {
         RMISocketFactory.setSocketFactory(new RMISocketFactory() {
             public Socket createSocket(String host, int port)
                     throws IOException {
@@ -78,7 +78,7 @@ public class TransactionClient {
         });
     }
 
-    public static String[][] readCoordinatorConfig() {
+    private static String[][] readCoordinatorConfig() {
         String hostPorts[][] = new String[coordinatorRepilcas][2];
         try {
             BufferedReader fileReader = new BufferedReader(new FileReader("coordinator_config.txt"));
@@ -101,9 +101,15 @@ public class TransactionClient {
     public static void main(String args[]) throws IOException {
         configureLogger();
         configureRMI();
-        String clientId = "NA";
         String coordinators[][] = readCoordinatorConfig();
         configuration = getShardConfig(coordinators);
+        if(args[1].startsWith("t") | args[1].startsWith("p") | args[1].startsWith("a")) {
+            protocol = args[1].charAt(0);
+        }
+        else {
+            log.error("Select transaction protocol for client");
+            System.exit(-1);
+        }
 
         String line;
         String tokens[];
@@ -136,7 +142,7 @@ public class TransactionClient {
                 case "GET":
                     // GET [KEY] INTO [$REGD]
                     if(localTransactionContext == null) {
-                        localTransactionContext = new ClientTransaction.LocalTransactionContext(current);
+                        localTransactionContext = new UtilityClasses.LocalTransactionContext(clientUUId, current);
                     }
 
                     key = tokens[1];
@@ -157,7 +163,7 @@ public class TransactionClient {
                 case "PUT":
                     // PUT [VALUE] INTO [KEY]
                     if(localTransactionContext == null) {
-                        localTransactionContext = new ClientTransaction.LocalTransactionContext(current);
+                        localTransactionContext = new UtilityClasses.LocalTransactionContext(clientUUId, current);
                     }
 
                     value = valuate(tokens[1]);
@@ -178,7 +184,7 @@ public class TransactionClient {
                 case "DELETE":
                     // DELETE [KEY]
                     if(localTransactionContext == null) {
-                        localTransactionContext = new ClientTransaction.LocalTransactionContext(current);
+                        localTransactionContext = new UtilityClasses.LocalTransactionContext(clientUUId, current);
                     }
 
                     key = tokens[2];
@@ -225,7 +231,7 @@ public class TransactionClient {
                     break;
 
                 case "START_TRANSACTOIN":
-                    localTransactionContext = new ClientTransaction.LocalTransactionContext(current);
+                    localTransactionContext = new UtilityClasses.LocalTransactionContext(clientUUId, current);
                     break;
 
                 case "COMMIT_TRANSACTION":
@@ -273,16 +279,13 @@ public class TransactionClient {
         return pollReply.getConfiguration();
     }
 
-    public static boolean handleGet(String key, String reg, UUID uuid) {
+    private static boolean handleGet(String key, String reg, UUID uuid) {
         String hostname;
         int port;
 
         Object value;
 
-        if (localStore.containsKey(key)) {
-            value = localStore.get(key);
-        }
-        else if(localTransactionContext.store.containsKey(key)) {
+        if(localTransactionContext.store.containsKey(key)) {
             value = localTransactionContext.store.get(key);
         }
         else {
@@ -311,61 +314,74 @@ public class TransactionClient {
         return true;
     }
 
-    public static boolean handlePut(String key, Object value, UUID uuid) {
-        String hostname;
-        int port;
-
-        List<UtilityClasses.HostPorts> hostPorts = configuration.getDbServersForKey(key);
-        int i = new Random().nextInt(hostPorts.size());
-        Response r = new Response("", false);
-        while (!r.done) {
-            UtilityClasses.HostPorts hostPort = hostPorts.get(i);
-            hostname = hostPort.getHostName();
-            port = hostPort.getPort();
-            try {
-                DbServerInterface hostImpl = (DbServerInterface) Naming.lookup("rmi://" + hostname + ":" + port + "/Calls");
-                // TODO: change next line
-                r = hostImpl.PUT("N/A", key, value.toString(), uuid);
-            } catch (Exception e) {
-                log.info("Contact server hostname:port " + hostname + " : " + port + " FAILED. Trying others..");
-            }
-            i = (i + 1) % hostPorts.size();
-        }
-
+    private static boolean handlePut(String key, Object value, UUID uuid) {
         localTransactionContext.txContext.writeSet.put(key, value);
         localTransactionContext.store.put(key, value);
-
         return true;
     }
 
-    public static boolean handleDelete(String key, UUID uuid) {
+    private static boolean handleDelete(String key, UUID uuid) {
+        localTransactionContext.txContext.writeSet.put(key, null);
+        localTransactionContext.store.put(key, null);
+        return true;
+    }
+
+    private static boolean tryCommitTransaction(UUID uuid) {
+        boolean retvalue;
+        if(protocol == 't') {
+            retvalue = tryTowPhaseCommitCommitTransaction(uuid);
+        }
+        else if(protocol == 'a') {
+            retvalue = tryAcyclicCommitTransaction(uuid);
+        }
+        else { // if(protocol == 'p')
+            retvalue = false;
+        }
+        return retvalue;
+    }
+
+    private static boolean tryTowPhaseCommitCommitTransaction(UUID uuid) {
         String hostname;
         int port;
 
-        List<UtilityClasses.HostPorts> hostPorts = configuration.getDbServersForKey(key);
-        int i = new Random().nextInt(hostPorts.size());
-        Response r = new Response("", false);
-        while (!r.done) {
-            UtilityClasses.HostPorts hostPort = hostPorts.get(i);
-            hostname = hostPort.getHostName();
-            port = hostPort.getPort();
-            try {
-                DbServerInterface hostImpl = (DbServerInterface) Naming.lookup("rmi://" + hostname + ":" + port + "/Calls");
-                // TODO: change next line
-                r = hostImpl.DELETE("N/A", key, uuid);
-            } catch (Exception e) {
-                log.info("Contact server hostname:port " + hostname + " : " + port + " FAILED. Trying others..");
+        Set<String> allkeys = new HashSet<>();
+        allkeys.addAll(localTransactionContext.txContext.readSet.keySet());
+        allkeys.addAll(localTransactionContext.txContext.writeSet.keySet());
+
+        List<List<UtilityClasses.HostPorts>> groups = configuration.getDbServersForKeys(allkeys.toArray(new String[0]));
+
+        for(List<UtilityClasses.HostPorts> hostPorts: groups) {
+            int i = new Random().nextInt(hostPorts.size());
+            Response r = new Response("", false);
+            while (!r.done) {
+                UtilityClasses.HostPorts hostPort = hostPorts.get(i);
+                hostname = hostPort.getHostName();
+                port = hostPort.getPort();
+                try {
+                    DbServerInterface hostImpl = (DbServerInterface) Naming.lookup("rmi://" + hostname + ":" + port + "/Calls");
+                    // TODO: change next line
+                    r = hostImpl.TRY_COMMIT("N/A", localTransactionContext.txContext, uuid);
+                } catch (Exception e) {
+                    log.info("Contact server hostname:port " + hostname + " : " + port + " FAILED. Trying others..");
+                }
+                i = (i + 1) % hostPorts.size();
             }
-            i = (i + 1) % hostPorts.size();
+
+            // TODO: change next line
+            if(r.getValue() == "commited") {
+                // merge transaction store with localStore
+                localStore.putAll(localTransactionContext.store);
+                return true;
+            }
+            // else
+            return false;
         }
 
-        localTransactionContext.txContext.writeSet.put(key, null);
-        localTransactionContext.store.put(key, null);
+        return false;
 
-        return true;
     }
 
-    public static boolean tryCommitTransaction(UUID uuid) {
+    private static boolean tryAcyclicCommitTransaction(UUID uuid) {
         String hostname;
         int port;
 
@@ -383,7 +399,7 @@ public class TransactionClient {
             try {
                 DbServerInterface hostImpl = (DbServerInterface) Naming.lookup("rmi://" + hostname + ":" + port + "/Calls");
                 // TODO: change next line
-                r = hostImpl.COMMIT("N/A", localTransactionContext.txContext, uuid);
+                r = hostImpl.TRY_COMMIT("N/A", localTransactionContext.txContext, uuid);
             } catch (Exception e) {
                 log.info("Contact server hostname:port " + hostname + " : " + port + " FAILED. Trying others..");
             }
@@ -393,19 +409,14 @@ public class TransactionClient {
         // TODO: change next line
         if(r.getValue() == "commited") {
             // merge transaction store with localStore
-            for (Map.Entry<String, Object> entry : localTransactionContext.store.entrySet()) {
-                String key = entry.getKey();
-                Object value = entry.getValue();
-
-                localTransactionContext.store.put(key, value);
-            }
+            localStore.putAll(localTransactionContext.store);
             return true;
         }
         // else
         return false;
     }
 
-    public static Object valuate(String input) {
+    private static Object valuate(String input) {
         Object value = input;
         boolean isRegister = input.trim().startsWith("$");
 
