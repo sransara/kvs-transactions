@@ -119,6 +119,7 @@ public class DbServerInterfaceImpl extends UnicastRemoteObject implements DbServ
     protected void initializeServer() throws Exception {
         configureLogger();
         hash = new ConcurrentHashMap<>();
+        rowLocks = new ConcurrentHashMap<>();
         hostPorts = readConfigFile();
         List<HostPorts> peers = new ArrayList<HostPorts>();
         me = 0;
@@ -243,7 +244,7 @@ public class DbServerInterfaceImpl extends UnicastRemoteObject implements DbServ
                 }
 
                 // some concurrent transaction has already locked this row
-                if (lockMap.get(ukey).equals('M')) {
+                if (lockMap.get(ukey).equals('W')) {
                     return "ABORT";
                 }
 
@@ -265,7 +266,7 @@ public class DbServerInterfaceImpl extends UnicastRemoteObject implements DbServ
                     continue;
                 }
 
-                if (lockMap.get(ukey).equals('S')) {
+                if (lockMap.get(ukey).equals('R')) {
                     return "ABORT";
                 }
             }
@@ -273,13 +274,13 @@ public class DbServerInterfaceImpl extends UnicastRemoteObject implements DbServ
 
         for(String key : txContext.readSet.keySet()) {
             lockMap = rowLocks.get(key);
-            lockMap.put(requesterId, 'S');
+            lockMap.put(requesterId, 'R');
         }
 
         for(String key : txContext.writeSet.keySet()) {
             lockMap = rowLocks.get(key);
             // lockmap must be either empty or 0 at this point
-            lockMap.put(requesterId, 'M');
+            lockMap.put(requesterId, 'W');
         }
 
         return "ACCEPT";
@@ -296,12 +297,12 @@ public class DbServerInterfaceImpl extends UnicastRemoteObject implements DbServ
         // remove any shared locks
         for(String key : txContext.readSet.keySet()) {
             lockMap = rowLocks.get(key);
-            lockMap.remove(requesterId, 'S');
+            lockMap.remove(requesterId, 'R');
         }
         // remove any modified locks
         for(String key : txContext.writeSet.keySet()) {
             lockMap = rowLocks.get(key);
-            lockMap.remove(requesterId, 'M');
+            lockMap.remove(requesterId, 'W');
         }
 
         return ACK;
