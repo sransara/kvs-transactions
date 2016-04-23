@@ -316,14 +316,18 @@ public class TransactionClient {
         HashMap<Integer, UUID> shardToGroupId = new HashMap<>();
         HashMap<UUID, List<UtilityClasses.HostPorts>> replicaGroupMap = new HashMap<>();
 
-        int i = 1;
-
-        UUID rgid = UUID.randomUUID();
-        shardToGroupId.put(i - 1, rgid);
-
+        UUID rgid = null;
+        int g = -1;
         // Use COORDINATOR_NUM_REPLICAS as the DB_SERVER count
         int div = COORDINATOR_NUM_REPLICAS / UtilityClasses.Configuration.NUM_SHARDS;
-        for(String[] hostport : coordinators) {
+        for(int i = 0; i < coordinators.length; i++) {
+            if((i % div) == 0) {
+                g += 1;
+                rgid = UUID.randomUUID();
+                shardToGroupId.put(g, rgid);
+            }
+
+            String[] hostport = coordinators[i];
             List<UtilityClasses.HostPorts> h = replicaGroupMap.get(rgid);
             if(h == null) {
                 h = new ArrayList<>();
@@ -331,11 +335,6 @@ public class TransactionClient {
             }
             h.add(new UtilityClasses.HostPorts(hostport[0], Integer.parseInt(hostport[1])));
 
-            if((i % div) == 0) {
-                i += 1;
-                rgid = UUID.randomUUID();
-                shardToGroupId.put(i - 1, rgid);
-            }
         }
 
         UtilityClasses.Configuration config = new UtilityClasses.Configuration(1, shardToGroupId, replicaGroupMap);
