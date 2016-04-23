@@ -249,8 +249,10 @@ public class DbServerInterfaceImpl extends UnicastRemoteObject implements DbServ
                 }
 
                 // the value seen by the client is wrong
-                if(!txContext.readSet.get(key).equals(hash.get(key))) {
-                    return "ABORT";
+                if(hash.contains(key)) {
+                    if(!txContext.readSet.get(key).equals(hash.get(key))) {
+                        return "ABORT";
+                    }
                 }
             }
         }
