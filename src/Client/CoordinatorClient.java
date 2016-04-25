@@ -9,7 +9,9 @@ import java.net.Socket;
 import java.rmi.Naming;
 import java.rmi.server.RMISocketFactory;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.UUID;
 
 import org.apache.log4j.ConsoleAppender;
@@ -66,6 +68,7 @@ public class CoordinatorClient {
 				UUID groupId = UUID.randomUUID();
 				UUID uuid = UUID.randomUUID();
 				List<HostPorts> servers = new ArrayList<HostPorts>();
+				Set<Integer> serverInd = new HashSet<Integer>();
 				for(int a = 1; a < args.length; a++)
 				{
 					try{
@@ -80,6 +83,7 @@ public class CoordinatorClient {
 						{
 						HostPorts hostPort = new HostPorts(hostPorts[serverIndex][0], Integer.parseInt(hostPorts[serverIndex][1]));
 						servers.add(hostPort);
+						serverInd.add(serverIndex);
 						}
 					}
 					catch(Exception e)
@@ -90,9 +94,10 @@ public class CoordinatorClient {
 					}
 				}
 				
-				if(servers.size() <5)
+				if(serverInd.size() <5)
 				{
-					log.error("Fatal error:  There must be atleast 5 servers in a replication group.");
+					log.error("Fatal error:  There must be atleast 5 unique servers in a replication group.");
+					System.exit(-1);
 				}
 				
 				JoinArgs joinArgs = new JoinArgs(groupId, servers, uuid);

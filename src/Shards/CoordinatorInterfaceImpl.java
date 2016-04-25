@@ -312,6 +312,7 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 			try{
 			Configuration oldConfiguration = configurations.get(maximumConfigurationNo-1);
 			HashMap<UUID, List<HostPorts>> replicaGroupMap =new HashMap<UUID, List<HostPorts>>(oldConfiguration.replicaGroupMap);
+			
 			// Check to see if servers provided are on some other replication group already
 			for(HostPorts hostPort: joinArgs.servers)
 			{
@@ -319,7 +320,7 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 				{
 					for(HostPorts checkHostPort: replicaGroupMap.get(key))
 					{
-						if(hostPort.getHostName() == checkHostPort.getHostName() && hostPort.getPort() == checkHostPort.getPort())
+						if(hostPort.getHostName().equalsIgnoreCase(checkHostPort.getHostName()) && hostPort.getPort() == checkHostPort.getPort())
 						{
 							joinReply.message = "Error: Can't Join. The server " + checkHostPort.getHostName() + " already exists in replica group " + key;
 							return joinReply;

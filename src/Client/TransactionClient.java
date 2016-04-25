@@ -30,7 +30,8 @@ import static Utility.UtilityClasses.atoi;
 public class TransactionClient {
     final static Logger log = Logger.getLogger(TransactionClient.class);
     final static String PATTERN = "%d [%p|%c|%C{1}] %m%n";
-    final static int COORDINATOR_NUM_REPLICAS = 10;
+    // final static int COORDINATOR_NUM_REPLICAS = 10;
+    final static int COORDINATOR_NUM_REPLICAS = 60;
     private static final int TIMEOUT = 1000;
 
     private static HashMap<String, Object> localStore = new HashMap<>();
@@ -108,6 +109,7 @@ public class TransactionClient {
         configureRMI();
         String coordinators[][] = readCoordinatorConfig();
         configuration = getShardConfig(coordinators);
+        //configuration = getStaticShardConfig(coordinators);
 
         if(args[0].startsWith("t") | args[0].startsWith("p") | args[0].startsWith("a")) {
             protocol = args[0].charAt(0);
@@ -314,14 +316,18 @@ public class TransactionClient {
         HashMap<Integer, UUID> shardToGroupId = new HashMap<>();
         HashMap<UUID, List<UtilityClasses.HostPorts>> replicaGroupMap = new HashMap<>();
 
-        int i = 1;
-
-        UUID rgid = UUID.randomUUID();
-        shardToGroupId.put(i - 1, rgid);
-
+        UUID rgid = null;
+        int g = -1;
         // Use COORDINATOR_NUM_REPLICAS as the DB_SERVER count
         int div = COORDINATOR_NUM_REPLICAS / UtilityClasses.Configuration.NUM_SHARDS;
-        for(String[] hostport : coordinators) {
+        for(int i = 0; i < coordinators.length; i++) {
+            if((i % div) == 0) {
+                g += 1;
+                rgid = UUID.randomUUID();
+                shardToGroupId.put(g, rgid);
+            }
+
+            String[] hostport = coordinators[i];
             List<UtilityClasses.HostPorts> h = replicaGroupMap.get(rgid);
             if(h == null) {
                 h = new ArrayList<>();
@@ -329,11 +335,6 @@ public class TransactionClient {
             }
             h.add(new UtilityClasses.HostPorts(hostport[0], Integer.parseInt(hostport[1])));
 
-            if((i % div) == 0) {
-                i += 1;
-                rgid = UUID.randomUUID();
-                shardToGroupId.put(i - 1, rgid);
-            }
         }
 
         UtilityClasses.Configuration config = new UtilityClasses.Configuration(1, shardToGroupId, replicaGroupMap);

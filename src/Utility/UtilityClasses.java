@@ -35,8 +35,8 @@ public class UtilityClasses {
         @Override
         public String toString() {
             return "Configuration [confNo=" + confNo + ", replicaGroupMap="
-                    + replicaGroupMap + ", shardToGroupIdMap="
-                    + shardToGroupIdMap + "]";
+                    + System.lineSeparator() + replicaGroupMap + System.lineSeparator() + ", shardToGroupIdMap="
+                    + System.lineSeparator()  + shardToGroupIdMap + " + ]";
         }
 
         public static final int NUM_SHARDS = 20;
@@ -177,8 +177,13 @@ public class UtilityClasses {
          *
          */
         private static final long serialVersionUID = 1L;
-        String hostName;
-        int port;
+		String hostName;
+        @Override
+		public String toString() {
+			return "HostPorts [hostName=" + hostName + ", port=" + port + "]";
+		}
+
+		int port;
 
         public String getHostName() {
             return hostName;

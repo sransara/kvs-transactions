@@ -43,7 +43,7 @@ public class DbServerInterfaceImpl extends UnicastRemoteObject implements DbServ
     private static int me;
     private static volatile int currentSeqNo;
     private static volatile HashMap<UUID, Response> responseLog;
-    private static final int numReplicas = 5;
+    private static final int numReplicas = 60;
     private Paxos paxosHelper;
     final static int hostPortColumn = 2;
     private static final int TIMEOUT = 1000;
@@ -122,15 +122,28 @@ public class DbServerInterfaceImpl extends UnicastRemoteObject implements DbServ
         rowLocks = new ConcurrentHashMap<>();
         hostPorts = readConfigFile();
         List<HostPorts> peers = new ArrayList<HostPorts>();
+        int numShards = 3;
+
         me = 0;
+        int group = -1;
         for (int a = 0; a < numReplicas; a++) {
+            if((a % 3) == 0) {
+                group += 1;
+            }
+            if (hostPorts[a][0].equalsIgnoreCase(hostname) && Integer.parseInt(hostPorts[a][1]) == port) {
+                break;
+            }
+        }
+
+        for(int a = group * numShards; a < (group * numShards + 3); a++) {
+            if (hostPorts[a][0].equalsIgnoreCase(hostname) && Integer.parseInt(hostPorts[a][1]) == port) {
+                me = a - (group * numShards);
+            }
             HostPorts newHostPort = new HostPorts(hostPorts[a][0], Integer.parseInt(hostPorts[a][1]));
-            if (hostPorts[a][0].equalsIgnoreCase(hostname) && Integer.parseInt(hostPorts[a][1]) == port)
-                me = a;
             peers.add(newHostPort);
         }
-        paxosHelper = new Paxos(peers, me, "/Paxos", "log/dbserver.log");
 
+        paxosHelper = new Paxos(peers, me, "/Paxos", "log/dbserver.log");
     }
 
     /*
@@ -176,11 +189,9 @@ public class DbServerInterfaceImpl extends UnicastRemoteObject implements DbServ
         String hostPorts[][] = new String[numReplicas][hostPortColumn];
         try {
             BufferedReader fileReader = new BufferedReader(new FileReader("configs.txt"));
-            int c = 0;
-
-            while (c++ != numReplicas) {
-                hostPorts[c - 1] = fileReader.readLine().split("\\s+");
-                if (hostPorts[c - 1][0].isEmpty() || !hostPorts[c - 1][1].matches("[0-9]+") || hostPorts[c - 1][1].isEmpty()) {
+            for(int c = 0; c < numReplicas; c++) {
+                hostPorts[c] = fileReader.readLine().split("\\s+");
+                if (hostPorts[c][0].isEmpty() || !hostPorts[c][1].matches("[0-9]+") || hostPorts[c][1].isEmpty()) {
                     log.info("You have made incorrect entries for addresses in config file, please investigate.");
                     System.exit(-1);
                 }
