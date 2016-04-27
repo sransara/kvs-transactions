@@ -4,18 +4,10 @@ GET X INTO $R1
 PUT 14 INT Y
 GET Y INTO $R2
 ADDI $R1 $R2 INTO $R3
-<<<<<<< Updated upstream
-COMMIT_TRANSACTION
-=======
-PRINT $R3
->>>>>>> Stashed changes
 PRINT $R3
 GET X INTO $RX
 GET Y INTO $RY
 PRINT RX = $RX
 PRINT RY = $RY
-<<<<<<< Updated upstream
-=======
 PUT -1 INTO X
 COMMIT_TRANSACTION
->>>>>>> Stashed changes
