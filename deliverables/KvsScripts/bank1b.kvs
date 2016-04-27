@@ -1,0 +1,50 @@
+START_TRANSACTION
+
+PRINT Increase for everyone by 10
+
+GET Alice INTO $RA
+ADDI $RA 10 INTO $RA
+PUT $RA INTO Alice
+
+GET Bob INTO $RB
+ADDI $RB 10 INTO $RB
+PUT $RB INTO Bob
+
+GET Carl INTO $RC
+ADDI $RC 10 INTO $RC
+PUT $RC INTO Carl
+
+GET Dolly INTO $RD
+ADDI $RD 10 INTO $RD
+PUT $RD INTO Dolly
+
+GET Ell INTO $RE
+ADDI $RE 10 INTO $RE
+PUT $RE INTO Ell
+
+GET Fahl INTO $RF
+ADDI $RF 10 INTO $RF
+PUT $RF INTO Fahl
+
+GET Gool INTO $RG
+ADDI $RG 10 INTO $RG
+PUT $RG INTO Gool
+
+GET Hal INTO $RH
+ADDI $RH 10 INTO $RH
+PUT $RH INTO Hal
+
+PRINT Increased for everyone by 10
+
+PRINT Alice should have $RA
+PRINT Bob should have $RB
+PRINT Carl should have $RC
+PRINT Dolly should have $RD
+PRINT Ell should have $RE
+PRINT Fahl should have $RF
+PRINT Gool should have $RG
+PRINT Hal should have $RH
+
+COMMIT_TRANSACTION
+
+PRINT Commited Transaction

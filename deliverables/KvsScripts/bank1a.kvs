@@ -1,0 +1,32 @@
+START_TRANSACTION
+PRINT Initialize accounts
+PUT 0 INTO Alice
+PUT 0 INTO Bob
+PUT 0 INTO Carl
+PUT 0 INTO Dolly
+PUT 0 INTO Ell
+PUT 0 INTO Fahl
+PUT 0 INTO Gool
+PUT 0 INTO Hal
+COMMIT_TRANSACTION
+
+START_TRANSACTION
+PRINT Check if they really initialized
+GET Alice INTO $RA
+GET Bob INTO $RB
+GET Carl INTO $RC
+GET Dolly INTO $RD
+GET Ell INTO $RE
+GET Fahl INTO $RF
+GET Gool INTO $RG
+GET Hal INTO $RH
+COMMIT_TRANSACTION
+
+PRINT Alice has $RA
+PRINT Bob has $RB
+PRINT Carl has $RC
+PRINT Dolly has $RD
+PRINT Ell has $RE
+PRINT Fahl has $RF
+PRINT Gool has $RG
+PRINT Hal has $RH
