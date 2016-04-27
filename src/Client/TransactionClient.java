@@ -140,6 +140,11 @@ public class TransactionClient {
                 program.add(line);
             }
 
+            if(line.isEmpty()) {
+                current += 1;
+                continue;
+            }
+
             tokens = line.split("\\s+");
             String command = tokens[0];
 
@@ -236,19 +241,15 @@ public class TransactionClient {
                     Object val1 = valuate(reg1);
                     Object val2 = valuate(reg2);
                     try {
-                        if(val1 instanceof String) {
-                            val1 = Integer.parseInt(val1.toString());
-                        }
-
-                        if(val2 instanceof String) {
-                            val2 = Integer.parseInt(val2.toString());
-                        }
+                        val1 = Integer.parseInt(val1.toString());
+                        val2 = Integer.parseInt(val2.toString());
+                        localTransactionContext.store.put(regd, (int) val1 + (int) val2);
                     }
-                    catch(NumberFormatException ex) {
+                    catch(Exception ex) {
+                        localTransactionContext.store.put(regd, null);
                         log.error("All argument register or literal values must be integers: " + val1 + " or " + val2);
                     }
 
-                    localTransactionContext.store.put(regd, (int) val1 + (int) val2);
 
                     break;
 
@@ -405,9 +406,6 @@ public class TransactionClient {
     private static boolean tryTowPhaseCommitCommitTransaction(UUID reqId) {
         boolean commitSuccessful = true;
 
-        SortedMap<String, Object> originalReadSet = new TreeMap<>(localTransactionContext.txContext.readSet);
-        SortedMap<String, Object> originalWriteSet  = new TreeMap<>(localTransactionContext.txContext.writeSet);
-
         Set<String> allkeys = new HashSet<>();
         allkeys.addAll(localTransactionContext.txContext.readSet.keySet());
         allkeys.addAll(localTransactionContext.txContext.writeSet.keySet());
@@ -420,16 +418,13 @@ public class TransactionClient {
         UUID tryReqId = reqId;
         UUID commitId = UUID.randomUUID();
 
+        // log.info("RSET " + localTransactionContext.txContext.readSet + " WSET:" + localTransactionContext.txContext.writeSet);
+
         for(UUID rgid: groupMap.keySet()) {
             ReplicaGroup group = groupMap.get(rgid);
             List<UtilityClasses.HostPorts> groupServers = group.servers;
 
-            // reset the transaction keyset
-            localTransactionContext.txContext.readSet = new TreeMap<>(originalReadSet);
-            localTransactionContext.txContext.writeSet = new TreeMap<>(originalWriteSet);
-            // filter to send only the subset of keys responsible by the replica group
-            localTransactionContext.txContext.readSet.keySet().retainAll(group.keys);
-            localTransactionContext.txContext.writeSet.keySet().retainAll(group.keys);
+            UtilityClasses.TransactionContext tx = generateTransactionContextForGroup(localTransactionContext.txContext, group);
 
             futures.add(executorService.submit(() -> {
                 String hostname;
@@ -442,11 +437,12 @@ public class TransactionClient {
                     port = hostPort.getPort();
                     try {
                         DbServerInterface hostImpl = (DbServerInterface) Naming.lookup("rmi://" + hostname + ":" + port + "/Calls");
-                        r = hostImpl.TRY_COMMIT(clientName, localTransactionContext.txContext, tryReqId);
+                        r = hostImpl.TRY_COMMIT(clientName, tx, tryReqId);
                     } catch (Exception e) {
                         log.info("Contact server hostname:port " + hostname + " : " + port + " FAILED. Trying others..");
                     }
                     i = (i + 1) % groupServers.size();
+                    Thread.sleep(5000);
                 }
                 return r;
             }));
@@ -472,11 +468,7 @@ public class TransactionClient {
             List<UtilityClasses.HostPorts> groupServers = group.servers;
 
             // reset the transaction keyset
-            localTransactionContext.txContext.readSet = new TreeMap<>(originalReadSet);
-            localTransactionContext.txContext.writeSet = new TreeMap<>(originalWriteSet);
-            // filter to send only the subset of keys responsible by the replica group
-            localTransactionContext.txContext.readSet.keySet().retainAll(group.keys);
-            localTransactionContext.txContext.writeSet.keySet().retainAll(group.keys);
+            UtilityClasses.TransactionContext tx = generateTransactionContextForGroup(localTransactionContext.txContext, group);
 
             callables.add(() -> {
                 String hostname;
@@ -489,11 +481,12 @@ public class TransactionClient {
                     port = hostPort.getPort();
                     try {
                         DbServerInterface hostImpl = (DbServerInterface) Naming.lookup("rmi://" + hostname + ":" + port + "/Calls");
-                        r = hostImpl.DECIDE_COMMIT(clientName, localTransactionContext.txContext, commitId);
+                        r = hostImpl.DECIDE_COMMIT(clientName, tx, commitId);
                     } catch (Exception e) {
                         log.info("Contact server hostname:port " + hostname + " : " + port + " FAILED. Trying others..");
                     }
                     i = (i + 1) % groupServers.size();
+                    Thread.sleep(5000);
                 }
                 return r;
             });
@@ -507,8 +500,12 @@ public class TransactionClient {
         }
 
         if(commitSuccessful) {
+            // log.info("Transaction commited r=" + localTransactionContext.txContext.readSet + " w=" + localTransactionContext.txContext.writeSet);
             // merge transaction store with localStore
             localStore.putAll(localTransactionContext.store);
+        }
+        else {
+            log.info("Aborted transaction");
         }
 
         return commitSuccessful;
@@ -547,6 +544,21 @@ public class TransactionClient {
         }
         // else
         return false;
+    }
+
+    private static UtilityClasses.TransactionContext generateTransactionContextForGroup(UtilityClasses.TransactionContext itx, ReplicaGroup rg) {
+        UtilityClasses.TransactionContext tx = new UtilityClasses.TransactionContext();
+        tx.commitSuccessful = itx.commitSuccessful;
+        tx.requesterId = itx.requesterId;
+
+
+        tx.readSet = new TreeMap<>(itx.readSet);
+        tx.readSet.keySet().retainAll(rg.keys);
+
+        tx.writeSet = new TreeMap<>(itx.writeSet);
+        tx.writeSet.keySet().retainAll(rg.keys);
+
+        return tx;
     }
 
     private static Object valuate(String input) {

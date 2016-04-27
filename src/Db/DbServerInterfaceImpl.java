@@ -33,7 +33,7 @@ public class DbServerInterfaceImpl extends UnicastRemoteObject implements DbServ
     final static String PATTERN = "%d [%p|%c|%C{1}] %m%n";
 
     private static ConcurrentHashMap<String, Object> hash;
-    private static ConcurrentHashMap<String, ConcurrentHashMap<UUID, Character>> rowLocks;
+    private static HashMap<String, HashMap<UUID, Character>> rowLocks;
 
     private static String[][] hostPorts;
     private static int port;
@@ -119,7 +119,7 @@ public class DbServerInterfaceImpl extends UnicastRemoteObject implements DbServ
     protected void initializeServer() throws Exception {
         configureLogger();
         hash = new ConcurrentHashMap<>();
-        rowLocks = new ConcurrentHashMap<>();
+        rowLocks = new HashMap<>();
         hostPorts = readConfigFile();
         List<HostPorts> peers = new ArrayList<HostPorts>();
         int numShards = 3;
@@ -241,14 +241,21 @@ public class DbServerInterfaceImpl extends UnicastRemoteObject implements DbServ
 
     public String tryCommitOperation(TransactionContext txContext) {
         UUID requesterId = txContext.requesterId;
-        ConcurrentHashMap<UUID, Character> lockMap = null;
+        HashMap<UUID, Character> lockMap = null;
 
+        log.info("TMPLOG: rowLocks " + rowLocks + " in " + hostname + txContext.readSet + txContext.writeSet);
         for(String key : txContext.readSet.keySet()) {
-            lockMap = rowLocks.putIfAbsent(key, new ConcurrentHashMap<>());
-            if(lockMap == null) {
+            if(rowLocks.containsKey(key)) {
+                log.info("TMPLOG: using lockmap for key: " + key + " in " + hostname);
+                lockMap = rowLocks.get(key);
+            }
+            else {
+                log.info("TMPLOG: new lockmap created for key:" + key + " in " + hostname);
+                rowLocks.put(key, new HashMap<>());
                 lockMap = rowLocks.get(key);
             }
 
+            log.info("TMPLOG lockMap for rkey: " + key + " " + lockMap + " in " + hostname);
             for(UUID ukey : lockMap.keySet()) {
                 if (ukey.equals(requesterId)) {
                     continue;
@@ -256,12 +263,14 @@ public class DbServerInterfaceImpl extends UnicastRemoteObject implements DbServ
 
                 // some concurrent transaction has already locked this row
                 if (lockMap.get(ukey).equals('W')) {
+                    log.info("abort");
                     return "ABORT";
                 }
 
                 // the value seen by the client is wrong
                 if(hash.contains(key)) {
                     if(!txContext.readSet.get(key).equals(hash.get(key))) {
+                        log.info("abort");
                         return "ABORT";
                     }
                 }
@@ -269,17 +278,30 @@ public class DbServerInterfaceImpl extends UnicastRemoteObject implements DbServ
         }
 
         for(String key : txContext.writeSet.keySet()) {
-            lockMap = rowLocks.putIfAbsent(key, new ConcurrentHashMap<>());
-            if(lockMap == null) {
+            if(rowLocks.containsKey(key)) {
+                log.info("TMPLOG: using lockmap for key: " + key + " in " + hostname);
                 lockMap = rowLocks.get(key);
             }
+            else {
+                log.info("TMPLOG: new lockmap created for key:" + key + " in " + hostname);
+                rowLocks.put(key, new HashMap<>());
+                lockMap = rowLocks.get(key);
+            }
+
+            log.info("TMPLOG lockMap for rkey: " + key + " " + lockMap + " in " + hostname);
 
             for(UUID ukey : lockMap.keySet()) {
                 if (ukey.equals(requesterId)) {
                     continue;
                 }
 
+                if (lockMap.get(ukey).equals('W')) {
+                    log.info("abort");
+                    return "ABORT";
+                }
+
                 if (lockMap.get(ukey).equals('R')) {
+                    log.info("abort");
                     return "ABORT";
                 }
             }
@@ -296,22 +318,26 @@ public class DbServerInterfaceImpl extends UnicastRemoteObject implements DbServ
             lockMap.put(requesterId, 'W');
         }
 
+        log.info("TMPLOG: rowLocks @end " + rowLocks + " in " + hostname);
         return "ACCEPT";
     }
 
     public String decideCommitOperation(TransactionContext txContext) {
         UUID requesterId = txContext.requesterId;
-        ConcurrentHashMap<UUID, Character> lockMap;
+        HashMap<UUID, Character> lockMap;
 
         if(txContext.commitSuccessful) {
             hash.putAll(txContext.writeSet);
         }
 
+        log.info("TMPLOG: Decide commit read eady " + me +" " +  requesterId + " "+ txContext.readSet);
         // remove any shared locks
         for(String key : txContext.readSet.keySet()) {
             lockMap = rowLocks.get(key);
             lockMap.remove(requesterId, 'R');
         }
+
+        log.info("TMPLOG: Decide commit write eady "+ me + " "+ requesterId + " "+ txContext.writeSet);
         // remove any modified locks
         for(String key : txContext.writeSet.keySet()) {
             lockMap = rowLocks.get(key);
@@ -431,7 +457,7 @@ public class DbServerInterfaceImpl extends UnicastRemoteObject implements DbServ
             if (status.done) {
                 DbOperation consensusOperation = UtilityClasses.decodeDbOperation(status.getValue());
                 if (!responseLog.containsKey((consensusOperation.requestId))) {
-                    log.info("Apply update at server " + (me() + 1) + ":" + consensusOperation.toString());
+                    // log.info("Apply update at server " +hostname +":"+ (me() + 1) + ":" + consensusOperation.toString());
                     applyOperation(consensusOperation);
                 }
             }
