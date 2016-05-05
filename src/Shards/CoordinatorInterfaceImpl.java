@@ -141,7 +141,7 @@ public class CoordinatorInterfaceImpl extends UnicastRemoteObject implements Coo
 				me =a;
 			peers.add(newHostPort);
 		}
-		paxosHelper = new Paxos(peers,me,"/ShardCoordinatorPaxos", "log/shardcoord.log");
+		paxosHelper = new Paxos(peers,me,"/ShardCoordinatorPaxos", "log/shardcoord.log", true);
 
 	}
 

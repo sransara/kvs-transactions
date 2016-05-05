@@ -41,6 +41,7 @@ public class Paxos extends UnicastRemoteObject implements PaxosInterface{
 	public static final String REJECT = "REJECT";
 	public List<HostPorts> peers;
 	public static int me;
+	public static boolean fast;
 	public Semaphore mutex = new Semaphore(1);
 	public static volatile HashMap<Integer, AcceptorState> acceptorStateMap;	
 	public static volatile HashMap<Integer, Status> statusMap;
@@ -51,7 +52,7 @@ public class Paxos extends UnicastRemoteObject implements PaxosInterface{
 	public static volatile String paxosRMIpath;
 	private static final long CRASH_DURATION = 1500;
 	
-	public Paxos(List<HostPorts> peers, int me, String paxosRMIpath, String logFileLocation) throws AlreadyBoundException, IOException {
+	public Paxos(List<HostPorts> peers, int me, String paxosRMIpath, String logFileLocation, boolean fast) throws AlreadyBoundException, IOException {
 		super();
 		configureLogger(logFileLocation);
 		this.peers = peers;
@@ -61,6 +62,7 @@ public class Paxos extends UnicastRemoteObject implements PaxosInterface{
 		acceptorStateMap = new HashMap<Integer,AcceptorState>();
 		statusMap = new HashMap<Integer, Status>();
 		max =-1;
+		this.fast = fast;
 		min =0;
 		peersDoneValue = new HashMap<Integer, Integer>();
 		for(int i =0; i < length; i++)
@@ -220,9 +222,12 @@ public class Paxos extends UnicastRemoteObject implements PaxosInterface{
 				int count = 0;
 				String v_a = null;
 				boolean sentPropose = false;
+				if(fast)
+					sentPropose = true;
+				else
+				{
 				for(HostPorts peer: peers)
 				{
-
 					PrepareArgs prepareArgs = new PrepareArgs(sequence, n,0);
 					PrepareReply prepareReply = null;
 					if (count ++ == me)
@@ -252,17 +257,18 @@ public class Paxos extends UnicastRemoteObject implements PaxosInterface{
 						if(prepareReply.isOk())
 						{
 							prepare_ok_count++;
-							if(prepareReply.getHighestPrepareNo() > n_a)
-							{
-								n_a = prepareReply.getHighestProposalNo();
-								v_a = prepareReply.getValue();
+								if(prepareReply.getHighestPrepareNo() > n_a)
+								{
+									n_a = prepareReply.getHighestProposalNo();
+									v_a = prepareReply.getValue();
+								}
 							}
 						}
 					}
 				}
 				if(sentPropose){
 				String v_prime;
-				if(prepare_ok_count > (length/2))
+				if(fast || (!fast && prepare_ok_count > (length/2)))
 				{
 					v_prime = value;
 					if(v_a != null)

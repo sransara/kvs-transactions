@@ -143,7 +143,7 @@ public class DbServerInterfaceImpl extends UnicastRemoteObject implements DbServ
             peers.add(newHostPort);
         }
 
-        paxosHelper = new Paxos(peers, me, "/Paxos", "log/dbserver.log");
+        paxosHelper = new Paxos(peers, me, "/Paxos", "log/dbserver.log", false);
     }
 
     /*
