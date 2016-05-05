@@ -16,7 +16,6 @@
 		<pathelement location="resources/log4j-1.2.17.jar"/>
 		<pathelement location="resources/mapdb-2.0-beta10.jar"/>
 		<pathelement location="resources/guava-13.0.1-redhat-1.jar"/>
-		<pathelement location="resources/jzy3d-api-0.9.1.jar"/>
 	</path>
 	<target name="init">
 		<mkdir dir="bin"/>
@@ -60,8 +59,7 @@
 		            <zipfileset excludes="META-INF/*.SF" src="resources/log4j-1.2.17.jar"/>
 		            <zipfileset excludes="META-INF/*.SF" src="resources/mapdb-2.0-beta10.jar"/>
 					<zipfileset excludes="META-INF/*.SF" src="resources/guava-13.0.1-redhat-1.jar"/>
-					<zipfileset excludes="META-INF/*.SF" src="resources/jzy3d-api-0.9.1.jar" />
-					<zipfileset excludes="META-INF/*.SF" src="resources/jzy3d-api-0.9.1.jar" />
+			
 								
 		</jar>
 		<jar destfile="deliverables/TransactionClient.jar" filesetmanifest="mergewithoutmain">
@@ -74,7 +72,6 @@
 				            <zipfileset excludes="META-INF/*.SF" src="resources/log4j-1.2.17.jar"/>
 				            <zipfileset excludes="META-INF/*.SF" src="resources/mapdb-2.0-beta10.jar"/>
 							<zipfileset excludes="META-INF/*.SF" src="resources/guava-13.0.1-redhat-1.jar"/>
-							<zipfileset excludes="META-INF/*.SF" src="resources/jzy3d-api-0.9.1.jar" />
 										
 				</jar>
 		<jar destfile="deliverables/DbServer.jar" filesetmanifest="mergewithoutmain">
@@ -87,7 +84,6 @@
 				            <zipfileset excludes="META-INF/*.SF" src="resources/log4j-1.2.17.jar"/>
 				            <zipfileset excludes="META-INF/*.SF" src="resources/mapdb-2.0-beta10.jar"/>
 							<zipfileset excludes="META-INF/*.SF" src="resources/guava-13.0.1-redhat-1.jar"/>
-							<zipfileset excludes="META-INF/*.SF" src="resources/jzy3d-api-0.9.1.jar" />
 		</jar>
 		<jar destfile="deliverables/Coordinator.jar" filesetmanifest="mergewithoutmain">
 		            <manifest>
@@ -99,7 +95,6 @@
 							    <zipfileset excludes="META-INF/*.SF" src="resources/log4j-1.2.17.jar"/>
 							    <zipfileset excludes="META-INF/*.SF" src="resources/mapdb-2.0-beta10.jar"/>
 								<zipfileset excludes="META-INF/*.SF" src="resources/guava-13.0.1-redhat-1.jar"/>
-								<zipfileset excludes="META-INF/*.SF" src="resources/jzy3d-api-0.9.1.jar" />
 		</jar>
 	</target>
 		
