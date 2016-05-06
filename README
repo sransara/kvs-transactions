@@ -9,7 +9,7 @@ one ssh into xinu machine for running: sh kickstart.sh
 (This step starts coordinators and DbServers on servers as specified on configs.txt)
 (use sh killall.sh at anytime to kill all these servers)
 
-... wait till you see messages saying Paxos started successfully ...
+... wait till you see messages saying Paxos RMI started successfully ...
 
 Then open
 one ssh into mc13.cs.purdue.edu for running client: sh bank.sh
@@ -33,6 +33,6 @@ Or by looing at the implementation in TransactionClient.java
 TransactionClient.java twopc < KVSScripts/bank1a.kvs
 (with transactions enabled)
 
-TransactionClient.java none < KVSScripts/sanstranscations.kvs
-TransactionClient.java twopc < KVSScripts/sanstranscations.kvs
+TransactionClient.java none < KVSScripts/sanstranscations-10.kvs
+TransactionClient.java twopc < KVSScripts/transcations-10.kvs
 (transactions disabled: used with plotting)
