@@ -30,8 +30,7 @@ import static Utility.UtilityClasses.atoi;
 public class TransactionClient {
     final static Logger log = Logger.getLogger(TransactionClient.class);
     final static String PATTERN = "%d [%p|%c|%C{1}] %m%n";
-    // final static int COORDINATOR_NUM_REPLICAS = 10;
-    final static int COORDINATOR_NUM_REPLICAS = 60;
+    final static int COORDINATOR_NUM_REPLICAS = 10;
     private static final int TIMEOUT = 1000;
 
     private static HashMap<String, Object> localStore = new HashMap<>();
@@ -108,8 +107,8 @@ public class TransactionClient {
         configureLogger();
         configureRMI();
         String coordinators[][] = readCoordinatorConfig();
-        // configuration = getShardConfig(coordinators);
-        configuration = getStaticShardConfig(coordinators);
+        configuration = getShardConfig(coordinators);
+        // configuration = getStaticShardConfig(coordinators);
 
         if(args[0].startsWith("t") | args[0].startsWith("p") | args[0].startsWith("a")) {
             protocol = args[0].charAt(0);
@@ -313,36 +312,6 @@ public class TransactionClient {
         return pollReply.getConfiguration();
     }
 
-    private static UtilityClasses.Configuration getStaticShardConfig(String[][] coordinators) {
-        HashMap<Integer, UUID> shardToGroupId = new HashMap<>();
-        HashMap<UUID, List<UtilityClasses.HostPorts>> replicaGroupMap = new HashMap<>();
-
-        UUID rgid = null;
-        int g = -1;
-        // Use COORDINATOR_NUM_REPLICAS as the DB_SERVER count
-        int div = COORDINATOR_NUM_REPLICAS / UtilityClasses.Configuration.NUM_SHARDS;
-        for(int i = 0; i < coordinators.length; i++) {
-            if((i % div) == 0) {
-                g += 1;
-                rgid = UUID.randomUUID();
-                shardToGroupId.put(g, rgid);
-            }
-
-            String[] hostport = coordinators[i];
-            List<UtilityClasses.HostPorts> h = replicaGroupMap.get(rgid);
-            if(h == null) {
-                h = new ArrayList<>();
-                replicaGroupMap.put(rgid, h);
-            }
-            h.add(new UtilityClasses.HostPorts(hostport[0], Integer.parseInt(hostport[1])));
-
-        }
-
-        UtilityClasses.Configuration config = new UtilityClasses.Configuration(1, shardToGroupId, replicaGroupMap);
-
-        return config;
-    }
-
     private static boolean handleGet(String key, String reg, UUID reqId) {
         String hostname;
         int port;
@@ -395,7 +364,8 @@ public class TransactionClient {
             retvalue = tryTowPhaseCommitCommitTransaction(reqId);
         }
         else if(protocol == 'a') {
-            retvalue = tryAcyclicCommitTransaction(reqId);
+            // retvalue = tryAcyclicCommitTransaction(reqId);
+            retvalue = false;
         }
         else { // if(protocol == 'p')
             retvalue = false;
@@ -509,41 +479,6 @@ public class TransactionClient {
         }
 
         return commitSuccessful;
-    }
-
-    private static boolean tryAcyclicCommitTransaction(UUID reqId) {
-        String hostname;
-        int port;
-
-        String readSetFirstKey = localTransactionContext.txContext.readSet.firstKey();
-        String writeSetFirstKey = localTransactionContext.txContext.writeSet.firstKey();
-        String firstKey = readSetFirstKey.compareTo(writeSetFirstKey) < 0 ? readSetFirstKey : writeSetFirstKey;
-
-        List<UtilityClasses.HostPorts> hostPorts = getDbServersForKey(configuration, firstKey);
-        int i = new Random().nextInt(hostPorts.size());
-        Response r = new Response("", false);
-        while (!r.done) {
-            UtilityClasses.HostPorts hostPort = hostPorts.get(i);
-            hostname = hostPort.getHostName();
-            port = hostPort.getPort();
-            try {
-                DbServerInterface hostImpl = (DbServerInterface) Naming.lookup("rmi://" + hostname + ":" + port + "/Calls");
-                // TODO: change next line
-                r = hostImpl.TRY_COMMIT(clientName, localTransactionContext.txContext, reqId);
-            } catch (Exception e) {
-                log.info("Contact server hostname:port " + hostname + " : " + port + " FAILED. Trying others..");
-            }
-            i = (i + 1) % hostPorts.size();
-        }
-
-        // TODO: change next line
-        if(r.getValue().equals("committed")) {
-            // merge transaction store with localStore
-            localStore.putAll(localTransactionContext.store);
-            return true;
-        }
-        // else
-        return false;
     }
 
     private static UtilityClasses.TransactionContext generateTransactionContextForGroup(UtilityClasses.TransactionContext itx, ReplicaGroup rg) {

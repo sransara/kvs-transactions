@@ -201,6 +201,10 @@ public class UtilityClasses {
         public void setPort(int port) {
             this.port = port;
         }
+
+        public boolean equals(HostPorts hp) {
+            return (hp.hostName.equals(hostName) && port == hp.port);
+        }
     }
 
     public static class PrepareReply implements Serializable {
