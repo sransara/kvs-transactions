@@ -531,7 +531,7 @@ public class TwoPhaseCommit extends UnicastRemoteObject implements DbServerInter
         UUID reqId = UUID.randomUUID();
         log.info("This request has id :" + reqId);
         int serverNum = new Random().nextInt(COORDINATOR_NUM_REPLICAS);
-
+        int startServerNum = serverNum;
         while (true) {
             String hostname = coordinators[serverNum][0];
             String port = coordinators[serverNum][1];
@@ -546,7 +546,13 @@ public class TwoPhaseCommit extends UnicastRemoteObject implements DbServerInter
 
             }
             serverNum = (serverNum + 1) % COORDINATOR_NUM_REPLICAS;
+
+            if(serverNum == startServerNum) {
+                log.info("No Coordinators available");
+                System.exit(-1);
+            }
         }
+
         return pollReply.getConfiguration();
     }
 

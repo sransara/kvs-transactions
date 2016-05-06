@@ -15,7 +15,7 @@ JAR="Coordinator.jar"
 stringarray=($line)
 ssh -T ${stringarray[0]} <<ENDSSH0 &
 cd $TEST
-java -$JAR $line
+java -jar $JAR $line
 ENDSSH0
 fi
 done < configs.txt &
@@ -52,7 +52,7 @@ JAR="DbServer.jar"
 stringarray=($line)
 ssh -T ${stringarray[0]} <<ENDSSH0 &
 cd $TEST
-java -$JAR $line
+java -jar $JAR $line
 ENDSSH0
 fi
 done < configs.txt &
