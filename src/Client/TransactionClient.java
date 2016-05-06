@@ -608,6 +608,7 @@ public class TransactionClient {
                 int port;
                 int i = new Random().nextInt(groupServers.size());
                 Response r = new Response("", false);
+                int wait = 500;
                 while (!r.done) {
                     UtilityClasses.HostPorts hostPort = groupServers.get(i);
                     hostname = hostPort.getHostName();
@@ -617,9 +618,11 @@ public class TransactionClient {
                         r = hostImpl.TRY_COMMIT(clientName, tx, tryReqId);
                     } catch (Exception e) {
                         log.info("Contact server hostname:port " + hostname + " : " + port + " FAILED. Trying others..");
+
+                        i = (i + 1) % groupServers.size();
+                        Thread.sleep(wait);
+                        wait += 500;
                     }
-                    i = (i + 1) % groupServers.size();
-                    Thread.sleep(5000);
                 }
                 return r;
             }));
@@ -651,6 +654,7 @@ public class TransactionClient {
                 int port;
                 int i = new Random().nextInt(groupServers.size());
                 Response r = new Response("", false);
+                int wait = 500;
                 while (!r.done) {
                     UtilityClasses.HostPorts hostPort = groupServers.get(i);
                     hostname = hostPort.getHostName();
@@ -660,9 +664,11 @@ public class TransactionClient {
                         r = hostImpl.DECIDE_COMMIT(clientName, tx, commitId);
                     } catch (Exception e) {
                         log.info("Contact server hostname:port " + hostname + " : " + port + " FAILED. Trying others..");
+
+                        i = (i + 1) % groupServers.size();
+                        Thread.sleep(wait);
+                        wait += 500;
                     }
-                    i = (i + 1) % groupServers.size();
-                    Thread.sleep(5000);
                 }
                 return r;
             });
