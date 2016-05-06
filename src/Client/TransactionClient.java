@@ -416,9 +416,19 @@ public class TransactionClient {
                     try {
                         val1 = Integer.parseInt(val1.toString());
                         val2 = Integer.parseInt(val2.toString());
-                        localTransactionContext.store.put(regd, (int) val1 + (int) val2);
+                        if(localTransactionContext != null) {
+                            localTransactionContext.store.put(regd, (int) val1 + (int) val2);
+                        }
+                        else {
+                            localStore.put(regd, (int)val1 + (int) val2);
+                        }
                     } catch (Exception ex) {
-                        localTransactionContext.store.put(regd, null);
+                        if(localTransactionContext != null) {
+                            localTransactionContext.store.put(regd, null);
+                        }
+                        else {
+                            localStore.put(regd, null);
+                        }
                         log.error("At line #" + line +" all argument register or literal values must be integers: " + val1 + " or " + val2);
                     }
 
