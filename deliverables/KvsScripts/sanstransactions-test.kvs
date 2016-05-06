@@ -1,0 +1,64 @@
+PUT 15 into X
+GET X into $RX
+PRINT RX = $RX
+PUT 25 into Y
+GET Y into $RY
+ADDI $RX $RY into $RZ
+PRINT RX + RY = $RZ
+
+PUT 120 into A
+GET A into $RA
+PRINT RA = $RA
+PUT 130 into B
+GET B INTO $RB
+PRINT RB = $RB
+ADDI $RA $RB INTO $RC
+PRINT RA + RB = $RC
+
+PUT 1000 into D
+PUT 2000 into E
+PUT 3000 into F
+PUT 4000 into G
+PUT 5000 into H
+GET D into $RD
+GET E into $RE
+GET F into $RF
+GET G into $RG
+GET H into $RH
+PRINT $RD $RE $RF $RG $RH
+
+PUT 5000 into D
+PUT 4000 into E
+PUT 3000 into F
+PUT 2000 into G
+PUT 1000 into H
+GET D into $RD
+GET E into $RE
+GET F into $RF
+GET G into $RG
+GET H into $RH
+PRINT $RD $RE $RF $RG $RH
+
+PUT 1000 into D
+PUT 2000 into E
+PUT 3000 into F
+PUT 4000 into G
+PUT 5000 into H
+GET D into $RD
+GET E into $RE
+GET F into $RF
+GET G into $RG
+GET H into $RH
+PRINT $RD $RE $RF $RG $RH
+
+PUT 5000 into D
+PUT 4000 into E
+PUT 3000 into F
+PUT 2000 into G
+PUT 1000 into H
+GET D into $RD
+GET E into $RE
+GET F into $RF
+GET G into $RG
+GET H into $RH
+PRINT $RD $RE $RF $RG $RH
