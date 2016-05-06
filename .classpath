@@ -8,5 +8,6 @@
 	<classpathentry kind="lib" path="resources/guava-13.0.1-redhat-1.jar"/>
 	<classpathentry kind="lib" path="resources/ant-javafx.jar"/>
 	<classpathentry kind="lib" path="resources/javafx-mx.jar"/>
+	<classpathentry kind="lib" path="resources/javafxrt.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
