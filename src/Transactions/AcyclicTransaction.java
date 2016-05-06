@@ -112,7 +112,7 @@ public class AcyclicTransaction extends UnicastRemoteObject implements DbServerI
 
 
     @Override
-    public Response PUT(String clientId, String key, String value, UUID requestId) throws Exception {
+    public Response PUT(String clientId, String key, Object value, UUID requestId) throws Exception {
         //	log.info("Server at " + hostname + ":" + port + " "+ "received [PUT " + key +"|"+value.trim() + "] from client " + clientId);
         DbOperation putOp = new DbOperation("PUT", key, value, clientId, requestId);
         return new Response();

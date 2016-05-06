@@ -39,7 +39,7 @@ public class TransactionClient {
     private static UtilityClasses.Configuration configuration;
     private static UUID clientId = UUID.randomUUID();
     private static String clientName = "N/A";
-    private static char protocol; // [t]wophase / [p]axos / [a]cyclic
+    private static char protocol; // [t]wophase / [p]axos / [a]cyclic / [n]one
 
 
     private static void configureLogger() {
@@ -111,7 +111,7 @@ public class TransactionClient {
         configuration = getShardConfig(coordinators);
         //configuration = getStaticShardConfig(coordinators);
 
-        if (args[0].startsWith("t") | args[0].startsWith("p") | args[0].startsWith("a")) {
+        if (args[0].startsWith("t") | args[0].startsWith("p") | args[0].startsWith("n")) {
             protocol = args[0].charAt(0);
         } else {
             log.error("Select transaction protocol for client");
@@ -119,6 +119,184 @@ public class TransactionClient {
         }
         clientName = InetAddress.getLocalHost().getHostName();
 
+        try {
+            if (protocol == 'n') {
+                // magic store: no need to recreate new contexts again
+                if (localTransactionContext == null) {
+                    localTransactionContext = new UtilityClasses.LocalTransactionContext(clientId, 0);
+                }
+                RunScriptWithOutTransactions();
+            } else {
+                RunScriptWithTransactions();
+            }
+        }
+        catch (ArrayIndexOutOfBoundsException ex) {
+            log.error("Script is not according to the language specification");
+        }
+        catch (IOException ex) {
+            log.error("Stdin kvsript file read error");
+        }
+
+    }
+    private static void RunScriptWithOutTransactions() throws  IOException {
+        String line;
+        String tokens[];
+        ArrayList<String> program = new ArrayList<>();
+        int current = 0;
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        while (true) {
+            if (current < program.size()) {
+                line = program.get(current);
+            } else {
+                line = br.readLine();
+                if (line == null) {
+                    break;
+                }
+                line = line.trim();
+                program.add(line);
+            }
+
+            if (line.isEmpty()) {
+                current += 1;
+                continue;
+            }
+
+            tokens = line.split("\\s+");
+            String command = tokens[0];
+
+            String key, reg;
+            Object value;
+            int i;
+
+            String hostname;
+            int port;
+
+            List<UtilityClasses.HostPorts> hostPorts;
+            Response r;
+
+            switch (command) {
+                case "GET":
+                    // GET [KEY] INTO [$REGD]
+                    key = tokens[1];
+                    reg = tokens[3];
+
+                    hostPorts = getDbServersForKey(configuration, key);
+
+                    i = new Random().nextInt(hostPorts.size());
+                    r = new Response("", false);
+
+                    while (!r.done) {
+                        UtilityClasses.HostPorts hostPort = hostPorts.get(i);
+                        hostname = hostPort.getHostName();
+                        port = hostPort.getPort();
+                        try {
+                            DbServerInterface hostImpl = (DbServerInterface) Naming.lookup("rmi://" + hostname + ":" + port + "/Calls");
+                            r = hostImpl.GET(clientName, key, UUID.randomUUID());
+                        } catch (Exception e) {
+                            log.info("Contact server hostname:port " + hostname + " : " + port + " FAILED. Trying others..");
+                        }
+                        i = (i + 1) % hostPorts.size();
+                    }
+                    value = r.getValue();
+
+                    localTransactionContext.store.put(reg, value);
+
+                    break;
+
+                case "PUT":
+                    // PUT [VALUE / $REG] INTO [KEY]
+                    value = valuate(tokens[1]);
+                    key = tokens[3];
+
+                    hostPorts = getDbServersForKey(configuration, key);
+
+                    i = new Random().nextInt(hostPorts.size());
+                    r = new Response("", false);
+
+                    while (!r.done) {
+                        UtilityClasses.HostPorts hostPort = hostPorts.get(i);
+                        hostname = hostPort.getHostName();
+                        port = hostPort.getPort();
+                        try {
+                            DbServerInterface hostImpl = (DbServerInterface) Naming.lookup("rmi://" + hostname + ":" + port + "/Calls");
+                            r = hostImpl.PUT(clientName, key, value, UUID.randomUUID());
+                        } catch (Exception e) {
+                            log.info("Contact server hostname:port " + hostname + " : " + port + " FAILED. Trying others..");
+                        }
+                        i = (i + 1) % hostPorts.size();
+                    }
+
+
+                    break;
+
+                case "DELETE":
+                    // DELETE [KEY]
+                    key = tokens[2];
+
+                    hostPorts = getDbServersForKey(configuration, key);
+
+                    i = new Random().nextInt(hostPorts.size());
+                    r = new Response("", false);
+
+                    while (!r.done) {
+                        UtilityClasses.HostPorts hostPort = hostPorts.get(i);
+                        hostname = hostPort.getHostName();
+                        port = hostPort.getPort();
+                        try {
+                            DbServerInterface hostImpl = (DbServerInterface) Naming.lookup("rmi://" + hostname + ":" + port + "/Calls");
+                            r = hostImpl.DELETE(clientName, key, UUID.randomUUID());
+                        } catch (Exception e) {
+                            log.info("Contact server hostname:port " + hostname + " : " + port + " FAILED. Trying others..");
+                        }
+                        i = (i + 1) % hostPorts.size();
+                    }
+
+                    break;
+
+                case "ADDI":
+                    // ADDI [$REG1] [$REG2] INTO [$REGD]
+
+                    String reg1 = tokens[1]; // must be integer values
+                    String reg2 = tokens[2];
+                    String regd = tokens[4];
+
+                    Object val1 = valuate(reg1);
+                    Object val2 = valuate(reg2);
+                    try {
+                        val1 = Integer.parseInt(val1.toString());
+                        val2 = Integer.parseInt(val2.toString());
+                        localTransactionContext.store.put(regd, (int) val1 + (int) val2);
+                    } catch (Exception ex) {
+                        localTransactionContext.store.put(regd, null);
+                        log.error("At line #" + line +" all argument register or literal values must be integers: " + val1 + " or " + val2);
+                    }
+
+
+                    break;
+
+                case "PRINT":
+                    String s = "(#" + current + ")";
+                    if (localTransactionContext != null) {
+                        s = "(in transaction)";
+                    }
+                    for (i = 1; i < tokens.length; i++) {
+                        s += " " + valuate(tokens[i]);
+                    }
+                    log.info(s);
+                    break;
+
+                default:
+                    log.error("Unrecognized instruction on in line 5: " + line);
+
+            }
+
+            current++;
+        }
+    }
+
+    private static void RunScriptWithTransactions() throws IOException {
         String line;
         String tokens[];
         ArrayList<String> program = new ArrayList<>();
@@ -178,7 +356,7 @@ public class TransactionClient {
                     break;
 
                 case "PUT":
-                    // PUT [VALUE] INTO [KEY]
+                    // PUT [VALUE / $REG] INTO [KEY]
                     if (localTransactionContext == null) {
                         localTransactionContext = new UtilityClasses.LocalTransactionContext(clientId, current);
                         orphanTransaction = true;
@@ -241,7 +419,7 @@ public class TransactionClient {
                         localTransactionContext.store.put(regd, (int) val1 + (int) val2);
                     } catch (Exception ex) {
                         localTransactionContext.store.put(regd, null);
-                        log.error("All argument register or literal values must be integers: " + val1 + " or " + val2);
+                        log.error("At line #" + line +" all argument register or literal values must be integers: " + val1 + " or " + val2);
                     }
 
 

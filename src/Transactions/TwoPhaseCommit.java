@@ -25,7 +25,6 @@ import org.apache.log4j.PatternLayout;
 import Paxos.Paxos;
 import Utility.UtilityClasses;
 import Utility.UtilityClasses.*;
-import org.apache.log4j.lf5.util.StreamUtils;
 
 
 @SuppressWarnings("serial")
@@ -155,7 +154,7 @@ public class TwoPhaseCommit extends UnicastRemoteObject implements DbServerInter
      * Two phase commit for PUT operation. Only if go is true. we would commit to disk.
      */
     @Override
-    public Response PUT(String clientId, String key, String value, UUID requestId) throws Exception {
+    public Response PUT(String clientId, String key, Object value, UUID requestId) throws Exception {
         //	log.info("Server at " + hostname + ":" + port + " "+ "received [PUT " + key +"|"+value.trim() + "] from client " + clientId);
         DbOperation putOp = new DbOperation("PUT", key, value, clientId, requestId);
         return stallIfCrashedExecuteIfNot(putOp);
@@ -202,7 +201,7 @@ public class TwoPhaseCommit extends UnicastRemoteObject implements DbServerInter
         return response;
     }
 
-    public String putOperation(String key, String value) {
+    public String putOperation(String key, Object value) {
         String response = "";
         // this would overwrite the values of the key
         hash.put(key, value);

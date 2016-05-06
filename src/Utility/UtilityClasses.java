@@ -524,12 +524,12 @@ public class UtilityClasses {
         private static final long serialVersionUID = 1L;
         public String type;
         public String key;
-        public String value;
+        public Object value;
         public String from;
         public TransactionContext txContext;
         public UUID requestId;
 
-        public DbOperation(String type, String key, String value, String from, UUID requestId) {
+        public DbOperation(String type, String key, Object value, String from, UUID requestId) {
             super();
             this.type = type;
             this.key = key;

@@ -10,7 +10,7 @@ import Utility.UtilityClasses.*;
  * Server interface- clients can call the following methods
  */
 public interface DbServerInterface extends Remote {
-    public Response PUT(String clientId, String key, String value, UUID requestId) throws Exception;
+    public Response PUT(String clientId, String key, Object value, UUID requestId) throws Exception;
 
     public Response GET(String clientId, String key, UUID requestId) throws Exception;
 
