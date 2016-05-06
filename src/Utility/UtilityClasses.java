@@ -31,12 +31,13 @@ public class UtilityClasses {
             this.startLine = startLine;
         }
     }
+
     public static class Configuration implements Serializable {
         @Override
         public String toString() {
             return "Configuration [confNo=" + confNo + ", replicaGroupMap="
                     + System.lineSeparator() + replicaGroupMap + System.lineSeparator() + ", shardToGroupIdMap="
-                    + System.lineSeparator()  + shardToGroupIdMap + " + ]";
+                    + System.lineSeparator() + shardToGroupIdMap + " + ]";
         }
 
         public static final int NUM_SHARDS = 20;
@@ -177,13 +178,14 @@ public class UtilityClasses {
          *
          */
         private static final long serialVersionUID = 1L;
-		String hostName;
-        @Override
-		public String toString() {
-			return "HostPorts [hostName=" + hostName + ", port=" + port + "]";
-		}
+        String hostName;
 
-		int port;
+        @Override
+        public String toString() {
+            return "HostPorts [hostName=" + hostName + ", port=" + port + "]";
+        }
+
+        int port;
 
         public String getHostName() {
             return hostName;
@@ -507,9 +509,9 @@ public class UtilityClasses {
             this.done = done;
         }
 
-		public Response() {
-			// TODO Auto-generated constructor stub
-		}
+        public Response() {
+            // TODO Auto-generated constructor stub
+        }
 
     }
 

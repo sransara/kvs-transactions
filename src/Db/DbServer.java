@@ -51,17 +51,14 @@ public class DbServer {
         DbServerInterface dbi = null;
         PaxosInterface pxi = null;
 
-        if(transactionType.startsWith("two")) {
+        if (transactionType.startsWith("two")) {
             TwoPhaseCommit rmiImpl;
-            dbi  = (rmiImpl = new TwoPhaseCommit(hostname, portNumber));
+            dbi = (rmiImpl = new TwoPhaseCommit(hostname, portNumber));
             pxi = rmiImpl.getPaxosHelper();
-        }
-        
-        else if (transactionType.startsWith("acyclic"))
-        {
-        	AcyclicTransaction rmiImpl;
-        	dbi = (rmiImpl = new AcyclicTransaction(hostname, portNumber));
-        	pxi = rmiImpl.getPaxosHelper();
+        } else if (transactionType.startsWith("acyclic")) {
+            AcyclicTransaction rmiImpl;
+            dbi = (rmiImpl = new AcyclicTransaction(hostname, portNumber));
+            pxi = rmiImpl.getPaxosHelper();
         }
 
         LocateRegistry.createRegistry(portNumber);

@@ -39,7 +39,7 @@ public class TwoPhaseCommit extends UnicastRemoteObject implements DbServerInter
 
     private static int port;
     private static String hostname;
-    public  static int me;
+    public static int me;
 
     private static final String ACK = "ACK";
     private static final long CRASH_DURATION = 1500;
@@ -131,10 +131,10 @@ public class TwoPhaseCommit extends UnicastRemoteObject implements DbServerInter
         List<HostPorts> peers = new ArrayList<HostPorts>();
 
         me = -1;
-        for (Map.Entry<UUID, List<HostPorts>> entry: configuration.replicaGroupMap.entrySet()){
+        for (Map.Entry<UUID, List<HostPorts>> entry : configuration.replicaGroupMap.entrySet()) {
             List<HostPorts> p = entry.getValue();
             int i = p.indexOf(hostPortMe);
-            if(i > -1) {
+            if (i > -1) {
                 me = i;
                 peers.addAll(p);
                 myReplicaGroupId = entry.getKey();
@@ -142,10 +142,9 @@ public class TwoPhaseCommit extends UnicastRemoteObject implements DbServerInter
             }
         }
 
-        if(me == -1) {
+        if (me == -1) {
             log.error("Coordinator doesn't know about me: " + hostname);
-        }
-        else {
+        } else {
             paxosHelper = new Paxos(peers, me, "/Paxos", "log/dbserver.log", false);
         }
     }
@@ -227,16 +226,15 @@ public class TwoPhaseCommit extends UnicastRemoteObject implements DbServerInter
         UUID requesterId = txContext.requesterId;
         HashMap<UUID, Character> lockMap = null;
 
-        for(String key : txContext.readSet.keySet()) {
-            if(rowLocks.containsKey(key)) {
+        for (String key : txContext.readSet.keySet()) {
+            if (rowLocks.containsKey(key)) {
                 lockMap = rowLocks.get(key);
-            }
-            else {
+            } else {
                 rowLocks.put(key, new HashMap<>());
                 lockMap = rowLocks.get(key);
             }
 
-            for(UUID ukey : lockMap.keySet()) {
+            for (UUID ukey : lockMap.keySet()) {
                 if (ukey.equals(requesterId)) {
                     continue;
                 }
@@ -248,8 +246,8 @@ public class TwoPhaseCommit extends UnicastRemoteObject implements DbServerInter
                 }
 
                 // the value seen by the client is wrong
-                if(hash.contains(key)) {
-                    if(!txContext.readSet.get(key).equals(hash.get(key))) {
+                if (hash.contains(key)) {
+                    if (!txContext.readSet.get(key).equals(hash.get(key))) {
                         log.info("abort");
                         return "ABORT";
                     }
@@ -257,16 +255,15 @@ public class TwoPhaseCommit extends UnicastRemoteObject implements DbServerInter
             }
         }
 
-        for(String key : txContext.writeSet.keySet()) {
-            if(rowLocks.containsKey(key)) {
+        for (String key : txContext.writeSet.keySet()) {
+            if (rowLocks.containsKey(key)) {
                 lockMap = rowLocks.get(key);
-            }
-            else {
+            } else {
                 rowLocks.put(key, new HashMap<>());
                 lockMap = rowLocks.get(key);
             }
 
-            for(UUID ukey : lockMap.keySet()) {
+            for (UUID ukey : lockMap.keySet()) {
                 if (ukey.equals(requesterId)) {
                     continue;
                 }
@@ -283,12 +280,12 @@ public class TwoPhaseCommit extends UnicastRemoteObject implements DbServerInter
             }
         }
 
-        for(String key : txContext.readSet.keySet()) {
+        for (String key : txContext.readSet.keySet()) {
             lockMap = rowLocks.get(key);
             lockMap.put(requesterId, 'R');
         }
 
-        for(String key : txContext.writeSet.keySet()) {
+        for (String key : txContext.writeSet.keySet()) {
             lockMap = rowLocks.get(key);
             // lockmap must be either empty or 0 at this point
             lockMap.put(requesterId, 'W');
@@ -301,18 +298,18 @@ public class TwoPhaseCommit extends UnicastRemoteObject implements DbServerInter
         UUID requesterId = txContext.requesterId;
         HashMap<UUID, Character> lockMap;
 
-        if(txContext.commitSuccessful) {
+        if (txContext.commitSuccessful) {
             hash.putAll(txContext.writeSet);
         }
 
         // remove any shared locks
-        for(String key : txContext.readSet.keySet()) {
+        for (String key : txContext.readSet.keySet()) {
             lockMap = rowLocks.get(key);
             lockMap.remove(requesterId, 'R');
         }
 
         // remove any modified locks
-        for(String key : txContext.writeSet.keySet()) {
+        for (String key : txContext.writeSet.keySet()) {
             lockMap = rowLocks.get(key);
             lockMap.remove(requesterId, 'W');
         }
@@ -336,7 +333,7 @@ public class TwoPhaseCommit extends UnicastRemoteObject implements DbServerInter
                 // fall through
             case "DELETE":
                 // fall through
-                if(!CheckKeyOwner(operation.key)) {
+                if (!CheckKeyOwner(operation.key)) {
                     responseLog.put(operation.requestId, new Response(result, true));
                     return;
                 }
@@ -348,7 +345,7 @@ public class TwoPhaseCommit extends UnicastRemoteObject implements DbServerInter
                 keys.addAll(operation.txContext.readSet.keySet());
                 keys.addAll(operation.txContext.writeSet.keySet());
 
-                if(!CheckKeyOwner(keys.toArray(new String[0]))) {
+                if (!CheckKeyOwner(keys.toArray(new String[0]))) {
                     responseLog.put(operation.requestId, new Response(result, true));
                     return;
                 }
@@ -415,7 +412,7 @@ public class TwoPhaseCommit extends UnicastRemoteObject implements DbServerInter
         for (String key : keys) {
             Integer shardNo = UtilityClasses.atoi(key) % configuration.NUM_SHARDS;
             UUID shardOwner = configuration.shardToGroupIdMap.get(shardNo);
-            if(!shardOwner.equals(myReplicaGroupId)) {
+            if (!shardOwner.equals(myReplicaGroupId)) {
                 return false;
             }
         }
@@ -558,7 +555,7 @@ public class TwoPhaseCommit extends UnicastRemoteObject implements DbServerInter
         try {
             BufferedReader fileReader = new BufferedReader(new FileReader("configs.txt"));
             log.info("Loading configurations from configs.txt..");
-            for(int c = 0; c < COORDINATOR_NUM_REPLICAS; c++) {
+            for (int c = 0; c < COORDINATOR_NUM_REPLICAS; c++) {
                 hostPorts[c] = fileReader.readLine().split("\\s+");
                 if (hostPorts[c][0].isEmpty() || !hostPorts[c][1].matches("[0-9]+") || hostPorts[c][1].isEmpty()) {
                     log.error("You have made incorrect entries for addresses in config file, please investigate.");

@@ -89,7 +89,7 @@ public class TransactionClient {
         try {
             BufferedReader fileReader = new BufferedReader(new FileReader("configs.txt"));
             log.info("Loading configurations from configs.txt..");
-            for(int c = 0; c < COORDINATOR_NUM_REPLICAS; c++) {
+            for (int c = 0; c < COORDINATOR_NUM_REPLICAS; c++) {
                 hostPorts[c] = fileReader.readLine().split("\\s+");
                 if (hostPorts[c][0].isEmpty() || !hostPorts[c][1].matches("[0-9]+") || hostPorts[c][1].isEmpty()) {
                     log.error("You have made incorrect entries for addresses in config file, please investigate.");
@@ -111,10 +111,9 @@ public class TransactionClient {
         configuration = getShardConfig(coordinators);
         //configuration = getStaticShardConfig(coordinators);
 
-        if(args[0].startsWith("t") | args[0].startsWith("p") | args[0].startsWith("a")) {
+        if (args[0].startsWith("t") | args[0].startsWith("p") | args[0].startsWith("a")) {
             protocol = args[0].charAt(0);
-        }
-        else {
+        } else {
             log.error("Select transaction protocol for client");
             System.exit(-1);
         }
@@ -127,20 +126,19 @@ public class TransactionClient {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        while(true) {
-            if(current < program.size()) {
+        while (true) {
+            if (current < program.size()) {
                 line = program.get(current);
-            }
-            else {
+            } else {
                 line = br.readLine();
-                if(line == null) {
+                if (line == null) {
                     break;
                 }
                 line = line.trim();
                 program.add(line);
             }
 
-            if(line.isEmpty()) {
+            if (line.isEmpty()) {
                 current += 1;
                 continue;
             }
@@ -156,7 +154,7 @@ public class TransactionClient {
             switch (command) {
                 case "GET":
                     // GET [KEY] INTO [$REGD]
-                    if(localTransactionContext == null) {
+                    if (localTransactionContext == null) {
                         localTransactionContext = new UtilityClasses.LocalTransactionContext(clientId, current);
                         orphanTransaction = true;
                     }
@@ -165,15 +163,14 @@ public class TransactionClient {
                     reg = tokens[3];
                     handleGet(key, reg, UUID.randomUUID());
 
-                    if(orphanTransaction) {
+                    if (orphanTransaction) {
                         orphanTransaction = false;
                         committed = tryCommitTransaction(UUID.randomUUID());
-                        if(!committed) {
+                        if (!committed) {
                             current = localTransactionContext.startLine;
                             localTransactionContext = null;
                             continue;
-                        }
-                        else {
+                        } else {
                             localTransactionContext = null;
                             break;
                         }
@@ -182,7 +179,7 @@ public class TransactionClient {
 
                 case "PUT":
                     // PUT [VALUE] INTO [KEY]
-                    if(localTransactionContext == null) {
+                    if (localTransactionContext == null) {
                         localTransactionContext = new UtilityClasses.LocalTransactionContext(clientId, current);
                         orphanTransaction = true;
                     }
@@ -191,15 +188,14 @@ public class TransactionClient {
                     key = tokens[3];
                     handlePut(key, value, UUID.randomUUID());
 
-                    if(orphanTransaction) {
+                    if (orphanTransaction) {
                         orphanTransaction = false;
                         committed = tryCommitTransaction(UUID.randomUUID());
-                        if(!committed) {
+                        if (!committed) {
                             current = localTransactionContext.startLine;
                             localTransactionContext = null;
                             continue;
-                        }
-                        else {
+                        } else {
                             localTransactionContext = null;
                             break;
                         }
@@ -208,7 +204,7 @@ public class TransactionClient {
 
                 case "DELETE":
                     // DELETE [KEY]
-                    if(localTransactionContext == null) {
+                    if (localTransactionContext == null) {
                         localTransactionContext = new UtilityClasses.LocalTransactionContext(clientId, current);
                         orphanTransaction = true;
                     }
@@ -216,15 +212,14 @@ public class TransactionClient {
                     key = tokens[2];
                     handleDelete(key, UUID.randomUUID());
 
-                    if(orphanTransaction) {
+                    if (orphanTransaction) {
                         orphanTransaction = false;
                         committed = tryCommitTransaction(UUID.randomUUID());
-                        if(!committed) {
+                        if (!committed) {
                             current = localTransactionContext.startLine;
                             localTransactionContext = null;
                             continue;
-                        }
-                        else {
+                        } else {
                             localTransactionContext = null;
                             break;
                         }
@@ -244,8 +239,7 @@ public class TransactionClient {
                         val1 = Integer.parseInt(val1.toString());
                         val2 = Integer.parseInt(val2.toString());
                         localTransactionContext.store.put(regd, (int) val1 + (int) val2);
-                    }
-                    catch(Exception ex) {
+                    } catch (Exception ex) {
                         localTransactionContext.store.put(regd, null);
                         log.error("All argument register or literal values must be integers: " + val1 + " or " + val2);
                     }
@@ -255,10 +249,10 @@ public class TransactionClient {
 
                 case "PRINT":
                     String s = "(#" + current + ")";
-                    if(localTransactionContext != null) {
+                    if (localTransactionContext != null) {
                         s = "(in transaction)";
                     }
-                    for(int i = 1; i < tokens.length; i++) {
+                    for (int i = 1; i < tokens.length; i++) {
                         s += " " + valuate(tokens[i]);
                     }
                     log.info(s);
@@ -270,12 +264,11 @@ public class TransactionClient {
 
                 case "COMMIT_TRANSACTION":
                     committed = tryCommitTransaction(UUID.randomUUID());
-                    if(!committed) {
+                    if (!committed) {
                         current = localTransactionContext.startLine;
                         localTransactionContext = null;
                         continue;
-                    }
-                    else {
+                    } else {
                         localTransactionContext = null;
                         break;
                     }
@@ -321,8 +314,8 @@ public class TransactionClient {
         int g = -1;
         // Use COORDINATOR_NUM_REPLICAS as the DB_SERVER count
         int div = COORDINATOR_NUM_REPLICAS / UtilityClasses.Configuration.NUM_SHARDS;
-        for(int i = 0; i < coordinators.length; i++) {
-            if((i % div) == 0) {
+        for (int i = 0; i < coordinators.length; i++) {
+            if ((i % div) == 0) {
                 g += 1;
                 rgid = UUID.randomUUID();
                 shardToGroupId.put(g, rgid);
@@ -330,7 +323,7 @@ public class TransactionClient {
 
             String[] hostport = coordinators[i];
             List<UtilityClasses.HostPorts> h = replicaGroupMap.get(rgid);
-            if(h == null) {
+            if (h == null) {
                 h = new ArrayList<>();
                 replicaGroupMap.put(rgid, h);
             }
@@ -349,10 +342,9 @@ public class TransactionClient {
 
         Object value;
 
-        if(localTransactionContext.store.containsKey(key)) {
+        if (localTransactionContext.store.containsKey(key)) {
             value = localTransactionContext.store.get(key);
-        }
-        else {
+        } else {
             List<UtilityClasses.HostPorts> hostPorts = getDbServersForKey(configuration, key);
             int i = new Random().nextInt(hostPorts.size());
             Response r = new Response("", false);
@@ -391,13 +383,11 @@ public class TransactionClient {
 
     private static boolean tryCommitTransaction(UUID reqId) {
         boolean retvalue;
-        if(protocol == 't') {
+        if (protocol == 't') {
             retvalue = tryTowPhaseCommitCommitTransaction(reqId);
-        }
-        else if(protocol == 'a') {
+        } else if (protocol == 'a') {
             retvalue = tryAcyclicCommitTransaction(reqId);
-        }
-        else { // if(protocol == 'p')
+        } else { // if(protocol == 'p')
             retvalue = false;
         }
         return retvalue;
@@ -420,7 +410,7 @@ public class TransactionClient {
 
         // log.info("RSET " + localTransactionContext.txContext.readSet + " WSET:" + localTransactionContext.txContext.writeSet);
 
-        for(UUID rgid: groupMap.keySet()) {
+        for (UUID rgid : groupMap.keySet()) {
             ReplicaGroup group = groupMap.get(rgid);
             List<UtilityClasses.HostPorts> groupServers = group.servers;
 
@@ -448,14 +438,13 @@ public class TransactionClient {
             }));
         }
 
-        for(Future<Response> f : futures) {
+        for (Future<Response> f : futures) {
             try {
                 Response r = f.get();
-                if(r.value.equals("ABORT")) {
+                if (r.value.equals("ABORT")) {
                     commitSuccessful = false;
                 }
-            }
-            catch (Exception ex) {
+            } catch (Exception ex) {
                 log.error(ex.getMessage());
             }
         }
@@ -463,7 +452,7 @@ public class TransactionClient {
         localTransactionContext.txContext.commitSuccessful = commitSuccessful;
 
         List<Callable<Response>> callables = new ArrayList<>();
-        for(UUID rgid: groupMap.keySet()) {
+        for (UUID rgid : groupMap.keySet()) {
             ReplicaGroup group = groupMap.get(rgid);
             List<UtilityClasses.HostPorts> groupServers = group.servers;
 
@@ -499,12 +488,11 @@ public class TransactionClient {
             log.error(e.getMessage());
         }
 
-        if(commitSuccessful) {
+        if (commitSuccessful) {
             // log.info("Transaction commited r=" + localTransactionContext.txContext.readSet + " w=" + localTransactionContext.txContext.writeSet);
             // merge transaction store with localStore
             localStore.putAll(localTransactionContext.store);
-        }
-        else {
+        } else {
             log.info("Aborted transaction");
         }
 
@@ -537,7 +525,7 @@ public class TransactionClient {
         }
 
         // TODO: change next line
-        if(r.getValue().equals("committed")) {
+        if (r.getValue().equals("committed")) {
             // merge transaction store with localStore
             localStore.putAll(localTransactionContext.store);
             return true;
@@ -564,15 +552,13 @@ public class TransactionClient {
     private static Object valuate(String input) {
         boolean isRegister = input.trim().startsWith("$");
 
-        if(!isRegister) {
+        if (!isRegister) {
             return input; // return it as a literal value
-        }
-        else if(localTransactionContext != null) {
-            if(localTransactionContext.store.containsKey(input)) {
+        } else if (localTransactionContext != null) {
+            if (localTransactionContext.store.containsKey(input)) {
                 return localTransactionContext.store.get(input);
             }
-        }
-        else if (localStore.containsKey(input)) {
+        } else if (localStore.containsKey(input)) {
             return localStore.get(input);
         }
 
@@ -604,8 +590,7 @@ public class TransactionClient {
                 rg = new ReplicaGroup(config.replicaGroupMap.get(rgid));
                 rg.keys.add(key);
                 replicaGroupMap.put(rgid, rg);
-            }
-            else {
+            } else {
                 rg.keys.add(key);
             }
         }
