@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 sh ./killall.sh
+echo "sleeping"
 sleep 7
-echo " Start Coordinator and Db Servers"
+echo " Start Coordinator"
 totalservers=70
 count=0
 joincount=0
@@ -19,6 +20,7 @@ java -jar $JAR $line
 ENDSSH0
 fi
 done < configs.txt &
+echo "sleeping"
 sleep 5
 b=0
 echo "Joining servers"
@@ -40,7 +42,9 @@ else
 : nop
 fi
 done
+echo "sleeping"
 sleep 15
+echo "Starting DbServer"
 while [ $count -lt $totalservers ] && read line; do
 let count++
 TEST=$(pwd)
