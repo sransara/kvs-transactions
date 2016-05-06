@@ -40,6 +40,8 @@ public class TransactionClient {
     private static String clientName = "N/A";
     private static char protocol; // [t]wophase / [p]axos / [a]cyclic
 
+    private static String coordinators[][];
+
 
     private static void configureLogger() {
         ConsoleAppender console = new ConsoleAppender(); //create appender
@@ -106,7 +108,7 @@ public class TransactionClient {
     public static void main(String args[]) throws IOException {
         configureLogger();
         configureRMI();
-        String coordinators[][] = readCoordinatorConfig();
+        coordinators = readCoordinatorConfig();
         configuration = getShardConfig(coordinators);
         // configuration = getStaticShardConfig(coordinators);
 
@@ -322,23 +324,32 @@ public class TransactionClient {
             value = localTransactionContext.store.get(key);
         }
         else {
-            List<UtilityClasses.HostPorts> hostPorts = getDbServersForKey(configuration, key);
-            int i = new Random().nextInt(hostPorts.size());
-            Response r = new Response("", false);
-            while (!r.done) {
-                UtilityClasses.HostPorts hostPort = hostPorts.get(i);
-                hostname = hostPort.getHostName();
-                port = hostPort.getPort();
-                try {
-                    DbServerInterface hostImpl = (DbServerInterface) Naming.lookup("rmi://" + hostname + ":" + port + "/Calls");
-                    r = hostImpl.GET(clientName, key, reqId);
-                } catch (Exception e) {
-                    log.info("Contact server hostname:port " + hostname + " : " + port + " FAILED. Trying others..");
+            while(true) {
+                List<UtilityClasses.HostPorts> hostPorts = getDbServersForKey(configuration, key);
+                int i = new Random().nextInt(hostPorts.size());
+                Response r = new Response("", false);
+                while (!r.done) {
+                    UtilityClasses.HostPorts hostPort = hostPorts.get(i);
+                    hostname = hostPort.getHostName();
+                    port = hostPort.getPort();
+                    try {
+                        DbServerInterface hostImpl = (DbServerInterface) Naming.lookup("rmi://" + hostname + ":" + port + "/Calls");
+                        r = hostImpl.GET(clientName, key, reqId);
+                    } catch (Exception e) {
+                        log.info("Contact server hostname:port " + hostname + " : " + port + " FAILED. Trying others..");
+                    }
+                    i = (i + 1) % hostPorts.size();
                 }
-                i = (i + 1) % hostPorts.size();
+                value = r.getValue();
+
+                if (value.equals("REFRESH_CONFIG")) {
+                    configuration = getShardConfig(coordinators);
+                    continue; // try again with new config
+                } else {
+                    localTransactionContext.txContext.readSet.put(key, value);
+                    break; // good to go
+                }
             }
-            value = r.getValue();
-            localTransactionContext.txContext.readSet.put(key, value);
         }
 
         localTransactionContext.store.put(reg, value);
@@ -380,53 +391,68 @@ public class TransactionClient {
         allkeys.addAll(localTransactionContext.txContext.readSet.keySet());
         allkeys.addAll(localTransactionContext.txContext.writeSet.keySet());
 
-        HashMap<UUID, ReplicaGroup> groupMap = getDbServersForKeys(configuration, allkeys.toArray(new String[0]));
+        HashMap<UUID, ReplicaGroup> groupMap;
+        ExecutorService executorService = Executors.newCachedThreadPool();
 
-        ExecutorService executorService = Executors.newFixedThreadPool(groupMap.size());
-        List<Future<Response>> futures = new ArrayList<>();
 
         UUID tryReqId = reqId;
         UUID commitId = UUID.randomUUID();
 
-        // log.info("RSET " + localTransactionContext.txContext.readSet + " WSET:" + localTransactionContext.txContext.writeSet);
+        while(true) {
+            groupMap = getDbServersForKeys(configuration, allkeys.toArray(new String[0]));
 
-        for(UUID rgid: groupMap.keySet()) {
-            ReplicaGroup group = groupMap.get(rgid);
-            List<UtilityClasses.HostPorts> groupServers = group.servers;
+            List<Future<Response>> futures = new ArrayList<>();
 
-            UtilityClasses.TransactionContext tx = generateTransactionContextForGroup(localTransactionContext.txContext, group);
+            // log.info("RSET " + localTransactionContext.txContext.readSet + " WSET:" + localTransactionContext.txContext.writeSet);
 
-            futures.add(executorService.submit(() -> {
-                String hostname;
-                int port;
-                int i = new Random().nextInt(groupServers.size());
-                Response r = new Response("", false);
-                while (!r.done) {
-                    UtilityClasses.HostPorts hostPort = groupServers.get(i);
-                    hostname = hostPort.getHostName();
-                    port = hostPort.getPort();
-                    try {
-                        DbServerInterface hostImpl = (DbServerInterface) Naming.lookup("rmi://" + hostname + ":" + port + "/Calls");
-                        r = hostImpl.TRY_COMMIT(clientName, tx, tryReqId);
-                    } catch (Exception e) {
-                        log.info("Contact server hostname:port " + hostname + " : " + port + " FAILED. Trying others..");
+            for (UUID rgid : groupMap.keySet()) {
+                ReplicaGroup group = groupMap.get(rgid);
+                List<UtilityClasses.HostPorts> groupServers = group.servers;
+
+                UtilityClasses.TransactionContext tx = generateTransactionContextForGroup(localTransactionContext.txContext, group);
+
+                futures.add(executorService.submit(() -> {
+                    String hostname;
+                    int port;
+                    int i = new Random().nextInt(groupServers.size());
+                    Response r = new Response("", false);
+                    while (!r.done) {
+                        UtilityClasses.HostPorts hostPort = groupServers.get(i);
+                        hostname = hostPort.getHostName();
+                        port = hostPort.getPort();
+                        try {
+                            DbServerInterface hostImpl = (DbServerInterface) Naming.lookup("rmi://" + hostname + ":" + port + "/Calls");
+                            r = hostImpl.TRY_COMMIT(clientName, tx, tryReqId);
+                        } catch (Exception e) {
+                            log.info("Contact server hostname:port " + hostname + " : " + port + " FAILED. Trying others..");
+                        }
+                        i = (i + 1) % groupServers.size();
+                        Thread.sleep(1000);
                     }
-                    i = (i + 1) % groupServers.size();
-                    Thread.sleep(5000);
-                }
-                return r;
-            }));
-        }
-
-        for(Future<Response> f : futures) {
-            try {
-                Response r = f.get();
-                if(r.value.equals("ABORT")) {
-                    commitSuccessful = false;
+                    return r;
+                }));
+            }
+            boolean retryWithNewConfig = false;
+            for (Future<Response> f : futures) {
+                try {
+                    Response r = f.get();
+                    if (r.value.equals("ABORT")) {
+                        commitSuccessful = false;
+                    }
+                    if(r.value.equals("REFRESH_CONFIG")) {
+                        retryWithNewConfig = true;
+                    }
+                } catch (Exception ex) {
+                    log.error(ex.getMessage());
                 }
             }
-            catch (Exception ex) {
-                log.error(ex.getMessage());
+
+            if(retryWithNewConfig) {
+                configuration = getShardConfig(coordinators);
+                continue; // retry
+            }
+            else {
+                break; // good to go
             }
         }
 

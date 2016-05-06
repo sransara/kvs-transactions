@@ -25,6 +25,7 @@ import org.apache.log4j.PatternLayout;
 import Paxos.Paxos;
 import Utility.UtilityClasses;
 import Utility.UtilityClasses.*;
+import org.apache.log4j.lf5.util.StreamUtils;
 
 
 @SuppressWarnings("serial")
@@ -324,8 +325,37 @@ public class TwoPhaseCommit extends UnicastRemoteObject implements DbServerInter
      * db directly.
      */
     public void applyOperation(DbOperation operation) {
-        String result = "";
-        switch (operation.type.trim().toUpperCase()) {
+        String result = "REFRESH_CONFIG";
+        String op = operation.type.trim().toUpperCase();
+
+        // CONFIG VALIDATION
+        switch (op) {
+            case "GET":
+                // fall through
+            case "PUT":
+                // fall through
+            case "DELETE":
+                // fall through
+                if(!CheckKeyOwner(operation.key)) {
+                    responseLog.put(operation.requestId, new Response(result, true));
+                    return;
+                }
+                break;
+            case "TRY_COMMIT":
+                // fall through
+            case "DECIDE_COMMIT":
+                ArrayList<String> keys = new ArrayList<>();
+                keys.addAll(operation.txContext.readSet.keySet());
+                keys.addAll(operation.txContext.writeSet.keySet());
+
+                if(!CheckKeyOwner(keys.toArray(new String[0]))) {
+                    responseLog.put(operation.requestId, new Response(result, true));
+                    return;
+                }
+                break;
+        }
+
+        switch (op) {
             case "GET":
                 result = getOperation(operation.key);
                 responseLog.put(operation.requestId, new Response(result, true));
@@ -379,6 +409,18 @@ public class TwoPhaseCommit extends UnicastRemoteObject implements DbServerInter
         } finally {
             mutex.release();
         }
+    }
+
+    private boolean CheckKeyOwner(String... keys) {
+        for (String key : keys) {
+            Integer shardNo = UtilityClasses.atoi(key) % configuration.NUM_SHARDS;
+            UUID shardOwner = configuration.shardToGroupIdMap.get(shardNo);
+            if(!shardOwner.equals(myReplicaGroupId)) {
+                return false;
+            }
+        }
+
+        return true;
     }
 
     /*
