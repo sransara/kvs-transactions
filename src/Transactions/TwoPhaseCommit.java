@@ -102,7 +102,7 @@ public class TwoPhaseCommit extends UnicastRemoteObject implements DbServerInter
         // This is for the rmi_server log file
         FileAppender fa = new FileAppender();
         fa.setName("FileLogger");
-        fa.setFile("log/dbserver.log");
+        fa.setFile("log/2pc.log");
         fa.setLayout(new PatternLayout("%d %-5p [%c{1}] %m%n"));
         fa.setThreshold(Level.ALL);
         fa.setAppend(true);

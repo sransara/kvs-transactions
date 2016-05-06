@@ -5,7 +5,9 @@ import java.io.InputStreamReader;
 import java.rmi.Naming;
 import java.rmi.registry.LocateRegistry;
 
+import Transactions.AcyclicTransaction;
 import Transactions.TwoPhaseCommit;
+
 import org.apache.log4j.ConsoleAppender;
 import org.apache.log4j.FileAppender;
 import org.apache.log4j.Level;
@@ -53,6 +55,13 @@ public class DbServer {
             TwoPhaseCommit rmiImpl;
             dbi  = (rmiImpl = new TwoPhaseCommit(hostname, portNumber));
             pxi = rmiImpl.getPaxosHelper();
+        }
+        
+        else if (transactionType.startsWith("acyclic"))
+        {
+        	AcyclicTransaction rmiImpl;
+        	dbi = (rmiImpl = new AcyclicTransaction(hostname, portNumber));
+        	pxi = rmiImpl.getPaxosHelper();
         }
 
         LocateRegistry.createRegistry(portNumber);

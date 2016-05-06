@@ -502,6 +502,10 @@ public class UtilityClasses {
             this.done = done;
         }
 
+		public Response() {
+			// TODO Auto-generated constructor stub
+		}
+
     }
 
 
