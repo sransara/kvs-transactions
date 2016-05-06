@@ -33,6 +33,6 @@ Or by looing at the implementation in TransactionClient.java
 TransactionClient.java twopc < KVSScripts/bank1a.kvs
 (with transactions enabled)
 
-TransactionClient.java none < KVSScripts/sanstranscations-10.kvs
-TransactionClient.java twopc < KVSScripts/transcations-10.kvs
+java -jar TransactionClient.java none < KVSScripts/sanstranscations-10.kvs
+java -jar TransactionClient.java twopc < KVSScripts/transcations-10.kvs
 (transactions disabled: used with plotting)
