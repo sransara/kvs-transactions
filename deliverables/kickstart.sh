@@ -52,7 +52,7 @@ JAR="DbServer.jar"
 stringarray=($line)
 ssh -T ${stringarray[0]} <<ENDSSH0 &
 cd $TEST
-java -jar $JAR $line
+java -jar $JAR $line two
 ENDSSH0
 fi
 done < configs.txt &

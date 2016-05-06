@@ -538,7 +538,7 @@ public class TwoPhaseCommit extends UnicastRemoteObject implements DbServerInter
 
             try {
                 // locate the remote object initialize the proxy using the binder
-                CoordinatorInterface hostImpl = (CoordinatorInterface) Naming.lookup("rmi://" + hostname + ":" + port + "/Calls");
+                CoordinatorInterface hostImpl = (CoordinatorInterface) Naming.lookup("rmi://" + hostname + ":" + port + "/ShardCoordinator");
                 pollReply = (UtilityClasses.PollReply) hostImpl.Poll(new UtilityClasses.PollArgs(-1, reqId));
                 break;
             } catch (Exception e) {
