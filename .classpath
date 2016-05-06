@@ -6,5 +6,7 @@
 	<classpathentry kind="lib" path="resources/mapdb-2.0-beta10.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="resources/guava-13.0.1-redhat-1.jar"/>
+	<classpathentry kind="lib" path="resources/ant-javafx.jar"/>
+	<classpathentry kind="lib" path="resources/javafx-mx.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
