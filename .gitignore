@@ -7,4 +7,7 @@ bin/
 ._*.*
 .classpath
 .project
+
+*.log
+deliverables/out/*
 deliverables/configs.txt

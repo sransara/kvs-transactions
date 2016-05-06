@@ -94,3 +94,2048 @@
 2016-04-15 11:31:19,957 INFO  [DbServer] Paxos RMIServer 5  started successfully
 2016-04-15 11:32:20,391 INFO  [DbServer] Paxos RMIServer 5  started successfully
 2016-04-15 12:11:07,577 INFO  [DbServer] Paxos RMIServer 3  started successfully
+2016-05-06 04:27:37,767 INFO  [DbServer] Enter hostname
+2016-05-06 04:27:37,769 INFO  [DbServer] Enter port
+2016-05-06 04:27:37,769 INFO  [DbServer] Enter transaction type
+2016-05-06 04:27:37,769 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 04:27:37,783 INFO  [DbServer] Enter hostname
+2016-05-06 04:27:37,785 INFO  [DbServer] Enter port
+2016-05-06 04:27:37,786 INFO  [DbServer] Enter transaction type
+2016-05-06 04:27:37,786 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 04:27:37,794 INFO  [DbServer] Enter hostname
+2016-05-06 04:27:37,796 INFO  [DbServer] Enter port
+2016-05-06 04:27:37,796 INFO  [DbServer] Enter transaction type
+2016-05-06 04:27:37,796 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 04:27:37,812 INFO  [DbServer] Enter hostname
+2016-05-06 04:27:37,815 INFO  [DbServer] Enter port
+2016-05-06 04:27:37,815 INFO  [DbServer] Enter transaction type
+2016-05-06 04:27:37,815 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 00:27:37,820 INFO  [DbServer] Enter hostname
+2016-05-06 00:27:37,822 INFO  [DbServer] Enter port
+2016-05-06 00:27:37,822 INFO  [DbServer] Enter transaction type
+2016-05-06 00:27:37,822 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 04:27:37,826 INFO  [DbServer] Enter hostname
+2016-05-06 04:27:37,828 INFO  [DbServer] Enter port
+2016-05-06 04:27:37,828 INFO  [DbServer] Enter transaction type
+2016-05-06 04:27:37,828 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 04:27:37,852 INFO  [DbServer] Enter hostname
+2016-05-06 04:27:37,855 INFO  [DbServer] Enter port
+2016-05-06 04:27:37,855 INFO  [DbServer] Enter transaction type
+2016-05-06 04:27:37,856 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 00:27:37,857 INFO  [DbServer] Enter hostname
+2016-05-06 00:27:37,858 INFO  [DbServer] Enter port
+2016-05-06 00:27:37,858 INFO  [DbServer] Enter transaction type
+2016-05-06 00:27:37,859 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 04:27:37,863 INFO  [DbServer] Enter hostname
+2016-05-06 04:27:37,867 INFO  [DbServer] Enter port
+2016-05-06 04:27:37,868 INFO  [DbServer] Enter transaction type
+2016-05-06 04:27:37,868 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 04:27:37,870 INFO  [DbServer] Enter hostname
+2016-05-06 04:27:37,871 INFO  [DbServer] Enter port
+2016-05-06 04:27:37,871 INFO  [DbServer] Enter transaction type
+2016-05-06 04:27:37,872 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 00:27:37,884 INFO  [DbServer] Enter hostname
+2016-05-06 00:27:37,898 INFO  [DbServer] Enter port
+2016-05-06 00:27:37,898 INFO  [DbServer] Enter transaction type
+2016-05-06 00:27:37,898 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 00:27:37,892 INFO  [DbServer] Enter hostname
+2016-05-06 00:27:37,894 INFO  [DbServer] Enter port
+2016-05-06 00:27:37,894 INFO  [DbServer] Enter transaction type
+2016-05-06 00:27:37,894 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 04:27:37,891 INFO  [DbServer] Enter hostname
+2016-05-06 04:27:37,893 INFO  [DbServer] Enter port
+2016-05-06 04:27:37,893 INFO  [DbServer] Enter transaction type
+2016-05-06 04:27:37,893 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 04:27:37,948 INFO  [DbServer] Enter hostname
+2016-05-06 04:27:37,951 INFO  [DbServer] Enter port
+2016-05-06 04:27:37,951 INFO  [DbServer] Enter transaction type
+2016-05-06 04:27:37,952 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 04:27:37,952 INFO  [DbServer] Enter hostname
+2016-05-06 04:27:37,954 INFO  [DbServer] Enter port
+2016-05-06 04:27:37,954 INFO  [DbServer] Enter transaction type
+2016-05-06 04:27:37,954 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 04:27:37,959 INFO  [DbServer] Enter hostname
+2016-05-06 04:27:37,961 INFO  [DbServer] Enter port
+2016-05-06 04:27:37,961 INFO  [DbServer] Enter transaction type
+2016-05-06 04:27:37,961 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 04:27:38,005 INFO  [DbServer] Enter hostname
+2016-05-06 04:27:38,015 INFO  [DbServer] Enter port
+2016-05-06 04:27:38,015 INFO  [DbServer] Enter transaction type
+2016-05-06 04:27:38,015 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 00:27:38,097 INFO  [DbServer] Enter hostname
+2016-05-06 00:27:38,101 INFO  [DbServer] Enter port
+2016-05-06 00:27:38,101 INFO  [DbServer] Enter transaction type
+2016-05-06 00:27:38,101 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 04:27:38,113 INFO  [DbServer] Enter hostname
+2016-05-06 04:27:38,117 INFO  [DbServer] Enter port
+2016-05-06 04:27:38,117 INFO  [DbServer] Enter transaction type
+2016-05-06 04:27:38,117 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 04:27:38,135 INFO  [DbServer] Enter hostname
+2016-05-06 04:27:38,138 INFO  [DbServer] Enter port
+2016-05-06 04:27:38,138 INFO  [DbServer] Enter transaction type
+2016-05-06 04:27:38,138 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 04:27:38,122 INFO  [DbServer] Enter hostname
+2016-05-06 04:27:38,127 INFO  [DbServer] Enter port
+2016-05-06 04:27:38,127 INFO  [DbServer] Enter transaction type
+2016-05-06 04:27:38,128 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 04:27:38,149 INFO  [DbServer] Enter hostname
+2016-05-06 04:27:38,153 INFO  [DbServer] Enter port
+2016-05-06 04:27:38,153 INFO  [DbServer] Enter transaction type
+2016-05-06 04:27:38,153 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 04:27:38,167 INFO  [DbServer] Enter hostname
+2016-05-06 04:27:38,170 INFO  [DbServer] Enter port
+2016-05-06 04:27:38,170 INFO  [DbServer] Enter transaction type
+2016-05-06 04:27:38,170 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 04:27:38,177 INFO  [DbServer] Enter hostname
+2016-05-06 04:27:38,181 INFO  [DbServer] Enter port
+2016-05-06 04:27:38,181 INFO  [DbServer] Enter transaction type
+2016-05-06 04:27:38,181 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 04:27:38,197 INFO  [DbServer] Enter hostname
+2016-05-06 04:27:38,200 INFO  [DbServer] Enter port
+2016-05-06 04:27:38,200 INFO  [DbServer] Enter transaction type
+2016-05-06 04:27:38,200 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 04:27:38,220 INFO  [DbServer] Enter hostname
+2016-05-06 04:27:38,224 INFO  [DbServer] Enter port
+2016-05-06 04:27:38,224 INFO  [DbServer] Enter transaction type
+2016-05-06 04:27:38,224 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 04:46:34,054 INFO  [DbServer] Enter hostname
+2016-05-06 04:46:34,056 INFO  [DbServer] Enter port
+2016-05-06 04:46:34,056 INFO  [DbServer] Enter transaction type
+2016-05-06 04:46:34,056 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 04:46:34,082 INFO  [DbServer] Enter hostname
+2016-05-06 04:46:34,085 INFO  [DbServer] Enter port
+2016-05-06 04:46:34,085 INFO  [DbServer] Enter transaction type
+2016-05-06 04:46:34,085 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 04:46:34,096 INFO  [DbServer] Enter hostname
+2016-05-06 04:46:34,098 INFO  [DbServer] Enter port
+2016-05-06 04:46:34,098 INFO  [DbServer] Enter transaction type
+2016-05-06 04:46:34,099 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 00:46:34,125 INFO  [DbServer] Enter hostname
+2016-05-06 00:46:34,130 INFO  [DbServer] Enter port
+2016-05-06 00:46:34,131 INFO  [DbServer] Enter transaction type
+2016-05-06 00:46:34,131 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 00:46:34,140 INFO  [DbServer] Enter hostname
+2016-05-06 00:46:34,142 INFO  [DbServer] Enter port
+2016-05-06 00:46:34,142 INFO  [DbServer] Enter transaction type
+2016-05-06 00:46:34,142 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 04:46:34,149 INFO  [DbServer] Enter hostname
+2016-05-06 04:46:34,151 INFO  [DbServer] Enter port
+2016-05-06 04:46:34,151 INFO  [DbServer] Enter transaction type
+2016-05-06 04:46:34,151 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 00:46:34,186 INFO  [DbServer] Enter hostname
+2016-05-06 00:46:34,197 INFO  [DbServer] Enter port
+2016-05-06 00:46:34,197 INFO  [DbServer] Enter transaction type
+2016-05-06 00:46:34,197 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 04:46:34,170 INFO  [DbServer] Enter hostname
+2016-05-06 04:46:34,173 INFO  [DbServer] Enter port
+2016-05-06 04:46:34,173 INFO  [DbServer] Enter transaction type
+2016-05-06 04:46:34,173 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 04:46:34,212 INFO  [DbServer] Enter hostname
+2016-05-06 04:46:34,216 INFO  [DbServer] Enter port
+2016-05-06 04:46:34,217 INFO  [DbServer] Enter transaction type
+2016-05-06 04:46:34,217 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 04:46:34,216 INFO  [DbServer] Enter hostname
+2016-05-06 04:46:34,219 INFO  [DbServer] Enter port
+2016-05-06 04:46:34,219 INFO  [DbServer] Enter transaction type
+2016-05-06 04:46:34,219 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 04:46:34,264 INFO  [DbServer] Enter hostname
+2016-05-06 04:46:34,276 INFO  [DbServer] Enter port
+2016-05-06 04:46:34,276 INFO  [DbServer] Enter transaction type
+2016-05-06 04:46:34,277 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 04:46:34,278 INFO  [DbServer] Enter hostname
+2016-05-06 04:46:34,279 INFO  [DbServer] Enter port
+2016-05-06 04:46:34,279 INFO  [DbServer] Enter transaction type
+2016-05-06 04:46:34,280 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 04:46:34,320 INFO  [DbServer] Enter hostname
+2016-05-06 04:46:34,330 INFO  [DbServer] Enter port
+2016-05-06 04:46:34,331 INFO  [DbServer] Enter transaction type
+2016-05-06 04:46:34,331 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 00:46:34,359 INFO  [DbServer] Enter hostname
+2016-05-06 00:46:34,368 INFO  [DbServer] Enter port
+2016-05-06 00:46:34,368 INFO  [DbServer] Enter transaction type
+2016-05-06 00:46:34,368 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 00:46:34,388 INFO  [DbServer] Enter hostname
+2016-05-06 00:46:34,392 INFO  [DbServer] Enter port
+2016-05-06 00:46:34,393 INFO  [DbServer] Enter transaction type
+2016-05-06 00:46:34,393 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 04:46:34,382 INFO  [DbServer] Enter hostname
+2016-05-06 04:46:34,385 INFO  [DbServer] Enter port
+2016-05-06 04:46:34,385 INFO  [DbServer] Enter transaction type
+2016-05-06 04:46:34,386 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 04:46:34,433 INFO  [DbServer] Enter hostname
+2016-05-06 04:46:34,439 INFO  [DbServer] Enter port
+2016-05-06 04:46:34,439 INFO  [DbServer] Enter transaction type
+2016-05-06 04:46:34,440 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 04:46:34,455 INFO  [DbServer] Enter hostname
+2016-05-06 04:46:34,459 INFO  [DbServer] Enter port
+2016-05-06 04:46:34,460 INFO  [DbServer] Enter transaction type
+2016-05-06 04:46:34,460 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 04:46:34,458 INFO  [DbServer] Enter hostname
+2016-05-06 04:46:34,462 INFO  [DbServer] Enter port
+2016-05-06 04:46:34,462 INFO  [DbServer] Enter transaction type
+2016-05-06 04:46:34,462 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 04:46:34,480 INFO  [DbServer] Enter hostname
+2016-05-06 04:46:34,484 INFO  [DbServer] Enter port
+2016-05-06 04:46:34,485 INFO  [DbServer] Enter transaction type
+2016-05-06 04:46:34,485 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 04:46:34,462 INFO  [DbServer] Enter hostname
+2016-05-06 04:46:34,465 INFO  [DbServer] Enter port
+2016-05-06 04:46:34,465 INFO  [DbServer] Enter transaction type
+2016-05-06 04:46:34,466 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 04:46:34,469 INFO  [DbServer] Enter hostname
+2016-05-06 04:46:34,473 INFO  [DbServer] Enter port
+2016-05-06 04:46:34,473 INFO  [DbServer] Enter transaction type
+2016-05-06 04:46:34,474 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 04:46:34,484 INFO  [DbServer] Enter hostname
+2016-05-06 04:46:34,488 INFO  [DbServer] Enter port
+2016-05-06 04:46:34,488 INFO  [DbServer] Enter transaction type
+2016-05-06 04:46:34,488 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 04:46:34,594 INFO  [DbServer] Enter hostname
+2016-05-06 04:46:34,597 INFO  [DbServer] Enter port
+2016-05-06 04:46:34,597 INFO  [DbServer] Enter transaction type
+2016-05-06 04:46:34,598 FATAL [DbServer] Fatal error : Usage - port#, error caused due to null
+2016-05-06 09:29:12,421 ERROR [DbServer] RMI server binding failed with Port already in use: 3700; nested exception is: 
+	java.net.BindException: Address already in use
+2016-05-06 13:56:00,723 ERROR [DbServer] RMI server binding failed with cannot bind to null
+2016-05-06 14:04:57,155 ERROR [DbServer] RMI server binding failed with cannot bind to null
+2016-05-06 14:14:20,860 INFO  [DbServer] Paxos RMIServer borg12.cs.purdue.edu  started successfully
+
+2016-05-06 14:15:14,854 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:14,854 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:14,855 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:25,824 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:25,824 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:25,824 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:38,039 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:38,039 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:38,039 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:38,245 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:38,245 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:38,245 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:38,360 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:38,360 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:38,360 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:38,723 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:38,723 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:38,723 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:38,782 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:38,783 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:38,783 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:38,844 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:38,844 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:38,844 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:38,904 INFO  [Paxos] sslab21.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:38,905 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:38,905 INFO  [Paxos] Accepted number = 3
+2016-05-06 14:15:38,905 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:38,966 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:38,966 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:38,966 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:39,025 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:39,025 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:39,025 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:39,085 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:39,086 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:39,086 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:39,145 INFO  [Paxos] sslab21.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:39,146 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:39,146 INFO  [Paxos] Accepted number = 3
+2016-05-06 14:15:39,146 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:39,206 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:39,206 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:39,206 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:39,268 INFO  [Paxos] sslab19.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:39,269 INFO  [Paxos] sslab20.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:39,270 INFO  [Paxos] sslab21.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:39,271 INFO  [Paxos] sslab22.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:39,271 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:39,271 INFO  [Paxos] Accepted number = 0
+2016-05-06 14:15:39,271 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 14:15:39,327 INFO  [Paxos] sslab19.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:39,329 INFO  [Paxos] sslab20.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:39,330 INFO  [Paxos] sslab21.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:39,331 INFO  [Paxos] sslab22.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:39,331 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:39,331 INFO  [Paxos] Accepted number = 0
+2016-05-06 14:15:39,331 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 14:15:39,388 INFO  [Paxos] sslab19.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:39,389 INFO  [Paxos] sslab20.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:39,391 INFO  [Paxos] sslab21.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:39,391 INFO  [Paxos] sslab22.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:39,391 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:39,391 INFO  [Paxos] Accepted number = 0
+2016-05-06 14:15:39,391 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 14:15:39,448 INFO  [Paxos] sslab19.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:39,450 INFO  [Paxos] sslab20.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:39,451 INFO  [Paxos] sslab21.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:39,451 INFO  [Paxos] sslab22.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:39,452 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:39,452 INFO  [Paxos] Accepted number = 0
+2016-05-06 14:15:39,452 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 14:15:39,466 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:39,466 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:39,466 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:39,509 INFO  [Paxos] sslab19.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:39,510 INFO  [Paxos] sslab20.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:39,512 INFO  [Paxos] sslab21.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:39,512 INFO  [Paxos] sslab22.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:39,513 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:39,513 INFO  [Paxos] Accepted number = 0
+2016-05-06 14:15:39,513 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 14:15:39,569 INFO  [Paxos] sslab19.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:39,571 INFO  [Paxos] sslab20.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:39,572 INFO  [Paxos] sslab21.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:39,573 INFO  [Paxos] sslab22.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:39,573 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:39,573 INFO  [Paxos] Accepted number = 0
+2016-05-06 14:15:39,573 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 14:15:39,579 INFO  [Paxos] sslab19.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:39,581 INFO  [Paxos] sslab20.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:39,582 INFO  [Paxos] sslab21.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:39,582 INFO  [Paxos] sslab22.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:39,582 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:39,583 INFO  [Paxos] Accepted number = 0
+2016-05-06 14:15:39,583 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 14:15:39,631 INFO  [Paxos] sslab20.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:39,632 INFO  [Paxos] sslab21.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:39,632 INFO  [Paxos] sslab22.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:39,633 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:39,633 INFO  [Paxos] Accepted number = 1
+2016-05-06 14:15:39,633 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 14:15:39,638 INFO  [Paxos] sslab19.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:39,640 INFO  [Paxos] sslab20.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:39,641 INFO  [Paxos] sslab21.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:39,641 INFO  [Paxos] sslab22.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:39,641 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:39,642 INFO  [Paxos] Accepted number = 0
+2016-05-06 14:15:39,642 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 14:15:40,012 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:40,012 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:40,012 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:40,072 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:40,072 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:40,072 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:40,132 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:40,132 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:40,132 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:40,348 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:40,348 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:40,348 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:40,411 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:40,411 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:40,411 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:40,472 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:40,472 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:40,472 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:40,734 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:40,734 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:40,734 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:40,794 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:40,794 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:40,794 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:40,853 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:40,853 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:40,853 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:40,914 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:40,914 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:40,914 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:40,977 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:40,977 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:40,977 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:41,034 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:41,034 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:41,034 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:41,286 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:41,286 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:41,286 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:41,346 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:41,346 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:41,346 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:41,411 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:41,411 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:41,411 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:41,472 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:41,472 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:41,472 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:41,532 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:41,532 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:41,532 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:41,595 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:41,595 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:41,595 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:41,656 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:41,656 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:41,656 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:41,891 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:41,891 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:41,891 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:46,160 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:46,161 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:46,161 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:46,726 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:46,726 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:46,726 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:50,638 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:50,638 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:50,638 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:51,097 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:51,098 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:51,098 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:51,416 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:51,416 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:51,416 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:51,659 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:51,659 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:51,659 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:51,720 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:51,720 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:51,720 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:52,182 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:52,182 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:52,182 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:52,242 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:52,242 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:52,242 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:52,690 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:52,690 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:52,690 INFO  [Paxos]  REQUEST ACCEPTED :)
+EST ACCEPTED :)
+2016-05-06 14:15:40,411 INFO  [Paxos] sslab19.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:40,413 INFO  [Paxos] sslab20.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:40,415 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:40,415 INFO  [Paxos] Accepted number = 2
+2016-05-06 14:15:40,415 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 14:15:40,429 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:40,430 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:40,430 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:40,797 INFO  [Paxos] sslab19.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:40,798 INFO  [Paxos] sslab20.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:40,798 INFO  [Paxos] sslab21.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:40,800 INFO  [Paxos] sslab22.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:40,800 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:40,800 INFO  [Paxos] Accepted number = 0
+2016-05-06 14:15:40,800 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 14:15:40,857 INFO  [Paxos] sslab19.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:40,859 INFO  [Paxos] sslab20.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:40,859 INFO  [Paxos] sslab21.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:40,860 INFO  [Paxos] sslab22.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:40,860 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:40,861 INFO  [Paxos] Accepted number = 0
+2016-05-06 14:15:40,861 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 14:15:40,918 INFO  [Paxos] sslab19.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:40,919 INFO  [Paxos] sslab20.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:40,919 INFO  [Paxos] sslab21.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:40,920 INFO  [Paxos] sslab22.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:40,921 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:40,921 INFO  [Paxos] Accepted number = 0
+2016-05-06 14:15:40,921 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 14:15:40,978 INFO  [Paxos] sslab19.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:40,979 INFO  [Paxos] sslab20.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:40,979 INFO  [Paxos] sslab21.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:40,980 INFO  [Paxos] sslab22.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:40,981 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:40,981 INFO  [Paxos] Accepted number = 0
+2016-05-06 14:15:40,981 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 14:15:40,994 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:40,994 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:40,994 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:41,038 INFO  [Paxos] sslab19.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:41,039 INFO  [Paxos] sslab20.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:41,040 INFO  [Paxos] sslab21.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:41,041 INFO  [Paxos] sslab22.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:41,041 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:41,041 INFO  [Paxos] Accepted number = 0
+2016-05-06 14:15:41,041 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 14:15:41,050 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:41,050 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:41,050 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:41,102 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:41,102 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:41,102 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:41,163 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:41,163 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:41,163 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:41,225 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:41,225 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:41,225 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:46,994 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:46,994 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:46,994 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:50,911 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:50,911 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:50,911 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:50,972 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:50,972 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:50,972 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:51,035 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:51,035 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:51,035 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:51,299 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:51,299 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:51,299 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:51,361 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:51,361 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:51,361 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:51,809 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:51,809 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:51,809 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:51,870 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:51,870 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:51,870 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:51,992 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:51,992 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:51,992 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:52,066 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:52,066 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:52,066 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:52,125 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:52,126 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:52,126 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:52,183 INFO  [Paxos] sslab19.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:52,185 INFO  [Paxos] sslab20.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:52,186 INFO  [Paxos] sslab22.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:15:52,187 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:52,187 INFO  [Paxos] Accepted number = 1
+2016-05-06 14:15:52,187 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 14:15:52,200 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:52,200 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:52,200 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:52,360 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:52,360 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:52,361 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:52,758 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:52,759 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:52,759 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:52,881 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:52,881 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:52,881 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:56,100 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:56,100 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:56,100 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:56,160 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:56,160 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:56,160 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:56,220 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:56,220 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:56,220 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:56,475 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:56,475 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:56,475 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:56,537 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:56,537 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:56,537 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:56,598 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:56,598 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:56,598 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:56,657 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:56,657 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:56,657 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:56,718 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:56,718 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:56,718 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:57,227 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:57,227 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:57,227 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:15:57,286 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:15:57,286 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:15:57,286 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:02,179 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:02,180 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:02,180 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:02,573 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:02,574 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:02,574 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:02,822 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:02,822 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:02,822 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:03,453 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:03,453 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:03,453 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:03,573 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:03,573 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:03,573 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:06,921 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:06,922 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:06,922 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:07,660 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:07,661 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:07,661 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:08,199 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:08,199 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:08,200 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:08,668 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:08,668 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:08,668 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:12,254 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:12,254 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:12,254 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:12,835 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:12,835 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:12,835 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:19,079 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:19,079 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:19,079 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:19,142 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:19,142 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:19,142 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:19,333 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:19,333 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:19,333 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:19,392 INFO  [Paxos] sslab19.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:16:19,394 INFO  [Paxos] sslab20.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:16:19,395 INFO  [Paxos] sslab21.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:16:19,395 INFO  [Paxos] sslab22.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:16:19,396 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:19,396 INFO  [Paxos] Accepted number = 0
+2016-05-06 14:16:19,396 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 14:16:19,403 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:19,403 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:19,403 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:19,456 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:19,456 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:19,456 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:22,782 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:22,783 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:22,783 INFO  [Paxos]  REQUEST ACCEPTED :)
+umber = 4
+2016-05-06 14:16:08,476 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:11,997 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:11,997 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:11,997 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:12,131 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:12,131 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:12,131 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:12,328 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:12,328 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:12,328 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:12,460 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:12,460 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:12,460 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:13,043 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:13,043 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:13,043 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:13,313 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:13,314 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:13,314 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:17,596 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:17,596 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:17,596 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:19,029 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:19,029 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:19,029 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:19,093 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:19,093 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:19,093 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:19,146 INFO  [Paxos] sslab19.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:16:19,147 INFO  [Paxos] sslab20.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:16:19,148 INFO  [Paxos] sslab21.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:16:19,149 INFO  [Paxos] sslab22.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:16:19,149 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:19,149 INFO  [Paxos] Accepted number = 0
+2016-05-06 14:16:19,149 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 14:16:19,160 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:19,161 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:19,161 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:19,211 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:19,211 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:19,211 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:19,409 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:19,409 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:19,409 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:19,473 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:19,473 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:19,473 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:19,526 INFO  [Paxos] sslab19.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:16:19,528 INFO  [Paxos] sslab20.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:16:19,528 INFO  [Paxos] sslab21.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:16:19,529 INFO  [Paxos] sslab22.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:16:19,530 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:19,530 INFO  [Paxos] Accepted number = 0
+2016-05-06 14:16:19,530 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 14:16:19,537 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:19,537 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:19,537 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:19,590 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:19,591 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:19,591 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:19,908 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:19,908 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:19,908 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:19,970 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:19,970 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:19,970 INFO  [Paxos]  REQUEST ACCEPTED :)
+s] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:03,592 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:03,592 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:03,641 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:03,641 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:03,641 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:03,704 INFO  [Paxos] sslab19.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:16:03,705 INFO  [Paxos] sslab20.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:16:03,706 INFO  [Paxos] sslab21.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:16:03,707 INFO  [Paxos] sslab22.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:16:03,708 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:03,708 INFO  [Paxos] Accepted number = 0
+2016-05-06 14:16:03,708 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 14:16:03,768 INFO  [Paxos] sslab21.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:16:03,769 INFO  [Paxos] sslab22.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:16:03,770 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:03,770 INFO  [Paxos] Accepted number = 2
+2016-05-06 14:16:03,770 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 14:16:03,782 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:03,782 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:03,782 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:08,145 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:08,145 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:08,145 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:08,275 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:08,275 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:08,275 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:08,408 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:08,409 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:08,409 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:08,544 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:08,544 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:08,544 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:08,611 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:08,611 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:08,611 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:08,907 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:08,907 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:08,907 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:12,202 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:12,202 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:12,202 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:12,402 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:12,402 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:12,402 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:12,531 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:12,531 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:12,531 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:12,780 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:12,780 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:12,780 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:12,911 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:12,911 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:12,911 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:12,976 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:12,976 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:12,976 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:13,244 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:13,244 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:13,244 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:13,964 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:13,964 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:13,964 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:14,023 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:14,024 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:14,024 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:19,281 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:19,282 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:19,282 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:19,340 INFO  [Paxos] sslab22.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:16:19,340 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:19,341 INFO  [Paxos] Accepted number = 3
+2016-05-06 14:16:19,341 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:19,534 INFO  [Paxos] sslab22.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:16:19,535 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:19,535 INFO  [Paxos] Accepted number = 3
+2016-05-06 14:16:19,535 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:19,661 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:19,661 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:19,661 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:19,717 INFO  [Paxos] sslab20.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:16:19,718 INFO  [Paxos] sslab21.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:16:19,720 INFO  [Paxos] sslab22.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 14:16:19,720 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:19,720 INFO  [Paxos] Accepted number = 1
+2016-05-06 14:16:19,720 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 14:16:19,732 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:19,732 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:19,732 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:19,977 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:19,977 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:19,977 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:20,036 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:20,036 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:20,036 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:23,575 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:23,575 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:23,575 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:23,640 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:23,641 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:23,641 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:23,826 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:23,826 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:23,826 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:22,990 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:22,990 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:22,990 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:23,190 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:23,190 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:23,190 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:23,444 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:23,444 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:23,444 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:23,901 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:23,901 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:23,901 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:25,044 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:25,044 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:25,044 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 14:16:25,103 INFO  [Paxos] sslab23.cs.purdue.edu:3701 unreachable didn't accept 
+2016-05-06 14:16:25,103 INFO  [Paxos] Accepted number = 4
+2016-05-06 14:16:25,103 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:06:05,746 INFO  [DbServer] Paxos RMIServer xinu15.cs.purdue.edu  started successfully
+
+2016-05-06 15:07:00,381 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:07:00,383 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:07:05,427 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:07:05,427 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:07:10,637 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:07:10,638 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:07:10,694 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:07:10,694 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:07:10,837 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:07:10,837 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:08:10,087 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:08:10,087 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:08:09,755 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:08:09,755 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:08:09,818 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:08:09,818 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:08:09,879 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:08:09,879 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:08:10,018 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:08:10,018 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:08:33,451 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:08:33,452 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:08:55,626 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:08:55,626 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:08:57,241 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,243 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,244 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,244 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,246 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,246 INFO  [Paxos] Accepted number = 0
+2016-05-06 11:08:57,246 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 11:08:57,257 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:08:57,257 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:08:57,302 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,304 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,305 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,305 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,307 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,307 INFO  [Paxos] Accepted number = 0
+2016-05-06 11:08:57,307 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 11:08:57,314 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,315 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,317 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,317 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,318 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,318 INFO  [Paxos] Accepted number = 0
+2016-05-06 11:08:57,318 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 11:08:57,330 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,331 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,333 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,333 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,334 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,334 INFO  [Paxos] Accepted number = 0
+2016-05-06 11:08:57,334 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 11:08:57,361 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,363 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,364 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,364 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,365 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,365 INFO  [Paxos] Accepted number = 0
+2016-05-06 11:08:57,366 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 11:08:57,372 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,374 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,375 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,375 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,376 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,376 INFO  [Paxos] Accepted number = 0
+2016-05-06 11:08:57,376 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 11:08:57,391 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:08:57,392 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:08:57,421 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,423 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,424 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,424 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,426 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,426 INFO  [Paxos] Accepted number = 0
+2016-05-06 11:08:57,426 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 11:08:57,432 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,434 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,435 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,436 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,436 INFO  [Paxos] Accepted number = 1
+2016-05-06 11:08:57,437 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 11:08:57,442 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,444 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,445 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,445 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,447 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,447 INFO  [Paxos] Accepted number = 0
+2016-05-06 11:08:57,447 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 11:08:57,462 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:08:57,462 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:08:57,482 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,483 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,485 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,485 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,486 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,486 INFO  [Paxos] Accepted number = 0
+2016-05-06 11:08:57,486 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 11:08:57,493 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,494 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,496 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,496 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,497 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,497 INFO  [Paxos] Accepted number = 0
+2016-05-06 11:08:57,497 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 11:08:57,503 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,505 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,506 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,506 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,507 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,507 INFO  [Paxos] Accepted number = 0
+2016-05-06 11:08:57,508 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 11:08:57,521 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:08:57,521 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:08:57,542 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,543 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,544 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,544 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,546 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,546 INFO  [Paxos] Accepted number = 0
+2016-05-06 11:08:57,546 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 11:08:57,553 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,554 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,556 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,556 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,558 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,558 INFO  [Paxos] Accepted number = 0
+2016-05-06 11:08:57,558 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 11:08:57,575 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:08:57,575 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:08:57,603 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,605 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,606 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,607 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,608 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,608 INFO  [Paxos] Accepted number = 0
+2016-05-06 11:08:57,608 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 11:08:57,614 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,616 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,617 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,617 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,619 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,619 INFO  [Paxos] Accepted number = 0
+2016-05-06 11:08:57,619 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 11:08:57,625 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,627 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,628 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,628 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,630 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:08:57,630 INFO  [Paxos] Accepted number = 0
+2016-05-06 11:08:57,630 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 11:08:57,663 INFO  [Paxos]r = 5
+2016-05-06 15:08:58,050 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:08:58,115 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:08:58,115 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:08:58,657 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:08:58,658 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:08:59,406 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:08:59,406 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:08:59,555 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:08:59,556 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:08:59,558 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:08:59,559 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:08:59,560 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:08:59,560 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:08:59,560 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:08:59,622 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:08:59,622 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:03,061 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:03,061 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:09,151 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:09,151 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:09,217 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:09,217 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:09,351 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:09,351 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:09,615 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:09,615 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:09,730 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:09,730 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:09,793 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:09,793 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:09,853 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:09,853 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:09,916 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:09,916 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:09,978 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:09,978 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:10,036 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:10,036 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:10,097 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:10,097 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:10,156 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:10,156 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:10,217 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:10,217 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:10,276 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:10,276 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:10,338 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:10,339 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:10,517 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,518 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,519 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,520 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,521 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,521 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:10,521 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:10,577 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,579 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,580 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,581 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,582 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,582 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:10,582 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:10,638 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,639 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,640 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,641 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,642 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,642 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:10,642 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:10,698 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,699 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,700 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,701 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,702 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,702 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:10,702 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:10,758 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,759 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,760 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,762 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,763 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,763 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:10,763 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:10,771 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,772 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,773 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,774 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,775 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,775 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:10,775 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:10,819 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,820 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,821 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,822 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,823 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,823 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:10,823 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:10,835 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:10,835 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:10,879 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,881 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,882 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,883 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,884 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,884 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:10,884 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:10,896 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,898 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,898 INFO  [Paxos] Accepted number = 3
+2016-05-06 15:09:10,898 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:10,946 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:10,946 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:11,005 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:11,005 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:11,064 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:11,065 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:11,732 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:11,733 INFO  [Paxos]  REQUEST ACCEPTED :)
+n't accept 
+2016-05-06 11:09:04,529 INFO  [Paxos] Accepted number = 2
+2016-05-06 11:09:04,530 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 11:09:04,545 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:09:04,545 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:09:04,685 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:09:04,685 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:09:04,836 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:09:04,837 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:09:04,973 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:09:04,974 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:09:08,946 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:09:08,947 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:09:10,026 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:10,028 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:10,029 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:10,029 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:10,030 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:10,030 INFO  [Paxos] Accepted number = 0
+2016-05-06 11:09:10,030 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 11:09:10,086 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:10,087 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:10,088 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:10,088 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:10,090 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:10,090 INFO  [Paxos] Accepted number = 0
+2016-05-06 11:09:10,090 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 11:09:10,147 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:10,148 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:10,149 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:10,149 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:10,150 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:10,150 INFO  [Paxos] Accepted number = 0
+2016-05-06 11:09:10,150 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 11:09:10,156 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:10,157 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:10,159 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:10,159 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:10,160 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:10,160 INFO  [Paxos] Accepted number = 0
+2016-05-06 11:09:10,160 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 11:09:10,208 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:10,209 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:10,210 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:10,210 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:10,211 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:10,212 INFO  [Paxos] Accepted number = 0
+2016-05-06 11:09:10,212 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 11:09:10,224 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:09:10,224 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:09:10,267 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:10,268 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:10,269 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:10,269 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:10,271 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11accept 
+2016-05-06 15:08:59,076 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:08:59,077 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:08:59,078 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:08:59,078 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:08:59,078 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:08:59,198 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:08:59,199 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:08:59,260 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:08:59,260 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:08:59,321 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:08:59,321 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:08:59,382 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:08:59,382 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:08:59,443 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:08:59,443 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:08:59,499 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:08:59,500 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:08:59,557 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:08:59,558 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:03,725 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:03,725 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:04,383 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:04,384 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:08,794 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:08,795 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:09,011 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:09,011 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:09,542 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:09,542 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:09,603 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:09,603 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:09,904 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:09,904 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:10,230 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:10,231 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:10,393 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,394 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,395 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,396 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,396 INFO  [Paxos] Accepted number = 1
+2016-05-06 15:09:10,396 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:10,405 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,406 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,407 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,408 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,408 INFO  [Paxos] Accepted number = 1
+2016-05-06 15:09:10,408 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:10,454 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,455 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,455 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,456 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,457 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,457 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:10,458 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:10,515 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,516 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,516 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,517 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,519 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,519 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:10,519 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:10,532 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:10,532 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:10,574 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,575 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,576 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,577 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,577 INFO  [Paxos] Accepted number = 1
+2016-05-06 15:09:10,577 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:10,586 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,587 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,589 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,590 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,590 INFO  [Paxos] Accepted number = 1
+2016-05-06 15:09:10,590 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:10,634 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,635 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,637 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,637 INFO  [Paxos] Accepted number = 2
+2016-05-06 15:09:10,637 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:10,695 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,696 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,696 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,697 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,698 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,698 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:10,698 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:10,756 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,757 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,758 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,759 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,759 INFO  [Paxos] Accepted number = 1
+2016-05-06 15:09:10,759 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:10,765 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,766 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,766 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,767 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,768 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,768 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:10,768 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:10,781 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:10,781 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:10,816 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,817 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,818 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,819 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,819 INFO  [Paxos] Accepted number = 1
+2016-05-06 15:09:10,819 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:10,824 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,825 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,825 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,826 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,827 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,827 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:10,828 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:10,841 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:10,841 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:10,876 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,877 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,877 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,878 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,879 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,879 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:10,879 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:10,885 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,886 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,886 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,888 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,889 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,889 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:10,889 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:10,902 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:10,902 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:10,932 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,933 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,933 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,936 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,936 INFO  [Paxos] Accepted number = 1
+2016-05-06 15:09:10,936 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:10,993 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,994 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,994 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,995 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,996 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:10,996 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:10,997 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:11,010 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:11,010 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:11,053 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:11,054 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:11,054 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:11,055 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:11,056 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:11,056 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:11,056 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:11,061 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:11,062 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:11,062 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:11,063 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:11,065 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:11,065 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:11,065 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:11,119 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:11,119 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:11,179 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:11,179 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:11,238 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:11,238 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:11,300 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:11,301 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:11,359 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:11,360 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:11,539 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:11,540 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:11,540 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:11,541 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:11,542 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:11,543 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:11,543 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:11,599 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:11,601 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:11,601 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:11,602 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:11,603 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:11,603 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:11,603 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:11,608 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:11,611 INFO  [Paxos] Accepted number = 4
+2016-05-06 15:09:11,611 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:11,663 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:11,664 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:11,720 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:11,721 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:11,721 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:11,722 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:11,724 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:11,724 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:11,724 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:11,730 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:11,731 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:11,731 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:11,732 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:11,734 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:11,734 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:11,734 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:11,785 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:11,785 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:11,844 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:11,844 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:11,907 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:11,909 INFO  [Paxos] Accepted number = 4
+2016-05-06 15:09:11,909 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:11,965 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:11,966 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:12,029 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:12,029 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:12,089 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:12,089 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:12,149 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:12,149 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:12,209 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:12,209 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:12,598 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:12,598 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:12,659 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:12,659 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:12,792 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:12,792 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:21,802 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:21,803 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:22,556 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:22,556 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:22,611 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:22,612 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:22,612 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:22,613 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:22,614 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:22,614 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:22,614 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:22,677 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:22,678 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:22,678 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:22,680 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:22,680 INFO  [Paxos] Accepted number = 1
+2016-05-06 15:09:22,680 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:22,737 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:22,737 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:22,798 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:22,798 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:22,859 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:22,859 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:22,915 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:22,916 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:22,918 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:22,918 INFO  [Paxos] Accepted number = 2
+2016-05-06 15:09:22,918 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:22,931 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:22,931 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:22,976 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:22,977 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:22,979 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:22,979 INFO  [Paxos] Accepted number = 2
+2016-05-06 15:09:22,979 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:22,991 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:22,991 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:23,036 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:23,037 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:23,039 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:23,039 INFO  [Paxos] Accepted number = 2
+2016-05-06 15:09:23,039 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:23,096 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:23,100 INFO  [Paxos] Accepted number = 4
+2016-05-06 15:09:23,100 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:23,157 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:23,158 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:23,158 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:23,161 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:23,161 INFO  [Paxos] Accepted number = 1
+2016-05-06 15:09:23,161 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:23,219 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:23,220 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:23,220 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:23,221 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:23,222 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:23,222 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:23,222 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:23,279 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:23,280 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:23,282 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:23,282 INFO  [Paxos] Accepted number = 2
+2016-05-06 15:09:23,282 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:23,295 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:23,295 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:23,338 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:23,339 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:23,342 INFO  [Paxos] Accepted number = 3
+2016-05-06 15:09:23,342 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:24,322 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:24,323 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:24,323 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:24,324 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:24,325 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:24,325 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:24,325 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:24,337 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:24,337 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:24,383 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:24,384 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:24,384 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:24,385 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:24,386 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:24,387 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:24,387 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:24,445 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:24,446 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:24,446 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:24,447 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:24,449 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:24,449 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:24,449 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:24,505 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:24,506 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:24,509 INFO  [Paxos] Accepted number = 3
+2016-05-06 15:09:24,509 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:24,761 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:24,763 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:24,763 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:24,764 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:24,765 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:24,765 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:24,765 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:24,821 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:24,822 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:24,822 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:24,823 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:24,824 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:24,825 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:24,825 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:24,882 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:24,087 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:24,087 INFO  [Paxos] Accepted number = 0
+2016-05-06 11:09:24,087 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 11:09:24,095 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:09:24,095 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:09:24,140 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:09:24,140 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:09:24,272 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:09:24,272 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:09:24,332 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:09:24,332 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:09:24,391 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:09:24,391 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:09:24,449 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:24,450 INFO  [Paxos] Accepted number = 4
+2016-05-06 11:09:24,450 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:09:24,510 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:24,511 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:24,512 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:24,512 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:24,513 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:24,513 INFO  [Paxos] Accepted number = 0
+2016-05-06 11:09:24,513 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 11:09:24,574 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:09:24,574 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:09:33,144 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:09:33,145 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:09:34,281 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:09:34,282 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:09:35,768 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:09:35,769 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:09:35,829 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:09:35,830 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:09:35,892 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:09:35,892 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:09:35,949 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:09:35,949 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:09:36,005 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:36,006 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:36,007 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:36,008 INFO  [Paxos] Accepted number = 2
+2016-05-06 11:09:36,008 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 11:09:36,014 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:36,015 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:36,016 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:36,016 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:36,017 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:36,017 INFO  [Paxos] Accepted number = 0
+2016-05-06 11:09:36,017 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 11:09:36,066 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:36,067 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:36,068 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:36,068 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:36,070 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:36,070 INFO  [Paxos] Accepted number = 0
+2016-05-06 11:09:36,070 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 11:09:36,075 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:36,076 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:36,077 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:36,077 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:36,078 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:36,078 INFO  [Paxos] Accepted number = 0
+2016-05-06 11:09:36,078 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 11:09:36,127 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:36,128 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:36,129 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:36,129 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:36,130 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:36,130 INFO  [Paxos] Accepted number = 0
+2016-05-06 11:09:36,130 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 11:09:36,140 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:36,141 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:36,142 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:36,142 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:36,144 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:36,144 INFO  [Paxos] Accepted number = 0
+2016-05-06 11:09:36,144 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 11:09:36,191 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:09:36,191 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:09:36,441 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:09:36,441 INFO  [Paxos]  REQUEST ACCEPTED :)
+du:3701 simply didn't accept 
+2016-05-06 15:09:35,701 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:35,701 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:35,709 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:35,709 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:35,761 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:35,761 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:36,004 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,005 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,005 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,006 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,008 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,008 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:36,008 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:36,021 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:36,021 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:36,065 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,066 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,066 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,067 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,068 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,068 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:36,068 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:36,082 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:36,082 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:36,126 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,127 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,127 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,128 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,129 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,129 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:36,129 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:36,138 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,139 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,139 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,140 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,141 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,141 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:36,141 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:36,185 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,186 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,186 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,188 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,189 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,189 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:36,189 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:36,206 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:36,206 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:36,250 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:36,250 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:36,388 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:36,388 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:36,446 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:36,446 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:36,505 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:36,505 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:36,564 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:36,564 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:36,624 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:36,624 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:36,691 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:36,691 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:36,753 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:36,753 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:36,810 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,811 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,814 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,814 INFO  [Paxos] Accepted number = 2
+2016-05-06 15:09:36,814 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:36,828 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:36,828 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:39,743 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:39,743 INFO  [Paxos]  REQUEST ACCEPTED :)
+5:09:35,642 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:35,643 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:35,644 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:35,645 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:35,645 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:35,645 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:35,701 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:35,701 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:35,702 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:35,704 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:35,705 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:35,705 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:35,705 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:35,764 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:35,764 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:35,765 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:35,766 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:35,768 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:35,768 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:35,768 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:35,829 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:35,829 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:35,884 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:35,884 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:35,885 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:35,886 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:35,887 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:35,887 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:35,887 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:35,949 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:35,949 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:36,144 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,144 INFO  [Paxos] Accepted number = 4
+2016-05-06 15:09:36,144 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:36,203 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,206 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,207 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,208 INFO  [Paxos] Accepted number = 2
+2016-05-06 15:09:36,208 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:36,265 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:36,265 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:36,318 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,318 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,319 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,320 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,322 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,322 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:36,322 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:36,327 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,330 INFO  [Paxos] Accepted number = 4
+2016-05-06 15:09:36,330 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:36,378 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,378 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,379 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,382 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,382 INFO  [Paxos] Accepted number = 1
+2016-05-06 15:09:36,382 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:36,387 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,387 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,388 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,389 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,390 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:36,390 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:36,390 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:42,066 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:42,066 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:45,271 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:45,271 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:47,206 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:47,206 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:47,265 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:47,265 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:47,325 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:47,325 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:47,385 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:47,385 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:47,510 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:09:47,503 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:09:47,811 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:09:47,811 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:09:48,195 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:09:48,195 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:09:48,317 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:09:48,317 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:09:48,377 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:09:48,377 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:09:48,439 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:09:48,439 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:09:48,500 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:09:48,500 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:09:53,502 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:09:53,502 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:09:58,299 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:09:58,299 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:09:58,434 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:09:58,435 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:09:59,064 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:09:59,064 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:09:59,558 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:59,559 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:59,560 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:59,560 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:59,561 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:59,561 INFO  [Paxos] Accepted number = 0
+2016-05-06 11:09:59,561 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 11:09:59,619 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:59,620 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:59,621 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:59,621 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:59,622 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:09:59,622 INFO  [Paxos] Accepted number = 0
+2016-05-06 11:09:59,622 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 11:09:59,631 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:09:59,631 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:09:59,682 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:09:59,682 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:10:05,119 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:10:05,119 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:10:10,373 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:10:10,373 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:10:10,635 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:10:10,635 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:10:10,690 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:10:10,690 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:10:10,752 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:10:10,752 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:10:10,812 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:10:10,812 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:10:10,873 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:10:10,873 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:10:11,247 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:10:11,247 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:10:11,313 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:10:11,313 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:10:11,434 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:10:11,434 INFO  [Paxos]  REQUEST ACCEPTED :)
+] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,137 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,138 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,139 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,139 INFO  [Paxos] Accepted number = 1
+2016-05-06 15:09:59,139 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:59,152 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:59,152 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:59,255 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:59,255 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:59,315 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:59,315 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:59,376 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:59,377 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:59,437 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:59,437 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:59,493 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,494 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,496 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,496 INFO  [Paxos] Accepted number = 2
+2016-05-06 15:09:59,496 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:59,504 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:59,504 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:59,615 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,616 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,616 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,617 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,618 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,618 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:59,618 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:59,675 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,676 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,676 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,678 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,679 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,680 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:59,680 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:59,740 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:59,740 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:59,805 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:59,805 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:59,866 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:59,866 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:10:00,055 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:10:00,056 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:10:00,118 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:10:00,118 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:10:00,180 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:10:00,180 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:10:05,245 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:10:05,245 INFO  [Paxos]  REQUEST ACCEPTED :)
+n't accept 
+2016-05-06 15:09:48,440 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:48,440 INFO  [Paxos] Accepted number = 1
+2016-05-06 15:09:48,440 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:48,635 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:48,635 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:48,706 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:48,706 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:58,169 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:58,170 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:58,578 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:58,578 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:58,647 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:58,647 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:58,707 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:58,707 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:58,759 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:58,760 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:58,761 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:58,762 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:58,763 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:58,763 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:58,763 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:58,823 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:58,823 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:58,879 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:58,880 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:58,881 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:58,882 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:58,884 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:58,884 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:58,884 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:58,943 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:58,944 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:58,945 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:58,946 INFO  [Paxos] Accepted number = 2
+2016-05-06 15:09:58,946 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:59,004 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,006 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,006 INFO  [Paxos] Accepted number = 3
+2016-05-06 15:09:59,006 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:59,132 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,133 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,134 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,136 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,136 INFO  [Paxos] Accepted number = 1
+2016-05-06 15:09:59,136 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:59,145 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,146 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,147 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,149 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,149 INFO  [Paxos] Accepted number = 1
+2016-05-06 15:09:59,149 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:59,187 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,189 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,190 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,191 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,193 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,193 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:59,193 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:59,255 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:59,255 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:59,314 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:59,314 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:59,375 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:59,375 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:59,434 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,435 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,437 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,438 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,439 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,439 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:59,440 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:59,495 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,496 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,497 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,498 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,500 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,500 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:59,500 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:59,516 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:59,517 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:59,560 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:59,560 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:59,694 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:59,695 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:59,867 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,868 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,869 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,870 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,871 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,871 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:59,871 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:59,927 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,929 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,930 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,931 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,933 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:09:59,933 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:09:59,933 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:09:59,944 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:59,944 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:09:59,994 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:09:59,994 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:10:00,055 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:10:00,055 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:10:00,116 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:10:00,116 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:10:03,504 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:10:03,504 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:10:21,891 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:10:21,891 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:10:22,012 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:10:22,013 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:10:22,015 INFO  [Paxos] Accepted number = 3
+2016-05-06 11:10:22,015 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:10:22,209 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:10:22,209 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:10:22,263 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:10:22,264 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:10:22,265 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:10:22,265 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:10:22,266 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 11:10:22,266 INFO  [Paxos] Accepted number = 0
+2016-05-06 11:10:22,266 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 11:10:22,327 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:10:22,328 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:10:22,515 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:10:22,515 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:10:33,489 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:10:33,489 INFO  [Paxos]  REQUEST ACCEPTED :)
+[Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:10:10,747 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:10:10,747 INFO  [Paxos] Accepted number = 1
+2016-05-06 15:10:10,747 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:10:10,761 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:10:10,761 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:10:16,822 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:10:16,822 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:10:16,884 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:10:16,884 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:10:27,889 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:10:27,890 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:10:33,167 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:10:33,167 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:10:33,230 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:10:33,230 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:10:33,357 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:10:33,357 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:10:33,554 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:10:33,554 INFO  [Paxos]  REQUEST ACCEPTED :)
+6 15:10:10,624 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:10:10,624 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:10:10,633 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:10:10,635 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:10:10,636 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:10:10,636 INFO  [Paxos] Accepted number = 2
+2016-05-06 15:10:10,636 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:10:10,685 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:10:10,685 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:10:10,814 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:10:10,814 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:10:10,815 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:10:10,816 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:10:10,818 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:10:10,818 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:10:10,818 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:10:10,874 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:10:10,874 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:10:10,875 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:10:10,876 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:10:10,877 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:10:10,877 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:10:10,877 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:10:10,939 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:10:10,939 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:10:11,001 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:10:11,001 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:10:11,134 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:10:11,134 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:10:11,194 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:10:11,194 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:10:11,260 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:10:11,260 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:10:11,312 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:10:11,312 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:10:11,314 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:10:11,315 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:10:11,317 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:10:11,317 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:10:11,317 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:10:11,376 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:10:11,376 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:10:11,433 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:10:11,433 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:10:11,435 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:10:11,436 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:10:11,438 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:10:11,438 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:10:11,438 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:10:11,498 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:10:11,498 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:10:11,557 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:10:11,557 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:10:11,623 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:10:11,623 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:10:21,962 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:10:21,962 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:10:22,025 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:10:22,026 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:10:22,080 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:10:22,080 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:10:22,084 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:10:22,084 INFO  [Paxos] Accepted number = 2
+2016-05-06 15:10:22,084 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:10:22,097 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:10:22,097 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:10:22,585 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:10:22,585 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:10:22,650 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:10:22,650 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:10:22,704 INFO  [Paxos] sslab09.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:10:22,704 INFO  [Paxos] sslab10.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:10:22,706 INFO  [Paxos] sslab11.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:10:22,707 INFO  [Paxos] sslab12.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:10:22,708 INFO  [Paxos] sslab13.cs.purdue.edu:3701 simply didn't accept 
+2016-05-06 15:10:22,708 INFO  [Paxos] Accepted number = 0
+2016-05-06 15:10:22,708 INFO  [Paxos]  REQUEST REJECTED :)
+2016-05-06 15:10:22,723 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:10:22,723 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:10:22,768 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:10:22,768 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:10:22,827 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:10:22,827 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:10:33,430 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:10:33,431 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:10:33,628 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:10:33,628 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:10:50,067 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:10:50,068 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 15:10:44,821 INFO  [Paxos] Accepted number = 5
+2016-05-06 15:10:44,821 INFO  [Paxos]  REQUEST ACCEPTED :)
+2016-05-06 11:10:45,000 INFO  [Paxos] Accepted number = 5
+2016-05-06 11:10:45,001 INFO  [Paxos]  REQUEST ACCEPTED :)

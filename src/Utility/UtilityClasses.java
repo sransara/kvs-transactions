@@ -209,7 +209,8 @@ public class UtilityClasses {
             this.port = port;
         }
 
-        public boolean equals(HostPorts hp) {
+        public boolean equals(Object o) {
+            HostPorts hp = (HostPorts) o;
             return (hp.hostName.equals(hostName) && port == hp.port);
         }
     }

@@ -30,8 +30,8 @@ import static Utility.UtilityClasses.atoi;
 public class TransactionClient {
     final static Logger log = Logger.getLogger(TransactionClient.class);
     final static String PATTERN = "%d [%p|%c|%C{1}] %m%n";
-    // final static int COORDINATOR_NUM_REPLICAS = 10;
-    final static int COORDINATOR_NUM_REPLICAS = 60;
+    final static int COORDINATOR_NUM_REPLICAS = 10;
+    // final static int COORDINATOR_NUM_REPLICAS = 60;
     private static final int TIMEOUT = 1000;
 
     private static HashMap<String, Object> localStore = new HashMap<>();
@@ -285,7 +285,6 @@ public class TransactionClient {
     private static UtilityClasses.Configuration getShardConfig(String[][] coordinators) {
         UtilityClasses.PollReply pollReply;
         UUID reqId = UUID.randomUUID();
-        log.info("This request has id :" + reqId);
         int serverNum = new Random().nextInt(COORDINATOR_NUM_REPLICAS);
 
         while (true) {

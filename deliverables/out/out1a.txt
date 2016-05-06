@@ -1,4 +1,0 @@
-2016-04-23 05:56:34,223 [INFO|Client.TransactionClient|TransactionClient] Loading configurations from configs.txt..
-2016-04-23 05:56:34,528 [INFO|Client.TransactionClient|TransactionClient] (#7) 29
-2016-04-23 05:56:35,229 [INFO|Client.TransactionClient|TransactionClient] (#10) RX = 45
-2016-04-23 05:56:35,230 [INFO|Client.TransactionClient|TransactionClient] (#11) RY = 25
