@@ -1,3 +1,15 @@
+# kvs-transaction
+### Exploring transaction protocols for distributed key value store
+
+In this project we implemented:
+- Concurrency control: Optimistic
+- Isolation level: Repeatable read
+- Two phase optimistic commit protocol
+
+## Original repo
+https://github.com/prashant-r/KVSTransactions
+
+## Usage
 To generate the jar files
 :Run "ant jar" from project root folder (that contains build.xml)
 
